@@ -4,9 +4,22 @@
   
   
   <entry>
+    <title>博客域名配置</title>
+    <link href="/2023/12/27/Configure-blog-domain/"/>
+    <url>/2023/12/27/Configure-blog-domain/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>前置条件：已经有一个域名，且跟着前面的文章配置好了 github pages。</p></blockquote><h3 id="1-在域名服务商处配置域名解析"><a href="#1-在域名服务商处配置域名解析" class="headerlink" title="1. 在域名服务商处配置域名解析"></a>1. 在域名服务商处配置域名解析</h3><p>域名解析，不同的服务商有不同的配置方式。<br>类型 选择 CNAME，主机记录填写你的域名，比如 <code>example.com</code>，<br>值填写 <code>用户名.github.io</code>，比如 <code>mobeicanyue.github.io</code>。</p><p><img src="/images/Configure-blog-domain/domain-record.jpg" alt="domain-record.jpg"></p><h3 id="2-在-github-仓库中配置域名"><a href="#2-在-github-仓库中配置域名" class="headerlink" title="2. 在 github 仓库中配置域名"></a>2. 在 github 仓库中配置域名</h3><p>进入你的仓库，点击 <code>settings</code>，左边栏，找到 <code>Pages</code>，在 <code>Custom domain</code> 中填写你的域名，比如 <code>example.com</code>，然后点击 <code>Save</code>。</p><p><img src="/images/Configure-blog-domain/set-domain.jpg" alt="set-domain.jpg"><br>等待 dns 检查，一般不到几分钟就好了。<br><img src="/images/Configure-blog-domain/wait-dns.jpg" alt="wait-dns.jpg"><br>访问你的域名，比如 <code>example.com</code>，就可以看到你的博客了。<br><img src="/images/Configure-blog-domain/blog.jpg" alt="blog.jpg"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>博客主题改为 fluid</title>
-    <link href="/2023/12/26/Modify-theme/"/>
-    <url>/2023/12/26/Modify-theme/</url>
+    <link href="/2023/12/27/Modify-theme/"/>
+    <url>/2023/12/27/Modify-theme/</url>
     
     <content type="html"><![CDATA[<p>官方教程<a href="https://hexo.fluid-dev.com/docs/start">fluid</a>其实挺详细的了。<br>记录一下我自己的操作。</p><h3 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1. 安装主题"></a>1. 安装主题</h3><p>进入博客目录执行命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install --save hexo-theme-fluid<br></code></pre></td></tr></table></figure><p>然后在博客目录下创建 _config.fluid.yml，将主题 <a href="https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml">_config.yml</a> 内容复制过去。</p><p>现在目录下有这三个 yml 文件：<br><img src="/images/Modify-theme/yml-files.jpg" alt="yml-files.jpg"></p><p>可删除 <code>_config.landscape.yml</code> , 它是默认的主题文件。</p><h3 id="2-修改主题配置"><a href="#2-修改主题配置" class="headerlink" title="2. 修改主题配置"></a>2. 修改主题配置</h3><p>修改 Hexo 博客目录中的 <code>_config.yml</code>：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span><br><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span><br></code></pre></td></tr></table></figure><h3 id="3-创建「关于页」"><a href="#3-创建「关于页」" class="headerlink" title="3. 创建「关于页」"></a>3. 创建「关于页」</h3><p>执行以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page about<br></code></pre></td></tr></table></figure><p>创建成功后修改 <code>/source/about/index.md</code>，添加 &#96;layout&#96;&#96; 属性。</p><p>改后如下</p><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs md">---<br>title: about<br>date: 2023-12-26 22:43:21<br><span class="hljs-section">layout: about</span><br><span class="hljs-section">---</span><br>这里写关于页的正文，支持 Markdown, HTML<br></code></pre></td></tr></table></figure><p>然后不出意外你就可以看到关于页了。<br>输入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s<br></code></pre></td></tr></table></figure><p>后访问 <code>http://localhost:4000/about/</code> 即可看到效果。</p>]]></content>
     
