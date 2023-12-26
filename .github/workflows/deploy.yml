@@ -1,0 +1,41 @@
+name: Deploy Hexo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "mobeicanyue"
+          git config --global user.email "${{ secrets.EMAIL }}"
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+      - name: Install Dependencies
+        run: |
+          npm install -g hexo-cli
+          npm install hexo-deployer-git --save
+          npm install
+
+      - name: Deploy Hexo
+        run: |
+          hexo clean
+          hexo generate
+          hexo deploy
