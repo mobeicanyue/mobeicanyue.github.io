@@ -34,8 +34,14 @@ jobs:
           npm install hexo-deployer-git --save
           npm install
 
-      - name: Deploy Hexo
+      - name: Build Site
         run: |
-          hexo clean
-          hexo generate
-          hexo deploy
+          export TZ='Asia/Shanghai'
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
+          cname: blog.ovvv.top
