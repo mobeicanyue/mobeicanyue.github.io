@@ -16,28 +16,28 @@
   <meta name="author" content="mobeicanyue">
   <meta name="keywords" content="">
   
-    <meta name="description" content="近来阅读竹林里有冰的博客，发现他的博客字体很好看，想着把他的字体也用到我的博客里，于是就有了这篇文章。 1. 字体介绍霞鹜文楷字体仓库霞鹜文楷 我之前其实在手机上用过，不过后面由于装机加上懒得折腾就没有再设置了，但是博客我觉得为了好的阅读体验还是可以换一下的 关于在 web 中使用 霞鹜文楷 请参阅 issue#24 其中 chawyehsu 提供了打包，但是点进去仓库发现已经有半年没更新了。在">
+    <meta name="description" content="官方文档官方文档其实挺详细的了。记录一下我自己的操作。 1. 安装主题进入博客目录执行命令： 1npm install --save hexo-theme-fluid 然后在博客目录下创建 _config.fluid.yml，将主题 _config.yml 内容复制过去。 现在目录下有这三个 yml 文件： 可删除 _config.landscape.yml , 它是 hexo 默认的主题文件。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在 fluid 主题中使用霞鹜文楷">
-<meta property="og:url" content="https://blog.ovvv.top/2023/12/27/Use-lxgw-wenkai-in-fluid/">
+<meta property="og:title" content="博客主题改为 fluid">
+<meta property="og:url" content="https://blog.ovvv.top/2023/12/27/Modify-theme/">
 <meta property="og:site_name" content="Canyue">
-<meta property="og:description" content="近来阅读竹林里有冰的博客，发现他的博客字体很好看，想着把他的字体也用到我的博客里，于是就有了这篇文章。 1. 字体介绍霞鹜文楷字体仓库霞鹜文楷 我之前其实在手机上用过，不过后面由于装机加上懒得折腾就没有再设置了，但是博客我觉得为了好的阅读体验还是可以换一下的 关于在 web 中使用 霞鹜文楷 请参阅 issue#24 其中 chawyehsu 提供了打包，但是点进去仓库发现已经有半年没更新了。在">
+<meta property="og:description" content="官方文档官方文档其实挺详细的了。记录一下我自己的操作。 1. 安装主题进入博客目录执行命令： 1npm install --save hexo-theme-fluid 然后在博客目录下创建 _config.fluid.yml，将主题 _config.yml 内容复制过去。 现在目录下有这三个 yml 文件： 可删除 _config.landscape.yml , 它是 hexo 默认的主题文件。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/wenkai.png">
-<meta property="og:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/style.css.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/font-css.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/result.jpg">
-<meta property="article:published_time" content="2023-12-27T06:58:04.000Z">
+<meta property="og:image" content="https://blog.ovvv.top/images/Modify-theme/yml-files.jpg">
+<meta property="og:image" content="https://blog.ovvv.top/images/Modify-theme/about.jpg">
+<meta property="og:image" content="https://blog.ovvv.top/images/Modify-theme/slogan-api.jpg">
+<meta property="article:published_time" content="2023-12-26T18:09:48.000Z">
 <meta property="article:modified_time" content="2023-12-27T09:02:23.674Z">
 <meta property="article:author" content="mobeicanyue">
 <meta property="article:tag" content="hexo">
+<meta property="article:tag" content="deploy">
 <meta property="article:tag" content="fluid">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/wenkai.png">
+<meta name="twitter:image" content="https://blog.ovvv.top/images/Modify-theme/yml-files.jpg">
   
   
   
-  <title>在 fluid 主题中使用霞鹜文楷 - Canyue</title>
+  <title>博客主题改为 fluid - Canyue</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -207,7 +207,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="在 fluid 主题中使用霞鹜文楷"></span>
+            <span id="subtitle" data-typed-text="博客主题改为 fluid"></span>
           
         </div>
 
@@ -223,7 +223,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-12-27 14:58" pubdate>
+        <time datetime="2023-12-27 02:09" pubdate>
           2023年12月27日
         </time>
       </span>
@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          419 字
+          429 字
         
       </span>
     
@@ -283,7 +283,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">在 fluid 主题中使用霞鹜文楷</h1>
+            <h1 id="seo-header">博客主题改为 fluid</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
@@ -296,16 +296,35 @@
             
               <div class="markdown-body">
                 
-                <p>近来阅读竹林里有冰的博客，发现他的博客字体很好看，想着把他的字体也用到我的博客里，于是就有了这篇文章。</p>
-<h3 id="1-字体介绍"><a href="#1-字体介绍" class="headerlink" title="1. 字体介绍"></a>1. 字体介绍</h3><p><a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai">霞鹜文楷字体仓库</a><br>霞鹜文楷 我之前其实在手机上用过，不过后面由于装机加上懒得折腾就没有再设置了，但是博客我觉得为了好的阅读体验还是可以换一下的<br><img src="/images/Use-lxgw-wenkai-in-fluid/wenkai.png" srcset="/img/loading.gif" lazyload alt="霞鹜文楷"></p>
-<p>关于在 web 中使用 霞鹜文楷 请参阅 <a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai/issues/24">issue#24</a></p>
-<p>其中 <a target="_blank" rel="noopener" href="https://github.com/chawyehsu/lxgw-wenkai-webfont">chawyehsu</a> 提供了打包，但是点进去仓库发现已经有半年没更新了。在 issue 的下面我们可以看到 <a target="_blank" rel="noopener" href="https://github.com/CMBill/lxgw-wenkai-gb-web">CMBill</a> 提供了一个新的打包，我的就是这个打包。</p>
-<p>在 <a target="_blank" rel="noopener" href="https://github.com/CMBill/lxgw-wenkai-gb-web">CMBill</a> 的仓库 README 中右键跳转 css 看看内容 <img src="/images/Use-lxgw-wenkai-in-fluid/style.css.jpg" srcset="/img/loading.gif" lazyload alt="style.css.jpg"></p>
-<p>可以发现这个 css 是分了几个不同的字体种类，还有不同的霞鹜文楷变体可供选择<br><img src="/images/Use-lxgw-wenkai-in-fluid/font-css.jpg" srcset="/img/loading.gif" lazyload alt="font-css.jpg"><br>将 <code>style.css</code> 替换为 <code>@import url</code> 之后的内容（去掉.&#x2F;），就可以直接使用了</p>
-<p>我最终选择了 <code>lxgwwenkaigb-bold</code> 这个字体，这个字体阅读起来比较舒服。<br>我的博客字体文件为<br><code>https://cdn.jsdelivr.net/gh/CMBill/lxgw-wenkai-gb-web/fonts/lxgwwenkaigb-bold/result.css</code></p>
-<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2. 使用方法"></a>2. 使用方法</h3><p>如果你恰好也用 hexo 的 fluid 主题，那么恭喜你，替换字体很简单，只需要在主题的配置文件里加上一行 <code>custom_css: https://xxxx</code>代码就可以了，再修改 font_family。参照你的 css 文件前几行显示的 <code>fontFamily: </code>，比如我的是 <code>fontFamily: LXGW WenKai GB</code>。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># 主题字体配置</span><br><span class="hljs-attr">font:</span><br>  <span class="hljs-attr">font_size:</span> <span class="hljs-string">17px</span><br>  <span class="hljs-attr">font_family:</span> <span class="hljs-string">&quot;LXGW WenKai GB&quot;</span><br>  <span class="hljs-attr">letter_spacing:</span> <span class="hljs-number">0.</span><span class="hljs-string">02em</span><br>  <span class="hljs-attr">code_font_size:</span> <span class="hljs-number">85</span><span class="hljs-string">%</span><br><br><span class="hljs-attr">custom_js:</span><br><span class="hljs-attr">custom_css:</span> <span class="hljs-string">https://cdn.jsdelivr.net/gh/CMBill/lxgw-wenkai-gb-web/fonts/lxgwwenkaigb-bold/result.css</span><br></code></pre></td></tr></table></figure>
-<h3 id="3-效果展示"><a href="#3-效果展示" class="headerlink" title="3. 效果展示"></a>3. 效果展示</h3><p><img src="/images/Use-lxgw-wenkai-in-fluid/result.jpg" srcset="/img/loading.gif" lazyload alt="效果"></p>
+                <p>官方文档<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/start">官方文档</a>其实挺详细的了。<br>记录一下我自己的操作。</p>
+<h3 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1. 安装主题"></a>1. 安装主题</h3><p>进入博客目录执行命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install --save hexo-theme-fluid<br></code></pre></td></tr></table></figure>
+<p>然后在博客目录下创建 _config.fluid.yml，将主题 <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml">_config.yml</a> 内容复制过去。</p>
+<p>现在目录下有这三个 yml 文件：<br><img src="/images/Modify-theme/yml-files.jpg" srcset="/img/loading.gif" lazyload alt="yml-files.jpg"></p>
+<p>可删除 <code>_config.landscape.yml</code> , 它是 hexo 默认的主题文件。</p>
+<h3 id="2-修改-hexo-配置"><a href="#2-修改-hexo-配置" class="headerlink" title="2. 修改 hexo 配置"></a>2. 修改 hexo 配置</h3><p>修改 Hexo 博客目录中的 <code>_config.yml</code>：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span><br><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="3-创建「关于页」"><a href="#3-创建「关于页」" class="headerlink" title="3. 创建「关于页」"></a>3. 创建「关于页」</h3><p>执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page about<br></code></pre></td></tr></table></figure>
+
+<p>创建成功后修改 <code>/source/about/index.md</code>，添加 <code>layout</code> 属性。</p>
+<p>添加后如下</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs md">---<br>title: about<br>date: 2023-12-26 22:43:21<br><span class="hljs-section">layout: about</span><br><span class="hljs-section">---</span><br>这里写关于页的正文，支持 Markdown, HTML<br></code></pre></td></tr></table></figure>
+<p>然后不出意外你就可以看到关于页了。<br>输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s -o<br></code></pre></td></tr></table></figure>
+
+<p>后访问 <code>http://localhost:4000/about/</code> 即可看到效果。</p>
+<p><img src="/images/Modify-theme/about.jpg" srcset="/img/loading.gif" lazyload alt="ablout.jpg"></p>
+<p>PS: 可以跟着文档把关于页面的几个 icon 一起改了。</p>
+<h3 id="4-修改主题配置"><a href="#4-修改主题配置" class="headerlink" title="4. 修改主题配置"></a>4. 修改主题配置</h3><p><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">官方文档</a><br>官方文档还算比较完善，耐心看完即可。</p>
+<h3 id="5-修改网站图标"><a href="#5-修改网站图标" class="headerlink" title="5. 修改网站图标"></a>5. 修改网站图标</h3><p><code>修改网站图标</code> 文档好像没提到，我这里写一下<br>首先把你的图标放到 <code>/source/images/</code> 目录下，然后<br>打开 <code>_config.fluid.yml</code> 找到这个配置：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># 用于浏览器标签的图标</span><br><span class="hljs-comment"># Icon for browser tab</span><br><span class="hljs-attr">favicon:</span> <span class="hljs-string">images/favicon.png</span><br><br><span class="hljs-comment"># 用于苹果设备的图标</span><br><span class="hljs-comment"># Icon for Apple touch</span><br><span class="hljs-attr">apple_touch_icon:</span> <span class="hljs-string">images/favicon.png</span><br></code></pre></td></tr></table></figure>
+<p>将 <code>favicon.png</code> 改为你的图标路径即可。</p>
+<h3 id="6-修改-slogan-为-api-语录"><a href="#6-修改-slogan-为-api-语录" class="headerlink" title="6. 修改 slogan 为 api 语录"></a>6. 修改 slogan 为 api 语录</h3><p>效果如图所示：<br><img src="/images/Modify-theme/slogan-api.jpg" srcset="/img/loading.gif" lazyload alt="slogan-api.jpg"></p>
+<p>在主题配置中开启：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">index:</span><br>  <span class="hljs-attr">slogan:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">text:</span> <span class="hljs-string">这是一条</span> <span class="hljs-string">Slogan</span><br>    <span class="hljs-attr">api:</span><br>      <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-attr">url:</span> <span class="hljs-string">&quot;https://v1.hitokoto.cn/&quot;</span><br>      <span class="hljs-attr">method:</span> <span class="hljs-string">&quot;GET&quot;</span><br>      <span class="hljs-attr">headers:</span> &#123;&#125;<br>      <span class="hljs-attr">keys:</span> [<span class="hljs-string">&#x27;data&#x27;</span>, <span class="hljs-string">&#x27;content&#x27;</span>]<br></code></pre></td></tr></table></figure>
+<p>把 <code>url</code> 改为你想要的 api 地址，<code>keys</code> 改为你想要的字段。具体参数可以看<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%9C%BA">官方文档</a></p>
 
                 
               </div>
@@ -320,6 +339,8 @@
       
         <a href="/tags/hexo/" class="print-no-link">#hexo</a>
       
+        <a href="/tags/deploy/" class="print-no-link">#deploy</a>
+      
         <a href="/tags/fluid/" class="print-no-link">#fluid</a>
       
     </div>
@@ -332,8 +353,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>在 fluid 主题中使用霞鹜文楷</div>
-      <div>https://blog.ovvv.top/2023/12/27/Use-lxgw-wenkai-in-fluid/</div>
+      <div>博客主题改为 fluid</div>
+      <div>https://blog.ovvv.top/2023/12/27/Modify-theme/</div>
     </div>
     <div class="license-meta">
       
@@ -345,7 +366,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年12月27日 14:58</div>
+          <div>2023年12月27日 02:09</div>
         </div>
       
       
@@ -394,12 +415,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/12/27/Configure-blog-domain/" title="博客域名配置">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">博客域名配置</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/12/27/Configure-blog-domain/" title="博客域名配置">
-                        <span class="hidden-mobile">博客域名配置</span>
+                      <a href="/2023/12/26/Init-my-first-hexo-blog/" title="我的第一篇 Hexo 博客">
+                        <span class="hidden-mobile">我的第一篇 Hexo 博客</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
