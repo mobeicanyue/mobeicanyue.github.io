@@ -24,9 +24,10 @@
 <meta property="og:description" content="官方文档官方文档其实挺详细的了。记录一下我自己的操作。 1. 安装主题进入博客目录执行命令： 1npm install --save hexo-theme-fluid 然后在博客目录下创建 _config.fluid.yml，将主题 _config.yml 内容复制过去。 现在目录下有这三个 yml 文件： 可删除 _config.landscape.yml , 它是默认的主题文件。 2. 修改">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.ovvv.top/images/Modify-theme/yml-files.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Modify-theme/localhost.jpg">
+<meta property="og:image" content="https://blog.ovvv.top/images/Modify-theme/about.jpg">
+<meta property="og:image" content="https://blog.ovvv.top/images/Modify-theme/slogan-api.jpg">
 <meta property="article:published_time" content="2023-12-26T18:09:48.000Z">
-<meta property="article:modified_time" content="2023-12-27T04:13:45.837Z">
+<meta property="article:modified_time" content="2023-12-27T05:05:15.425Z">
 <meta property="article:author" content="Canyue">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://blog.ovvv.top/images/Modify-theme/yml-files.jpg">
@@ -97,7 +98,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>漠北残月</strong>
+      <strong>漠北残月的博客</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -222,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          318 字
+          428 字
         
       </span>
     
@@ -233,7 +234,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -288,17 +289,22 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page about<br></code></pre></td></tr></table></figure>
 
 <p>创建成功后修改 <code>/source/about/index.md</code>，添加 <code>layout</code> 属性。</p>
-<p>改后如下</p>
+<p>添加后如下</p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs md">---<br>title: about<br>date: 2023-12-26 22:43:21<br><span class="hljs-section">layout: about</span><br><span class="hljs-section">---</span><br>这里写关于页的正文，支持 Markdown, HTML<br></code></pre></td></tr></table></figure>
 <p>然后不出意外你就可以看到关于页了。<br>输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s -o<br></code></pre></td></tr></table></figure>
 
 <p>后访问 <code>http://localhost:4000/about/</code> 即可看到效果。</p>
-<p><img src="/images/Modify-theme/localhost.jpg" srcset="/img/loading.gif" lazyload alt="localhost.jpg"></p>
+<p><img src="/images/Modify-theme/about.jpg" srcset="/img/loading.gif" lazyload alt="ablout.jpg"></p>
+<p>PS: 可以跟着文档把关于页面的几个 icon 一起改了。</p>
 <h3 id="4-修改主题配置"><a href="#4-修改主题配置" class="headerlink" title="4. 修改主题配置"></a>4. 修改主题配置</h3><p><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">官方文档</a><br>官方文档还算比较完善，耐心看完即可。</p>
-<p><code>修改网站图标</code> 文档好像没提到，我这里写一下<br>首先把你的图标放到 <code>/source/images/</code> 目录下，然后<br>打开 <code>_config.fluid.yml</code> 找到这个配置：</p>
+<h3 id="5-修改网站图标"><a href="#5-修改网站图标" class="headerlink" title="5. 修改网站图标"></a>5. 修改网站图标</h3><p><code>修改网站图标</code> 文档好像没提到，我这里写一下<br>首先把你的图标放到 <code>/source/images/</code> 目录下，然后<br>打开 <code>_config.fluid.yml</code> 找到这个配置：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># 用于浏览器标签的图标</span><br><span class="hljs-comment"># Icon for browser tab</span><br><span class="hljs-attr">favicon:</span> <span class="hljs-string">images/favicon.png</span><br><br><span class="hljs-comment"># 用于苹果设备的图标</span><br><span class="hljs-comment"># Icon for Apple touch</span><br><span class="hljs-attr">apple_touch_icon:</span> <span class="hljs-string">images/favicon.png</span><br></code></pre></td></tr></table></figure>
 <p>将 <code>favicon.png</code> 改为你的图标路径即可。</p>
+<h3 id="6-修改-slogan-为-api-语录"><a href="#6-修改-slogan-为-api-语录" class="headerlink" title="6. 修改 slogan 为 api 语录"></a>6. 修改 slogan 为 api 语录</h3><p>效果如图所示：<br><img src="/images/Modify-theme/slogan-api.jpg" srcset="/img/loading.gif" lazyload alt="slogan-api.jpg"></p>
+<p>在主题配置中开启：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">index:</span><br>  <span class="hljs-attr">slogan:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">text:</span> <span class="hljs-string">这是一条</span> <span class="hljs-string">Slogan</span><br>    <span class="hljs-attr">api:</span><br>      <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-attr">url:</span> <span class="hljs-string">&quot;https://v1.hitokoto.cn/&quot;</span><br>      <span class="hljs-attr">method:</span> <span class="hljs-string">&quot;GET&quot;</span><br>      <span class="hljs-attr">headers:</span> &#123;&#125;<br>      <span class="hljs-attr">keys:</span> [<span class="hljs-string">&#x27;data&#x27;</span>, <span class="hljs-string">&#x27;content&#x27;</span>]<br></code></pre></td></tr></table></figure>
+<p>把 <code>url</code> 改为你想要的 api 地址，<code>keys</code> 改为你想要的字段。具体参数可以看<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%9C%BA">官方文档</a></p>
 
                 
               </div>
@@ -475,7 +481,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
     </div>
   
   
