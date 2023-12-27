@@ -23,19 +23,19 @@
 <meta property="og:site_name" content="Canyue">
 <meta property="og:description" content="前置条件：已经有一个域名，且跟着前面的文章配置好了 github pages。  1. 在域名服务商处配置域名解析域名解析，不同的服务商有不同的配置方式。类型 选择 CNAME，主机记录填写你的域名，比如 example.com，值填写 用户名.github.io，比如 mobeicanyue.github.io。  2. 在 github 仓库中配置域名进入你的仓库，点击 settings，左">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/domain-record.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/set-domain.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/wait-dns.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/blog.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/CNAME-file.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/url.jpg">
+<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/domain-record.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/set-domain.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/wait-dns.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/blog.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/CNAME-file.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Configure-blog-domain/url.webp">
 <meta property="article:published_time" content="2023-12-26T18:31:59.000Z">
-<meta property="article:modified_time" content="2023-12-27T08:09:01.000Z">
+<meta property="article:modified_time" content="2023-12-27T16:59:11.000Z">
 <meta property="article:author" content="mobeicanyue">
 <meta property="article:tag" content="github actions">
 <meta property="article:tag" content="domain">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.ovvv.top/images/Configure-blog-domain/domain-record.jpg">
+<meta name="twitter:image" content="https://blog.ovvv.top/images/Configure-blog-domain/domain-record.webp">
   
   
   
@@ -290,7 +290,7 @@
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2023年12月27日 16:09
+                    本文最后更新于 2023年12月28日 00:59
                   
                 
               </p>
@@ -302,11 +302,11 @@
 <p>前置条件：已经有一个域名，且跟着前面的文章配置好了 github pages。</p>
 </blockquote>
 <h3 id="1-在域名服务商处配置域名解析"><a href="#1-在域名服务商处配置域名解析" class="headerlink" title="1. 在域名服务商处配置域名解析"></a>1. 在域名服务商处配置域名解析</h3><p>域名解析，不同的服务商有不同的配置方式。<br>类型 选择 CNAME，主机记录填写你的域名，比如 <code>example.com</code>，<br>值填写 <code>用户名.github.io</code>，比如 <code>mobeicanyue.github.io</code>。</p>
-<p><img src="/images/Configure-blog-domain/domain-record.jpg" srcset="/img/loading.gif" lazyload alt="domain-record.jpg"></p>
+<p><img src="/images/Configure-blog-domain/domain-record.webp" srcset="/img/loading.gif" lazyload alt="domain-record.webp"></p>
 <h3 id="2-在-github-仓库中配置域名"><a href="#2-在-github-仓库中配置域名" class="headerlink" title="2. 在 github 仓库中配置域名"></a>2. 在 github 仓库中配置域名</h3><p>进入你的仓库，点击 <code>settings</code>，左边栏，找到 <code>Pages</code>，在 <code>Custom domain</code> 中填写你的域名，比如 <code>example.com</code>，然后点击 <code>Save</code>。</p>
-<p><img src="/images/Configure-blog-domain/set-domain.jpg" srcset="/img/loading.gif" lazyload alt="set-domain.jpg"><br>等待 dns 检查，很快就好了。<br><img src="/images/Configure-blog-domain/wait-dns.jpg" srcset="/img/loading.gif" lazyload alt="wait-dns.jpg"><br>访问你的域名，比如 <code>example.com</code>，就可以看到你的博客了。<br><img src="/images/Configure-blog-domain/blog.jpg" srcset="/img/loading.gif" lazyload alt="blog.jpg"><br>此时可以注意到在 gh-pages 分支中多了一个 CNAME 文件，这个文件内容就是我们刚刚配置的域名。<br>但是按照之前的配置，每次 github action 部署的时候，都会把这个文件给覆盖掉，所以我们后面需要修改一下配置。<br><img src="/images/Configure-blog-domain/CNAME-file.jpg" srcset="/img/loading.gif" lazyload alt="CNAME-file.jpg"></p>
+<p><img src="/images/Configure-blog-domain/set-domain.webp" srcset="/img/loading.gif" lazyload alt="set-domain.webp"><br>等待 dns 检查，很快就好了。<br><img src="/images/Configure-blog-domain/wait-dns.webp" srcset="/img/loading.gif" lazyload alt="wait-dns.webp"><br>访问你的域名，比如 <code>example.com</code>，就可以看到你的博客了。<br><img src="/images/Configure-blog-domain/blog.webp" srcset="/img/loading.gif" lazyload alt="blog.webp"><br>此时可以注意到在 gh-pages 分支中多了一个 CNAME 文件，这个文件内容就是我们刚刚配置的域名。<br>但是按照之前的配置，每次 github action 部署的时候，都会把这个文件给覆盖掉，所以我们后面需要修改一下配置。<br><img src="/images/Configure-blog-domain/CNAME-file.webp" srcset="/img/loading.gif" lazyload alt="CNAME-file.webp"></p>
 <h3 id="3-修改-hexo-配置文件"><a href="#3-修改-hexo-配置文件" class="headerlink" title="3. 修改 hexo 配置文件"></a>3. 修改 hexo 配置文件</h3><p>在 hexo 的配置文件 <code>_config.yml</code> 中，找到 <code>url</code>，把 <code>url</code> 改成你的域名，比如 <code>https://example.com</code>。</p>
-<p><img src="/images/Configure-blog-domain/url.jpg" srcset="/img/loading.gif" lazyload alt="url.jpg"></p>
+<p><img src="/images/Configure-blog-domain/url.webp" srcset="/img/loading.gif" lazyload alt="url.webp"></p>
 <h3 id="4-修改-Github-Actions-自动部署"><a href="#4-修改-Github-Actions-自动部署" class="headerlink" title="4. 修改 Github Actions 自动部署"></a>4. 修改 Github Actions 自动部署</h3><p>由于我们之前那种写法，在 github action 部署到 github pages 的时候，会把 CNAME 文件给覆盖掉，所以我们需要修改一下 github action 配置。</p>
 <p>也就是把之前的</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">Hexo</span><br>    <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">        hexo clean</span><br><span class="hljs-string">        hexo generate</span><br><span class="hljs-string">        hexo deploy</span><br></code></pre></td></tr></table></figure>
@@ -364,7 +364,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年12月27日 16:09</div>
+          <div>2023年12月28日 00:59</div>
         </div>
       
       

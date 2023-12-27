@@ -23,24 +23,24 @@
 <meta property="og:site_name" content="Canyue">
 <meta property="og:description" content="Hexo 部署 Github Pages, Github Actions 自动部署激动的心 颤抖的手，这是本站第一篇博客。部署 hexo 的过程中遇到了很多问题，最终还是解决了，这里记录一下。  最终实现的效果，一个项目仓库，main 分支存放源代码，gh-pages 存放生成后的网页代码，github pages 加载 gh-pages 的网页代码。这样，每当我们 push 代码到 main 分">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/gh-create-repo1.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/ssh-link.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/gh-create-repo2.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/deploy-key1.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/deploy-key2.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/init-hexo.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/init-git.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/git-push.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/github-code.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/new-branch1.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/new-branch2.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/set-branch.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/config.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/new-file.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/commit-push.jpg">
-<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/success.jpg">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/gh-create-repo1.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/ssh-link.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/gh-create-repo2.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/deploy-key1.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/deploy-key2.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/init-hexo.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/init-git.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/git-push.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/github-code.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/new-branch1.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/new-branch2.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/set-branch.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/config.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/new-file.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/commit-push.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/success.webp">
 <meta property="article:published_time" content="2023-12-26T15:18:38.000Z">
-<meta property="article:modified_time" content="2023-12-27T08:09:01.000Z">
+<meta property="article:modified_time" content="2023-12-27T16:59:11.000Z">
 <meta property="article:author" content="mobeicanyue">
 <meta property="article:tag" content="github actions">
 <meta property="article:tag" content="hexo">
@@ -48,7 +48,7 @@
 <meta property="article:tag" content="github pages">
 <meta property="article:tag" content="deploy">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/gh-create-repo1.jpg">
+<meta name="twitter:image" content="https://blog.ovvv.top/images/Init-my-first-hexo-blog/gh-create-repo1.webp">
   
   
   
@@ -303,7 +303,7 @@
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2023年12月27日 16:09
+                    本文最后更新于 2023年12月28日 00:59
                   
                 
               </p>
@@ -320,39 +320,39 @@
 <p>linux plasma manjaro<br>nodejs 20<br>git 2.43<br>github 账号配置好 ssh（可以参考我前面教程）<br>vscode</p>
 </blockquote>
 <p>你需要熟知的技能：git 相关操作</p>
-<h3 id="1-新建-用户名-github-io-仓库"><a href="#1-新建-用户名-github-io-仓库" class="headerlink" title="1. 新建 用户名.github.io 仓库"></a>1. 新建 <code>用户名.github.io</code> 仓库</h3><p><img src="/images/Init-my-first-hexo-blog/gh-create-repo1.jpg" srcset="/img/loading.gif" lazyload alt="gh-create-repo1.jpg"></p>
-<p>记住这串 <code>仓库的ssh地址</code> 后面要用到<br><img src="/images/Init-my-first-hexo-blog/ssh-link.jpg" srcset="/img/loading.gif" lazyload alt="ssh-link.jpg"></p>
-<p><img src="/images/Init-my-first-hexo-blog/gh-create-repo2.jpg" srcset="/img/loading.gif" lazyload alt="gh-create-repo2.jpg"></p>
-<h3 id="2-部署你的-ssh-私钥-到仓库变量中"><a href="#2-部署你的-ssh-私钥-到仓库变量中" class="headerlink" title="2. 部署你的 ssh 私钥 到仓库变量中"></a>2. 部署你的 ssh 私钥 到仓库变量中</h3><p><img src="/images/Init-my-first-hexo-blog/deploy-key1.jpg" srcset="/img/loading.gif" lazyload alt="deploy-key1.jpg"></p>
-<p>填入你的私钥<br><img src="/images/Init-my-first-hexo-blog/deploy-key2.jpg" srcset="/img/loading.gif" lazyload alt="deploy-key2.jpg"></p>
+<h3 id="1-新建-用户名-github-io-仓库"><a href="#1-新建-用户名-github-io-仓库" class="headerlink" title="1. 新建 用户名.github.io 仓库"></a>1. 新建 <code>用户名.github.io</code> 仓库</h3><p><img src="/images/Init-my-first-hexo-blog/gh-create-repo1.webp" srcset="/img/loading.gif" lazyload alt="gh-create-repo1.webp"></p>
+<p>记住这串 <code>仓库的ssh地址</code> 后面要用到<br><img src="/images/Init-my-first-hexo-blog/ssh-link.webp" srcset="/img/loading.gif" lazyload alt="ssh-link.webp"></p>
+<p><img src="/images/Init-my-first-hexo-blog/gh-create-repo2.webp" srcset="/img/loading.gif" lazyload alt="gh-create-repo2.webp"></p>
+<h3 id="2-部署你的-ssh-私钥-到仓库变量中"><a href="#2-部署你的-ssh-私钥-到仓库变量中" class="headerlink" title="2. 部署你的 ssh 私钥 到仓库变量中"></a>2. 部署你的 ssh 私钥 到仓库变量中</h3><p><img src="/images/Init-my-first-hexo-blog/deploy-key1.webp" srcset="/img/loading.gif" lazyload alt="deploy-key1.webp"></p>
+<p>填入你的私钥<br><img src="/images/Init-my-first-hexo-blog/deploy-key2.webp" srcset="/img/loading.gif" lazyload alt="deploy-key2.webp"></p>
 <h3 id="3-初始化-hexo-博客目录"><a href="#3-初始化-hexo-博客目录" class="headerlink" title="3. 初始化 hexo 博客目录"></a>3. 初始化 hexo 博客目录</h3><p>找一个空目录 然后执行下面代码，<br>把 mobeicanyue.github.io 换成你仓库的名字</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init mobeicanyue.github.io &amp;&amp; <span class="hljs-built_in">cd</span> mobeicanyue.github.io<br></code></pre></td></tr></table></figure>
-<p>执行结果如下<br><img src="/images/Init-my-first-hexo-blog/init-hexo.jpg" srcset="/img/loading.gif" lazyload alt="init-hexo.jpg"></p>
+<p>执行结果如下<br><img src="/images/Init-my-first-hexo-blog/init-hexo.webp" srcset="/img/loading.gif" lazyload alt="init-hexo.webp"></p>
 <h3 id="4-初始化-git-仓库并提交到-github"><a href="#4-初始化-git-仓库并提交到-github" class="headerlink" title="4. 初始化 git 仓库并提交到 github"></a>4. 初始化 git 仓库并提交到 github</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init<br>git add .<br>git commit -m <span class="hljs-string">&quot;Initial commit&quot;</span><br></code></pre></td></tr></table></figure>
-<p>执行结果如下<br><img src="/images/Init-my-first-hexo-blog/init-git.jpg" srcset="/img/loading.gif" lazyload alt="init-git.jpg"></p>
+<p>执行结果如下<br><img src="/images/Init-my-first-hexo-blog/init-git.webp" srcset="/img/loading.gif" lazyload alt="init-git.webp"></p>
 <p>把下面 git@xxx 地址换成你仓库的 ssh 地址</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git remote add origin git@github.com:mobeicanyue/mobeicanyue.github.io.git<br>git push -u origin master<br></code></pre></td></tr></table></figure>
-<p>执行结果如下<br><img src="/images/Init-my-first-hexo-blog/git-push.jpg" srcset="/img/loading.gif" lazyload alt="git-push.jpg"></p>
+<p>执行结果如下<br><img src="/images/Init-my-first-hexo-blog/git-push.webp" srcset="/img/loading.gif" lazyload alt="git-push.webp"></p>
 <p>此时我们刷新一下 github 仓库，就可以看到我们的代码已经提交上去了<br>但是网页第一次构建肯定是失败的（打叉），因为还没配置 github action</p>
-<p><img src="/images/Init-my-first-hexo-blog/github-code.jpg" srcset="/img/loading.gif" lazyload alt="github-code.jpg"></p>
-<h3 id="5-新建-gh-pages-分支并将其设置为-pages-的默认部署分支"><a href="#5-新建-gh-pages-分支并将其设置为-pages-的默认部署分支" class="headerlink" title="5. 新建 gh-pages 分支并将其设置为 pages 的默认部署分支"></a>5. 新建 gh-pages 分支并将其设置为 pages 的默认部署分支</h3><p>点击分支<br><img src="/images/Init-my-first-hexo-blog/new-branch1.jpg" srcset="/img/loading.gif" lazyload alt="new-branch1.jpg"><br>创建 gh-pages 分支<br><img src="/images/Init-my-first-hexo-blog/new-branch2.jpg" srcset="/img/loading.gif" lazyload alt="new-branch2.jpg"><br>设置 gh-pages 为 pages 的默认部署分支<br><img src="/images/Init-my-first-hexo-blog/set-branch.jpg" srcset="/img/loading.gif" lazyload alt="set-branch.jpg"></p>
+<p><img src="/images/Init-my-first-hexo-blog/github-code.webp" srcset="/img/loading.gif" lazyload alt="github-code.webp"></p>
+<h3 id="5-新建-gh-pages-分支并将其设置为-pages-的默认部署分支"><a href="#5-新建-gh-pages-分支并将其设置为-pages-的默认部署分支" class="headerlink" title="5. 新建 gh-pages 分支并将其设置为 pages 的默认部署分支"></a>5. 新建 gh-pages 分支并将其设置为 pages 的默认部署分支</h3><p>点击分支<br><img src="/images/Init-my-first-hexo-blog/new-branch1.webp" srcset="/img/loading.gif" lazyload alt="new-branch1.webp"><br>创建 gh-pages 分支<br><img src="/images/Init-my-first-hexo-blog/new-branch2.webp" srcset="/img/loading.gif" lazyload alt="new-branch2.webp"><br>设置 gh-pages 为 pages 的默认部署分支<br><img src="/images/Init-my-first-hexo-blog/set-branch.webp" srcset="/img/loading.gif" lazyload alt="set-branch.webp"></p>
 <h3 id="6-编写-github-actions-代码"><a href="#6-编写-github-actions-代码" class="headerlink" title="6. 编写 github actions 代码"></a>6. 编写 github actions 代码</h3><ol>
-<li><p>修改 _config.yml 文件的 repo 改成你仓库的 ssh 地址<br><img src="/images/Init-my-first-hexo-blog/config.jpg" srcset="/img/loading.gif" lazyload alt="config.jpg"></p>
+<li><p>修改 _config.yml 文件的 repo 改成你仓库的 ssh 地址<br><img src="/images/Init-my-first-hexo-blog/config.webp" srcset="/img/loading.gif" lazyload alt="config.webp"></p>
 </li>
 <li><p>在 hexo 博客文件夹的 .github 目录创建 deploy.yml 文件</p>
 </li>
 </ol>
-<p><img src="/images/Init-my-first-hexo-blog/new-file.jpg" srcset="/img/loading.gif" lazyload alt="new-file.jpg"></p>
+<p><img src="/images/Init-my-first-hexo-blog/new-file.webp" srcset="/img/loading.gif" lazyload alt="new-file.webp"></p>
 <p>下面的代码只需要修改你的用户名和邮箱</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">Hexo</span><br> <br><span class="hljs-attr">on:</span><br>  <span class="hljs-attr">push:</span><br>    <span class="hljs-attr">branches:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-string">main</span><br> <br><span class="hljs-attr">jobs:</span><br>  <span class="hljs-attr">build:</span><br>    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>    <span class="hljs-attr">steps:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Check</span> <span class="hljs-string">Out</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v4</span><br> <br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">Node</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@v4</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-attr">node-version:</span> <span class="hljs-number">20</span><br> <br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">Git</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          git config --global user.name &quot;用户名&quot;</span><br><span class="hljs-string">          git config --global user.email &quot;邮箱&quot;</span><br><span class="hljs-string"></span> <br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">SSH</span> <span class="hljs-string">Key</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          mkdir -p ~/.ssh</span><br><span class="hljs-string">          echo &quot;$&#123;&#123; secrets.KEY &#125;&#125;&quot; &gt; ~/.ssh/id_ed25519</span><br><span class="hljs-string">          chmod 600 ~/.ssh/id_ed25519</span><br><span class="hljs-string"></span> <br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Install</span> <span class="hljs-string">Dependencies</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          npm install -g hexo-cli</span><br><span class="hljs-string">          npm install hexo-deployer-git --save</span><br><span class="hljs-string">          npm install</span><br><span class="hljs-string"></span> <br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">Hexo</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          hexo clean</span><br><span class="hljs-string">          hexo generate</span><br><span class="hljs-string">          hexo deploy</span><br></code></pre></td></tr></table></figure>
 
 <br>
 
 <ol start="3">
-<li>最后提交代码并推送<br><img src="/images/Init-my-first-hexo-blog/commit-push.jpg" srcset="/img/loading.gif" lazyload alt="commit-push.jpg"></li>
+<li>最后提交代码并推送<br><img src="/images/Init-my-first-hexo-blog/commit-push.webp" srcset="/img/loading.gif" lazyload alt="commit-push.webp"></li>
 </ol>
 <h3 id="7-访问站点，部署成功！"><a href="#7-访问站点，部署成功！" class="headerlink" title="7. 访问站点，部署成功！"></a>7. 访问站点，部署成功！</h3><p>地址为 <code>https://用户名.github.io</code></p>
-<p><img src="/images/Init-my-first-hexo-blog/success.jpg" srcset="/img/loading.gif" lazyload alt="success.jpg"></p>
+<p><img src="/images/Init-my-first-hexo-blog/success.webp" srcset="/img/loading.gif" lazyload alt="success.webp"></p>
 <br>
 <br>
 
@@ -408,7 +408,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年12月27日 16:09</div>
+          <div>2023年12月28日 00:59</div>
         </div>
       
       

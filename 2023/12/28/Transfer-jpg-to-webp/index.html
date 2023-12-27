@@ -16,28 +16,24 @@
   <meta name="author" content="mobeicanyue">
   <meta name="keywords" content="">
   
-    <meta name="description" content="近来阅读竹林里有冰的博客，发现他的博客字体很好看，想着把他的字体也用到我的博客里，于是就有了这篇文章。 1. 字体介绍霞鹜文楷字体仓库霞鹜文楷 我之前其实在手机上用过，不过后面由于装机加上懒得折腾就没有再设置了，但是博客我觉得为了好的阅读体验还是可以换一下的 关于在 web 中使用 霞鹜文楷 请参阅 issue#24 其中 chawyehsu 提供了打包，但是点进去仓库发现已经有半年没更新了。在">
+    <meta name="description" content="本文主要介绍如何将 Jpg 转换为 WebP。为什么要转换为 WebP 呢？因为 WebP 图片通常比 JPEG 图片更小，同时保持相似的视觉质量。也是现代浏览器支持、推荐使用的图片格式之一。  1. 安装 cwebparchlinux 系列的 1sudo pacman -S libwebp 2. 转换我编写了一个脚本，可以将当前 images 目录下的所有 jpg 文件转换为 webp 文件。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在 fluid 主题中使用霞鹜文楷">
-<meta property="og:url" content="https://blog.ovvv.top/2023/12/27/Use-lxgw-wenkai-in-fluid/">
+<meta property="og:title" content="将 jpg 转换为 webp">
+<meta property="og:url" content="https://blog.ovvv.top/2023/12/28/Transfer-jpg-to-webp/">
 <meta property="og:site_name" content="Canyue">
-<meta property="og:description" content="近来阅读竹林里有冰的博客，发现他的博客字体很好看，想着把他的字体也用到我的博客里，于是就有了这篇文章。 1. 字体介绍霞鹜文楷字体仓库霞鹜文楷 我之前其实在手机上用过，不过后面由于装机加上懒得折腾就没有再设置了，但是博客我觉得为了好的阅读体验还是可以换一下的 关于在 web 中使用 霞鹜文楷 请参阅 issue#24 其中 chawyehsu 提供了打包，但是点进去仓库发现已经有半年没更新了。在">
+<meta property="og:description" content="本文主要介绍如何将 Jpg 转换为 WebP。为什么要转换为 WebP 呢？因为 WebP 图片通常比 JPEG 图片更小，同时保持相似的视觉质量。也是现代浏览器支持、推荐使用的图片格式之一。  1. 安装 cwebparchlinux 系列的 1sudo pacman -S libwebp 2. 转换我编写了一个脚本，可以将当前 images 目录下的所有 jpg 文件转换为 webp 文件。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/wenkai.png">
-<meta property="og:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/style.css.webp">
-<meta property="og:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/font-css.webp">
-<meta property="og:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/result.webp">
-<meta property="article:published_time" content="2023-12-27T06:58:04.000Z">
+<meta property="og:image" content="https://blog.ovvv.top/images/Transfer-jpg-to-webp/compare.webp">
+<meta property="og:image" content="https://blog.ovvv.top/images/Transfer-jpg-to-webp/replace.webp">
+<meta property="article:published_time" content="2023-12-27T16:25:25.000Z">
 <meta property="article:modified_time" content="2023-12-27T16:59:11.000Z">
 <meta property="article:author" content="mobeicanyue">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="fluid">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.ovvv.top/images/Use-lxgw-wenkai-in-fluid/wenkai.png">
+<meta name="twitter:image" content="https://blog.ovvv.top/images/Transfer-jpg-to-webp/compare.webp">
   
   
   
-  <title>在 fluid 主题中使用霞鹜文楷 - Canyue</title>
+  <title>将 jpg 转换为 webp - Canyue</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -207,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="在 fluid 主题中使用霞鹜文楷"></span>
+            <span id="subtitle" data-typed-text="将 jpg 转换为 webp"></span>
           
         </div>
 
@@ -223,8 +219,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-12-27 14:58" pubdate>
-          2023年12月27日
+        <time datetime="2023-12-28 00:25" pubdate>
+          2023年12月28日
         </time>
       </span>
     
@@ -235,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          419 字
+          350 字
         
       </span>
     
@@ -246,7 +242,7 @@
         
         
         
-          5 分钟
+          4 分钟
         
       </span>
     
@@ -283,7 +279,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">在 fluid 主题中使用霞鹜文楷</h1>
+            <h1 id="seo-header">将 jpg 转换为 webp</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
@@ -296,16 +292,18 @@
             
               <div class="markdown-body">
                 
-                <p>近来阅读竹林里有冰的博客，发现他的博客字体很好看，想着把他的字体也用到我的博客里，于是就有了这篇文章。</p>
-<h3 id="1-字体介绍"><a href="#1-字体介绍" class="headerlink" title="1. 字体介绍"></a>1. 字体介绍</h3><p><a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai">霞鹜文楷字体仓库</a><br>霞鹜文楷 我之前其实在手机上用过，不过后面由于装机加上懒得折腾就没有再设置了，但是博客我觉得为了好的阅读体验还是可以换一下的<br><img src="/images/Use-lxgw-wenkai-in-fluid/wenkai.png" srcset="/img/loading.gif" lazyload alt="霞鹜文楷"></p>
-<p>关于在 web 中使用 霞鹜文楷 请参阅 <a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai/issues/24">issue#24</a></p>
-<p>其中 <a target="_blank" rel="noopener" href="https://github.com/chawyehsu/lxgw-wenkai-webfont">chawyehsu</a> 提供了打包，但是点进去仓库发现已经有半年没更新了。在 issue 的下面我们可以看到 <a target="_blank" rel="noopener" href="https://github.com/CMBill/lxgw-wenkai-gb-web">CMBill</a> 提供了一个新的打包，我的就是这个打包。</p>
-<p>在 <a target="_blank" rel="noopener" href="https://github.com/CMBill/lxgw-wenkai-gb-web">CMBill</a> 的仓库 README 中右键跳转 css 看看内容 <img src="/images/Use-lxgw-wenkai-in-fluid/style.css.webp" srcset="/img/loading.gif" lazyload alt="style.css.webp"></p>
-<p>可以发现这个 css 是分了几个不同的字体种类，还有不同的霞鹜文楷变体可供选择<br><img src="/images/Use-lxgw-wenkai-in-fluid/font-css.webp" srcset="/img/loading.gif" lazyload alt="font-css.webp"><br>将 <code>style.css</code> 替换为 <code>@import url</code> 之后的内容（去掉.&#x2F;），就可以直接使用了</p>
-<p>我最终选择了 <code>lxgwwenkaigb-bold</code> 这个字体，这个字体阅读起来比较舒服。<br>我的博客字体文件为<br><code>https://cdn.jsdelivr.net/gh/CMBill/lxgw-wenkai-gb-web/fonts/lxgwwenkaigb-bold/result.css</code></p>
-<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2. 使用方法"></a>2. 使用方法</h3><p>如果你恰好也用 hexo 的 fluid 主题，那么恭喜你，替换字体很简单，只需要在主题的配置文件里加上一行 <code>custom_css: https://xxxx</code>代码就可以了，再修改 font_family。参照你的 css 文件前几行显示的 <code>fontFamily: </code>，比如我的是 <code>fontFamily: LXGW WenKai GB</code>。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># 主题字体配置</span><br><span class="hljs-attr">font:</span><br>  <span class="hljs-attr">font_size:</span> <span class="hljs-string">17px</span><br>  <span class="hljs-attr">font_family:</span> <span class="hljs-string">&quot;LXGW WenKai GB&quot;</span><br>  <span class="hljs-attr">letter_spacing:</span> <span class="hljs-number">0.</span><span class="hljs-string">02em</span><br>  <span class="hljs-attr">code_font_size:</span> <span class="hljs-number">85</span><span class="hljs-string">%</span><br><br><span class="hljs-attr">custom_js:</span><br><span class="hljs-attr">custom_css:</span> <span class="hljs-string">https://cdn.jsdelivr.net/gh/CMBill/lxgw-wenkai-gb-web/fonts/lxgwwenkaigb-bold/result.css</span><br></code></pre></td></tr></table></figure>
-<h3 id="3-效果展示"><a href="#3-效果展示" class="headerlink" title="3. 效果展示"></a>3. 效果展示</h3><p><img src="/images/Use-lxgw-wenkai-in-fluid/result.webp" srcset="/img/loading.gif" lazyload alt="效果"></p>
+                <blockquote>
+<p>本文主要介绍如何将 Jpg 转换为 WebP。<br>为什么要转换为 WebP 呢？因为 WebP 图片通常比 JPEG 图片更小，同时保持相似的视觉质量。也是现代浏览器支持、推荐使用的图片格式之一。</p>
+</blockquote>
+<h3 id="1-安装-cwebp"><a href="#1-安装-cwebp" class="headerlink" title="1. 安装 cwebp"></a>1. 安装 cwebp</h3><p>archlinux 系列的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo pacman -S libwebp<br></code></pre></td></tr></table></figure>
+<h3 id="2-转换"><a href="#2-转换" class="headerlink" title="2. 转换"></a>2. 转换</h3><p>我编写了一个脚本，可以将当前 <code>images</code> 目录下的所有 jpg 文件转换为 webp 文件。<br>遍历所有文件夹并将图片转换为 WebP 格式。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 使用 find 命令遍历所有子文件夹中的图片文件</span><br>find images -<span class="hljs-built_in">type</span> f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png \) -<span class="hljs-built_in">exec</span> sh -c <span class="hljs-string">&#x27;</span><br><span class="hljs-string">  for file do</span><br><span class="hljs-string">    # 获取文件的相对路径和文件名</span><br><span class="hljs-string">    relpath=$(dirname &quot;$file&quot;)</span><br><span class="hljs-string">    filename=$(basename &quot;$file&quot;)</span><br><span class="hljs-string"></span><br><span class="hljs-string">    # 使用 cwebp 将图片转换为 WebP 格式并保存到当前目录</span><br><span class="hljs-string">    cwebp &quot;$file&quot; -o &quot;$&#123;relpath&#125;/$&#123;filename%.*&#125;.webp&quot;</span><br><span class="hljs-string"></span><br><span class="hljs-string">    # 删除原始图片文件已注释, 建议先在测试环境中运行一下再放到代码仓库中运行</span><br><span class="hljs-string">    # rm &quot;$file&quot;</span><br><span class="hljs-string">  done</span><br><span class="hljs-string">&#x27;</span> sh &#123;&#125; +<br></code></pre></td></tr></table></figure>
+<p>可以看到确实图片体积减少很多，但是由于这张图片清晰度有点低，所以压缩后画质当然也不高。<br><img src="/images/Transfer-jpg-to-webp/compare.webp" srcset="/img/loading.gif" lazyload alt="compare.webp"></p>
+<h3 id="3-更改博客中的图片链接"><a href="#3-更改博客中的图片链接" class="headerlink" title="3. 更改博客中的图片链接"></a>3. 更改博客中的图片链接</h3><p>vscode 或者别的 ide 批量替换你用到的 markdown 图片链接，将 .jpg 替换为 .webp 即可。<br><img src="/images/Transfer-jpg-to-webp/replace.webp" srcset="/img/loading.gif" lazyload alt="replace.webp"></p>
+<blockquote>
+<p>在部署博客之前，记得先在本地测试一下，看看是否有问题。</p>
+</blockquote>
 
                 
               </div>
@@ -315,15 +313,6 @@
               <div class="post-metas my-3">
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/hexo/" class="print-no-link">#hexo</a>
-      
-        <a href="/tags/fluid/" class="print-no-link">#fluid</a>
-      
-    </div>
-  
 </div>
 
 
@@ -332,8 +321,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>在 fluid 主题中使用霞鹜文楷</div>
-      <div>https://blog.ovvv.top/2023/12/27/Use-lxgw-wenkai-in-fluid/</div>
+      <div>将 jpg 转换为 webp</div>
+      <div>https://blog.ovvv.top/2023/12/28/Transfer-jpg-to-webp/</div>
     </div>
     <div class="license-meta">
       
@@ -345,7 +334,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年12月27日 14:58</div>
+          <div>2023年12月28日 00:25</div>
         </div>
       
       
@@ -394,18 +383,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/12/27/Fix-article-updated-time-on-github-pages/" title="修复 github pages 上的文章更新时间">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">修复 github pages 上的文章更新时间</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/12/27/Configure-blog-domain/" title="博客域名配置">
-                        <span class="hidden-mobile">博客域名配置</span>
+                      <a href="/2023/12/27/Fix-article-updated-time-on-github-pages/" title="修复 github pages 上的文章更新时间">
+                        <span class="hidden-mobile">修复 github pages 上的文章更新时间</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
