@@ -31,19 +31,19 @@ tags:
 
 ### 1. 新建 `用户名.github.io` 仓库
 
-![gh-create-repo1.jpg](/images/Init-my-first-hexo-blog/gh-create-repo1.jpg)
+![gh-create-repo1.webp](/images/Init-my-first-hexo-blog/gh-create-repo1.webp)
 
 记住这串 `仓库的ssh地址` 后面要用到
-![ssh-link.jpg](/images/Init-my-first-hexo-blog/ssh-link.jpg)
+![ssh-link.webp](/images/Init-my-first-hexo-blog/ssh-link.webp)
 
-![gh-create-repo2.jpg](/images/Init-my-first-hexo-blog/gh-create-repo2.jpg)
+![gh-create-repo2.webp](/images/Init-my-first-hexo-blog/gh-create-repo2.webp)
 
 ### 2. 部署你的 ssh 私钥 到仓库变量中
 
-![deploy-key1.jpg](/images/Init-my-first-hexo-blog/deploy-key1.jpg)
+![deploy-key1.webp](/images/Init-my-first-hexo-blog/deploy-key1.webp)
 
 填入你的私钥
-![deploy-key2.jpg](/images/Init-my-first-hexo-blog/deploy-key2.jpg)
+![deploy-key2.webp](/images/Init-my-first-hexo-blog/deploy-key2.webp)
 
 ### 3. 初始化 hexo 博客目录
 
@@ -54,7 +54,7 @@ tags:
 hexo init mobeicanyue.github.io && cd mobeicanyue.github.io
 ```
 执行结果如下
-![init-hexo.jpg](/images/Init-my-first-hexo-blog/init-hexo.jpg)
+![init-hexo.webp](/images/Init-my-first-hexo-blog/init-hexo.webp)
 
 ### 4. 初始化 git 仓库并提交到 github
 
@@ -64,7 +64,7 @@ git add .
 git commit -m "Initial commit"
 ```
 执行结果如下
-![init-git.jpg](/images/Init-my-first-hexo-blog/init-git.jpg)
+![init-git.webp](/images/Init-my-first-hexo-blog/init-git.webp)
 
 把下面 git@xxx 地址换成你仓库的 ssh 地址
 
@@ -73,31 +73,31 @@ git remote add origin git@github.com:mobeicanyue/mobeicanyue.github.io.git
 git push -u origin master
 ```
 执行结果如下
-![git-push.jpg](/images/Init-my-first-hexo-blog/git-push.jpg)
+![git-push.webp](/images/Init-my-first-hexo-blog/git-push.webp)
 
 此时我们刷新一下 github 仓库，就可以看到我们的代码已经提交上去了
 但是网页第一次构建肯定是失败的（打叉），因为还没配置 github action
 
-![github-code.jpg](/images/Init-my-first-hexo-blog/github-code.jpg)
+![github-code.webp](/images/Init-my-first-hexo-blog/github-code.webp)
 
 ### 5. 新建 gh-pages 分支并将其设置为 pages 的默认部署分支
 
 点击分支
-![new-branch1.jpg](/images/Init-my-first-hexo-blog/new-branch1.jpg)
+![new-branch1.webp](/images/Init-my-first-hexo-blog/new-branch1.webp)
 创建 gh-pages 分支
-![new-branch2.jpg](/images/Init-my-first-hexo-blog/new-branch2.jpg)
+![new-branch2.webp](/images/Init-my-first-hexo-blog/new-branch2.webp)
 设置 gh-pages 为 pages 的默认部署分支
-![set-branch.jpg](/images/Init-my-first-hexo-blog/set-branch.jpg)
+![set-branch.webp](/images/Init-my-first-hexo-blog/set-branch.webp)
 
 
 ### 6. 编写 github actions 代码
 
 1) 修改 _config.yml 文件的 repo 改成你仓库的 ssh 地址
-![config.jpg](/images/Init-my-first-hexo-blog/config.jpg)
+![config.webp](/images/Init-my-first-hexo-blog/config.webp)
 
 2) 在 hexo 博客文件夹的 .github 目录创建 deploy.yml 文件
 
-![new-file.jpg](/images/Init-my-first-hexo-blog/new-file.jpg)
+![new-file.webp](/images/Init-my-first-hexo-blog/new-file.webp)
 
 下面的代码只需要修改你的用户名和邮箱
 
@@ -149,12 +149,12 @@ jobs:
 <br>
 
 3) 最后提交代码并推送
-![commit-push.jpg](/images/Init-my-first-hexo-blog/commit-push.jpg)
+![commit-push.webp](/images/Init-my-first-hexo-blog/commit-push.webp)
 
 ### 7. 访问站点，部署成功！
 地址为 `https://用户名.github.io`
 
-![success.jpg](/images/Init-my-first-hexo-blog/success.jpg)
+![success.webp](/images/Init-my-first-hexo-blog/success.webp)
 
 <br>
 <br>
