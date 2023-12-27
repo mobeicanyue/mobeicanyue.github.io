@@ -224,8 +224,8 @@ color:
 # 主题字体配置
 # Font
 font:
-  font_size: 16px
-  font_family:
+  font_size: 17px
+  font_family: "LXGW WenKai GB"
   letter_spacing: 0.02em
   code_font_size: 85%
 
@@ -235,7 +235,7 @@ custom_js:
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
-custom_css:
+custom_css: https://cdn.jsdelivr.net/gh/CMBill/lxgw-wenkai-gb-web/fonts/lxgwwenkaigb-bold/result.css
 
 # 网页访问统计
 # Analysis of website visitors

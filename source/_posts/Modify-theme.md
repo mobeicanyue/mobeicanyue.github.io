@@ -17,7 +17,7 @@ npm install --save hexo-theme-fluid
 现在目录下有这三个 yml 文件：
 ![yml-files.jpg](/images/Modify-theme/yml-files.jpg)
 
-可删除 `_config.landscape.yml` , 它是默认的主题文件。
+可删除 `_config.landscape.yml` , 它是 hexo 默认的主题文件。
 
 ### 2. 修改 hexo 配置
 
