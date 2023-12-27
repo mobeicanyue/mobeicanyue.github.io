@@ -7,7 +7,7 @@ tags:
 - deploy
 ---
 
-官方文档[官方文档](https://hexo.fluid-dev.com/docs/start)其实挺详细的了。
+[官方文档](https://hexo.fluid-dev.com/docs/start)其实挺详细的了。
 记录一下我自己的操作。
 
 ### 1. 安装主题
@@ -84,7 +84,7 @@ apple_touch_icon: images/favicon.png
 
 ### 6. 修改 slogan 为 api 语录
 效果如图所示：
-![slogan-api.jpg](/images/Modify-theme/slogan-api.jpg)
+![api-slogan.jpg](/images/Modify-theme/api-slogan.jpg)
 
 在主题配置中开启：
 ```yml
@@ -100,3 +100,17 @@ index:
       keys: ['data', 'content']
 ```
 把 `url` 改为你想要的 api 地址，`keys` 改为你想要的字段。具体参数可以看[官方文档](https://hexo.fluid-dev.com/docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%9C%BA)
+
+### 7. 修改背景图片 为 api 图片
+既然可以改 slogan 为 api 语录，那么背景图片当然也可以改为 api 图片 笑）。
+
+效果如图所示：
+![api-bg.jpg](/images/Modify-theme/api-bg.jpg)
+
+在主题配置中搜索
+```yml
+/img/default.png
+```
+将其改为你想要的 api 地址即可。
+我是 [Bing 每日图片](https://api.vvhan.com/api/bing?size=1920x1080)
+感谢接口提供者！！！
