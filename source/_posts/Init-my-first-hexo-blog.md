@@ -4,7 +4,9 @@ date: 2023-12-26 23:18:38
 tags:
 - hexo
 - github
-- code
+- github pages
+- github actions
+- deploy
 ---
 
 ## Hexo 部署 Github Pages, Github Actions 自动部署

@@ -2,6 +2,8 @@
 title: 博客域名配置
 date: 2023-12-27 02:31:59
 tags:
+- github actions
+- domain
 ---
 > 前置条件：已经有一个域名，且跟着前面的文章配置好了 github pages。
 

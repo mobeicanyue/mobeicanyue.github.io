@@ -2,6 +2,10 @@
 title: 博客主题改为 fluid
 date: 2023-12-27 02:09:48
 tags:
+tags:
+- hexo
+- fluid
+- deploy
 ---
 
 官方文档[官方文档](https://hexo.fluid-dev.com/docs/start)其实挺详细的了。
