@@ -11,7 +11,7 @@ tags:
 ### 1. 字体介绍
 [霞鹜文楷字体仓库](https://github.com/lxgw/LxgwWenKai)
 霞鹜文楷 我之前其实在手机上用过，不过后面由于装机加上懒得折腾就没有再设置了，但是博客我觉得为了好的阅读体验还是可以换一下的
-![霞鹜文楷](/images/Use-lxgw-wenkai-in-fluid/wenkai.png)
+![霞鹜文楷](/images/Use-lxgw-wenkai-in-fluid/wenkai.webp)
 
 关于在 web 中使用 霞鹜文楷 请参阅 [issue#24](https://github.com/lxgw/LxgwWenKai/issues/24)
 
