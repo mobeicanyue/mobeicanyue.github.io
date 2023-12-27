@@ -34,6 +34,11 @@ jobs:
           npm install hexo-deployer-git --save
           npm install
 
+      # https://github.com/zhullyb/zhullyb.github.io/blob/master/.github/workflows/deploy.yml
+      - name: Fix File Updated Date
+        run: |
+          git ls-files | while read filepath; do touch -d "$(git log -1 --format='@%ct' $filepath)" "$filepath" && echo "Fixed: $filepath"; done
+
       - name: Build Site
         run: |
           export TZ='Asia/Shanghai'
