@@ -37,7 +37,7 @@ hexo new page about
 
 创建成功后修改 `/source/about/index.md`，添加 `layout` 属性。
 
-改后如下
+添加后如下
 
 ```md
 ---
@@ -55,13 +55,16 @@ hexo clean && hexo g && hexo s -o
 
 后访问 `http://localhost:4000/about/` 即可看到效果。
 
-![localhost.jpg](/images/Modify-theme/localhost.jpg)
+![ablout.jpg](/images/Modify-theme/about.jpg)
+
+PS: 可以跟着文档把关于页面的几个 icon 一起改了。
 
 ### 4. 修改主题配置
 
 [官方文档](https://hexo.fluid-dev.com/docs/guide/)
 官方文档还算比较完善，耐心看完即可。
 
+### 5. 修改网站图标
 `修改网站图标` 文档好像没提到，我这里写一下
 首先把你的图标放到 `/source/images/` 目录下，然后
 打开 `_config.fluid.yml` 找到这个配置：
@@ -75,3 +78,22 @@ favicon: images/favicon.png
 apple_touch_icon: images/favicon.png
 ```
 将 `favicon.png` 改为你的图标路径即可。
+
+### 6. 修改 slogan 为 api 语录
+效果如图所示：
+![slogan-api.jpg](/images/Modify-theme/slogan-api.jpg)
+
+在主题配置中开启：
+```yml
+index:
+  slogan:
+    enable: true
+    text: 这是一条 Slogan
+    api:
+      enable: true
+      url: "https://v1.hitokoto.cn/"
+      method: "GET"
+      headers: {}
+      keys: ['data', 'content']
+```
+把 `url` 改为你想要的 api 地址，`keys` 改为你想要的字段。具体参数可以看[官方文档](https://hexo.fluid-dev.com/docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%9C%BA)
