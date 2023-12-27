@@ -11,11 +11,11 @@ tags:
 我开启了 fluid 配置的
 ![fluid-config.webp](../images/Fix-article-updated-time-on-github-pages/fluid-config.webp)
 
-但是在部署到 github pages 时，`hexo 并不会像我们本地运行那样，显示的是文章的更新时间，而是显示的是部署的时间。` 换句话说，你所有文章的更新时间都全部定格在 github actions 最新部署的那个时间（难绷）。
+但是在部署到 github pages 时，`hexo 并不会像我们本地运行那样，显示的是文章的更新时间，而是显示的是部署的时间。` 换句话说，你所有文章的更新时间都全部定格在 github actions 最新的部署的那个时间（难绷）。
 ![error-time.webp](../images/Fix-article-updated-time-on-github-pages/error-time.webp)
 
 我们可以在 `front-matter` 加入 `updated: 更新时间` 解决
-```yaml
+```markdown
 title: article title
 date: 2023-01-01 00:00:00
 
@@ -24,7 +24,7 @@ updated: 2023-01-01 00:00:00
 ```
 但是很明显，这个需要我们手动去维护时间，这样很麻烦。
 
-我们设想的是，文章的正常修改时间，就是文章的 commit 时间。
+我们设想的是，文章的正常 updated 时间，就是文章的 commit 时间。
 
 ### 2. 解决方案
 修改 deploy.yml

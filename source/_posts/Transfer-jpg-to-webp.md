@@ -16,8 +16,10 @@ sudo pacman -S libwebp
 我编写了一个脚本，可以将当前 `images` 目录下的所有 jpg 文件转换为 webp 文件。
 遍历所有文件夹并将图片转换为 WebP 格式。
 ```bash
+script_dir=$(dirname "$0")
+
 # 使用 find 命令遍历所有子文件夹中的图片文件
-find images -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png \) -exec sh -c '
+find "$script_dir" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png \) -exec sh -c '
   for file do
     # 获取文件的相对路径和文件名
     relpath=$(dirname "$file")
