@@ -61,3 +61,17 @@ hexo clean && hexo g && hexo s -o
 
 [官方文档](https://hexo.fluid-dev.com/docs/guide/)
 官方文档还算比较完善，耐心看完即可。
+
+`修改网站图标` 文档好像没提到，我这里写一下
+首先把你的图标放到 `/source/images/` 目录下，然后
+打开 `_config.fluid.yml` 找到这个配置：
+```yml
+# 用于浏览器标签的图标
+# Icon for browser tab
+favicon: images/favicon.png
+
+# 用于苹果设备的图标
+# Icon for Apple touch
+apple_touch_icon: images/favicon.png
+```
+将 `favicon.png` 改为你的图标路径即可。
