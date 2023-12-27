@@ -86,7 +86,7 @@ apple_touch_icon: images/favicon.png
 效果如图所示：
 ![api-slogan.jpg](/images/Modify-theme/api-slogan.jpg)
 
-在主题配置中开启：
+在主题配置 `_config.fluid.yml` 中开启：
 ```yml
 index:
   slogan:
@@ -107,7 +107,7 @@ index:
 效果如图所示：
 ![api-bg.jpg](/images/Modify-theme/api-bg.jpg)
 
-在主题配置中搜索
+在主题配置 `_config.fluid.yml` 中搜索
 ```yml
 /img/default.png
 ```
