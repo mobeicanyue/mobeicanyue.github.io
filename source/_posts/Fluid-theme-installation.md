@@ -112,5 +112,5 @@ index:
 /img/default.png
 ```
 将其改为你想要的 api 地址即可。
-我是 [Bing 每日图片](https://api.vvhan.com/api/bing?size=1920x1080)
+我使用的是 [Bing 每日图片](https://api.vvhan.com/api/bing?size=1920x1080)
 感谢接口提供者！！！

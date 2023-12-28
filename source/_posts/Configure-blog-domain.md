@@ -25,6 +25,7 @@ tags:
 访问你的域名，比如 `example.com`，就可以看到你的博客了。
 ![blog.webp](../images/Configure-blog-domain/blog.webp)
 此时可以注意到在 gh-pages 分支中多了一个 CNAME 文件，这个文件内容就是我们刚刚配置的域名。
+
 但是按照之前的配置，每次 github action 部署的时候，都会把这个文件给覆盖掉，所以我们后面需要修改一下配置。
 ![CNAME-file.webp](../images/Configure-blog-domain/CNAME-file.webp)
 

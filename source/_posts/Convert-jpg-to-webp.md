@@ -8,13 +8,13 @@ tags:
 
 ### 1. 安装 cwebp
 
-archlinux 系列的
+Archlinux 系 Linux 安装 `cwebp`
 ```bash
 sudo pacman -S libwebp
 ```
 ### 2. 转换
-我编写了一个脚本，可以将当前 `images` 目录下的所有 jpg 文件转换为 webp 文件。
-遍历所有文件夹并将图片转换为 WebP 格式。
+我编写了一个脚本，可以将`当前目录`下的所有 jpg 文件转换为 webp 文件。
+代码遍历所有文件夹并将图片转换为 WebP 格式。
 ```bash
 script_dir=$(dirname "$0")
 

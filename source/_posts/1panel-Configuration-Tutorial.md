@@ -18,7 +18,7 @@ tags:
 
 宝塔面板是比较知名的服务器管理面板，但是它`不开源`，`UI 也不好看`，登录时甚至还`要求绑定宝塔官网账号`，否则就无法继续使用面板！
 
-如此种种便促使我们寻找替代品。我的服务器在 11 月份左右过期了，新的服务器不想使用宝塔面板，但是不使用面板操作服务器还是不太方便（比如设置反向代理、申请域名 SSL 证书和管理 docker 应用，面板可视化点击几下就好了，命令行操作起来很折磨人），于是便寻找它的替代品，也就是我们今天的主角 —— `1panel`。
+如此种种便促使我寻找替代品。我的服务器在 11 月份左右过期了，新的服务器不想使用宝塔面板，但是不使用面板操作服务器还是不太方便（比如设置反向代理、申请域名 SSL 证书和管理 docker 应用，面板可视化点击几下就好了，命令行操作起来很折磨人），于是便寻找它的替代品，也就是我们今天的主角 —— `1panel`。
 
 ![1panel 首页](../images/1panel-Configuration-Tutorial/panel.webp)
 
@@ -27,7 +27,7 @@ tags:
 
 你可以访问这个连接来体验一下 1panel 的功能：[https://demo.1panel.cn](https://demo.1panel.cn)
 
-经过一两个月的使用，我觉得现在体验相当稳定，写这篇教程，希望能帮助到大家。
+经过一两个月的使用，我觉得现在体验相当稳定，写这篇教程希望能帮助到大家。
 
 ### 2. 1panel 安装
 
@@ -51,7 +51,8 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 后面命令行会输出一大串安装日志，等待即可。
 
 3) 命令行提示输入端口号，你可以自定义，也可以用它给你默认的端口号。
-注意 如果你使用的是云服务器，请至安全组开放 `输入的端口`
+注意 如果你使用的是云服务器，请至云服务器提供商的安全组开放 `输入的端口`。
+账号密码自己设置，但最好不要太简单，不然被人爆破就不好了。
 ![输入信息](../images/1panel-Configuration-Tutorial/enter-info.webp)
 
 如果没有什么报错的话，那么恭喜你，1panel 已经安装成功了。
@@ -77,14 +78,14 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 ![应用商店](../images/1panel-Configuration-Tutorial/app-store.webp)
 
 
-我们安装 `openresty` 应用。这是一个 nginx 的衍生版本，支持 lua 脚本，我们可以用它来做反向代理。
-（不知道为啥没有 `nginx`，但是这个也挺好用的，没差）
+我们选择安装 `openresty`。这是一个 nginx 的开源衍生版本，支持 lua 脚本，我们可以用它来做反向代理。
+（不知道为啥没有 `nginx`，但是这个 `openresty` 也挺好用的，没差）
 安装了它才能编辑网页、配置反代。
 ![openresty](../images/1panel-Configuration-Tutorial/install-openresty.webp)
 不要改配置！直接点确定即可。
 
 ### 4. 设置域名解析
-域名服务商设置域名解析，将域名解析到服务器的 IP 上。这里应该不用我多教。
+域名服务商设置域名解析，将 `域名` 解析到服务器的 `IP` 上。这里应该不用我多教。
 ![域名解析](../images/1panel-Configuration-Tutorial/dns-record.webp)
 
 ### 5. 配置反向代理

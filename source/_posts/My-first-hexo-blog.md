@@ -1,7 +1,6 @@
 ---
 title: 我的第一篇 Hexo 博客
 date: 2023-12-26 23:18:38
-sticky: 100
 tags:
 - hexo
 - github
@@ -19,7 +18,7 @@ tags:
 > 最终实现的效果，一个项目仓库，`main` 分支存放源代码，`gh-pages` 存放生成后的网页代码，github pages 加载 `gh-pages` 的网页代码。
 > 这样，每当我们 push 代码到 `main` 分支的时候，github action 会自动构建并将代码发布到 `gh-pages` 分支，github pages 会自动加载 `gh-pages` 分支的代码，这样就实现了自动部署。
 
-搭建环境：
+环境：
 
 > linux plasma manjaro
 > nodejs 20
@@ -45,7 +44,7 @@ tags:
 
 ![deploy-key1.webp](../images/My-first-hexo-blog/deploy-key1.webp)
 
-填入你的私钥
+填入你的私钥 取名为 `KEY`，后面要用到
 ![deploy-key2.webp](../images/My-first-hexo-blog/deploy-key2.webp)
 
 ### 3. 初始化 hexo 博客目录
@@ -69,7 +68,7 @@ git commit -m "Initial commit"
 执行结果如下
 ![init-git.webp](../images/My-first-hexo-blog/init-git.webp)
 
-把下面 git@xxx 地址换成你仓库的 ssh 地址
+把下面 git@xxx 地址换成你`仓库的ssh地址`
 
 ```bash
 git remote add origin git@github.com:mobeicanyue/mobeicanyue.github.io.git
@@ -102,8 +101,8 @@ git push -u origin master
 
 ![new-file.webp](../images/My-first-hexo-blog/new-file.webp)
 
-下面的代码只需要修改你的用户名和邮箱
-
+下面的代码需要修改你的用户名和邮箱
+还有你对应的 nodejs 版本
 
 ```yml
 name: Deploy Hexo
@@ -149,9 +148,11 @@ jobs:
           hexo deploy
 ```
 
+上面的`${{ secrets.KEY }}` 就是我们前面设置的私钥
+
 <br>
 
-3) 最后提交代码并推送
+1) 最后提交代码并推送
 ![commit-push.webp](../images/My-first-hexo-blog/commit-push.webp)
 
 ### 7. 访问站点，部署成功！
