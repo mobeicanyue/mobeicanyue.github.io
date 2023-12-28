@@ -34,11 +34,11 @@ find "$script_dir" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png \
 ' sh {} +
 ```
 可以看到确实图片体积减少很多，但是由于这张图片清晰度有点低，所以压缩后画质当然也不高。
-![compare.webp](/images/Transfer-jpg-to-webp/compare.webp)
+![compare.webp](../images/Transfer-jpg-to-webp/compare.webp)
 
 ### 3. 更改博客中的图片链接
 
 vscode 或者别的 ide 批量替换你用到的 markdown 图片链接，将 .jpg 替换为 .webp 即可。
-![replace.webp](/images/Transfer-jpg-to-webp/replace.webp)
+![replace.webp](../images/Transfer-jpg-to-webp/replace.webp)
 
 > 在部署博客之前，记得先在本地测试一下，看看是否有问题。

@@ -13,25 +13,25 @@ tags:
 类型 选择 CNAME，主机记录填写你的域名，比如 `example.com`，
 值填写 `用户名.github.io`，比如 `mobeicanyue.github.io`。
 
-![domain-record.webp](/images/Configure-blog-domain/domain-record.webp)
+![domain-record.webp](../images/Configure-blog-domain/domain-record.webp)
 
 ### 2. 在 github 仓库中配置域名
 
 进入你的仓库，点击 `settings`，左边栏，找到 `Pages`，在 `Custom domain` 中填写你的域名，比如 `example.com`，然后点击 `Save`。
 
-![set-domain.webp](/images/Configure-blog-domain/set-domain.webp)
+![set-domain.webp](../images/Configure-blog-domain/set-domain.webp)
 等待 dns 检查，很快就好了。
-![wait-dns.webp](/images/Configure-blog-domain/wait-dns.webp)
+![wait-dns.webp](../images/Configure-blog-domain/wait-dns.webp)
 访问你的域名，比如 `example.com`，就可以看到你的博客了。
-![blog.webp](/images/Configure-blog-domain/blog.webp)
+![blog.webp](../images/Configure-blog-domain/blog.webp)
 此时可以注意到在 gh-pages 分支中多了一个 CNAME 文件，这个文件内容就是我们刚刚配置的域名。
 但是按照之前的配置，每次 github action 部署的时候，都会把这个文件给覆盖掉，所以我们后面需要修改一下配置。
-![CNAME-file.webp](/images/Configure-blog-domain/CNAME-file.webp)
+![CNAME-file.webp](../images/Configure-blog-domain/CNAME-file.webp)
 
 ### 3. 修改 hexo 配置文件
 在 hexo 的配置文件 `_config.yml` 中，找到 `url`，把 `url` 改成你的域名，比如 `https://example.com`。
 
-![url.webp](/images/Configure-blog-domain/url.webp)
+![url.webp](../images/Configure-blog-domain/url.webp)
 
 ### 4. 修改 Github Actions 自动部署
 由于我们之前那种写法，在 github action 部署到 github pages 的时候，会把 CNAME 文件给覆盖掉，所以我们需要修改一下 github action 配置。
