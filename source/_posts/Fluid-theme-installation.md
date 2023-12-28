@@ -1,5 +1,5 @@
 ---
-title: 博客主题改为 Fluid
+title: Fluid 主题安装
 date: 2023-12-27 02:09:48
 tags:
 - hexo
@@ -18,7 +18,7 @@ npm install --save hexo-theme-fluid
 然后在博客目录下创建 _config.fluid.yml，将主题 [_config.yml](https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml) 内容复制过去。
 
 现在目录下有这三个 yml 文件：
-![yml-files.webp](../images/Modify-theme/yml-files.webp)
+![yml-files.webp](../images/Fluid-theme-installation/yml-files.webp)
 
 可删除 `_config.landscape.yml` , 它是 hexo 默认的主题文件。
 
@@ -58,7 +58,7 @@ hexo clean && hexo g && hexo s -o
 
 后访问 `http://localhost:4000/about/` 即可看到效果。
 
-![ablout.webp](../images/Modify-theme/about.webp)
+![ablout.webp](../images/Fluid-theme-installation/about.webp)
 
 PS: 可以跟着文档把关于页面的几个 icon 一起改了。
 
@@ -84,7 +84,7 @@ apple_touch_icon: images/favicon.png
 
 ### 6. 修改 slogan 为 api 语录
 效果如图所示：
-![api-slogan.webp](../images/Modify-theme/api-slogan.webp)
+![api-slogan.webp](../images/Fluid-theme-installation/api-slogan.webp)
 
 在主题配置 `_config.fluid.yml` 中开启：
 ```yml
@@ -105,7 +105,7 @@ index:
 既然可以改 slogan 为 api 语录，那么背景图片当然也可以改为 api 图片 笑）。
 
 效果如图所示：
-![api-bg.webp](../images/Modify-theme/api-bg.webp)
+![api-bg.webp](../images/Fluid-theme-installation/api-bg.webp)
 
 在主题配置 `_config.fluid.yml` 中搜索
 ```yml
