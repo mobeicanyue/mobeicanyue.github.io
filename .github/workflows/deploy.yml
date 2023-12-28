@@ -32,8 +32,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          npm install -g hexo-cli
-          npm install hexo-deployer-git --save
           npm install
 
       # https://github.com/zhullyb/zhullyb.github.io/blob/master/.github/workflows/deploy.yml
@@ -45,6 +43,7 @@ jobs:
       - name: Build Site
         run: |
           export TZ='Asia/Shanghai'
+          npm run clean
           npm run build
 
       - name: Deploy to GitHub Pages
