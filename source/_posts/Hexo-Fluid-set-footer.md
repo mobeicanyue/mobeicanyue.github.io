@@ -10,7 +10,8 @@ tags:
 ![set-footer.webp](/images/Hexo-Fluid-set-footer/set-footer.webp)
 
 ### 1. 修改 `Fluid` 主题配置文件
-
+Fluid 提供了选项来自定义页脚。
+打开`_config.fluid.yml`，找到`footer`，修改`content`的值为：
 ```yml
 footer:
   content: '
@@ -32,8 +33,11 @@ footer:
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
     '
 ```
+上面分别是版权信息、运行时间、Hexo 和 Fluid 的链接。
+这样子还不行，因为显示的时间是动态的，需要 js 来实现（经过测试好像不能在这写 script 代码，所以外链 js）。
+<br>
 新建文件夹`source/js`，新建文件`duration.js`，内容如下：
-> 代码来源于网络，由于找的都是大同小异的代码，不知道原作者是谁，版权归原作者所有。
+> 代码来源于网络，由于找的代码都是大同小异的，不知道原作者是谁，版权归原作者所有。
 ```js
 function createtime() {
     var grt= new Date("12/26/2023 22:19:15");// 在此处修改你的建站时间，格式：月/日/年 时:分:秒

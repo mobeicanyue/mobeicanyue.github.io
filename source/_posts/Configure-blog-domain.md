@@ -2,6 +2,7 @@
 title: 博客域名配置
 date: 2023-12-27 02:31:59
 tags:
+- hexo
 - github actions
 - domain
 ---
