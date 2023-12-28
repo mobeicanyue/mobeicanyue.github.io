@@ -7,17 +7,16 @@ tags:
 ## 目录
 
 ### Hexo Github-Pages 自动部署 
-- [Hexo 环境搭建](Build-the-environment.md)
-- [部署 Hexo](My-first-hexo-blog.md)
-- [博客域名配置](Configure-blog-domain.md)
+- {% post_link Build-the-environment 'Hexo 环境搭建' %}
+- {% post_link My-first-hexo-blog '部署 Hexo' %}
+- {% post_link Configure-blog-domain '博客域名配置' %}
 
 ### Fluid 主题、美化相关
-- [Fluid 主题安装](Fluid-theme-installation.md)
-- [在 Fluid 主题中使用霞鹜文楷](Use-lxgw-wenkai-in-fluid.md)
-- [修复 Github Pages 上的文章更新时间](Fix-article-updated-time-on-github-pages.md)
-- [Hexo Fluid 设置页脚](Hexo-Fluid-set-footer.md)
+- {% post_link Fluid-theme-installation 'Fluid 主题安装' %}
+- {% post_link Use-lxgw-wenkai-in-fluid '在 Fluid 主题中使用霞鹜文楷' %}
+- {% post_link Fix-article-updated-time-on-github-pages '修复 Github Pages 上的文章更新时间' %}
+- {% post_link Hexo-Fluid-set-footer 'Hexo Fluid 设置页脚' %}
 
 ### 博客性能优化
-- [将 jpg 转换为 webp](Convert-jpg-to-webp.md)
-- [压缩部署的代码](Compress-deploy-code-size.md)
-
+- {% post_link Convert-jpg-to-webp '将 jpg 转换为 webp' %}
+- {% post_link Compress-deploy-code-size '压缩部署的代码' %}
