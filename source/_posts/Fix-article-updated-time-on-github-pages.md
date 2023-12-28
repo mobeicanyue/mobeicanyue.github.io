@@ -1,5 +1,5 @@
 ---
-title: 修复 github pages 上的文章更新时间
+title: 修复 Github Pages 上的文章更新时间
 date: 2023-12-27 22:47:28
 tags:
 - github-actions

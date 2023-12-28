@@ -1,5 +1,5 @@
 ---
-title: 在 fluid 主题中使用霞鹜文楷
+title: 在 Fluid 主题中使用霞鹜文楷
 date: 2023-12-27 14:58:04
 tags:
 - hexo

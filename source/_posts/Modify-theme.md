@@ -1,5 +1,5 @@
 ---
-title: 博客主题改为 fluid
+title: 博客主题改为 Fluid
 date: 2023-12-27 02:09:48
 tags:
 - hexo
