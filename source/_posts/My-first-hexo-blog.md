@@ -32,20 +32,20 @@ tags:
 
 ### 1. 新建 `用户名.github.io` 仓库
 
-![gh-create-repo1.webp](../images/My-first-hexo-blog/gh-create-repo1.webp)
+![gh-create-repo1.webp](gh-create-repo1.webp)
 
 记住这串 `仓库的ssh地址` 后面要用到
-![ssh-link.webp](../images/My-first-hexo-blog/ssh-link.webp)
+![ssh-link.webp](ssh-link.webp)
 
 创建的仓库名 建议为 `用户名.github.io`
-![gh-create-repo2.webp](../images/My-first-hexo-blog/gh-create-repo2.webp)
+![gh-create-repo2.webp](gh-create-repo2.webp)
 
 ### 2. 部署你的 ssh 私钥 到仓库变量中
 
-![deploy-key1.webp](../images/My-first-hexo-blog/deploy-key1.webp)
+![deploy-key1.webp](deploy-key1.webp)
 
 填入你的私钥 取名为 `KEY`，后面要用到
-![deploy-key2.webp](../images/My-first-hexo-blog/deploy-key2.webp)
+![deploy-key2.webp](deploy-key2.webp)
 
 ### 3. 初始化 hexo 博客目录
 
@@ -56,7 +56,7 @@ tags:
 hexo init mobeicanyue.github.io && cd mobeicanyue.github.io
 ```
 执行结果如下
-![init-hexo.webp](../images/My-first-hexo-blog/init-hexo.webp)
+![init-hexo.webp](init-hexo.webp)
 
 ### 4. 初始化 git 仓库并提交到 github
 
@@ -66,7 +66,7 @@ git add .
 git commit -m "Initial commit"
 ```
 执行结果如下
-![init-git.webp](../images/My-first-hexo-blog/init-git.webp)
+![init-git.webp](init-git.webp)
 
 把下面 git@xxx 地址换成你`仓库的ssh地址`
 
@@ -75,31 +75,31 @@ git remote add origin git@github.com:mobeicanyue/mobeicanyue.github.io.git
 git push -u origin master
 ```
 执行结果如下
-![git-push.webp](../images/My-first-hexo-blog/git-push.webp)
+![git-push.webp](git-push.webp)
 
 此时我们刷新一下 github 仓库，就可以看到我们的代码已经提交上去了
 但是网页第一次构建肯定是失败的（打叉），因为还没配置 github action
 
-![github-code.webp](../images/My-first-hexo-blog/github-code.webp)
+![github-code.webp](github-code.webp)
 
 ### 5. 新建 gh-pages 分支并将其设置为 pages 的默认部署分支
 
 点击分支
-![new-branch1.webp](../images/My-first-hexo-blog/new-branch1.webp)
+![new-branch1.webp](new-branch1.webp)
 创建 gh-pages 分支
-![new-branch2.webp](../images/My-first-hexo-blog/new-branch2.webp)
+![new-branch2.webp](new-branch2.webp)
 设置 gh-pages 为 pages 的默认部署分支
-![set-branch.webp](../images/My-first-hexo-blog/set-branch.webp)
+![set-branch.webp](set-branch.webp)
 
 
 ### 6. 编写 github actions 代码
 
 1) 修改 _config.yml 文件的 repo 改成你仓库的 ssh 地址
-![config.webp](../images/My-first-hexo-blog/config.webp)
+![config.webp](config.webp)
 
 2) 在 hexo 博客文件夹的 .github 目录创建 deploy.yml 文件
 
-![new-file.webp](../images/My-first-hexo-blog/new-file.webp)
+![new-file.webp](new-file.webp)
 
 下面的代码需要修改你的用户名和邮箱
 还有你对应的 nodejs 版本
@@ -153,12 +153,12 @@ jobs:
 <br>
 
 1) 最后提交代码并推送
-![commit-push.webp](../images/My-first-hexo-blog/commit-push.webp)
+![commit-push.webp](commit-push.webp)
 
 ### 7. 访问站点，部署成功！
 地址为 `https://用户名.github.io`
 
-![success.webp](../images/My-first-hexo-blog/success.webp)
+![success.webp](success.webp)
 
 <br>
 <br>

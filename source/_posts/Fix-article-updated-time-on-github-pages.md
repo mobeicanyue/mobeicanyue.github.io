@@ -9,10 +9,10 @@ tags:
 
 ### 1. 问题起因
 我开启了 fluid 配置 `updated: true`，这样会显示文章的更新时间。
-![fluid-config.webp](../images/Fix-article-updated-time-on-github-pages/fluid-config.webp)
+![fluid-config.webp](fluid-config.webp)
 
 但是在部署到 github pages 时，`hexo 并不会像我们本地运行那样，显示的是文章的更新时间，它获取的是部署的时间。` 换句话说，你所有文章的更新时间都全部定格在 github actions 最新的部署的那个时间（难绷）。
-![error-time.webp](../images/Fix-article-updated-time-on-github-pages/error-time.webp)
+![error-time.webp](error-time.webp)
 
 我们可以在 `front-matter` 加入 `updated: 更新时间` 解决
 ```markdown

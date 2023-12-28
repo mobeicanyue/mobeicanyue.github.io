@@ -86,4 +86,4 @@ minify:
 hexo clean && hexo g
 ```
 可以看到 html 确实被压缩了
-![压缩后](../images/Compress-deploy-code-size/after.webp)
+![压缩后](after.webp)

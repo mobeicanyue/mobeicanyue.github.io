@@ -7,7 +7,7 @@ tags:
 ---
 
 效果图：
-![set-footer.webp](../images/Hexo-Fluid-set-footer/set-footer.webp)
+![set-footer.webp](set-footer.webp)
 
 ### 1. 修改 `Fluid` 主题配置文件
 Fluid 提供了选项来自定义页脚。
