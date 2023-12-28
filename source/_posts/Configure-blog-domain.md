@@ -36,7 +36,6 @@ tags:
 ### 4. 修改 Github Actions 自动部署
 由于我们之前那种写法，在 github action 部署到 github pages 的时候，会把 CNAME 文件给覆盖掉，所以我们需要修改一下 github action 配置。
 
-
 也就是把之前的
     
 ```yml
@@ -50,6 +49,11 @@ tags:
 换成
     
 ```yml
+- name: Build Site
+        run: |
+          export TZ='Asia/Shanghai'
+          npm run clean
+          npm run build
 - name: Deploy to GitHub Pages
     uses: peaceiris/actions-gh-pages@v3
     with:
@@ -57,7 +61,21 @@ tags:
         publish_dir: public
         cname: blog.ovvv.top
 ```
+其中
+- `npm run clean` 即 `hexo clean` 清除构造缓存
+- `npm run build` 即 `hexo generate` 生成静态文件
+- 不使用 `hexo deploy` 部署，因为这个命令会把 CNAME 文件给覆盖掉
+- 使用 `peaceiris/actions-gh-pages` 这个 action 部署，这个 action 在上传静态文件的同时还会自动把 CNAME 文件给加上去。
+
 <br>
+
+对比我们第一篇文章中的配置，我们还删除了
+```yml
+npm install -g hexo-cli
+npm install hexo-deployer-git --save
+```
+因为我们仓库是 npm 项目，依赖清单里现在已经包含了 `hexo` 无需再安装。直接`npm install` npm 就会安装 `package.json` 里的 `hexo`。
+因为我们不再使用 `hexo deploy` 部署了，所以 `hexo-deployer-git` 就用不到了。
 
 更新后整个文件如下：
 ```yml
@@ -93,13 +111,12 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          npm install -g hexo-cli
-          npm install hexo-deployer-git --save
           npm install
 
       - name: Build Site
         run: |
           export TZ='Asia/Shanghai'
+          npm run clean
           npm run build
 
       - name: Deploy to GitHub Pages
