@@ -1,6 +1,7 @@
 ---
 title: 我的第一篇 Hexo 博客
 date: 2023-12-26 23:18:38
+sticky: 100
 tags:
 - hexo
 - github
@@ -11,11 +12,12 @@ tags:
 
 ## Hexo 部署 Github Pages, Github Actions 自动部署
 
-激动的心 颤抖的手，这是本站第一篇博客。
+激动的心 颤抖的手，这是本站真正意义上的第一篇博客。第零篇是 hexo 生成的 Hello World。
+
 部署 hexo 的过程中遇到了很多问题，最终还是解决了，这里记录一下。
 
-> 最终实现的效果，一个项目仓库，main 分支存放源代码，gh-pages 存放生成后的网页代码，github pages 加载 gh-pages 的网页代码。
-> 这样，每当我们 push 代码到 main 分支的时候，github action 会自动构建并将代码发布到 gh-pages 分支，github pages 会自动加载 gh-pages 分支的代码，这样就实现了自动部署。
+> 最终实现的效果，一个项目仓库，`main` 分支存放源代码，`gh-pages` 存放生成后的网页代码，github pages 加载 `gh-pages` 的网页代码。
+> 这样，每当我们 push 代码到 `main` 分支的时候，github action 会自动构建并将代码发布到 `gh-pages` 分支，github pages 会自动加载 `gh-pages` 分支的代码，这样就实现了自动部署。
 
 搭建环境：
 
@@ -36,6 +38,7 @@ tags:
 记住这串 `仓库的ssh地址` 后面要用到
 ![ssh-link.webp](../images/My-first-hexo-blog/ssh-link.webp)
 
+创建的仓库名 建议为 `用户名.github.io`
 ![gh-create-repo2.webp](../images/My-first-hexo-blog/gh-create-repo2.webp)
 
 ### 2. 部署你的 ssh 私钥 到仓库变量中
