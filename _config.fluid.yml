@@ -470,7 +470,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -498,7 +498,7 @@ index:
 
       # 请求地址
       # Request url
-      url: "https://api.vvhan.com/api/ian?type=json"
+      url: "https://v1.hitokoto.cn/"
 
       # 请求方法
       # Request method
@@ -511,7 +511,7 @@ index:
 
       # 从请求结果获取字符串的取值字段，最终必须是一个字符串，例如返回结果为 {"data": {"author": "fluid", "content": "An elegant theme"}}, 则取值字段为 ['data', 'content']；如果返回是列表则自动选择第一项
       # The value field of the string obtained from the response. For example, the response content is {"data": {"author": "fluid", "content": "An elegant theme"}}, the expected `keys: ['data','content']`; if the return is a list, the first item is automatically selected
-      keys: ["data","vhan"]
+      keys: ["hitokoto"]
 
   # 自动截取文章摘要
   # Auto extract post
@@ -542,7 +542,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -905,7 +905,7 @@ discuss:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -916,7 +916,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -945,7 +945,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -962,7 +962,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.png
@@ -985,7 +985,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -996,7 +996,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟（毫秒）
@@ -1010,7 +1010,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://api.vvhan.com/api/bing?size=1920x1080
+  banner_img: https://bing.img.run/1920x1080.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项

@@ -98,7 +98,7 @@ index:
       url: "https://v1.hitokoto.cn/"
       method: "GET"
       headers: {}
-      keys: ['data', 'content']
+      keys: ["hitokoto"]
 ```
 把 `url` 改为你想要的 api 地址，`keys` 改为你想要的字段。具体参数可以看[官方文档](https://hexo.fluid-dev.com/docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%9C%BA)
 
@@ -113,5 +113,5 @@ index:
 /img/default.png
 ```
 将其改为你想要的 api 地址即可。
-我使用的是 [Bing 每日图片](https://api.vvhan.com/api/bing?size=1920x1080)
+我使用的是 [Bing 每日图片](https://bing.img.run/1920x1080.php)
 感谢接口提供者！！！
