@@ -21,5 +21,6 @@ tags:
 - {% post_link Convert-jpg-to-webp '将 jpg 转换为 webp' %}
 - {% post_link Compress-deploy-code-size '压缩部署的代码' %}
 
-### 写作相关
+### Hexo 写作相关
+- {% post_link Using-post-link 'post_link 的使用' %}
 - {% post_link Enable-asset-folder '启用资源文件夹' %}
