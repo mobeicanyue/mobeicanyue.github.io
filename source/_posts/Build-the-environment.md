@@ -1,7 +1,9 @@
 ---
 title: Hexo 环境搭建
+abbrlink: dc0bbd22
 date: 2023-12-28 19:08:02
 tags:
+- Hexo
 ---
 
 我是 `Linux` 操作系统 `Manjaro` 分支，所以文章着重介绍 `Linux` 下的环境搭建。

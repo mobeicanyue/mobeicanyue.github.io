@@ -1,12 +1,13 @@
 ---
 title: 我的第一篇 Hexo 博客
-date: 2023-12-26 23:18:38
 tags:
-- hexo
-- github
-- github pages
-- github actions
-- deploy
+  - hexo
+  - github
+  - github pages
+  - github actions
+  - 部署
+abbrlink: 7a862802
+date: 2023-12-26 23:18:38
 ---
 
 ## Hexo 部署 Github Pages, Github Actions 自动部署

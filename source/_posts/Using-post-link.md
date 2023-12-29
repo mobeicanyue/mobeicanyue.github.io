@@ -1,5 +1,6 @@
 ---
 title: post_link 的使用
+abbrlink: 5acfc949
 date: 2023-12-28 22:46:11
 tags:
 ---

@@ -1,10 +1,11 @@
 ---
 title: Fluid 主题安装
-date: 2023-12-27 02:09:48
 tags:
-- hexo
-- fluid
-- deploy
+  - hexo
+  - fluid
+  - 部署
+abbrlink: 5eba38dc
+date: 2023-12-27 02:09:48
 ---
 
 [官方文档](https://hexo.fluid-dev.com/docs/start)其实挺详细的了。

@@ -1,9 +1,11 @@
 ---
 title: 1panel 配置教程
-date: 2023-12-28 15:54:04
 tags:
-- 1panel
-- server
+  - 1panel
+  - 运维
+  - 服务器
+abbrlink: 15c02856
+date: 2023-12-28 15:54:04
 ---
 
 > 本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网
