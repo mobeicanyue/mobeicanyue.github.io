@@ -28,7 +28,7 @@ abbrlink:
      over_write: false 
   auto_title: false #enable auto title, it can auto fill the title by path
   auto_date: false #enable auto date, it can auto fill the date by time today
-  force: false #enable force mode
+  force: false # 启用强制模式，在此模式下，插件将忽略缓存，并计算每篇文章的 abbrlink，即使它已经有了 abbrlink。这只会更新 abbrlink，而不会更新其他前置变量。
 
 permalink_defaults:
 pretty_urls:
