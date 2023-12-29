@@ -427,8 +427,9 @@ footer:
     </div>
 
     <div>
+      <span id="timeYear">载入年份...</span>
       <span id="timeDate">载入天数...</span>
-      <span id="times">载入时分秒...</span>
+      <span id="times">载入时分...</span>
       <script src="/js/duration.js"></script>
     </div>
 
