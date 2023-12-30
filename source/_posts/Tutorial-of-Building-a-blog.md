@@ -1,5 +1,5 @@
 ---
-title: 博客相关教程
+title: 博客搭建相关教程
 sticky: 100
 abbrlink: 6db78a27
 date: 2023-12-28 19:03:00
@@ -11,6 +11,7 @@ tags:
 - {% post_link Build-the-environment 'Hexo 环境搭建' %}
 - {% post_link My-first-hexo-blog '部署 Hexo' %}
 - {% post_link Configure-blog-domain '博客域名配置' %}
+- {% post_link Enable-blog-comment '启用博客评论' %}
 
 ### Fluid 主题、美化相关
 - {% post_link Fluid-theme-installation 'Fluid 主题安装' %}

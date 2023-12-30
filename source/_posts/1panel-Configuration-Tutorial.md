@@ -1,5 +1,5 @@
 ---
-title: 1panel 配置教程
+title: 1panel 安装配置教程
 tags:
   - 1panel
   - 运维

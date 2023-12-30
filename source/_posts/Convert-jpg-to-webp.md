@@ -1,5 +1,5 @@
 ---
-title: 将 jpg 转换为 webp
+title: 将 jpg 转换为 webp，提高博客加载速度
 abbrlink: 72658df0
 date: 2023-12-28 00:25:25
 tags:
