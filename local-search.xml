@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>2024, happy new year!</title>
+    <link href="/posts/1c0214de/"/>
+    <url>/posts/1c0214de/</url>
+    
+    <content type="html"><![CDATA[<p>祝大家元旦快乐！！！<br>虽然今年并不一帆风顺，但新的一年还是要开心啊！<br><img src="/posts/1c0214de/2024.webp" alt="2024"><br><img src="/posts/1c0214de/th.webp" alt="fireworks"></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日常</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>启用博客评论</title>
     <link href="/posts/7671c28e/"/>
     <url>/posts/7671c28e/</url>
@@ -72,7 +91,7 @@
     
     <tags>
       
-      <tag>Hexo</tag>
+      <tag>hexo</tag>
       
     </tags>
     
@@ -282,11 +301,11 @@
       
       <tag>部署</tag>
       
+      <tag>github-actions</tag>
+      
+      <tag>github-pages</tag>
+      
       <tag>github</tag>
-      
-      <tag>github pages</tag>
-      
-      <tag>github actions</tag>
       
     </tags>
     
