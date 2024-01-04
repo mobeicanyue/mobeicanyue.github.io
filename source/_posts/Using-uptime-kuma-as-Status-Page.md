@@ -3,6 +3,7 @@ title: 使用 uptime-kuma 作为 Status Page
 tags:
   - 服务器
   - 运维
+  - 部署
 abbrlink: c7c2ca22
 date: 2024-01-04 11:56:45
 ---
