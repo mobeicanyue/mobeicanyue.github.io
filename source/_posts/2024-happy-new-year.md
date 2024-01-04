@@ -1,5 +1,5 @@
 ---
-title: '2024, happy new year!'
+title: '2024, Happy New Year!'
 tags:
   - 日常
 abbrlink: 1c0214de
