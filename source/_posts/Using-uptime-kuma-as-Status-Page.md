@@ -20,8 +20,12 @@ uptime-kuma 是一个开源的 Status Page，它可以帮助你监控你的网�
 `uptime-kuma` 支持两种安装方式：
 1. Docker
 2. 二进制文件
+3. 1Panel 一键安装（写完文章才发现 QAQ）
 
 ### 1. 安装 uptime-kuma
+
+> 使用 1Panel 安装可以跳过这一步
+
 我这里使用 `docker-compose` 安装，在安装之前，先确保你的服务器已经安装了 `docker` 和 `docker-compose`
 
 找一个空文件夹，新建一个 `docker-compose.yml`
