@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-01-05T10:40:22.000Z</updated>
+  <updated>2024-01-09T18:03:02.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 随谈 —— 聊聊我对 Java 这门语言的看法</title>
+    <link href="https://blog.ovvv.top/posts/f7c262de/"/>
+    <id>https://blog.ovvv.top/posts/f7c262de/</id>
+    <published>2024-01-09T18:02:20.000Z</published>
+    <updated>2024-01-09T18:03:02.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;note note-secondary&quot;&gt;
+            &lt;p&gt;Java 是一种高级的、基于类的面向对象的编程语言，其设计目的是尽可能减少对实现的依赖。它是一种通用编程语言，旨在让程序员一次编写，随处运行（WORA），也就是说，编译后的</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Java" scheme="https://blog.ovvv.top/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 uptime-kuma 作为 Status Page</title>
