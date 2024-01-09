@@ -54,7 +54,7 @@ external_link:
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
-render_drafts: false
+render_drafts: true
 
 # 下面这四行的作用：
 # post_asset_folder: true 新建文章会自动创建同名文件夹
