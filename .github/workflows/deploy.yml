@@ -36,7 +36,6 @@ jobs:
           export TZ='Asia/Shanghai'
           npm run clean
           npm run build
-          bash convert-cdn-img.sh
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
