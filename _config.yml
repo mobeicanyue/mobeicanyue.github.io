@@ -4,9 +4,9 @@
 
 # Site
 title: 漠北残月的博客
-subtitle: ''
-description: "This is the blog of mobeicanyue."
-keywords: blog, hexo, github, mobeicanyue, program, technology, life, share, study, diary
+subtitle: '漠北残月，江南垂柳'
+description: '欢迎来到漠北残月的博客'
+keywords: 漠北残月 , mobeicanyue, technology, daily, share
 author: mobeicanyue
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -141,7 +141,7 @@ feed:
     content:
     content_limit: 140
     content_limit_delim: ' '
-    icon: https://cdn.jsdelivr.net/gh/mobeicanyue/mobeicanyue.github.io@gh-pages/images/favicon.webp
+    icon: images/favicon.webp
 
 # 压缩文件
 minify:
