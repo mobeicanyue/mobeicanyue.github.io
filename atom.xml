@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-01-16T14:23:38.000Z</updated>
+  <updated>2024-01-17T15:48:02.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>部署一个你自己的网盘—Alist</title>
+    <link href="https://blog.ovvv.top/posts/9c18a796/"/>
+    <id>https://blog.ovvv.top/posts/9c18a796/</id>
+    <published>2024-01-17T12:50:59.000Z</published>
+    <updated>2024-01-17T15:48:02.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;note note-secondary&quot;&gt;
+            &lt;p&gt;本文档为 Alist 部署教程，主要介绍 Alist 的配置及使用，参考了官网的教程来编写。更多信息请参照官网 &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="alist" scheme="https://blog.ovvv.top/tags/alist/"/>
+    
+  </entry>
   
   <entry>
     <title>Java 随谈 — 聊聊我对 Java 的看法</title>
@@ -232,7 +256,7 @@
     <link href="https://blog.ovvv.top/posts/15c02856/"/>
     <id>https://blog.ovvv.top/posts/15c02856/</id>
     <published>2023-12-28T07:54:04.000Z</published>
-    <updated>2023-12-30T03:03:39.000Z</updated>
+    <updated>2024-01-17T15:48:02.000Z</updated>
     
     
       
@@ -256,6 +280,8 @@
     
     <category term="服务器" scheme="https://blog.ovvv.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
   </entry>
   
   <entry>
@@ -277,9 +303,9 @@
     
     
     
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
     
     <category term="优化" scheme="https://blog.ovvv.top/tags/%E4%BC%98%E5%8C%96/"/>
     
@@ -441,9 +467,9 @@
     
     
     
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
     
     <category term="fluid" scheme="https://blog.ovvv.top/tags/fluid/"/>
     
@@ -468,9 +494,9 @@
     
     
     
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
     
     <category term="github-actions" scheme="https://blog.ovvv.top/tags/github-actions/"/>
     
