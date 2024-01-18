@@ -141,7 +141,7 @@ feed:
     content:
     content_limit: 140
     content_limit_delim: ' '
-    icon: images/favicon.webp
+    icon: images/rss.png
 
 # 压缩文件
 minify:
