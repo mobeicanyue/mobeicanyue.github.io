@@ -20,18 +20,18 @@ Cloudflare 是一个 CDN 服务商，提供免费的 CDN 服务。它提供免�
 
 ## 2. 在 Cloudflare 上创建应用程序
 
-打开 Cloudfalre 面板，点击 `Workers 和 Pages`
+打开 Cloudflare 面板，点击 `Workers 和 Pages`，点击 `Pages`
 
-选择 `创建应用程序`，点击 `Pages`
+![创建 Pages](Create-Pages.webp)
 
 选择 `连接到 Git` 后，添加你的 `Github` 账号，选择你要部署的仓库
 
-![创建 Pages](Create-Pages.webp)
+![选择仓库](Select-Repository.webp)
 
 ### 2.1 方式一 部署现有的静态网站（推荐）
 如果你已经在 Github Pages 上部署了你的博客，那么你可以直接选择 拉取现有的静态网站部署。
 
-`生产分支` 选择 `静态网站所在的分支`，其他保持不变，点击 `保存并部署`
+`生产分支` 选择 `静态网站所在的分支`，如果你是部署到`gh-pages`分支，那就选`gh-pages`。其他保持不变，点击 保存并部署。
 ![生产分支](branch.webp)
 ![静态网站所在的分支](gh-pages.webp)
 
