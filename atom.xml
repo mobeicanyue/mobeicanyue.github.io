@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-01-19T09:48:56.000Z</updated>
+  <updated>2024-01-18T06:12:11.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>博客的 SEO 优化</title>
-    <link href="https://blog.ovvv.top/posts/3ed143e7/"/>
-    <id>https://blog.ovvv.top/posts/3ed143e7/</id>
-    <published>2024-01-19T06:48:15.000Z</published>
-    <updated>2024-01-19T09:48:56.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;写博客的目的是为了记录自己的学习过程，分享日常。而想要让更多的人看到自己的博客，就需要做一些 SEO 优化，提升自己的博客在搜索引擎上的排名。&lt;br&gt;特别是如果你的博客是部署在 GitHub Pages 上的，那么你就更需要注意了。因为百度被</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>部署一个你自己的网盘 — Alist</title>
