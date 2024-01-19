@@ -46,7 +46,8 @@ Cloudflare 是一个 CDN 服务商，提供免费的 CDN 服务。它提供免�
 生产分支选择 `main`
 ![main](main.webp)
 
-`构建设置` 按需填写，如果流程过于复杂，可以单独写一个 bash 脚本，执行 `bash deploy.sh`
+`构建设置` 按需填写。
+如果流程过于复杂，可以单独写一个 bash 脚本，执行 `bash deploy.sh`
 
 ![构建设置](Build-Settings.webp)
 
