@@ -182,32 +182,6 @@
   </entry>
   
   <entry>
-    <title>post_link 的使用</title>
-    <link href="https://blog.ovvv.top/posts/5acfc949/"/>
-    <id>https://blog.ovvv.top/posts/5acfc949/</id>
-    <published>2023-12-28T14:46:11.000Z</published>
-    <updated>2023-12-29T02:20:02.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;如果使用正常的 &lt;code&gt;markdown&lt;/code&gt; 语法，会导致目录中的链接无法跳转，所以我使用了 post_link 标签。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;br&gt;
-
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hexo 环境搭建</title>
     <link href="https://blog.ovvv.top/posts/dc0bbd22/"/>
     <id>https://blog.ovvv.top/posts/dc0bbd22/</id>
@@ -235,7 +209,7 @@
     <link href="https://blog.ovvv.top/posts/6db78a27/"/>
     <id>https://blog.ovvv.top/posts/6db78a27/</id>
     <published>2023-12-28T11:03:00.000Z</published>
-    <updated>2023-12-30T03:03:39.000Z</updated>
+    <updated>2024-01-19T05:29:35.000Z</updated>
     
     
       

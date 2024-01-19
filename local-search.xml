@@ -129,19 +129,6 @@
   
   
   <entry>
-    <title>post_link 的使用</title>
-    <link href="/posts/5acfc949/"/>
-    <url>/posts/5acfc949/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>如果使用正常的 <code>markdown</code> 语法，会导致目录中的链接无法跳转，所以我使用了 post_link 标签。</p></blockquote><br><p><a href="https://hexo.io/zh-cn/docs/tag-plugins#%E5%BC%95%E7%94%A8%E6%96%87%E7%AB%A0">官方文档</a></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% post<span class="hljs-emphasis">_link filename [title] [escape] %&#125;</span><br></code></pre></td></tr></table></figure><p><code>使用此标签时可以忽略文章文件所在的路径或者文章的永久链接信息、如语言、日期。</code><br><br><br>我在写目录的时候发现，<br>如果使用正常的 <code>markdown</code> 语法，</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">博客域名配置</span>](<span class="hljs-link">Configure-blog-domain.md</span>)<br></code></pre></td></tr></table></figure><p>会导致目录中的链接无法跳转（即使两个 markdown 是同路径）。<br><br></p><p>报错原因排查：</p><p>在我的设想里，点击下面这个链接，应该就跳转到 <code>Configure-blog-domain.md</code> 这个文件。实际上 markdown 里面也确实这么做的，因为这就是一个很简单的同路径下的文件跳转。两种写法的对比：<br><img src="/posts/5acfc949/example.webp" alt="post_link 写法和 markdown 写法"></p><p>但是到了 html 里面，情况就截然不同，因为 <code>hexo</code> 博客路径是默认带时间的！</p><p>html 中的显示：<br><img src="/posts/5acfc949/example2.webp" alt="html 中的显示，上为 post_link 写法，下为 markdown 写法"><br>上面那个代码可以正常访问，但是下面那个就不行了，因为路径不对。<br><img src="/posts/5acfc949/up.webp" alt="上面的链接点击"><br><img src="/posts/5acfc949/down.webp" alt="下面的链接点击"><br>有两个错误：</p><ol><li>路径在 <code>Tutorial-of-Building-a-blog</code> 下而不是正常的 <code>日期/无后缀文件名</code> 下。</li><li>链接访问的是 <code>2023/12/28</code> 的路径！而我们文件是 <code>2023/12/27</code> 写的。hexo 生成静态文件时根本不知道你的文件是哪天写的，所以就会默认使用当前日期。</li></ol><p>所以最终的引用解决方案就是 <code>post_link</code> 标签。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% post<span class="hljs-emphasis">_link 无后缀文章名 文章标题（可选） %&#125;</span><br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Hexo 环境搭建</title>
     <link href="/posts/dc0bbd22/"/>
     <url>/posts/dc0bbd22/</url>
@@ -165,7 +152,7 @@
     <link href="/posts/6db78a27/"/>
     <url>/posts/6db78a27/</url>
     
-    <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="Hexo-博客部署"><a href="#Hexo-博客部署" class="headerlink" title="Hexo 博客部署"></a>Hexo 博客部署</h3><ul><li><a href="/posts/dc0bbd22/" title="Hexo 环境搭建">Hexo 环境搭建</a></li><li><a href="/posts/7a862802/" title="我的第一篇 Hexo 博客">部署 Hexo</a></li><li><a href="/posts/62af491f/" title="博客域名配置">博客域名配置</a></li><li><a href="/posts/7671c28e/" title="启用博客评论">启用博客评论</a></li></ul><h3 id="Fluid-主题、美化相关"><a href="#Fluid-主题、美化相关" class="headerlink" title="Fluid 主题、美化相关"></a>Fluid 主题、美化相关</h3><ul><li><a href="/posts/5eba38dc/" title="Fluid 主题安装">Fluid 主题安装</a></li><li><a href="/posts/f24b41b1/" title="在 Fluid 主题中使用霞鹜文楷">在 Fluid 主题中使用霞鹜文楷</a></li><li><a href="/posts/21f09adf/" title="修复 Github Pages 上的文章更新时间">修复 Github Pages 上的文章更新时间</a></li><li><a href="/posts/2422058f/" title="Hexo Fluid 设置页脚">Hexo Fluid 设置页脚</a></li></ul><h3 id="博客资源性能优化"><a href="#博客资源性能优化" class="headerlink" title="博客资源性能优化"></a>博客资源性能优化</h3><ul><li><a href="/posts/72658df0/" title="将 jpg 转换为 webp，提高博客加载速度">将 jpg 转换为 webp</a></li><li><a href="/posts/a89b8953/" title="压缩部署的代码">压缩部署的代码</a></li></ul><h3 id="Hexo-写作相关"><a href="#Hexo-写作相关" class="headerlink" title="Hexo 写作相关"></a>Hexo 写作相关</h3><ul><li><a href="/posts/5acfc949/" title="post_link 的使用">post_link 的使用</a></li><li><a href="/posts/9b9e473f/" title="启用资源文件夹，更方便地管理图片">启用资源文件夹</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="Hexo-博客部署"><a href="#Hexo-博客部署" class="headerlink" title="Hexo 博客部署"></a>Hexo 博客部署</h3><ul><li><a href="/posts/dc0bbd22/" title="Hexo 环境搭建">Hexo 环境搭建</a></li><li><a href="/posts/7a862802/" title="我的第一篇 Hexo 博客">部署 Hexo</a></li><li><a href="/posts/62af491f/" title="博客域名配置">博客域名配置</a></li><li><a href="/posts/7671c28e/" title="启用博客评论">启用博客评论</a></li></ul><h3 id="Fluid-主题、美化相关"><a href="#Fluid-主题、美化相关" class="headerlink" title="Fluid 主题、美化相关"></a>Fluid 主题、美化相关</h3><ul><li><a href="/posts/5eba38dc/" title="Fluid 主题安装">Fluid 主题安装</a></li><li><a href="/posts/f24b41b1/" title="在 Fluid 主题中使用霞鹜文楷">在 Fluid 主题中使用霞鹜文楷</a></li><li><a href="/posts/21f09adf/" title="修复 Github Pages 上的文章更新时间">修复 Github Pages 上的文章更新时间</a></li><li><a href="/posts/2422058f/" title="Hexo Fluid 设置页脚">Hexo Fluid 设置页脚</a></li></ul><h3 id="博客资源性能优化"><a href="#博客资源性能优化" class="headerlink" title="博客资源性能优化"></a>博客资源性能优化</h3><ul><li><a href="/posts/72658df0/" title="将 jpg 转换为 webp，提高博客加载速度">将 jpg 转换为 webp</a></li><li><a href="/posts/a89b8953/" title="压缩部署的代码">压缩部署的代码</a></li></ul><h3 id="Hexo-写作相关"><a href="#Hexo-写作相关" class="headerlink" title="Hexo 写作相关"></a>Hexo 写作相关</h3><ul><li><a href="/posts/9b9e473f/" title="启用资源文件夹，更方便地管理图片">启用资源文件夹</a></li></ul>]]></content>
     
     
     
