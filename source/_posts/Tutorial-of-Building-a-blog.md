@@ -24,5 +24,4 @@ tags:
 - {% post_link Compress-deploy-code-size '压缩部署的代码' %}
 
 ### Hexo 写作相关
-- {% post_link Using-post-link 'post_link 的使用' %}
 - {% post_link Enable-asset-folder '启用资源文件夹' %}
