@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>漠北残月的博客</title>
-  <icon>https://blog.ovvv.top/images/rss.png</icon>
+  <icon>https://blog.ovvv.top/images/rss.svg</icon>
   <subtitle>漠北残月，江南垂柳</subtitle>
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
