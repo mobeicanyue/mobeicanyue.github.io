@@ -141,7 +141,7 @@ feed:
     content:
     content_limit: 140
     content_limit_delim: ' '
-    icon: images/rss.png
+    icon: images/rss.svg
 
 # 压缩文件
 minify:
