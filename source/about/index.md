@@ -4,15 +4,17 @@ date: 2023-12-26 22:43:21
 layout: about
 ---
 
-# 你好，
-### 我是 Canyue 👋
+# 你好 👋
+### 欢迎来到漠北残月的博客，这是一个记录技术与日常的自留地。
 
-计算机本科生一枚，用 [Manjaro Linux](https://manjaro.org/) 系统 .
-掌握语言：C/C++, [Java](https://www.java.com/), [Python](https://www.python.org/), [JavaScript](https://www.javascript.com/), [Dart](https://dart.cn/).
+本博客使用了 [Hexo](https://hexo.io/zh-cn) 开源静态框架，开源主题 [Fluid](https://hexo.fluid-dev.com/docs)，全静态网页无 cookie。源代码托管于 [Github](https://github.com) ，博客通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的服务支持。
 
-你可以关注我的 [Github](https://github.com/mobeicanyue), 我项目的代码都在那。你也可以看看本博客。
-喜欢自由、开源的软件和系统，但不得不用 Windows 玩游戏:)（谁让他是大哥）
-
-热爱编程 💻.
-喜欢音乐、电影和游戏 🎨.
-有空爱看 kpop 靓妹 💃.
+本站支持
+- [IPv6](https://ready.chair6.net/?url=ovvv.top)
+- [Brotli](https://tools.keycdn.com/brotli-test?url=https%3A%2F%2Fblog.ovvv.top)
+- [0-RTT Connection Resumption](https://developers.cloudflare.com/speed/optimization/protocol/0-rtt-connection-resumption/)
+- [HTTP 2](http://http2.pro/check?url=https%3A//blog.ovvv.top) / [HTTP 3(with QUIC)](https://http3check.net?host=blog.ovvv.top)
+- [TLS 1.3](https://www.cdn77.com/tls-test/result?domain=blog.ovvv.top)
+- [HSTS Preload](https://hstspreload.org/?domain=ovvv.top)
+- [DNSSEC](https://dnssec-debugger.verisignlabs.com/blog.ovvv.top)
+- [Security headers](https://securityheaders.com/?q=blog.ovvv.top&hide=on&followRedirects=on)
