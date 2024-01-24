@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-01-19T15:53:39.000Z</updated>
+  <updated>2024-01-24T14:20:14.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Umami 安装使用教程</title>
+    <link href="https://blog.ovvv.top/posts/f7a090e6/"/>
+    <id>https://blog.ovvv.top/posts/f7a090e6/</id>
+    <published>2024-01-24T03:55:35.000Z</published>
+    <updated>2024-01-24T14:20:14.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Umami is a simple, fast, privacy-focused alternative to Google Analytics.&lt;/p&gt;
+&lt;p&gt;Umami 是一个简单、快速、注重隐私的 Google Analytics</summary>
+        
+      
+    
+    
+    
+    
+    <category term="1panel" scheme="https://blog.ovvv.top/tags/1panel/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="umami" scheme="https://blog.ovvv.top/tags/umami/"/>
+    
+  </entry>
   
   <entry>
     <title>部署博客到 Cloudflare</title>
@@ -43,11 +72,11 @@
   </entry>
   
   <entry>
-    <title>部署一个你自己的网盘 — Alist</title>
+    <title>部署自己的网盘 — Alist 安装配置教程</title>
     <link href="https://blog.ovvv.top/posts/9c18a796/"/>
     <id>https://blog.ovvv.top/posts/9c18a796/</id>
     <published>2024-01-17T12:50:59.000Z</published>
-    <updated>2024-01-24T06:07:01.000Z</updated>
+    <updated>2024-01-24T14:20:14.000Z</updated>
     
     
       
@@ -64,6 +93,8 @@
     
     <category term="1panel" scheme="https://blog.ovvv.top/tags/1panel/"/>
     
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
     <category term="alist" scheme="https://blog.ovvv.top/tags/alist/"/>
     
   </entry>
@@ -73,7 +104,7 @@
     <link href="https://blog.ovvv.top/posts/f7c262de/"/>
     <id>https://blog.ovvv.top/posts/f7c262de/</id>
     <published>2024-01-09T18:02:20.000Z</published>
-    <updated>2024-01-16T14:23:38.000Z</updated>
+    <updated>2024-01-24T13:34:33.000Z</updated>
     
     
       
@@ -97,15 +128,18 @@
     <link href="https://blog.ovvv.top/posts/c7c2ca22/"/>
     <id>https://blog.ovvv.top/posts/c7c2ca22/</id>
     <published>2024-01-04T03:56:45.000Z</published>
-    <updated>2024-01-24T06:07:01.000Z</updated>
+    <updated>2024-01-24T14:20:14.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;div class=&quot;note note-secondary&quot;&gt;
-            &lt;p&gt;uptime-kuma 是一个开源的 Status Page，它可以帮助你监控你的网站、服务器、API 等，当你的网站、服务器、API</summary>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;A fancy self-hosted monitoring tool&lt;/p&gt;
+&lt;p&gt;一个精致的自托管监控工具&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-什么是-uptime-kuma，为什么要使用它？&quot;&gt;&lt;a</summary>
         
       
     
@@ -114,11 +148,9 @@
     
     <category term="1panel" scheme="https://blog.ovvv.top/tags/1panel/"/>
     
-    <category term="运维" scheme="https://blog.ovvv.top/tags/%E8%BF%90%E7%BB%B4/"/>
-    
-    <category term="服务器" scheme="https://blog.ovvv.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="uptime-kuma" scheme="https://blog.ovvv.top/tags/uptime-kuma/"/>
     
   </entry>
   
@@ -260,7 +292,7 @@
     <link href="https://blog.ovvv.top/posts/15c02856/"/>
     <id>https://blog.ovvv.top/posts/15c02856/</id>
     <published>2023-12-28T07:54:04.000Z</published>
-    <updated>2024-01-24T06:07:01.000Z</updated>
+    <updated>2024-01-24T13:38:52.000Z</updated>
     
     
       
@@ -269,9 +301,8 @@
         
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;部署条件：一台能 ssh</summary>
+&lt;p&gt;部署条件：一台能 ssh 登录的服务器，一个域名&lt;/p&gt;
+&lt;p&gt;最后实现的效果：安装配置 1panel 并配置反向代理，使用域名访问</summary>
         
       
     
@@ -507,27 +538,6 @@
     <category term="github-pages" scheme="https://blog.ovvv.top/tags/github-pages/"/>
     
     <category term="github" scheme="https://blog.ovvv.top/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://blog.ovvv.top/posts/4a17b156/"/>
-    <id>https://blog.ovvv.top/posts/4a17b156/</id>
-    <published>2023-12-26T14:19:15.000Z</published>
-    <updated>2023-12-29T02:20:02.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;欢迎来到 &lt;a href=&quot;https://blog.ovvv.top/&quot;&gt;Canyue’s Blog&lt;/a&gt;!</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
