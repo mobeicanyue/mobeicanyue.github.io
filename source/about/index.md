@@ -7,7 +7,11 @@ layout: about
 # 你好 👋
 ### 欢迎来到漠北残月的博客，这是一个记录技术与日常的自留地。
 
-本博客使用了 [Hexo](https://hexo.io/zh-cn) 开源静态框架，开源主题 [Fluid](https://hexo.fluid-dev.com/docs)，全静态网页无 cookie。源代码托管于 [Github](https://github.com) ，博客通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的服务支持。
+本博客使用了 [Hexo](https://hexo.io/zh-cn) 开源静态框架，开源主题 [Fluid](https://hexo.fluid-dev.com/docs)，全静态网页无 cookie。
+
+源代码托管于 [Github](https://github.com/mobeicanyue) ，博客通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的服务支持。
+
+网站访问情况可通过 https://umami.ovvv.top/share/DaABZPnhvYFyIHNr/Blog 查看。
 
 本站支持
 - [IPv6](https://ready.chair6.net/?url=ovvv.top)
