@@ -47,7 +47,7 @@
     <link href="https://blog.ovvv.top/posts/9c18a796/"/>
     <id>https://blog.ovvv.top/posts/9c18a796/</id>
     <published>2024-01-17T12:50:59.000Z</published>
-    <updated>2024-01-18T06:12:11.000Z</updated>
+    <updated>2024-01-24T06:07:01.000Z</updated>
     
     
       
@@ -61,6 +61,8 @@
     
     
     
+    
+    <category term="1panel" scheme="https://blog.ovvv.top/tags/1panel/"/>
     
     <category term="alist" scheme="https://blog.ovvv.top/tags/alist/"/>
     
@@ -95,7 +97,7 @@
     <link href="https://blog.ovvv.top/posts/c7c2ca22/"/>
     <id>https://blog.ovvv.top/posts/c7c2ca22/</id>
     <published>2024-01-04T03:56:45.000Z</published>
-    <updated>2024-01-05T10:40:22.000Z</updated>
+    <updated>2024-01-24T06:07:01.000Z</updated>
     
     
       
@@ -109,6 +111,8 @@
     
     
     
+    
+    <category term="1panel" scheme="https://blog.ovvv.top/tags/1panel/"/>
     
     <category term="运维" scheme="https://blog.ovvv.top/tags/%E8%BF%90%E7%BB%B4/"/>
     
@@ -252,11 +256,11 @@
   </entry>
   
   <entry>
-    <title>1panel 安装配置教程</title>
+    <title>1Panel 安装配置教程</title>
     <link href="https://blog.ovvv.top/posts/15c02856/"/>
     <id>https://blog.ovvv.top/posts/15c02856/</id>
     <published>2023-12-28T07:54:04.000Z</published>
-    <updated>2024-01-17T15:48:02.000Z</updated>
+    <updated>2024-01-24T06:07:01.000Z</updated>
     
     
       
@@ -264,10 +268,10 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网&lt;br&gt;部署条件：一台能 ssh 登录的服务器，一个域名&lt;/p&gt;
+&lt;p&gt;本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;最后实现的效果：安装配置</summary>
+&lt;p&gt;部署条件：一台能 ssh</summary>
         
       
     
