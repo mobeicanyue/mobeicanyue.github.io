@@ -20,9 +20,9 @@ Umami 是一个简单、快速、注重隐私的 Google Analytics 替代品。
 ## 2. 安装 Umami
 
 {% fold info @1Panel 一键安装 %}
-`1Panel` 安装教程：{% post_link 1panel-Configuration-Tutorial '1Panel 安装配置教程' %}
-
 打开 `1Panel` 面板，点击 `应用商店`，搜索 `umami`，点击 `安装` 即可。
+
+{% post_link 1panel-installation-and-usage-tutorial '1Panel 安装配置教程' %}
 {% endfold %}
 
 {% fold info @从源码安装 %}

@@ -1,5 +1,5 @@
 ---
-title: 部署一个你自己的网盘 — Alist
+title: 部署自己的网盘 — Alist 安装配置教程
 tags:
   - 部署
   - alist
@@ -15,7 +15,9 @@ date: 2024-01-17 20:50:59
 ## 1. 安装 Alist
 
 {% fold info @1Panel 一键安装 %}
-打开 1Panel 面板，点击 `应用商店`，搜索 `Alist`，点击 `安装` 即可。
+打开 `1Panel` 面板，点击 `应用商店`，搜索 `Alist`，点击 `安装` 即可。
+
+{% post_link 1panel-installation-and-usage-tutorial '1Panel 安装配置教程' %}
 {% endfold %}
 
 {% fold info @一键脚本安装 %}
