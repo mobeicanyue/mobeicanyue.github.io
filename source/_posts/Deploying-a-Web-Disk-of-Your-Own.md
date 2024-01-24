@@ -2,6 +2,7 @@
 title: 部署一个你自己的网盘 — Alist
 tags:
   - alist
+  - 1panel
 abbrlink: 9c18a796
 date: 2024-01-17 20:50:59
 ---
@@ -11,6 +12,11 @@ date: 2024-01-17 20:50:59
 {% endnote %}
 
 ## 1. 安装 Alist
+
+{% fold info @1Panel 一键安装 %}
+打开 1Panel 面板，点击 `应用商店`，搜索 `Alist`，点击 `安装` 即可。
+{% endfold %}
+
 {% fold info @一键脚本安装 %}
 仅适用于 Linux amd64/arm64 平台
 打开命令行输入
@@ -55,14 +61,28 @@ docker-compose up -d
 
 ## 2. 获取 Alist 密码
 
+在安装路径下（能访问到 alist 可执行文件）执行如下命令
+
+（如果是 1panel 安装，就点击 `容器` 列表，点击 `alist 容器` 的 `终端` 按钮，在容器终端下再执行如下命令。）
+
 随机生成一个密码
 ```bash
 ./alist admin random
 ```
-或者
+
 手动设置一个密码，`NEW_PASSWORD`是指你需要设置的密码
 ```bash
 ./alist admin set NEW_PASSWORD
+```
+
+<br>
+如果是 doekcer compose 安装，可执行如下命令
+```bash
+docker exec -it alist ./alist admin random
+```
+
+```bash
+docker exec -it alist ./alist admin set NEW_PASSWORD
 ```
 
 ## 3. 配置 Alist

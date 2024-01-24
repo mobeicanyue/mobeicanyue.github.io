@@ -1,5 +1,5 @@
 ---
-title: 1panel 安装配置教程
+title: 1Panel 安装配置教程
 tags:
   - 1panel
   - 运维
@@ -10,13 +10,14 @@ date: 2023-12-28 15:54:04
 ---
 
 > 本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网
+
 > 部署条件：一台能 ssh 登录的服务器，一个域名
 
 > 最后实现的效果：安装配置 1panel 并配置反向代理，使用域名访问 1panel 面板。
 
 ## 1. `1panel` 是什么？
 ![1panel 的官网简介](1panel-profile.webp)
-<center>1panel 的 Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.com/1Panel-dev/1Panel<a/></center>
+<center>Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.com/1Panel-dev/1Panel<a/></center>
 <br>
 
 众所周知，服务器运维要求我们熟悉 Linux 系统各种命令行操作，这些是维护服务器必不可少的。但是~~人总会想着偷懒~~命令行操作起来不方便，而且很多操作都需要手动编辑，比如安装软件配置 docker、docker-compose、配置反向代理等等。有了服务器管理面板，它可以让我们在浏览器中操作服务器，而不需要在命令行编辑。
@@ -24,14 +25,14 @@ date: 2023-12-28 15:54:04
 感知提升最明显的例子就是配置反向代理：只需要填写域名和 ip:端口号，点击确定就好了，不需要记住命令，也不需要研究 nginx 配置文件，这样就大大方便了程序员操作。
 
 {% fold @一点碎碎念 %}
-之前我的服务器使用的是`宝塔面板`，是个比较知名的面板，但是它`不开源`，且`UI 也不好看`，登录时甚至还`要求绑定宝塔官网账号`，否则就无法继续使用面板！
+之前我用的是`宝塔面板`，是个比较知名的服务器管理面板，但是它`不开源`，且`UI 也不好看`，登录时甚至还`要求绑定宝塔官网账号`，否则就无法继续使用面板！
 
 如此种种便促使我寻找替代品。我的服务器在 11 月份左右过期了，新的服务器不想使用宝塔面板，但是不使用面板操作服务器还是不太方便（比如设置反向代理、申请域名 SSL 证书和管理 docker 应用，面板可视化点击几下就好了，命令行操作起来很折磨人），于是便寻找它的替代品，也就是我们今天的主角 —— `1panel`。
 {% endfold %}
 
 ![1panel 首页](panel.webp)
 
-项目还采用的是 vue 编写的前端，算是比较先进的技术栈。后端采用 GO 编写。
+1Panel 使用 vue 编写前端，算是比较先进的技术栈。后端使用 GO 编写。
 ![项目语言](language.webp)
 
 你可以访问这个连接来体验一下 1panel 的功能：[https://demo.1panel.cn](https://demo.1panel.cn)
@@ -107,5 +108,6 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 配置好后，就可以使用域名访问 1panel 面板了。
 
 ## 6. 申请域名 SSL 证书
-由于我的域名托管在 Cloudflare，域名流量经过他 proxied，就不需要手动申请。如果你的域名托管在其他地方，那么你可以使用 1panel 申请 SSL 证书。
+由于我的域名托管在 Cloudflare，域名流量经过他 proxied，就不需要手动申请。
+如果你的域名在其他注册商托管，那么你可以使用 1panel 申请 SSL 证书。
 留个坑 如果有需要我再补充。
