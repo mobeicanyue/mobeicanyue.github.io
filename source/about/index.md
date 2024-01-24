@@ -11,7 +11,7 @@ layout: about
 
 源代码托管于 [Github](https://github.com/mobeicanyue) ，博客通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的服务支持。
 
-网站访问情况可通过 https://umami.ovvv.top/share/DaABZPnhvYFyIHNr/Blog 查看。
+网站访问情况可通过 https://umami.ovvv.top/share/S38bsqfsJup99p67/blog 查看。
 
 本站支持
 - [IPv6](https://ready.chair6.net/?url=ovvv.top)

@@ -1,6 +1,7 @@
 ---
 title: 部署一个你自己的网盘 — Alist
 tags:
+  - 部署
   - alist
   - 1panel
 abbrlink: 9c18a796
@@ -87,7 +88,9 @@ docker exec -it alist ./alist admin set NEW_PASSWORD
 
 ## 3. 配置 Alist
 
-输入 ip:5244，浏览器访问 Alist 登陆页面
+默认情况下，应用程序将在 http://localhost:5244 上启动。你可能需要代理 Web 服务器的请求，或更改端口来直接为应用程序提供服务。
+
+浏览器访问 Alist 登陆页面
 输入用户名 `admin` 和上一步获取的 `密码`
 点击登陆
 
