@@ -1,0 +1,118 @@
+---
+title: Umami 安装使用教程
+tags:
+  - 部署
+  - umami
+  - 1panel
+abbrlink: f7a090e6
+date: 2024-01-24 11:55:35
+---
+> Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+> 
+> Umami 是一个简单、快速、注重隐私的 Google Analytics 替代品。
+
+## 1. 什么是 Umami，为什么要使用它？
+
+Umami 是一个简单、快速、注重隐私的 Google Analytics 替代品。
+
+它是一个网站统计工具，可以帮助你分析网站的访问情况，比如访问量、访问来源、访问时间等等。这对于静态网站来说是非常有用的，因为静态网站无法像动态网站一样通过后端代码来统计访问情况。
+
+## 2. 安装 Umami
+
+{% fold info @1Panel 一键安装 %}
+`1Panel` 安装教程：{% post_link 1panel-Configuration-Tutorial '1Panel 安装配置教程' %}
+
+打开 `1Panel` 面板，点击 `应用商店`，搜索 `umami`，点击 `安装` 即可。
+{% endfold %}
+
+{% fold info @从源码安装 %}
+要求：
+Node.js >= 16.13
+MySQL or Postgresql
+
+- 安装 Yarn
+```bash
+npm install -g yarn
+```
+
+- 获取源码并安装依赖
+```bash
+git clone https://github.com/umami-software/umami.git
+cd umami
+yarn install
+```
+
+- 配置 Umami
+创建一个 `.env` 文件，内容如下：
+```
+DATABASE_URL=connection-url
+```
+其中 `connection-url` 为数据库连接地址，如
+```
+postgresql://username:mypassword@localhost:5432/mydb
+```
+```
+mysql://username:mypassword@localhost:3306/mydb
+```
+
+- 构建 Umami
+```bash
+yarn build
+```
+
+- 启动 Umami
+```bash
+yarn start
+```
+
+{% endfold %}
+
+{% fold info @dokcer-compose 安装 %}
+下载官方的 docker-compose.yml 文件：
+https://github.com/umami-software/umami/blob/master/docker-compose.yml
+
+配置里默认是 Postgresql 数据库，如果你想使用 MySQL 数据库，可以修改 `docker-compose.yml` 文件，将 `DATABASE_URL` 的 `postgres` 替换为 `mysql`，并修改 `DATABASE_URL` 为 MySQL 对应的链接。
+
+然后运行：
+```bash
+docker-compose up -d
+```
+{% endfold %}
+
+默认情况下，应用程序将在 http://localhost:3000 上启动。你可能需要代理 Web 服务器的请求，或更改端口来直接为应用程序提供服务。
+
+
+## 3. 修改 Umami 密码
+Umami 启动后，默认用户名为 `admin`，默认密码为 `umami`。
+
+第一件事是修改密码，选择 `Setting` -> `Profile`，然后设置你的新密码。
+![修改密码](login.webp)
+
+点击右上角的地球图标，修改语言为 `中文`。
+
+## 4. 添加网站
+
+点击 `设置` -> `网站` -> `添加网站`，输入你的网站地址，点击 `添加` 即可。
+![添加网站](add-site.webp)
+
+填写信息后，点击 `编辑`
+![编辑](edit.webp)
+
+再点击 `跟踪代码`，复制代码到你的网站中即可。
+![跟踪代码](tracking-code.webp)
+
+```javascript
+<script async src="https://example.com/script.js" data-website-id="xxxxxxxxxxxxxxxxxxxx"></script>
+```
+
+如果你在本地写博客，你会发现 `localhost` 也被统计了，可以添加 `data-domains` 属性，只统计你的域名：
+
+```javascript
+<script async src="https://example.com/script.js" data-website-id="xxxxxxxxxxxxxxxxxxxx" data-domains="example.com"></script>
+```
+如果你想遵循访客的 `Do Not Track` 设置，可以添加 `data-do-not-track` 属性：
+
+```javascript
+<script async src="https://example.com/script.js" data-website-id="xxxxxxxxxxxxxxxxxxxx" data-do-not-track="true"></script>
+```
+更多使用方法请参考官方文档：https://umami.is/docs/tracker-configuration
