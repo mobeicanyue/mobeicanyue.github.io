@@ -9,17 +9,22 @@ abbrlink: 15c02856
 date: 2023-12-28 15:54:04
 ---
 
-> 本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网
+> 本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网:https://1panel.cn
 >
-> 部署条件：一台能 ssh 登录的服务器，一个域名
->
-> 最后实现的效果：安装配置 1panel 并配置反向代理，使用域名访问 1panel 面板。
+> 部署条件：一台能 ssh 登录的 `Linux` 服务器，一个域名
 
-## 1. `1panel` 是什么？
+
+## 1. 什么是 1Panel，为什么要使用它？
+
+
 ![1panel 的官网简介](1panel-profile.webp)
-<center>Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.com/1Panel-dev/1Panel<a/></center>
-<br>
 
+<center>
+1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。<br>
+Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.com/1Panel-dev/1Panel<a/>
+</center>
+
+<br>
 众所周知，服务器运维要求我们熟悉 Linux 系统各种命令行操作，这些是维护服务器必不可少的。但是~~人总会想着偷懒~~命令行操作起来不方便，而且很多操作都需要手动编辑，比如安装软件配置 docker、docker-compose、配置反向代理等等。有了服务器管理面板，它可以让我们在浏览器中操作服务器，而不需要在命令行编辑。
 
 感知提升最明显的例子就是配置反向代理：只需要填写域名和 ip:端口号，点击确定就好了，不需要记住命令，也不需要研究 nginx 配置文件，这样就大大方便了程序员操作。
@@ -39,31 +44,20 @@ date: 2023-12-28 15:54:04
 
 经过一两个月的使用，我觉得体验相当稳定，写这篇教程希望能帮助到大家。
 
-## 2. `1panel` 安装
+## 2. 1Panel 安装、登陆
 
-先确保你的服务器安装了 `curl`
-服务器是 `debian` 系列的系统，则执行下面命令安装 curl
-```bash
-sudo apt install curl
-```
-服务器是 `centos` 系列的系统，则执行下面命令
-```bash
-sudo yum install curl
-```
-
-<br>
-开始安装 1panel
+开始之前先确保你的服务器安装了 `curl`
 
 1) ssh 连接到你的服务器，执行下面的命令，安装 1panel
 ```bash
 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
 ```
 
-2) 命令行提示输入安装目录，敲回车 默认即可
+1) 命令行提示输入安装目录，敲回车 默认即可
 ![安装目录](dir.webp)
 随后命令行会输出一大串安装日志，等待即可。
 
-3) 命令行提示输入端口号，你可以自定义，也可以用它给你默认的端口号。
+1) 命令行提示输入端口号，你可以自定义，也可以用它给你默认的端口号。
 注意 如果你使用的是云服务器，请至云服务器提供商的安全组开放 `输入的端口`。
 账号密码自己设置，但最好不要太简单，不然被人爆破就不好了。
 ![输入信息](enter-info.webp)
@@ -78,19 +72,18 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 如果出现错误很可能是网络连接问题（服务器下载面板资源出错）或者 ssh 连接断开了，重新执行安装命令即可。具体错误信息请自行搜索解决。
 
-## 3. 安装 `openresty` 应用
-
-登陆以后我们可以看到 1panel 的界面，如下图所示。
+输入账号密码 登陆以后我们可以看到 1panel 的界面，如下图所示。
 ![1panel 首页](home.webp)
 
 首页显示的是`服务器的基本信息`，我们可以看到服务器的内存、cpu、硬盘、负载、系统的发行版本、内核、主机名等信息。
 
 我们点击应用商店，这里有 1panel 社区维护的一些应用，我们可以直接安装使用。
-应用商店包括了一些很热门的应用和开源项目 如：`AList` `MySQL` `Mariadb` `WordPress` `Typecho` `Gitea` `Jenkins` `Redis` `MongoDB` `PostgreSQL` `RabbitMQ`  等等。都是运行在 docker 容器中的，安装和卸载都很方便。
+应用商店包括了一些很热门的应用和开源项目 如：`AList` `MySQL` `Bitwarden` `WordPress` `Umami` `Uptime Kuma` `Gitea` `Jenkins` `Redis` `MongoDB` `PostgreSQL` `RabbitMQ`  等等。都是运行在 docker 容器中的，安装和卸载都很方便。（商店安装的软件和直接 docker-compose 安装的不同，它是运行在 1panel-network 的 bridge 网络中）
 ![应用商店](app-store.webp)
 
+## 3. 安装 `openresty` 应用
 
-我们选择安装 `openresty`。这是一个 nginx 的开源衍生版本，支持 lua 脚本，我们可以用它来做反向代理。
+我们选择安装 `openresty`，`安装` -> `确认` 即可。这是一个 nginx 的开源衍生版本，支持 lua 脚本，我们可以用它来做反向代理。
 （不知道为啥没有 `nginx`，但是这个 `openresty` 也挺好用的，没差）
 安装了它才能编辑网页、配置反代。
 ![openresty](install-openresty.webp)

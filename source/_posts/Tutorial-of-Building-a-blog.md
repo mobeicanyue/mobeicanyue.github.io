@@ -9,7 +9,7 @@ tags:
 
 ### Hexo 博客部署 
 - {% post_link Build-the-environment 'Hexo 环境搭建' %}
-- {% post_link My-first-hexo-blog '部署 Hexo' %}
+- {% post_link My-first-hexo-blog 'Hexo 博客部署教程' %}
 - {% post_link Configure-blog-domain '博客域名配置' %}
 - {% post_link Enable-blog-comment '启用博客评论' %}
 

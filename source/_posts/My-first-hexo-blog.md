@@ -1,5 +1,5 @@
 ---
-title: 我的第一篇 Hexo 博客
+title: Hexo 博客部署教程
 tags:
   - hexo
   - github
