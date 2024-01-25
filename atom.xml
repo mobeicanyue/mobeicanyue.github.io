@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-01-24T14:20:14.000Z</updated>
+  <updated>2024-01-25T07:07:19.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>开源软件推荐</title>
+    <link href="https://blog.ovvv.top/posts/f297b285/"/>
+    <id>https://blog.ovvv.top/posts/f297b285/</id>
+    <published>2024-01-25T06:05:33.000Z</published>
+    <updated>2024-01-25T07:07:19.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1Panel&lt;/code&gt;. 现代化、开源的 Linux 服务器运维管理面板：&lt;a href=&quot;/posts/15c02856/&quot; title=&quot;1Panel 安装配置教程&quot;&gt;1Panel</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Umami 安装使用教程</title>
     <link href="https://blog.ovvv.top/posts/f7a090e6/"/>
     <id>https://blog.ovvv.top/posts/f7a090e6/</id>
     <published>2024-01-24T03:55:35.000Z</published>
-    <updated>2024-01-24T14:20:14.000Z</updated>
+    <updated>2024-01-25T07:07:19.000Z</updated>
     
     
       
@@ -271,7 +293,7 @@
     <link href="https://blog.ovvv.top/posts/6db78a27/"/>
     <id>https://blog.ovvv.top/posts/6db78a27/</id>
     <published>2023-12-28T11:03:00.000Z</published>
-    <updated>2024-01-19T05:29:35.000Z</updated>
+    <updated>2024-01-25T07:07:19.000Z</updated>
     
     
       
@@ -292,7 +314,7 @@
     <link href="https://blog.ovvv.top/posts/15c02856/"/>
     <id>https://blog.ovvv.top/posts/15c02856/</id>
     <published>2023-12-28T07:54:04.000Z</published>
-    <updated>2024-01-24T13:38:52.000Z</updated>
+    <updated>2024-01-25T07:07:19.000Z</updated>
     
     
       
@@ -300,9 +322,8 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网&lt;/p&gt;
-&lt;p&gt;部署条件：一台能 ssh 登录的服务器，一个域名&lt;/p&gt;
-&lt;p&gt;最后实现的效果：安装配置 1panel 并配置反向代理，使用域名访问</summary>
+&lt;p&gt;本文档为 1panel 配置教程，主要介绍 1panel 的配置及使用。更多信息请参照官网:&lt;a href=&quot;https://1panel.cn/&quot;&gt;https://1panel.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;部署条件：一台能 ssh 登录的</summary>
         
       
     
@@ -507,37 +528,6 @@
     <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
     
     <category term="fluid" scheme="https://blog.ovvv.top/tags/fluid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的第一篇 Hexo 博客</title>
-    <link href="https://blog.ovvv.top/posts/7a862802/"/>
-    <id>https://blog.ovvv.top/posts/7a862802/</id>
-    <published>2023-12-26T15:18:38.000Z</published>
-    <updated>2023-12-31T16:26:01.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Hexo-部署-Github-Pages-Github-Actions-自动部署&quot;&gt;&lt;a href=&quot;#Hexo-部署-Github-Pages-Github-Actions-自动部署&quot; class=&quot;headerlink&quot; title=&quot;Hexo 部署</summary>
-        
-      
-    
-    
-    
-    
-    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
-    
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
-    <category term="github-actions" scheme="https://blog.ovvv.top/tags/github-actions/"/>
-    
-    <category term="github-pages" scheme="https://blog.ovvv.top/tags/github-pages/"/>
-    
-    <category term="github" scheme="https://blog.ovvv.top/tags/github/"/>
     
   </entry>
   
