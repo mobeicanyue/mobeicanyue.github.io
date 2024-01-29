@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-01-25T07:07:19.000Z</updated>
+  <updated>2024-01-29T03:30:03.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客 SEO 优化</title>
+    <link href="https://blog.ovvv.top/posts/d6d74ca/"/>
+    <id>https://blog.ovvv.top/posts/d6d74ca/</id>
+    <published>2024-01-28T04:56:50.000Z</published>
+    <updated>2024-01-29T03:30:03.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;写博客的目的是为了记录自己的学习过程与分享日常。&lt;br&gt;而想要让更多的人看到自己的博客，就需要做一些 SEO 优化，提升自己的博客在搜索引擎上的排名。&lt;br&gt;如果你的博客是部署在 GitHub Pages 上的，就更需要注意了。因为 Github</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>开源软件推荐</title>
@@ -293,7 +315,7 @@
     <link href="https://blog.ovvv.top/posts/6db78a27/"/>
     <id>https://blog.ovvv.top/posts/6db78a27/</id>
     <published>2023-12-28T11:03:00.000Z</published>
-    <updated>2024-01-25T07:07:19.000Z</updated>
+    <updated>2024-01-29T03:30:03.000Z</updated>
     
     
       
@@ -500,34 +522,6 @@
     <category term="github-actions" scheme="https://blog.ovvv.top/tags/github-actions/"/>
     
     <category term="域名" scheme="https://blog.ovvv.top/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fluid 主题安装</title>
-    <link href="https://blog.ovvv.top/posts/5eba38dc/"/>
-    <id>https://blog.ovvv.top/posts/5eba38dc/</id>
-    <published>2023-12-26T18:09:48.000Z</published>
-    <updated>2023-12-29T06:14:30.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://hexo.fluid-dev.com/docs/start&quot;&gt;官方文档&lt;/a&gt;其实挺详细的了。&lt;br&gt;记录一下我自己的操作。&lt;/p&gt;
-&lt;h3 id=&quot;1-安装主题&quot;&gt;&lt;a href=&quot;#1-安装主题&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
-    
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
-    <category term="fluid" scheme="https://blog.ovvv.top/tags/fluid/"/>
     
   </entry>
   
