@@ -19,9 +19,10 @@ tags:
 - {% post_link Fix-article-updated-time-on-github-pages '修复 Github Pages 上的文章更新时间' %}
 - {% post_link Hexo-Fluid-set-footer 'Hexo Fluid 设置页脚' %}
 
-### 博客资源性能优化
+### 博客优化
 - {% post_link Convert-jpg-to-webp '将 jpg 转换为 webp' %}
 - {% post_link Compress-deploy-code-size '压缩部署的代码' %}
+- {% post_link Blog-seo-optimization '博客 SEO 优化' %}
 
 ### Hexo 写作相关
 - {% post_link Enable-asset-folder '启用资源文件夹' %}
