@@ -11,14 +11,13 @@ tags:
 
 ### 1. 检查 Git 环境
 
--  `Linux` 大多数发行版都默认安装了 Git，所以我们只需要检查一下 Git 版本。
+-  `Linux` 大多数发行版都默认安装了 Git，所以只需要检查一下 Git 版本。
     ```bash
     git --version
     ```
-    输出如下内容。
-    ```bash
-    git version 2.43.0
-    ```
+    如果没有报错而是输出版本号，就说明安装成功了。
+
+
 - `Windows` 下的 安装 Git 可以参考 [Git 官网](https://git-scm.com/downloads)，或者搜索教程。
 
 ### 2. 安装 Node.js 和 npm
@@ -30,24 +29,17 @@ npm 的依赖项就是 nodejs。所以安装 npm, nodejs 会一起被安装。
     ```bash
     sudo apt install npm
     ```
-    检验版本
-    ```bash
-    node -v
-    npm -v
-    ```
-
-<br>
-
 -   `ArchLinux` 系安装 npm 和 nodejs
 
     ```bash
     sudo pacman -S npm
     ```
-    检验版本
-    ```bash
-    node -v
-    npm -v
-    ```
+
+检验版本
+```bash
+node -v
+npm -v
+```
 
 -   `Windows` 下的 安装 Node.js 和 npm 可以参考 [Node.js 官网](https://nodejs.org/en/download/)，或者搜索教程。
 
@@ -57,9 +49,9 @@ npm 的依赖项就是 nodejs。所以安装 npm, nodejs 会一起被安装。
 
 ### 3. 安装 Hexo
 
-注：如果是 `Windows` 系统，需要空白处单击鼠标右键，选择“Git Bash Here”输入以下命令。
+- Windows 需要空白处单击鼠标右键，选择"Git Bash Here"输入以下命令。
 
-Linux 系统直接打开终端输入即可。
+- Linux 系统直接打开终端输入即可。
 ```bash
 npm install hexo-cli -g
 ```

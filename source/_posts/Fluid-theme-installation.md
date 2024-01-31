@@ -1,5 +1,5 @@
 ---
-title: Fluid 主题安装
+title: 安装 Fluid 主题
 tags:
   - hexo
   - fluid
