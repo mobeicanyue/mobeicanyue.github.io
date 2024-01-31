@@ -265,34 +265,11 @@
   </entry>
   
   <entry>
-    <title>启用资源文件夹，更方便地管理图片</title>
-    <link href="https://blog.ovvv.top/posts/9b9e473f/"/>
-    <id>https://blog.ovvv.top/posts/9b9e473f/</id>
-    <published>2023-12-28T16:00:12.000Z</published>
-    <updated>2023-12-30T03:03:39.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;之前就苦于 Hexo 每次写一篇新文章就要去 &lt;code&gt;source/images&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="优化" scheme="https://blog.ovvv.top/tags/%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo 环境搭建</title>
     <link href="https://blog.ovvv.top/posts/dc0bbd22/"/>
     <id>https://blog.ovvv.top/posts/dc0bbd22/</id>
     <published>2023-12-28T11:08:02.000Z</published>
-    <updated>2023-12-31T16:26:01.000Z</updated>
+    <updated>2024-01-31T03:37:26.000Z</updated>
     
     
       
@@ -315,7 +292,7 @@
     <link href="https://blog.ovvv.top/posts/6db78a27/"/>
     <id>https://blog.ovvv.top/posts/6db78a27/</id>
     <published>2023-12-28T11:03:00.000Z</published>
-    <updated>2024-01-29T03:30:03.000Z</updated>
+    <updated>2024-01-31T03:37:26.000Z</updated>
     
     
       
@@ -496,32 +473,61 @@
   </entry>
   
   <entry>
-    <title>博客域名配置</title>
-    <link href="https://blog.ovvv.top/posts/62af491f/"/>
-    <id>https://blog.ovvv.top/posts/62af491f/</id>
-    <published>2023-12-26T18:31:59.000Z</published>
-    <updated>2023-12-29T02:20:02.000Z</updated>
+    <title>安装 Fluid 主题</title>
+    <link href="https://blog.ovvv.top/posts/5eba38dc/"/>
+    <id>https://blog.ovvv.top/posts/5eba38dc/</id>
+    <published>2023-12-26T18:09:48.000Z</published>
+    <updated>2024-01-31T03:37:26.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;前置条件：已经有一个域名，且跟着前面的文章配置好了 github pages。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;1-在域名服务商处配置域名解析&quot;&gt;&lt;a href=&quot;#1-在域名服务商处配置域名解析&quot;</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://hexo.fluid-dev.com/docs/start&quot;&gt;官方文档&lt;/a&gt;其实挺详细的了。&lt;br&gt;记录一下我自己的操作。&lt;/p&gt;
+&lt;h3 id=&quot;1-安装主题&quot;&gt;&lt;a href=&quot;#1-安装主题&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
+    
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
+    
+    <category term="fluid" scheme="https://blog.ovvv.top/tags/fluid/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 博客部署教程</title>
+    <link href="https://blog.ovvv.top/posts/7a862802/"/>
+    <id>https://blog.ovvv.top/posts/7a862802/</id>
+    <published>2023-12-26T15:18:38.000Z</published>
+    <updated>2024-01-25T07:07:19.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Hexo-部署-Github-Pages-Github-Actions-自动部署&quot;&gt;&lt;a href=&quot;#Hexo-部署-Github-Pages-Github-Actions-自动部署&quot; class=&quot;headerlink&quot; title=&quot;Hexo 部署</summary>
+        
+      
+    
+    
+    
+    
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
     <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
     
     <category term="github-actions" scheme="https://blog.ovvv.top/tags/github-actions/"/>
     
-    <category term="域名" scheme="https://blog.ovvv.top/tags/%E5%9F%9F%E5%90%8D/"/>
+    <category term="github-pages" scheme="https://blog.ovvv.top/tags/github-pages/"/>
+    
+    <category term="github" scheme="https://blog.ovvv.top/tags/github/"/>
     
   </entry>
   
