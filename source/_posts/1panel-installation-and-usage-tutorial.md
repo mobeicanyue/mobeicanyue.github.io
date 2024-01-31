@@ -21,10 +21,11 @@ date: 2023-12-28 15:54:04
 
 <center>
 1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。<br>
-Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.com/1Panel-dev/1Panel<a/>
+Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.com/1Panel-dev/1Panel</a>
 </center>
 
 <br>
+
 众所周知，服务器运维要求我们熟悉 Linux 系统各种命令行操作，这些是维护服务器必不可少的。但是~~人总会想着偷懒~~命令行操作起来不方便，而且很多操作都需要手动编辑，比如安装软件配置 docker、docker-compose、配置反向代理等等。有了服务器管理面板，它可以让我们在浏览器中操作服务器，而不需要在命令行编辑。
 
 感知提升最明显的例子就是配置反向代理：只需要填写域名和 ip:端口号，点击确定就好了，不需要记住命令，也不需要研究 nginx 配置文件，这样就大大方便了程序员操作。
