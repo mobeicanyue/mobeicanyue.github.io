@@ -38,9 +38,6 @@ Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.co
 
 ![1panel 首页](panel.webp)
 
-1Panel 使用 vue 编写前端，算是比较先进的技术栈。后端使用 GO 编写。
-![项目语言](language.webp)
-
 你可以访问这个连接来体验一下 1panel 的功能：[https://demo.1panel.cn](https://demo.1panel.cn)
 
 经过一两个月的使用，我觉得体验相当稳定，写这篇教程希望能帮助到大家。
