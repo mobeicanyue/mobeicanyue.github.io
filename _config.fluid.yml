@@ -225,7 +225,7 @@ color:
 # Font
 font:
   font_size: 17px
-  font_family: "LXGW WenKai GB"
+  font_family: "LXGW WenKai GB Screen"
   letter_spacing: 0.02em
   code_font_size: 85%
 
@@ -235,7 +235,7 @@ custom_js:
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
-custom_css: https://cdn.jsdelivr.net/npm/lxgw-wenkai-gb-web@latest/lxgwwenkaigb-bold/result.min.css
+custom_css: https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/fonts/lxgwwenkaigbscreen/result.min.css
 
 custom_html: '<script async src="https://umami.ovvv.top/script.js" data-website-id="6d808b04-2d12-49f7-bd94-718f680faa99" data-domains="blog.ovvv.top" data-do-not-track="true"></script>'
 
