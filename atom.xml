@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-01-29T03:30:03.000Z</updated>
+  <updated>2024-02-02T08:49:52.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>1Panel 申请 Let&#39;s Encrypt 域名证书</title>
+    <link href="https://blog.ovvv.top/posts/e6ee4a29/"/>
+    <id>https://blog.ovvv.top/posts/e6ee4a29/</id>
+    <published>2024-02-02T06:00:09.000Z</published>
+    <updated>2024-02-02T08:49:52.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;域名证书是网站安全的基础，它可以保护网站的数据传输安全，防止中间人攻击。而 Let’s Encrypt 是一个免费的证书颁发机构，它提供了免费的域名证书，可以让我们的网站免费使用 HTTPS</summary>
+        
+      
+    
+    
+    
+    
+    <category term="1panel" scheme="https://blog.ovvv.top/tags/1panel/"/>
+    
+    <category term="Let&#39;s-Encrypt" scheme="https://blog.ovvv.top/tags/Let-s-Encrypt/"/>
+    
+  </entry>
   
   <entry>
     <title>博客 SEO 优化</title>
@@ -43,7 +69,7 @@
     <link href="https://blog.ovvv.top/posts/f297b285/"/>
     <id>https://blog.ovvv.top/posts/f297b285/</id>
     <published>2024-01-25T06:05:33.000Z</published>
-    <updated>2024-01-25T07:07:19.000Z</updated>
+    <updated>2024-02-02T05:58:14.000Z</updated>
     
     
       
@@ -51,7 +77,7 @@
         
         
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;1Panel&lt;/code&gt;. 现代化、开源的 Linux 服务器运维管理面板：&lt;a href=&quot;/posts/15c02856/&quot; title=&quot;1Panel 安装配置教程&quot;&gt;1Panel</summary>
+&lt;li&gt;&lt;code&gt;1Panel&lt;/code&gt;，现代化、开源的 Linux 服务器运维管理面板：&lt;a href=&quot;/posts/15c02856/&quot; title=&quot;1Panel 安装配置教程&quot;&gt;1Panel</summary>
         
       
     
@@ -313,7 +339,7 @@
     <link href="https://blog.ovvv.top/posts/15c02856/"/>
     <id>https://blog.ovvv.top/posts/15c02856/</id>
     <published>2023-12-28T07:54:04.000Z</published>
-    <updated>2024-01-25T07:07:19.000Z</updated>
+    <updated>2024-02-02T08:49:52.000Z</updated>
     
     
       
@@ -497,37 +523,6 @@
     <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
     
     <category term="fluid" scheme="https://blog.ovvv.top/tags/fluid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 博客部署教程</title>
-    <link href="https://blog.ovvv.top/posts/7a862802/"/>
-    <id>https://blog.ovvv.top/posts/7a862802/</id>
-    <published>2023-12-26T15:18:38.000Z</published>
-    <updated>2024-01-25T07:07:19.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Hexo-部署-Github-Pages-Github-Actions-自动部署&quot;&gt;&lt;a href=&quot;#Hexo-部署-Github-Pages-Github-Actions-自动部署&quot; class=&quot;headerlink&quot; title=&quot;Hexo 部署</summary>
-        
-      
-    
-    
-    
-    
-    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
-    
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
-    <category term="github-actions" scheme="https://blog.ovvv.top/tags/github-actions/"/>
-    
-    <category term="github-pages" scheme="https://blog.ovvv.top/tags/github-pages/"/>
-    
-    <category term="github" scheme="https://blog.ovvv.top/tags/github/"/>
     
   </entry>
   
