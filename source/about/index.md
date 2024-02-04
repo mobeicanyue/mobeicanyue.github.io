@@ -9,9 +9,25 @@ layout: about
 
 本博客使用了 [Hexo](https://hexo.io/zh-cn) 开源静态框架，开源主题 [Fluid](https://hexo.fluid-dev.com/docs)，全静态网页无 cookie。
 
-源代码托管于 [Github](https://github.com/mobeicanyue) ，博客通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的服务支持。
+源代码托管于 [Github](https://github.com/mobeicanyue) 并自动构建，通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的服务支持。
 
 网站访问情况可通过 https://umami.ovvv.top/share/S38bsqfsJup99p67/blog 查看。
+
+如果本站出现异常，请尝试刷新页面或者清除浏览器缓存（ctrl+f5）。或者访问本站镜像：
+
+- Cloudflare Pages: https://blog-ovvv-top.pages.dev
+- Netlify: https://blog-ovvv-top.netlify.app
+- Vercel: https://blog-ovvv-top.vercel.app
+- Github Pages: https://mobeicanyue.github.io
+
+<br><br>
+<p style="text-align:center">
+  博客构建状态：
+</p>
+
+![GitHub Actions Workflow](https://img.shields.io/github/actions/workflow/status/mobeicanyue/mobeicanyue.github.io/deploy.yml)
+
+<br><br>
 
 本站支持
 - [IPv6](https://ready.chair6.net/?url=ovvv.top)

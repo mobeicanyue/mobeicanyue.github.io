@@ -19,10 +19,10 @@ date: 2023-12-28 15:54:04
 
 ![1panel 的官网简介](1panel-profile.webp)
 
-<center>
-1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。<br>
+<p style="text-align:center">
+  1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。<br>
 Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.com/1Panel-dev/1Panel</a>
-</center>
+</p>
 
 <br>
 

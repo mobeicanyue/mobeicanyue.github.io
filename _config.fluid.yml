@@ -357,7 +357,7 @@ navbar:
         submenu: [
           { key: 'Main Site', link: "https://blog.ovvv.top" },
           { key: 'Github Pages', link: "https://mobeicanyue.github.io" },
-          { key: 'Cloudflare Pages', link: "https://blog-ovvv-top.pages.dev" },
+          { key: 'Cloudflare', link: "https://blog-ovvv-top.pages.dev" },
           { key: 'Vercel', link: "https://blog-ovvv-top.vercel.app" },
           { key: 'Netlify', link: "https://blog-ovvv-top.netlify.app" },
         ]
