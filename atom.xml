@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-02-03T12:58:51.000Z</updated>
+  <updated>2024-02-05T10:32:36.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>与流氓软件斗智斗勇</title>
+    <link href="https://blog.ovvv.top/posts/dfba1590/"/>
+    <id>https://blog.ovvv.top/posts/dfba1590/</id>
+    <published>2024-02-05T08:24:43.000Z</published>
+    <updated>2024-02-05T10:32:36.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;新年临近，最近也是越来越忙了。&lt;br&gt;上午外公喊我去处理一下“电脑卡顿”的问题，那个时候我尚未睡醒，所以中午吃完饭看了会哔站就过去了。&lt;/p&gt;
+&lt;p&gt;外公平时只看看新闻和视频，但是电脑卡顿得厉害，至于原因…这类问题我可老有经验了，没去之前我就料到了：电脑里的无用流氓软件太多</summary>
+        
+      
+    
+    
+    
+    
+    <category term="日常" scheme="https://blog.ovvv.top/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>1Panel 申请 Let&#39;s Encrypt 域名证书</title>
@@ -491,34 +515,6 @@
     
     
     
-    
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
-    <category term="fluid" scheme="https://blog.ovvv.top/tags/fluid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>安装 Fluid 主题</title>
-    <link href="https://blog.ovvv.top/posts/5eba38dc/"/>
-    <id>https://blog.ovvv.top/posts/5eba38dc/</id>
-    <published>2023-12-26T18:09:48.000Z</published>
-    <updated>2024-01-31T03:37:26.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://hexo.fluid-dev.com/docs/start&quot;&gt;官方文档&lt;/a&gt;其实挺详细的了。&lt;br&gt;记录一下我自己的操作。&lt;/p&gt;
-&lt;h3 id=&quot;1-安装主题&quot;&gt;&lt;a href=&quot;#1-安装主题&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
     <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
     
