@@ -237,7 +237,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css: https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/fonts/lxgwwenkaigbscreen/result.min.css
 
-custom_html: '<script async src="https://umami.ovvv.top/script.js" data-website-id="6d808b04-2d12-49f7-bd94-718f680faa99" data-domains="blog.ovvv.top" data-do-not-track="true"></script>'
+custom_html: '<script async src="https://umami.ovvv.top/script.js" data-website-id="72f672c5-4ac9-4bbf-be13-2ba876d8cb93" data-domains="blog.ovvv.top,blog-ovvv-top.pages.dev,blog-ovvv-top.netlify.app,blog-ovvv-top.vercel.app,mobeicanyue.github.io" data-do-not-track="true"></script>'
 
 # 网页访问统计
 # Analysis of website visitors
