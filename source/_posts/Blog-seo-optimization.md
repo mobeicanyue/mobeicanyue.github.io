@@ -55,15 +55,35 @@ Sitemap: 后面的链接是你的 sitemap.xml 文件的链接，这样搜索引�
 百度搜索资源平台：https://ziyuan.baidu.com/site/index
 ![百度搜索资源平台](baidu.webp)
 
-### 4.2 谷歌
+### 4.2 Google
+不出意外，谷歌是会自己爬取你的网站的，但是你可以通过谷歌搜索控制台来查看你的网站的爬取情况，以及提交你的网站。
+
 谷歌搜索控制台：https://search.google.com/search-console?hl=zh-CN
 ![添加域名](google-add.webp)
 ![谷歌搜索控制台](google.webp)
 
-### 4.3 必应
+### 4.3 Bing
+不出意外，必应也会自己爬取你的网站。
+
 必应站长平台：https://www.bing.com/webmasters
 
 必应添加域名可以选择 `从谷歌搜索控制台导入` 或者 `手动添加`
 ![添加域名](bing-import.webp)
 ![从谷歌控制台导入](bing-google.webp)
 ![必应站长平台](bing-page.webp)
+
+### 4.4 Naver
+Naver 是韩国本土的搜索引擎，类似于国内的百度，不会像 Google Bing 那样自动收录你的网站。如果有需要，可以注册一个 Naver 账号，然后提交你的网站。
+注意 IP 限制，Naver 需要韩国 IP 才能注册。
+站长平台：https://searchadvisor.naver.com/console/board
+
+![注册](register.webp)
+![验证所有权](verify.webp)
+![成功添加](success.webp)
+
+
+建议使用在根域名添加 html 来验证所有权
+
+### 4.5 其他搜索引擎
+
+Yandex、DuckDuckGo、Yahoo 等搜索引擎会自动爬取你的网站，不需要去站长手动提交（不主流，没啥必要）。
