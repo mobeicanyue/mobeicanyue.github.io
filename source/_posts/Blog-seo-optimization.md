@@ -56,9 +56,10 @@ Sitemap: 后面的链接是你的 sitemap.xml 文件的链接，这样搜索引�
 ![百度搜索资源平台](baidu.webp)
 
 ### 4.2 Google
-不出意外，谷歌是会自己爬取你的网站的，但是你可以通过谷歌搜索控制台来查看你的网站的爬取情况，以及提交你的网站。
+不出意外，谷歌是会自己爬取你的网站的，但是你可以通过谷歌搜索控制台来查看你的网站的爬取情况、优化你的网站内容、提交站点地图等等。
 
 谷歌搜索控制台：https://search.google.com/search-console?hl=zh-CN
+建议不要添加整个域名，而是添加你的网站的子域名，比如 `blog.example.com`，这样你可以更好的管理你的网站。如果你添加了整个域名，那么一些你并不想让谷歌爬取的子域名网页也会被收录。
 ![添加域名](google-add.webp)
 ![谷歌搜索控制台](google.webp)
 
@@ -75,14 +76,15 @@ Sitemap: 后面的链接是你的 sitemap.xml 文件的链接，这样搜索引�
 ### 4.4 Naver
 Naver 是韩国本土的搜索引擎，类似于国内的百度，不会像 Google Bing 那样自动收录你的网站。如果有需要，可以注册一个 Naver 账号，然后提交你的网站。
 注意 IP 限制，Naver 需要韩国 IP 才能注册。
-站长平台：https://searchadvisor.naver.com/console/board
-
 ![注册](register.webp)
+
+站长平台：https://searchadvisor.naver.com/console/board
 ![验证所有权](verify.webp)
-![成功添加](success.webp)
+建议使用 `在根目录添加 html` 来验证所有权
 
+接下来就是提交站点地图了，点击你添加成功的网站，提交站点地图，步骤和前面的谷歌必应差不多。
+![提交站点地图](sitemap.webp)
 
-建议使用在根域名添加 html 来验证所有权
 
 ### 4.5 其他搜索引擎
 
