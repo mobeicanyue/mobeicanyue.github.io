@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-02-06T07:54:52.000Z</updated>
+  <updated>2024-02-12T15:08:59.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>纪事与感悟 — 我的 2023</title>
+    <link href="https://blog.ovvv.top/posts/af028bbd/"/>
+    <id>https://blog.ovvv.top/posts/af028bbd/</id>
+    <published>2024-02-12T12:15:28.000Z</published>
+    <updated>2024-02-12T15:08:59.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;2024 农历新年，在这一年一度的新春佳节，祝大家龙年行大运！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/posts/af028bbd/1707741873052.webp&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="2023" scheme="https://blog.ovvv.top/tags/2023/"/>
+    
+  </entry>
   
   <entry>
     <title>与流氓软件斗智斗勇</title>
@@ -71,7 +95,7 @@
     <link href="https://blog.ovvv.top/posts/d6d74ca/"/>
     <id>https://blog.ovvv.top/posts/d6d74ca/</id>
     <published>2024-01-28T04:56:50.000Z</published>
-    <updated>2024-02-06T07:54:52.000Z</updated>
+    <updated>2024-02-11T03:37:34.000Z</updated>
     
     
       
@@ -493,32 +517,6 @@
     <category term="github-actions" scheme="https://blog.ovvv.top/tags/github-actions/"/>
     
     <category term="github-pages" scheme="https://blog.ovvv.top/tags/github-pages/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在 Fluid 主题中使用霞鹜文楷</title>
-    <link href="https://blog.ovvv.top/posts/f24b41b1/"/>
-    <id>https://blog.ovvv.top/posts/f24b41b1/</id>
-    <published>2023-12-27T06:58:04.000Z</published>
-    <updated>2023-12-29T02:20:02.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;近来阅读竹林里有冰的博客，发现他的博客字体很好看，想着把他的字体也用到我的博客里，于是就有了这篇文章。&lt;/p&gt;
-&lt;h3 id=&quot;1-字体介绍&quot;&gt;&lt;a href=&quot;#1-字体介绍&quot; class=&quot;headerlink&quot; title=&quot;1. 字体介绍&quot;&gt;&lt;/a&gt;1.</summary>
-        
-      
-    
-    
-    
-    
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
-    <category term="fluid" scheme="https://blog.ovvv.top/tags/fluid/"/>
     
   </entry>
   
