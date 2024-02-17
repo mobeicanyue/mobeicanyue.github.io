@@ -7,9 +7,15 @@ layout: about
 # 你好 👋
 ### 欢迎来到漠北残月的博客，这是一个记录技术与日常的自留地。
 
-本博客使用了 [Hexo](https://hexo.io/zh-cn) 开源静态框架，开源主题 [Fluid](https://hexo.fluid-dev.com/docs)，全静态网页无 cookie。
+本博客使用了 [Hexo](https://hexo.io/zh-cn) 开源静态框架，开源主题 [Fluid](https://hexo.fluid-dev.com/docs)，本站全静态网页无 cookie（但是必应每日一图有，微软干的😁）。
 
-源代码托管于 [Github](https://github.com/mobeicanyue) 并自动构建，通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的服务支持。
+源代码托管于 [Github](https://github.com/mobeicanyue) 并自动构建，通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的优质服务支持。
+
+<br>
+
+![Cloudflare](about/cloudflare-icon-2.webp)
+
+<br>
 
 由于奇奇怪怪的玄学原因，百度并没有收录本站，且我无法在百度搜索资源平台提交（总是提示 300 跳转），所以除了百度的主流搜索引擎都可以搜索到本站，如 Google、Bing（必应）、DuckDuckGo、Yandex、Yahoo（雅虎）等。
 
@@ -22,12 +28,6 @@ layout: about
 - Vercel: https://blog-ovvv-top.vercel.app
 - Github Pages: https://mobeicanyue.github.io
 
-<br><br>
-<p style="text-align:center">
-  博客构建状态：
-</p>
-
-![GitHub Actions Workflow](https://img.shields.io/github/actions/workflow/status/mobeicanyue/mobeicanyue.github.io/deploy.yml)
 
 <br><br>
 
