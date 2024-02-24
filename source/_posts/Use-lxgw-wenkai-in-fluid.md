@@ -29,7 +29,24 @@ date: 2023-12-27 14:58:04
 `https://cdn.jsdelivr.net/gh/CMBill/lxgw-wenkai-gb-web/fonts/lxgwwenkaigb-bold/result.css`
 
 ### 2. 使用方法
-如果你恰好也用 hexo 的 fluid 主题，那么恭喜你，替换字体很简单，只需要在主题的配置文件里加上一行 `custom_css: https://xxxx`代码就可以了，再修改 font_family。参照你的 css 文件前几行显示的 `fontFamily: `，比如我的是 `fontFamily: LXGW WenKai GB`。
+
+如果你使用的是 Hexo 博客，可以采用注入的方式，将字体 css 注入到你的博客中。
+首先在根目录创建一个 `scripts` 文件夹，然后在 `scripts` 文件夹中创建一个 `font.js` 文件，内容如下：
+```javascript
+hexo.extend.injector.register('head_end',
+'<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CMBill/lxgw-wenkai-gb-web/fonts/lxgwwenkaigb-bold/result.css" />',
+'default');
+```
+然后修改你的主题配置文件
+```yaml
+font:
+  font_size: 17px
+  font_family: "LXGW WenKai GB"
+  letter_spacing: 0.02em
+  code_font_size: 85%
+```
+
+如果你使用 Hexo 的 fluid 主题，那么恭喜你，替换字体很简单，只需要在主题的配置文件里加上一行 `custom_css: https://xxxx`代码就可以了，再修改 font_family。比如我的是 `fontFamily: LXGW WenKai GB`。
 
 ```yaml
 # 主题字体配置

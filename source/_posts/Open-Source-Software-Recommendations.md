@@ -1,6 +1,6 @@
 ---
-title: 服务器 推荐部署的开源软件
-sticky: 101
+title: 服务器推荐部署的开源软件
+sticky: 102
 abbrlink: f297b285
 date: 2024-01-25 14:05:33
 tags:

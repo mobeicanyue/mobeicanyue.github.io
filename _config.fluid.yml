@@ -237,7 +237,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css: https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/lxgwwenkaigbscreen/result.min.css
 
-custom_html: '<script async src="https://umami.ovvv.top/script.js" data-website-id="72f672c5-4ac9-4bbf-be13-2ba876d8cb93" data-domains="blog.ovvv.top,blog-ovvv-top.pages.dev,blog-ovvv-top.netlify.app,blog-ovvv-top.vercel.app,mobeicanyue.github.io" data-do-not-track="true"></script>'
+custom_head: '<script async src="https://umami.ovvv.top/script.js" data-website-id="72f672c5-4ac9-4bbf-be13-2ba876d8cb93" data-domains="blog.ovvv.top,blog-ovvv-top.pages.dev,blog-ovvv-top.netlify.app,blog-ovvv-top.vercel.app,mobeicanyue.github.io" data-do-not-track="true"></script>'
 
 # 网页访问统计
 # Analysis of website visitors
@@ -441,7 +441,7 @@ footer:
 
     <div>
       © 2023<span id="copyrightYear"></span> |
-      <a href="https://github.com/mobeicanyue/mobeicanyue.github.io" target="_blank" rel="nofollow noopener">
+      <a href="https://github.com/mobeicanyue" target="_blank" rel="nofollow noopener">
       <span>mobeicanyue</span></a>    
     </div>
 
