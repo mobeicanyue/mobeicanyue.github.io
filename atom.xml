@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-02-19T13:45:18.000Z</updated>
+  <updated>2024-02-25T14:03:07.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编写 Umami 的 UV, PV 访问统计显示</title>
+    <link href="https://blog.ovvv.top/posts/4259ee82/"/>
+    <id>https://blog.ovvv.top/posts/4259ee82/</id>
+    <published>2024-02-25T11:47:17.000Z</published>
+    <updated>2024-02-25T14:03:07.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Umami is a simple, fast, privacy-focused alternative to Google Analytics.&lt;/p&gt;
+&lt;p&gt;Umami 是一个简单、快速、注重隐私的 Google Analytics</summary>
+        
+      
+    
+    
+    
+    
+    <category term="umami" scheme="https://blog.ovvv.top/tags/umami/"/>
+    
+  </entry>
   
   <entry>
     <title>Fail2ban 安装使用教程</title>
@@ -44,7 +69,7 @@
     <link href="https://blog.ovvv.top/posts/af028bbd/"/>
     <id>https://blog.ovvv.top/posts/af028bbd/</id>
     <published>2024-02-12T12:15:28.000Z</published>
-    <updated>2024-02-16T05:00:41.000Z</updated>
+    <updated>2024-02-24T03:50:59.000Z</updated>
     
     
       
@@ -138,11 +163,11 @@
   </entry>
   
   <entry>
-    <title>服务器 推荐部署的开源软件</title>
+    <title>服务器推荐部署的开源软件</title>
     <link href="https://blog.ovvv.top/posts/f297b285/"/>
     <id>https://blog.ovvv.top/posts/f297b285/</id>
     <published>2024-01-25T06:05:33.000Z</published>
-    <updated>2024-02-19T13:45:18.000Z</updated>
+    <updated>2024-02-24T03:50:59.000Z</updated>
     
     
       
@@ -488,32 +513,6 @@
     <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
     
     <category term="fluid" scheme="https://blog.ovvv.top/tags/fluid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>将 jpg 转换为 webp，提高博客加载速度</title>
-    <link href="https://blog.ovvv.top/posts/72658df0/"/>
-    <id>https://blog.ovvv.top/posts/72658df0/</id>
-    <published>2023-12-27T16:25:25.000Z</published>
-    <updated>2023-12-30T03:03:39.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;本文主要介绍如何将 Jpg 转换为 WebP。&lt;br&gt;为什么要转换为 WebP 呢？因为 WebP 图片通常比 JPEG 图片更小，同时保持相似的视觉质量。也是现代浏览器支持、推荐使用的图片格式之一。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3</summary>
-        
-      
-    
-    
-    
-    
-    <category term="优化" scheme="https://blog.ovvv.top/tags/%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
