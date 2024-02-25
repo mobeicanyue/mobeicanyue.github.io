@@ -3,6 +3,7 @@ title: 博客 SEO 优化
 abbrlink: d6d74ca
 date: 2024-01-28 12:56:50
 tags:
+- seo
 ---
 
 > 写博客的目的是为了记录自己的学习过程与分享日常。

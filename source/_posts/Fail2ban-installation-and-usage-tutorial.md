@@ -3,6 +3,7 @@ title: Fail2ban 安装使用教程
 abbrlink: 1acd162e
 date: 2024-02-19 12:06:33
 tags:
+- Fail2ban
 ---
 
 ![Fail2ban](fail2ban.webp)

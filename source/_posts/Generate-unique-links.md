@@ -3,6 +3,7 @@ title: Hexo 生成文章唯一永久链接
 abbrlink: 6a24c2b
 date: 2023-12-29 10:27:37
 tags:
+- 优化
 ---
 
 
