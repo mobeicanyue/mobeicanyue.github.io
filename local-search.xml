@@ -31,6 +31,12 @@
     
     
     
+    <tags>
+      
+      <tag>Fail2ban</tag>
+      
+    </tags>
+    
   </entry>
   
   
@@ -103,6 +109,12 @@
     
     
     
+    <tags>
+      
+      <tag>seo</tag>
+      
+    </tags>
+    
   </entry>
   
   
@@ -115,6 +127,12 @@
     <content type="html"><![CDATA[<ul><li><p><code>1Panel</code>，现代化、开源的 Linux 服务器运维管理面板：<a href="/posts/15c02856/" title="1Panel 安装配置教程">1Panel 安装配置教程</a></p></li><li><p><code>Alist</code>，支持多种存储的文件列表程序：<a href="/posts/9c18a796/" title="部署自己的网盘 — Alist 安装配置教程">部署自己的网盘 — Alist 安装配置教程</a></p></li><li><p><code>Bitwarden</code>，开源密码管理解决方案：</p></li><li><p><code>Fail2ban</code>，是一个入侵检测系统框架，可以保护电脑服务器免受暴力破解等攻击：<a href="/posts/1acd162e/" title="Fail2ban 安装使用教程">Fail2ban 安装使用教程</a></p></li><li><p><code>Hexo</code>，快速、简洁且高效的博客框架：<a href="/posts/7a862802/" title="Hexo 博客部署教程">Hexo 博客部署教程</a></p></li><li><p><code>Umami</code>，简单、快速、注重隐私的开源分析解决方案：<a href="/posts/f7a090e6/" title="Umami 安装使用教程">Umami 安装使用教程</a></p></li><li><p><code>Uptime Kuma</code>，精致的自托管监控工具：<a href="/posts/c7c2ca22/" title="使用 uptime-kuma 作为 Status Page">使用 uptime-kuma 作为 Status Page</a></p></li></ul>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>open-source</tag>
+      
+    </tags>
     
   </entry>
   
@@ -257,6 +275,12 @@
     
     
     
+    <tags>
+      
+      <tag>Giscus</tag>
+      
+    </tags>
+    
   </entry>
   
   
@@ -269,6 +293,12 @@
     <content type="html"><![CDATA[<h3 id="1-安装插件"><a href="#1-安装插件" class="headerlink" title="1. 安装插件"></a>1. 安装插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-abbrlink --save<br></code></pre></td></tr></table></figure><h3 id="2-配置插件"><a href="#2-配置插件" class="headerlink" title="2. 配置插件"></a>2. 配置插件</h3><p>修改 <code>_config.yml</code> 文件 <code>permalink</code> 为：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">permalink:</span> <span class="hljs-string">posts/:abbrlink/</span> <br><span class="hljs-comment"># 或</span><br><span class="hljs-attr">permalink:</span> <span class="hljs-string">posts/:abbrlink.html</span><br></code></pre></td></tr></table></figure><p>然后在这行下面添加：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># abbrlink config</span><br><span class="hljs-attr">abbrlink:</span><br>  <span class="hljs-attr">alg:</span> <span class="hljs-string">crc32</span>      <span class="hljs-comment">#support crc16(default) and crc32</span><br>  <span class="hljs-attr">rep:</span> <span class="hljs-string">hex</span>        <span class="hljs-comment">#support dec(default) and hex</span><br>  <span class="hljs-attr">drafts:</span> <span class="hljs-literal">false</span>   <span class="hljs-comment">#(true)Process draft,(false)Do not process draft. false(default) </span><br>  <span class="hljs-comment"># Generate categories from directory-tree</span><br>  <span class="hljs-comment"># depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br>  <span class="hljs-attr">auto_category:</span><br>     <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment">#true(default)</span><br>     <span class="hljs-attr">depth:</span>        <span class="hljs-comment">#3(default)</span><br>     <span class="hljs-attr">over_write:</span> <span class="hljs-literal">false</span> <br>  <span class="hljs-attr">auto_title:</span> <span class="hljs-literal">false</span> <span class="hljs-comment">#enable auto title, it can auto fill the title by path</span><br>  <span class="hljs-attr">auto_date:</span> <span class="hljs-literal">false</span> <span class="hljs-comment">#enable auto date, it can auto fill the date by time today</span><br>  <span class="hljs-attr">force:</span> <span class="hljs-literal">false</span> <span class="hljs-comment">#启用强制模式，在此模式下，插件将忽略缓存，并计算每篇文章的 abbrlink，即使它已经有了 abbrlink。这只会更新 abbrlink，而不会更新其他前置变量。</span><br></code></pre></td></tr></table></figure><h3 id="3-清除缓存再生成"><a href="#3-清除缓存再生成" class="headerlink" title="3. 清除缓存再生成"></a>3. 清除缓存再生成</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo g<br></code></pre></td></tr></table></figure><p>插件将会在你所有文章的 <code>Front-matter</code> 开头生成一个 <code>abbrlink</code> 属性，这个变量就是你文章的唯一永久链接。</p><h3 id="4-前后效果对比"><a href="#4-前后效果对比" class="headerlink" title="4. 前后效果对比"></a>4. 前后效果对比</h3><p><img src="/posts/6a24c2b/default-link.webp" alt="生成前"></p><p><img src="/posts/6a24c2b/abbrlink.webp" alt="生成后"></p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>优化</tag>
+      
+    </tags>
     
   </entry>
   
@@ -491,7 +521,7 @@
     <link href="/posts/4a17b156/"/>
     <url>/posts/4a17b156/</url>
     
-    <content type="html"><![CDATA[<p>欢迎来到 <a href="https://blog.ovvv.top/">Canyue’s Blog</a>! 这是我的第一篇博客。</p>]]></content>
+    <content type="html"><![CDATA[<p>欢迎来到 <a href="https://blog.ovvv.top/">mobeicanyue’s Blog</a>! 这是我的第一篇博客。</p>]]></content>
     
     
     
