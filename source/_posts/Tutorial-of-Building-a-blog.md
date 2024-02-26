@@ -19,6 +19,5 @@ tags:
 - {% post_link Hexo-Fluid-set-footer 'Hexo Fluid 设置页脚' %}
 
 ### 博客优化
-- {% post_link Convert-jpg-to-webp '将 jpg 转换为 webp' %}
 - {% post_link Compress-deploy-code-size '压缩部署的代码' %}
 - {% post_link Blog-seo-optimization '博客 SEO 优化' %}
