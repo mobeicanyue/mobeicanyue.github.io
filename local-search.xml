@@ -328,7 +328,7 @@
     <link href="/posts/6db78a27/"/>
     <url>/posts/6db78a27/</url>
     
-    <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="Hexo-博客部署"><a href="#Hexo-博客部署" class="headerlink" title="Hexo 博客部署"></a>Hexo 博客部署</h3><ul><li><a href="/posts/dc0bbd22/" title="Hexo 环境搭建">Hexo 环境搭建</a></li><li><a href="/posts/7a862802/" title="Hexo 博客部署教程">Hexo 博客部署教程</a></li><li><a href="/posts/7671c28e/" title="启用博客评论">启用博客评论</a></li></ul><h3 id="Fluid-主题、美化相关"><a href="#Fluid-主题、美化相关" class="headerlink" title="Fluid 主题、美化相关"></a>Fluid 主题、美化相关</h3><ul><li><a href="/posts/5eba38dc/" title="安装 Fluid 主题">安装 Fluid 主题</a></li><li><a href="/posts/f24b41b1/" title="在 Fluid 主题中使用霞鹜文楷">在 Fluid 主题中使用霞鹜文楷</a></li><li><a href="/posts/21f09adf/" title="修复 Github Pages 上的文章更新时间">修复 Github Pages 上的文章更新时间</a></li><li><a href="/posts/2422058f/" title="Hexo Fluid 设置页脚">Hexo Fluid 设置页脚</a></li></ul><h3 id="博客优化"><a href="#博客优化" class="headerlink" title="博客优化"></a>博客优化</h3><ul><li><a href="/posts/72658df0/" title="将 jpg 转换为 webp，提高博客加载速度">将 jpg 转换为 webp</a></li><li><a href="/posts/a89b8953/" title="压缩部署的代码">压缩部署的代码</a></li><li><a href="/posts/d6d74ca/" title="博客 SEO 优化">博客 SEO 优化</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="Hexo-博客部署"><a href="#Hexo-博客部署" class="headerlink" title="Hexo 博客部署"></a>Hexo 博客部署</h3><ul><li><a href="/posts/dc0bbd22/" title="Hexo 环境搭建">Hexo 环境搭建</a></li><li><a href="/posts/7a862802/" title="Hexo 博客部署教程">Hexo 博客部署教程</a></li><li><a href="/posts/7671c28e/" title="启用博客评论">启用博客评论</a></li></ul><h3 id="Fluid-主题、美化相关"><a href="#Fluid-主题、美化相关" class="headerlink" title="Fluid 主题、美化相关"></a>Fluid 主题、美化相关</h3><ul><li><a href="/posts/5eba38dc/" title="安装 Fluid 主题">安装 Fluid 主题</a></li><li><a href="/posts/f24b41b1/" title="在 Fluid 主题中使用霞鹜文楷">在 Fluid 主题中使用霞鹜文楷</a></li><li><a href="/posts/21f09adf/" title="修复 Github Pages 上的文章更新时间">修复 Github Pages 上的文章更新时间</a></li><li><a href="/posts/2422058f/" title="Hexo Fluid 设置页脚">Hexo Fluid 设置页脚</a></li></ul><h3 id="博客优化"><a href="#博客优化" class="headerlink" title="博客优化"></a>博客优化</h3><ul><li><a href="/posts/a89b8953/" title="压缩部署的代码">压缩部署的代码</a></li><li><a href="/posts/d6d74ca/" title="博客 SEO 优化">博客 SEO 优化</a></li></ul>]]></content>
     
     
     
@@ -398,25 +398,6 @@
       <tag>hexo</tag>
       
       <tag>fluid</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>将 jpg 转换为 webp，提高博客加载速度</title>
-    <link href="/posts/72658df0/"/>
-    <url>/posts/72658df0/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>本文主要介绍如何将 Jpg 转换为 WebP。<br>为什么要转换为 WebP 呢？因为 WebP 图片通常比 JPEG 图片更小，同时保持相似的视觉质量。也是现代浏览器支持、推荐使用的图片格式之一。</p></blockquote><h3 id="1-安装-cwebp"><a href="#1-安装-cwebp" class="headerlink" title="1. 安装 cwebp"></a>1. 安装 cwebp</h3><p>Archlinux 系 Linux 安装 <code>cwebp</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo pacman -S libwebp<br></code></pre></td></tr></table></figure><h3 id="2-转换"><a href="#2-转换" class="headerlink" title="2. 转换"></a>2. 转换</h3><p>我编写了一个脚本，可以将<code>当前目录</code>下的所有 jpg 文件转换为 webp 文件。<br>代码遍历所有文件夹并将图片转换为 WebP 格式。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs bash">script_dir=$(<span class="hljs-built_in">dirname</span> <span class="hljs-string">&quot;<span class="hljs-variable">$0</span>&quot;</span>)<br><br><span class="hljs-comment"># 使用 find 命令遍历所有子文件夹中的图片文件</span><br>find <span class="hljs-string">&quot;<span class="hljs-variable">$script_dir</span>&quot;</span> -<span class="hljs-built_in">type</span> f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png \) -<span class="hljs-built_in">exec</span> sh -c <span class="hljs-string">&#x27;</span><br><span class="hljs-string">  for file do</span><br><span class="hljs-string">    # 获取文件的相对路径和文件名</span><br><span class="hljs-string">    relpath=$(dirname &quot;$file&quot;)</span><br><span class="hljs-string">    filename=$(basename &quot;$file&quot;)</span><br><span class="hljs-string"></span><br><span class="hljs-string">    # 使用 cwebp 将图片转换为 WebP 格式并保存到当前目录</span><br><span class="hljs-string">    cwebp &quot;$file&quot; -o &quot;$&#123;relpath&#125;/$&#123;filename%.*&#125;.webp&quot;</span><br><span class="hljs-string"></span><br><span class="hljs-string">    # 删除原始图片文件已注释, 建议先在测试环境中运行一下再放到代码仓库中运行</span><br><span class="hljs-string">    # rm &quot;$file&quot;</span><br><span class="hljs-string">  done</span><br><span class="hljs-string">&#x27;</span> sh &#123;&#125; +<br></code></pre></td></tr></table></figure><p>可以看到确实图片体积减少很多，但是由于这张图片清晰度有点低，所以压缩后画质当然也不高。<br><img src="/posts/72658df0/compare.webp" alt="compare.webp"></p><h3 id="3-更改博客中的图片链接"><a href="#3-更改博客中的图片链接" class="headerlink" title="3. 更改博客中的图片链接"></a>3. 更改博客中的图片链接</h3><p>vscode 或者别的 ide 批量替换你用到的 markdown 图片链接，将 .jpg 替换为 .webp 即可。<br><img src="/posts/72658df0/replace.webp" alt="replace.webp"></p><blockquote><p>在部署博客之前，记得先在本地测试一下，看看是否有问题。</p></blockquote>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>优化</tag>
       
     </tags>
     
