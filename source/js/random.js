@@ -1,6 +1,6 @@
 function randomRedirect() {
     // 发起网络请求获取 sitemap.txt 文件内容
-    fetch("sitemap.txt")
+    fetch("https://blog.ovvv.top/sitemap.txt")
         .then((response) => {
             if (!response.ok) {
                 throw new Error(
