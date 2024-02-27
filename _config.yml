@@ -128,10 +128,8 @@ deploy:
   repo: 'git@github.com:mobeicanyue/mobeicanyue.github.io.git'
   branch: 'gh-pages'
 
-# 发现个逆天的事，我好像安装了 hexo-generator-sitemap 但没配置 sitemap，
-# 也能生成 sitemap.xml 文件，看了下仓库 好像是默认启用的
-# https://github.com/hexojs/hexo-generator-sitemap
 sitemap:
+    rel: true
     tags: false
     categories: false
 
