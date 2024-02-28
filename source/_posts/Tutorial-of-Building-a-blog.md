@@ -1,6 +1,5 @@
 ---
 title: 博客搭建相关教程
-sticky: 100
 abbrlink: 6db78a27
 date: 2023-12-28 19:03:00
 tags:
