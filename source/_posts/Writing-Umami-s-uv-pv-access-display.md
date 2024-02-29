@@ -1,7 +1,7 @@
 ---
 title: 编写 Umami 的 UV, PV 访问统计显示
 tags:
-  - umami
+  - Umami
 abbrlink: 4259ee82
 date: 2024-02-25 19:47:17
 ---

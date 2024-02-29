@@ -1,8 +1,8 @@
 ---
 title: 修复 Github Pages 上的文章更新时间
 tags:
-  - github-actions
-  - github-pages
+  - Github-Actions
+  - Github-Pages
 abbrlink: 21f09adf
 date: 2023-12-27 22:47:28
 ---

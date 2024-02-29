@@ -1,7 +1,7 @@
 ---
 title: 1Panel 安装配置教程
 tags:
-  - 1panel
+  - 1Panel
   - 运维
   - 服务器
   - 部署

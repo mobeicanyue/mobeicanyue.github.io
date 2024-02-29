@@ -2,9 +2,9 @@
 title: Hexo 博客部署教程
 tags:
   - hexo
-  - github
-  - github-pages
-  - github-actions
+  - Github
+  - Github-Pages
+  - Github-Actions
   - 部署
 abbrlink: 7a862802
 date: 2023-12-26 23:18:38

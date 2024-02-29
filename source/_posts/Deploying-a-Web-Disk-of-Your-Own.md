@@ -2,8 +2,8 @@
 title: 部署自己的网盘 — Alist 安装配置教程
 tags:
   - 部署
-  - alist
-  - 1panel
+  - Alist
+  - 1Panel
 abbrlink: 9c18a796
 date: 2024-01-17 20:50:59
 ---

@@ -1,7 +1,7 @@
 ---
 title: 1Panel 申请 Let's Encrypt 域名证书
 tags:
-  - 1panel
+  - 1Panel
   - Let's-Encrypt
 abbrlink: e6ee4a29
 date: 2024-02-02 14:00:09
