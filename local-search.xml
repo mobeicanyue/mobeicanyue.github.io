@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>在 ArchLinux 上安装使用 PostgreSQL</title>
+    <link href="/posts/d2adab3b/"/>
+    <url>/posts/d2adab3b/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文主要介绍如何在 ArchLinux 上安装和使用 <code>PostgreSQL</code>。</p><p>我之前一直使用 <code>MySQL</code>，最近才接触 <code>PostgreSQL</code>。如果你也是 <code>PostgreSQL</code> 的新手，想必也会和我一样在安装使用的时候遇到一些问题（如安装了没有初始化数据库 启动失败等），所以我在这里记录一下我遇到的问题和解决方法。</p></blockquote><ol><li><p>安装 <code>PostgreSQL</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo pacman -S postgresql<br></code></pre></td></tr></table></figure><p>检查 <code>Postgresql</code> 版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">psql -V<br></code></pre></td></tr></table></figure></li><li><p>初始化数据库<br><code>PostgreSQL</code> 与 <code>MySQL</code> 不同，它需要初始化数据库。<br>输入以下命令。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo -iu postgres<br></code></pre></td></tr></table></figure><p>这时候你会进入到 <code>postgres</code> 用户的 shell <code>[postgres]$</code> 中，执行下面的命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">initdb -D /var/lib/postgres/data<br></code></pre></td></tr></table></figure><p>如果没有报错，可以退出 <code>postgres</code> shell。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span><br></code></pre></td></tr></table></figure></li><li><p>启动 PostgreSQL 服务</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo systemctl start postgresql<br></code></pre></td></tr></table></figure><p>确认服务是否启动成功</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo systemctl status postgresql<br></code></pre></td></tr></table></figure><p>如果显示 <code>active (running)</code> 就表示服务启动成功了。</p></li><li><p>创建用户和数据库<br>PostgreSQL 还需要添加一个新的数据库用户。进入 <code>postgres</code> shell</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo -iu postgres<br></code></pre></td></tr></table></figure><p>输入以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">createuser --interactive<br></code></pre></td></tr></table></figure><p>输入要增加的角色名称，新的角色是否是超级用户。<br>提示：如果创建一个与 Linux 用户名相同的 PostgreSQL 角色&#x2F;用户，就可以访问 PostgreSQL 数据库 shell，而无需指定用户登录（这非常方便）。</p></li><li><p>创建数据库<br>使用 createdb 命令，创建一个上述用户可以读写的新数据库。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">createdb myDatabaseName<br></code></pre></td></tr></table></figure></li><li><p>登录数据库<br>在 <code>postgres</code> shell 中，输入以下命令来登录数据库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">psql<br></code></pre></td></tr></table></figure></li></ol><p><code>postgres</code> shell 中，一些常用的命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">\<span class="hljs-built_in">help</span> <span class="hljs-comment"># 列出所有命令</span><br>\l <span class="hljs-comment"># 列出所有数据库</span><br>\c database <span class="hljs-comment"># 连接到指定数据库</span><br>\<span class="hljs-built_in">du</span> <span class="hljs-comment"># 列出所有用户</span><br>\dt <span class="hljs-comment"># 列出当前数据库的所有表</span><br>\q <span class="hljs-comment"># 退出数据库</span><br></code></pre></td></tr></table></figure><br><p>参考文章：</p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://wiki.archlinuxcn.org/wiki/PostgreSQL">https://wiki.archlinuxcn.org/wiki/PostgreSQL</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8">https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>PostgreSQL</tag>
+      
+      <tag>数据库</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>编写 Umami 的 UV, PV 访问统计显示</title>
     <link href="/posts/4259ee82/"/>
     <url>/posts/4259ee82/</url>
@@ -14,7 +35,7 @@
     
     <tags>
       
-      <tag>umami</tag>
+      <tag>Umami</tag>
       
     </tags>
     
@@ -90,7 +111,7 @@
     
     <tags>
       
-      <tag>1panel</tag>
+      <tag>1Panel</tag>
       
       <tag>Let&#39;s-Encrypt</tag>
       
@@ -149,11 +170,11 @@
     
     <tags>
       
-      <tag>1panel</tag>
+      <tag>1Panel</tag>
       
       <tag>部署</tag>
       
-      <tag>umami</tag>
+      <tag>Umami</tag>
       
     </tags>
     
@@ -193,11 +214,11 @@
     
     <tags>
       
-      <tag>1panel</tag>
+      <tag>1Panel</tag>
       
       <tag>部署</tag>
       
-      <tag>alist</tag>
+      <tag>Alist</tag>
       
     </tags>
     
@@ -235,11 +256,11 @@
     
     <tags>
       
-      <tag>1panel</tag>
+      <tag>1Panel</tag>
       
       <tag>部署</tag>
       
-      <tag>uptime-kuma</tag>
+      <tag>Uptime-kuma</tag>
       
     </tags>
     
@@ -347,7 +368,7 @@
     
     <tags>
       
-      <tag>1panel</tag>
+      <tag>1Panel</tag>
       
       <tag>运维</tag>
       
@@ -416,9 +437,9 @@
     
     <tags>
       
-      <tag>github-actions</tag>
+      <tag>Github-Actions</tag>
       
-      <tag>github-pages</tag>
+      <tag>Github-Pages</tag>
       
     </tags>
     
@@ -485,11 +506,11 @@
       
       <tag>hexo</tag>
       
-      <tag>github-actions</tag>
+      <tag>Github-Actions</tag>
       
-      <tag>github-pages</tag>
+      <tag>Github-Pages</tag>
       
-      <tag>github</tag>
+      <tag>Github</tag>
       
     </tags>
     
