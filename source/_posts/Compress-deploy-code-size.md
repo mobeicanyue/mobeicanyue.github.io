@@ -2,7 +2,6 @@
 title: 压缩部署的代码
 tags:
   - hexo
-  - 部署
   - 优化
 abbrlink: a89b8953
 date: 2023-12-28 02:51:41
