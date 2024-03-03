@@ -21,14 +21,6 @@ layout: about
 
 网站访问情况可通过 https://umami.ovvv.top/share/SYu8qUKmty52PW9w/blog 查看。
 
-如果本站出现异常，请尝试刷新页面或者清除浏览器缓存（ctrl+f5）。或者访问本站镜像：
-
-- Cloudflare Pages: https://blog-ovvv-top.pages.dev
-- Netlify: https://blog-ovvv-top.netlify.app
-- Vercel: https://blog-ovvv-top.vercel.app
-- Github Pages: https://mobeicanyue.github.io
-
-
 <br><br>
 
 本站支持
