@@ -202,27 +202,6 @@
   
   
   <entry>
-    <title>部署博客到 Cloudflare</title>
-    <link href="/posts/767e8929/"/>
-    <url>/posts/767e8929/</url>
-    
-    <content type="html"><![CDATA[<p>Github Pages 是一个免费的静态网站托管服务，但是由于众所周知的原因，国内访问速度不是很理想，且经常抽风。</p><p>Cloudflare 是一个 CDN 服务商，提供免费的 CDN 服务。它提供免费的 自动托管 SSL 证书、代理域名、优化网站内容、优化协议 等服务（国内也由于众所周知的原因，感知并不明显）。而现在 Cloudflare 也推出 Pages 服务，可以将你的网站部署到 Cloudflare 上，这样就可以享受到 Cloudflare 的 完整服务了。</p><h2 id="1-拥有一个-Github-仓库"><a href="#1-拥有一个-Github-仓库" class="headerlink" title="1. 拥有一个 Github 仓库"></a>1. 拥有一个 Github 仓库</h2><p>如果你按照 <a href="/posts/7a862802/" title="Hexo 博客部署教程">我的第一篇 Hexo 博客</a> 的教程创建了一个 <code>hexo</code> 博客，那么你已经有了一个 Github 仓库，且 <code>gh-pages</code> 分支已经部署到了 Github Pages。</p><p>如果不是 <code>hexo</code> 也没有关系，只要你有一个 Github&#x2F;Gitlab 博客代码仓库，那么你也可以部署 Cloudflare Pages。</p><h2 id="2-在-Cloudflare-上创建应用程序"><a href="#2-在-Cloudflare-上创建应用程序" class="headerlink" title="2. 在 Cloudflare 上创建应用程序"></a>2. 在 Cloudflare 上创建应用程序</h2><p>打开 Cloudflare 面板，点击 <code>Workers 和 Pages</code>，点击 <code>Pages</code></p><p><img src="/posts/767e8929/Create-Pages.webp" alt="创建 Pages"></p><p>选择 <code>连接到 Git</code> 后，添加你的 <code>Github</code> 账号，选择你要部署的仓库</p><p><img src="/posts/767e8929/Select-Repository.webp" alt="选择仓库"></p><h3 id="2-1-方式一-部署现有的静态网站（推荐）"><a href="#2-1-方式一-部署现有的静态网站（推荐）" class="headerlink" title="2.1 方式一 部署现有的静态网站（推荐）"></a>2.1 方式一 部署现有的静态网站（推荐）</h3><p>如果你已经在 Github Pages 上部署了你的博客，那么你可以直接选择 拉取现有的静态网站部署。</p><p><code>生产分支</code> 选择 <code>静态网站所在的分支</code>，如果你是部署到<code>gh-pages</code>分支，那就选<code>gh-pages</code>。其他保持不变，点击 保存并部署。<br><img src="/posts/767e8929/branch.webp" alt="生产分支"><br><img src="/posts/767e8929/gh-pages.webp" alt="静态网站所在的分支"></p><p>这样子最方便，不需要修改任何配置，和 Github Pages 保持一致。一般等待几分钟，网站就部署好了，点击 <code>项目名.pages.dev</code> 即可访问。</p><p>方式二 这种部署方式，如果你有些特殊需求就无法满足，有些操作只能在 Github Actions 上进行，如 <a href="/posts/21f09adf/" title="修复 Github Pages 上的文章更新时间">获取所有 commit 历史来修复文章更新时间</a></p><h3 id="2-2-方式二-拉取源代码构建部署"><a href="#2-2-方式二-拉取源代码构建部署" class="headerlink" title="2.2 方式二 拉取源代码构建部署"></a>2.2 方式二 拉取源代码构建部署</h3><p>当然 如果你没有上述需求，你也可以选择 <code>拉取源代码构建部署</code>。</p><p>生产分支选择 <code>main</code><br><img src="/posts/767e8929/main.webp" alt="main"></p><p><code>构建设置</code> 按需填写。<br>如果流程过于复杂，可以单独写一个 bash 脚本，执行 <code>bash deploy.sh</code></p><p><img src="/posts/767e8929/Build-Settings.webp" alt="构建设置"></p><p><code>环境变量</code>，添加 <code>NODE_VERSION</code>，值 为你部署网站使用的版本，如 <code>20</code></p><br>一般等待几分钟，网站就部署好了，点击 `项目名.pages.dev` 即可访问。<h2 id="3-配置域名"><a href="#3-配置域名" class="headerlink" title="3. 配置域名"></a>3. 配置域名</h2><p>点击 <code>自定义域</code>，输入你的域名，按要求添加 <code>CNAME</code> 记录，等待几分钟，就可以通过你的域名访问你的网站了。<br><img src="/posts/767e8929/Custom-Domain.webp" alt="自定义域"></p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>部署</tag>
-      
-      <tag>Cloudflare</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>部署自己的网盘 — Alist 安装配置教程</title>
     <link href="/posts/9c18a796/"/>
     <url>/posts/9c18a796/</url>
