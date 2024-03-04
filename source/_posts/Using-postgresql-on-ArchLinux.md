@@ -50,7 +50,7 @@ sudo systemctl start postgresql
 ```bash
 sudo systemctl status postgresql
 ```
-如果显示 `active (running)` 就表示服务启动成功了。
+如果输出中显示 `Active: active (running)` 就表示服务启动成功了。
 
 
 ## 4. 创建用户和数据库
