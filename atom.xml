@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-03-04T04:55:28.000Z</updated>
+  <updated>2024-03-06T04:35:10.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Nginx 安装配置教程</title>
+    <title>Nginx 安装与使用教程</title>
     <link href="https://blog.ovvv.top/posts/6645bed3/"/>
     <id>https://blog.ovvv.top/posts/6645bed3/</id>
     <published>2024-03-02T06:04:40.000Z</published>
-    <updated>2024-03-04T04:55:28.000Z</updated>
+    <updated>2024-03-06T04:35:10.000Z</updated>
     
     
       
@@ -38,6 +38,30 @@
     
     
     <category term="Nginx" scheme="https://blog.ovvv.top/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从零开始部署服务器和网站</title>
+    <link href="https://blog.ovvv.top/posts/4cde56ee/"/>
+    <id>https://blog.ovvv.top/posts/4cde56ee/</id>
+    <published>2024-03-01T14:25:20.000Z</published>
+    <updated>2024-03-06T04:35:10.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;note note-secondary&quot;&gt;
+           </summary>
+        
+      
+    
+    
+    
+    
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
   </entry>
   
@@ -97,7 +121,7 @@
     <link href="https://blog.ovvv.top/posts/1acd162e/"/>
     <id>https://blog.ovvv.top/posts/1acd162e/</id>
     <published>2024-02-19T04:06:33.000Z</published>
-    <updated>2024-02-25T14:14:10.000Z</updated>
+    <updated>2024-03-06T04:35:10.000Z</updated>
     
     
       
@@ -222,7 +246,7 @@
     <link href="https://blog.ovvv.top/posts/f297b285/"/>
     <id>https://blog.ovvv.top/posts/f297b285/</id>
     <published>2024-01-25T06:05:33.000Z</published>
-    <updated>2024-02-25T14:14:10.000Z</updated>
+    <updated>2024-03-06T04:35:10.000Z</updated>
     
     
       
@@ -495,31 +519,6 @@
     <category term="服务器" scheme="https://blog.ovvv.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>压缩部署的代码</title>
-    <link href="https://blog.ovvv.top/posts/a89b8953/"/>
-    <id>https://blog.ovvv.top/posts/a89b8953/</id>
-    <published>2023-12-27T18:51:41.000Z</published>
-    <updated>2024-03-02T11:32:47.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;众所周知，我们在写 HTML CSS 和 JS 文件时文件中会包含许多换行和空格。&lt;br&gt;然而，这些换行和空格对浏览器而言并不具备实际意义，反而可能降低页面的加载速度，会对页面的渲染性能造成一定影响。比如我们看个&lt;br&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
-    
-    <category term="优化" scheme="https://blog.ovvv.top/tags/%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
