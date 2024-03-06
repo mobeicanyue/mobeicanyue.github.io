@@ -8,7 +8,7 @@ tags:
 
 ![Fail2ban](fail2ban.webp)
 
-> Fail2Ban 是一个入侵检测系统框架，它可以保护电脑服务器免受暴力破解。它用 Python 编程语言编写，旨在防止暴力攻击。它能够在具有本地安装的数据包控制系统或防火墙（例如 iptables 或 TCP Wrapper）接口的 POSIX 系统上运行。
+> Fail2Ban 是一个入侵检测系统框架，它可以保护电脑服务器免受暴力破解。它用 Python 编写，旨在防止暴力攻击。它能够在具有本地安装的数据包控制系统或防火墙（如 iptables）接口的 POSIX 系统上运行。
 
 ## 1. 安装 Fail2ban
 
@@ -18,7 +18,7 @@ sudo apt update
 sudo apt install fail2ban
 ```
 
-需要特别注意的是，Debian 从 12 开始弃用了 `rsyslog`，如果你是 `Debian 12 及以上版本` 的用户，你需要手动安装：
+需要特别注意的是，Debian 12 及以上的版本需要手动安装 `rsyslog` 来保证其正常运行：
 ```bash
 sudo apt install rsyslog
 ```
@@ -49,7 +49,7 @@ sudo systemctl status fail2ban
 sudo vim /etc/fail2ban/jail.local
 ```
 
-可以在文件中输入以下内容：
+在文件中输入以下内容：
 ```
 [DEFAULT]
 bantime = 600
@@ -66,7 +66,8 @@ maxretry = 2
 port = 22
 logpath = /var/log/auth.log
 ```
-简单的配置文件示例，可以根据自己的需求进行修改。
+
+可以根据自己的需求进行修改。
 其中：
 - `bantime`：封禁时间，单位为秒。-1 表示永久封禁。
 - `findtime`：检测时间，单位为秒。如果在这个时间内有超过 `maxretry` 次的尝试，就会被封禁，如 300 秒内有 5 次尝试失败就会被封禁。
@@ -74,7 +75,7 @@ logpath = /var/log/auth.log
 - `ignoreip`：不会被封禁的 IP 地址列表。
 - `filter`：指定用于匹配日志的过滤器，这里使用了 sshd 过滤器，用于匹配 SSH 登录日志。
 
-修改完成后，重启 Fail2ban 服务：
+修改完成后 保存并退出编辑器，重启 Fail2ban 服务：
 ```bash
 sudo systemctl restart fail2ban
 ```

@@ -1,5 +1,5 @@
 ---
-title: Nginx 安装配置教程
+title: Nginx 安装与使用教程
 tags:
   - Nginx
 abbrlink: 6645bed3
@@ -11,6 +11,7 @@ date: 2024-03-02 14:04:40
 Nginx 是一个高性能的开源 Web 服务器，也可以作为反向代理服务器、负载均衡器和 HTTP 缓存。其轻量级且高效的设计使其在处理高并发请求时表现优异。Nginx 采用事件驱动的异步架构，能够有效地处理大量连接而不会消耗过多系统资源。它支持多种功能模块和扩展，可以满足各种 Web 服务的需求。由于其稳定性、性能和可靠性，Nginx 已成为许多网站和应用程序的首选服务器。
 {% endnote %}
 
+其中 `Nginx` 是市场占有量最高的 Web 服务器，没有之一。如果你是运维或者开发人员，那么我相信你多多少少一定会接触到 Nginx 的相关操作。
 
 本文将介绍 Nginx 的安装和基本配置，以及一些常用的功能和技巧。以 Debian12 为例，其他 Linux 发行版的安装方法类似。假设你已经拥有一个域名和一台能联网的服务器。
 
@@ -37,7 +38,7 @@ sudo systemctl status nginx
 ```
 如果输出中显示 `Active: active (running)`，则表示 Nginx 已成功启动。
 
-如果 Nginx 未启动，可以使用以下命令手动启动：
+如果 Nginx 未启动，可以根据报错信息排查问题，解决后尝试手动启动 Nginx：
 ```bash
 sudo systemctl start nginx
 ```
@@ -105,18 +106,19 @@ sudo systemctl status nginx
 ![Nginx 虚拟主机](nginx-virtual-host.webp)
 
 什么是虚拟主机？
-虚拟主机是指，在一台服务器上通过 Nginx 配置多个域名和网站，使得这台服务器  可以同时提供多个网站服务。通过虚拟主机，Nginx 可以根据请求的域名来确定提供哪个网站的内容。
+虚拟主机是指，在一台服务器上通过 Nginx 配置多个域名和网站，使得 Nginx 可以根据请求的域名来同时提供为多个网站提供服务。
 
 下面，我们将介绍如何配置一个简单的虚拟主机。
+
+我们现在演示如何配置 `example.com` 的虚拟主机，使得访问 `example.com` 就会显示 `Hello World !` 页面。
 
 假设你的域名为 `example.com`，且在域名供应商域名解析处已经将 `example.com` 解析到服务器的 IP 地址。
 
 
 ### 4.1 创建网站根目录
 
-`/var/www` 目录通常用于存放网站文件。
+`/var/www` 目录通常用于存放网站文件，我们可以在这个目录下创建一个目录，用于存放 `example.com` 的网站文件。
 
-现在，可以在 `/var/www` 目录下创建一个名为 `example.com` 的目录：
 ```bash
 sudo mkdir -p /var/www/example.com
 ```
@@ -198,7 +200,7 @@ sudo systemctl reload nginx
 ```
 
 现在，可以在浏览器中输入 `example.com`，就会看到 `Hello World !` 页面。
-
+![Hello World](Hello.webp)
 
 ### 4.4 执行流程
 整个执行流程如下：
@@ -221,6 +223,7 @@ Nginx 的反向代理是我们常用到的功能，它可以隐藏真实服务�
 
 假设你的域名为 `website.com`，并且你的服务器上有一个运行在 8080 端口的应用程序，你希望用户通过 `website.com` 访问这个应用程序，而不是通过 `website.com:8080` 直接访问。
 ![没反向代理的网站](<Reverse Proxy.webp>)
+![反向代理过的网站](reverse2.webp)
 
 
 ### 5.1 启动应用程序
