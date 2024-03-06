@@ -1,6 +1,6 @@
 ---
 title: 纪事与感悟 — 我的 2023
-sticky: 101
+sticky: 100
 tags:
   - "2023"
 abbrlink: af028bbd

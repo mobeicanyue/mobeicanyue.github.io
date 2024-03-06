@@ -17,6 +17,8 @@ tags:
 
 - `Hexo`，快速、简洁且高效的博客框架：{% post_link My-first-hexo-blog 'Hexo 博客部署教程' %}
 
+- `Nginx`，高性能的 HTTP 和反向代理服务器：{% post_link Nginx-installation-and-usage-tutorial 'Nginx 安装使用教程' %}
+
 - `Umami`，简单、快速、注重隐私的开源分析解决方案：{% post_link Umami-installation-and-usage-tutorial 'Umami 安装使用教程' %}
 
 - `Uptime Kuma`，精致的自托管监控工具：{% post_link Using-uptime-kuma-as-Status-Page '使用 uptime-kuma 作为 Status Page' %}
