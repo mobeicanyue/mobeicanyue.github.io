@@ -150,12 +150,15 @@ sudo reboot
 但如果你是小白或者想寻找`Nginx`的替代品，那么可以尝试一下 `Caddy`。`Caddy` 提供了简单易用的配置和自动提供 HTTPS 等功能，使得搭建和管理网站变得更加轻松。
 
 
-### 3.1 Nginx 安装与使用教程
+### 3.1 Nginx 安装与使用
 
 可以参考我的文章：{% post_link Nginx-installation-and-usage-tutorial 'Nginx 安装与使用教程' %}
-里面设计了 Nginx 的安装、配置、虚拟主机配置、反向代理配置等等。建议花时间阅读一下，对你的服务器操作和理解会有很大帮助。
+里面涉及 Nginx 的安装、配置、虚拟主机配置、反向代理配置等等。建议花时间阅读一下，对你的服务器操作和理解会有很大帮助。
 
-### 3.2 Caddy 安装与使用教程
+### 3.2 Caddy 安装与使用
+
+可以参考我的文章：{% post_link Caddy-installation-and-usage-tutorial 'Caddy 安装与使用教程' %}
+现代化的 Web 服务器，具有自动 HTTPS、HTTP/3、反向代理、负载均衡、静态文件服务等功能。如果你是小白或者想寻找 Nginx 的替代品，那么可以尝试一下 Caddy。
 
 
 ## 4. SSH 安全配置
