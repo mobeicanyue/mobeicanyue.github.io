@@ -13,6 +13,8 @@ tags:
 
 - `Bitwarden`，开源密码管理解决方案：
 
+- `Caddy`，现代化的 Web 服务器，具有自动 HTTPS、HTTP/3、反向代理、负载均衡、静态文件服务等功能：{% post_link Caddy-installation-and-usage-tutorial 'Caddy 安装使用教程' %} 
+
 - `Fail2ban`，是一个入侵检测系统框架，可以保护电脑服务器免受暴力破解等攻击：{% post_link Fail2ban-installation-and-usage-tutorial 'Fail2ban 安装使用教程' %}
 
 - `Hexo`，快速、简洁且高效的博客框架：{% post_link My-first-hexo-blog 'Hexo 博客部署教程' %}

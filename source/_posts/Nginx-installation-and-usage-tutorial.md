@@ -29,6 +29,11 @@ sudo apt install nginx
 ```
 系统会提示是否安装，`回车` 或输入 `Y` 确认安装。
 
+安装完成后，可以使用以下命令检查 Nginx 的版本：
+```bash
+nginx -v
+```
+当前教程演示的 Nginx 版本是 `1.22.1`。
 
 ## 2. 启动 Nginx
 
@@ -50,7 +55,7 @@ sudo systemctl start nginx
 ## 3. 了解 Nginx
 
 
-### Nginx 配置文件
+### 3.1 Nginx 配置文件
 Nginx 的默认配置文件位于 `/etc/nginx` 目录下
 
 我们可以输出目录下的文件列表：
@@ -67,50 +72,26 @@ fastcgi_params  mime.types  nginx.conf         sites-available  uwsgi_params
 
 其中，
 - `nginx.conf` 是 Nginx 的`主配置文件`
-- `sites-available` 目录下存放着`所有可用的虚拟主机配置文件`
-- `sites-enabled` 目录下存放着`启用的虚拟主机配置文件`
+- `sites-available` 目录下存放着`所有可用的网站配置文件`
+- `sites-enabled` 目录下存放着`启用的网站配置文件`
 - `conf.d` 目录下存放着`其他配置文件`
 
 
-### Nginx 常用命令
+### 3.2 Nginx 常用命令
 Nginx 的常用命令如下：
 
-- 检查 nginx 配置文件是否正确：
-```bash
-sudo nginx -t
-```
-
-- 重新加载配置文件，优雅地重新启动：
-```bash
-sudo nginx -s reload
-```
-
-- 优雅地关闭：
-```bash
-sudo nginx -s quit
-```
-
-- 快速关闭：
-```bash
-sudo nginx -s stop
-```
-
-- 查看 Nginx 状态：
-```bash
-sudo systemctl status nginx
-```
+- `sudo nginx -t`：检查 nginx 配置文件是否正确：
+- `sudo nginx -s reload`：重新加载配置文件，优雅地重新启动
+- `sudo nginx -s quit`：优雅地关闭
+- `sudo nginx -s stop`：快速关闭
+- `sudo systemctl status nginx`：查看 Nginx 服务的状态
 
 
-## 4. 配置虚拟主机
+## 4. 配置网站
 
 ![Nginx 虚拟主机](nginx-virtual-host.webp)
 
-什么是虚拟主机？
-虚拟主机是指，在一台服务器上通过 Nginx 配置多个域名和网站，使得 Nginx 可以根据请求的域名来同时提供为多个网站提供服务。
-
-下面，我们将介绍如何配置一个简单的虚拟主机。
-
-我们现在演示如何配置 `example.com` 的虚拟主机，使得访问 `example.com` 就会显示 `Hello World !` 页面。
+我们现在演示如何配置 `example.com`，使得访问 `example.com` 就会显示 `Hello World !` 页面。
 
 假设你的域名为 `example.com`，且在域名供应商域名解析处已经将 `example.com` 解析到服务器的 IP 地址。
 
@@ -128,6 +109,7 @@ sudo vim /var/www/example.com/index.html
 ```
 
 将以下内容粘贴到 `index.html` 文件中：
+{% fold info @html 代码 %}
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -141,10 +123,11 @@ sudo vim /var/www/example.com/index.html
 </body>
 </html>
 ```
+{% endfold %}
 保存并退出编辑器。
 
 
-### 4.2 创建虚拟主机配置文件 
+### 4.2 创建网站配置文件 
 
 那么，现在可以在 `sites-available` 目录下创建一个 Nginx 配置文件 `example.com.conf`：
 ```bash
@@ -154,11 +137,11 @@ sudo vim /etc/nginx/sites-available/example.com.conf
 将以下内容粘贴到文件中：
 ```nginx
 server {
-    listen 80; # 监听 80 端口（HTTP）
-    server_name example.com; # 域名
+    listen 80; 监听 80 端口（HTTP）
+    server_name example.com; 域名
 
-    root /var/www/example.com; # 文档根目录
-    index index.html; # 默认文件
+    root /var/www/example.com; 文档根目录
+    index index.html; 默认文件
 
     location / {
         try_files $uri $uri/ =404;
@@ -167,13 +150,15 @@ server {
 ```
 保存并退出编辑器。
 
-- `server{ }` # 定义一个虚拟主机
-- `listen 80;` # 监听 80 端口（HTTP）
-- `server_name example.com;` # 域名
-- `root /var/www/example.com;` # 文档根目录
-- `index index.html;` # 默认文件
-- `location /`  # `/` 表示所有以`/`开头的请求（也就是所有请求）
-- `try_files $uri $uri/ =404;` # 检查请求的文件是否存在，如果不存在则返回 404 错误
+- `server{ }` 定义一个虚拟主机
+- `listen 80;` 监听 80 端口（HTTP）
+- `server_name example.com;` 域名
+- `root /var/www/example.com;` 文档根目录
+- `index index.html;` 默认文件
+- `location /`  `/` 表示所有以`/`开头的请求（也就是所有请求）
+- `try_files $uri $uri/ =404;` 检查请求的文件是否存在，如果不存在则返回 404 错误
+
+这样，Nginx 就会监听 `example.com` 的请求，并返回 `/var/www/example.com` 目录下的文件。
 
 
 测试配置文件是否编写正确：
@@ -187,7 +172,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
 
-### 4.3 启用虚拟主机
+### 4.3 启用网站配置
 
 接下来，需要在 `sites-enabled` 目录下创建一个符号链接，指向 `sites-available` 目录下的配置文件：
 ```bash
@@ -205,7 +190,7 @@ sudo systemctl reload nginx
 ### 4.4 执行流程
 整个执行流程如下：
 1. 浏览器发送请求到服务器
-2. Nginx 接收到请求，根据请求的域名和端口，选择对应的虚拟主机配置文件
+2. Nginx 接收到请求，根据请求的域名和端口，选择对应的网站配置文件
 3. Nginx 根据配置文件中的 `root` 指令，找到对应的文档根目录
 4. Nginx 根据配置文件中的 `index` 指令，找到默认文件
 5. Nginx 返回默认文件的内容给浏览器
@@ -218,37 +203,12 @@ sudo systemctl reload nginx
 
 Nginx 的反向代理是我们常用到的功能，它可以隐藏真实服务器地址，提高安全性，还可以实现负载均衡和缓存等功能。
 
-什么是反向代理？
-反向代理是指，Nginx 作为代理服务器，接收客户端的请求，然后将请求转发给后端服务器，最后将后端服务器的响应返回给客户端。客户端并不知道后端服务器的存在，只知道代理服务器的存在。
-
 假设你的域名为 `website.com`，并且你的服务器上有一个运行在 8080 端口的应用程序，你希望用户通过 `website.com` 访问这个应用程序，而不是通过 `website.com:8080` 直接访问。
-![没反向代理的网站](<Reverse Proxy.webp>)
+![没反向代理的网站](Reverse-Proxy.webp)
 ![反向代理过的网站](reverse2.webp)
 
 
-### 5.1 启动应用程序
-
-我们没必要去写一个复杂的 `Java Web` 跑个 `Tomcat`，我们可以使用 `Python Web` 服务器来模拟一个简单的应用程序。
-
-首先和 4.1 节一样，创建目录 `/var/www/website.com` ，用于存放网站文件。
-index.html 的内容可以改为：`Reverse Proxy`
-```html
-<h1 style="text-align: center;">Reverse Proxy</h1>
-```
-
-然后目录切换到 `/var/www/website.com`，启动一个简单的 Python Web 服务器，模拟 `Tomcat` 监听 8080 端口：
-```bash
-cd /var/www/website.com
-python3 -m http.server 8080
-```
-
-访问浏览器可以看到，`website.com:8080` 显示 `Reverse Proxy` 页面。
-![Reverse Proxy](<Reverse Proxy.webp>)
-
-按 `Ctrl + C` 终止 Python Web 服务器。
-
-
-### 5.2 创建反向代理配置文件
+### 5.1 创建反向代理配置文件
 
 在 `sites-available` 目录下创建一个 Nginx 配置文件 `website.com.conf`：
 ```bash
@@ -273,8 +233,8 @@ server {
 保存并退出编辑器。
 
 这个配置文件定义了一个简单的反向代理。
-- `proxy_pass http://127.0.0.1:8080;` # 将请求转发给 127.0.0.1:8080 端口来处理
-- `proxy_set_header` # 设置请求头，这些请求头会被传递给后端服务器
+- `proxy_pass http://127.0.0.1:8080;` 将请求转发给 127.0.0.1:8080 端口来处理
+- `proxy_set_header` 设置请求头，这些请求头会被传递给后端服务器
 
 
 测试配置文件是否编写正确：
@@ -283,7 +243,7 @@ sudo nginx -t
 ```
 
 
-### 5.3 启用反向代理
+### 5.2 启用反向代理
 
 接下来，需要在 `sites-enabled` 目录下创建一个符号链接，指向 `sites-available` 目录下的配置文件：
 ```bash
@@ -304,10 +264,10 @@ python3 -m http.server 8080
 ![反向代理](reverse2.webp)
 
 
-### 5.4 执行流程
+### 5.3 执行流程
 整个执行流程如下：
 1. 浏览器发送请求到服务器
-2. Nginx 接收到请求，根据请求的域名和端口，选择对应的虚拟主机配置文件
+2. Nginx 接收到请求，根据请求的域名和端口，选择对应的网站配置文件
 3. Nginx 根据配置文件中的 `location /` 指令，将请求转发给 `http://127.0.0.1:8080` 端口处理
 4. Python Web 服务器处理请求，返回 `Reverse Proxy` 页面
 5. Nginx 返回 `Reverse Proxy` 页面给浏览器
@@ -348,3 +308,5 @@ server {
     }
 }
 ```
+
+更多 Nginx 的配置和功能，可以参考官方文档： [Nginx Documentation](https://nginx.org/en/docs/)。
