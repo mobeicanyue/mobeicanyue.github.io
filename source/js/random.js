@@ -27,7 +27,7 @@ function randomRedirect() {
             }
 
             let randomNavItem = document.querySelector(
-                ".nav-item:nth-child(6) a"
+                ".nav-item:nth-child(5) a"
             );
 
             randomNavItem.href = randomLink;
@@ -41,3 +41,4 @@ function randomRedirect() {
 }
 
 randomRedirect();
+console.log("random.js loaded");

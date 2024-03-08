@@ -16,4 +16,4 @@ function createTime() {
     document.getElementById("times").textContent = ` ${hours < 10 ? "0" : ""}${hours} 小时`;
 }
 createTime();
-console.log("页脚脚本加载成功！");
+console.log("duration.js loaded");
