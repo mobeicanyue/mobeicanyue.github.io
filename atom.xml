@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-03-07T14:08:46.000Z</updated>
+  <updated>2024-03-08T11:36:48.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.ovvv.top/posts/f3ac7ef6/"/>
     <id>https://blog.ovvv.top/posts/f3ac7ef6/</id>
     <published>2024-03-03T20:56:00.000Z</published>
-    <updated>2024-03-07T14:08:46.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -36,6 +36,18 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Caddy" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Caddy/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="运维" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+    <category term="运维" scheme="https://blog.ovvv.top/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
     <category term="Caddy" scheme="https://blog.ovvv.top/tags/Caddy/"/>
     
@@ -46,7 +58,7 @@
     <link href="https://blog.ovvv.top/posts/6645bed3/"/>
     <id>https://blog.ovvv.top/posts/6645bed3/</id>
     <published>2024-03-02T06:04:40.000Z</published>
-    <updated>2024-03-07T14:08:46.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -61,6 +73,18 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="Nginx" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Nginx/"/>
+    
+    <category term="运维" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+    <category term="运维" scheme="https://blog.ovvv.top/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
     <category term="Nginx" scheme="https://blog.ovvv.top/tags/Nginx/"/>
     
@@ -71,7 +95,7 @@
     <link href="https://blog.ovvv.top/posts/4cde56ee/"/>
     <id>https://blog.ovvv.top/posts/4cde56ee/</id>
     <published>2024-03-01T14:25:20.000Z</published>
-    <updated>2024-03-07T14:14:45.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -85,8 +109,26 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="运维" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="服务器" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+    <category term="运维" scheme="https://blog.ovvv.top/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="服务器" scheme="https://blog.ovvv.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="Fail2ban" scheme="https://blog.ovvv.top/tags/Fail2ban/"/>
+    
+    <category term="SSH" scheme="https://blog.ovvv.top/tags/SSH/"/>
+    
+    <category term="ufw" scheme="https://blog.ovvv.top/tags/ufw/"/>
     
   </entry>
   
@@ -95,7 +137,7 @@
     <link href="https://blog.ovvv.top/posts/d2adab3b/"/>
     <id>https://blog.ovvv.top/posts/d2adab3b/</id>
     <published>2024-02-29T01:44:23.000Z</published>
-    <updated>2024-03-04T03:00:26.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -109,6 +151,12 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="数据库" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="PostgreSQL" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/PostgreSQL/"/>
+    
     
     <category term="PostgreSQL" scheme="https://blog.ovvv.top/tags/PostgreSQL/"/>
     
@@ -121,7 +169,7 @@
     <link href="https://blog.ovvv.top/posts/4259ee82/"/>
     <id>https://blog.ovvv.top/posts/4259ee82/</id>
     <published>2024-02-25T11:47:17.000Z</published>
-    <updated>2024-02-29T11:19:51.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -136,6 +184,10 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Umami" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Umami/"/>
+    
     
     <category term="Umami" scheme="https://blog.ovvv.top/tags/Umami/"/>
     
@@ -146,7 +198,7 @@
     <link href="https://blog.ovvv.top/posts/1acd162e/"/>
     <id>https://blog.ovvv.top/posts/1acd162e/</id>
     <published>2024-02-19T04:06:33.000Z</published>
-    <updated>2024-03-06T05:25:51.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -161,6 +213,18 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="运维" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+    <category term="运维" scheme="https://blog.ovvv.top/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="服务器" scheme="https://blog.ovvv.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
     <category term="Fail2ban" scheme="https://blog.ovvv.top/tags/Fail2ban/"/>
     
@@ -171,7 +235,7 @@
     <link href="https://blog.ovvv.top/posts/af028bbd/"/>
     <id>https://blog.ovvv.top/posts/af028bbd/</id>
     <published>2024-02-12T12:15:28.000Z</published>
-    <updated>2024-03-06T04:47:18.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -187,6 +251,10 @@
     
     
     
+    <category term="随笔" scheme="https://blog.ovvv.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="日常" scheme="https://blog.ovvv.top/categories/%E9%9A%8F%E7%AC%94/%E6%97%A5%E5%B8%B8/"/>
+    
     
     <category term="2023" scheme="https://blog.ovvv.top/tags/2023/"/>
     
@@ -197,7 +265,7 @@
     <link href="https://blog.ovvv.top/posts/dfba1590/"/>
     <id>https://blog.ovvv.top/posts/dfba1590/</id>
     <published>2024-02-05T08:24:43.000Z</published>
-    <updated>2024-02-19T07:30:11.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -211,6 +279,10 @@
     
     
     
+    <category term="随笔" scheme="https://blog.ovvv.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="日常" scheme="https://blog.ovvv.top/categories/%E9%9A%8F%E7%AC%94/%E6%97%A5%E5%B8%B8/"/>
+    
     
     <category term="日常" scheme="https://blog.ovvv.top/tags/%E6%97%A5%E5%B8%B8/"/>
     
@@ -221,7 +293,7 @@
     <link href="https://blog.ovvv.top/posts/e6ee4a29/"/>
     <id>https://blog.ovvv.top/posts/e6ee4a29/</id>
     <published>2024-02-02T06:00:09.000Z</published>
-    <updated>2024-02-29T11:19:51.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -235,6 +307,10 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="1Panel" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/1Panel/"/>
+    
     
     <category term="1Panel" scheme="https://blog.ovvv.top/tags/1Panel/"/>
     
@@ -247,7 +323,7 @@
     <link href="https://blog.ovvv.top/posts/d6d74ca/"/>
     <id>https://blog.ovvv.top/posts/d6d74ca/</id>
     <published>2024-01-28T04:56:50.000Z</published>
-    <updated>2024-02-25T14:14:10.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -261,8 +337,12 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="seo" scheme="https://blog.ovvv.top/tags/seo/"/>
+    <category term="SEO" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/SEO/"/>
+    
+    
+    <category term="SEO" scheme="https://blog.ovvv.top/tags/SEO/"/>
     
   </entry>
   
@@ -271,7 +351,7 @@
     <link href="https://blog.ovvv.top/posts/f297b285/"/>
     <id>https://blog.ovvv.top/posts/f297b285/</id>
     <published>2024-01-25T06:05:33.000Z</published>
-    <updated>2024-03-07T14:08:46.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -285,6 +365,14 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="部署" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="运维" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="服务器" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
     
     <category term="open-source" scheme="https://blog.ovvv.top/tags/open-source/"/>
     
@@ -295,7 +383,7 @@
     <link href="https://blog.ovvv.top/posts/f7a090e6/"/>
     <id>https://blog.ovvv.top/posts/f7a090e6/</id>
     <published>2024-01-24T03:55:35.000Z</published>
-    <updated>2024-02-29T11:19:51.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -310,8 +398,12 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="1Panel" scheme="https://blog.ovvv.top/tags/1Panel/"/>
+    <category term="部署" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="Umami" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Umami/"/>
+    
     
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
@@ -320,11 +412,11 @@
   </entry>
   
   <entry>
-    <title>部署自己的网盘 — Alist 安装配置教程</title>
+    <title>部署自己的网盘 — AList 安装配置教程</title>
     <link href="https://blog.ovvv.top/posts/9c18a796/"/>
     <id>https://blog.ovvv.top/posts/9c18a796/</id>
     <published>2024-01-17T12:50:59.000Z</published>
-    <updated>2024-02-29T11:19:51.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -338,12 +430,16 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="1Panel" scheme="https://blog.ovvv.top/tags/1Panel/"/>
+    <category term="部署" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="AList" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/AList/"/>
+    
     
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
-    <category term="Alist" scheme="https://blog.ovvv.top/tags/Alist/"/>
+    <category term="AList" scheme="https://blog.ovvv.top/tags/AList/"/>
     
   </entry>
   
@@ -352,7 +448,7 @@
     <link href="https://blog.ovvv.top/posts/f7c262de/"/>
     <id>https://blog.ovvv.top/posts/f7c262de/</id>
     <published>2024-01-09T18:02:20.000Z</published>
-    <updated>2024-01-24T13:34:33.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -366,6 +462,10 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Java" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Java/"/>
+    
     
     <category term="Java" scheme="https://blog.ovvv.top/tags/Java/"/>
     
@@ -376,7 +476,7 @@
     <link href="https://blog.ovvv.top/posts/c7c2ca22/"/>
     <id>https://blog.ovvv.top/posts/c7c2ca22/</id>
     <published>2024-01-04T03:56:45.000Z</published>
-    <updated>2024-02-29T11:19:51.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -393,8 +493,12 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="1Panel" scheme="https://blog.ovvv.top/tags/1Panel/"/>
+    <category term="部署" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="运维" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/%E8%BF%90%E7%BB%B4/"/>
+    
     
     <category term="部署" scheme="https://blog.ovvv.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
@@ -407,7 +511,7 @@
     <link href="https://blog.ovvv.top/posts/1c0214de/"/>
     <id>https://blog.ovvv.top/posts/1c0214de/</id>
     <published>2023-12-31T16:19:00.000Z</published>
-    <updated>2024-01-05T17:17:57.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -420,6 +524,10 @@
     
     
     
+    <category term="随笔" scheme="https://blog.ovvv.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="日常" scheme="https://blog.ovvv.top/categories/%E9%9A%8F%E7%AC%94/%E6%97%A5%E5%B8%B8/"/>
+    
     
     <category term="日常" scheme="https://blog.ovvv.top/tags/%E6%97%A5%E5%B8%B8/"/>
     
@@ -430,7 +538,7 @@
     <link href="https://blog.ovvv.top/posts/7671c28e/"/>
     <id>https://blog.ovvv.top/posts/7671c28e/</id>
     <published>2023-12-29T08:39:46.000Z</published>
-    <updated>2024-02-25T14:14:10.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -444,6 +552,10 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Hexo" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+    
     
     <category term="Giscus" scheme="https://blog.ovvv.top/tags/Giscus/"/>
     
@@ -454,7 +566,7 @@
     <link href="https://blog.ovvv.top/posts/6a24c2b/"/>
     <id>https://blog.ovvv.top/posts/6a24c2b/</id>
     <published>2023-12-29T02:27:37.000Z</published>
-    <updated>2024-02-25T14:14:10.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -467,6 +579,10 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Hexo" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+    
     
     <category term="优化" scheme="https://blog.ovvv.top/tags/%E4%BC%98%E5%8C%96/"/>
     
@@ -477,7 +593,7 @@
     <link href="https://blog.ovvv.top/posts/dc0bbd22/"/>
     <id>https://blog.ovvv.top/posts/dc0bbd22/</id>
     <published>2023-12-28T11:08:02.000Z</published>
-    <updated>2024-01-31T03:37:26.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -490,8 +606,12 @@
     
     
     
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="hexo" scheme="https://blog.ovvv.top/tags/hexo/"/>
+    <category term="Hexo" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.ovvv.top/tags/Hexo/"/>
     
   </entry>
   
@@ -500,7 +620,7 @@
     <link href="https://blog.ovvv.top/posts/6db78a27/"/>
     <id>https://blog.ovvv.top/posts/6db78a27/</id>
     <published>2023-12-28T11:03:00.000Z</published>
-    <updated>2024-02-28T14:27:02.000Z</updated>
+    <updated>2024-03-08T11:36:48.000Z</updated>
     
     
       
@@ -512,6 +632,10 @@
       
     
     
+    
+    <category term="技术" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Hexo" scheme="https://blog.ovvv.top/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
   </entry>
