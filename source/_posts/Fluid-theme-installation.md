@@ -1,7 +1,7 @@
 ---
 title: 安装 Fluid 主题
 tags:
-  - hexo
+  - Hexo
   - fluid
   - 部署
 abbrlink: 5eba38dc

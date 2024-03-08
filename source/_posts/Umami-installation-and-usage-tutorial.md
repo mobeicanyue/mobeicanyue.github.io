@@ -3,7 +3,6 @@ title: Umami 安装使用教程
 tags:
   - 部署
   - Umami
-  - 1Panel
 abbrlink: f7a090e6
 date: 2024-01-24 11:55:35
 ---

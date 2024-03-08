@@ -1,7 +1,7 @@
 ---
 title: Hexo 博客部署教程
 tags:
-  - hexo
+  - Hexo
   - Github
   - Github-Pages
   - Github-Actions

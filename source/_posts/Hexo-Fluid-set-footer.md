@@ -1,7 +1,7 @@
 ---
 title: Hexo Fluid 设置页脚
 tags:
-  - hexo
+  - Hexo
   - fluid
 abbrlink: 2422058f
 date: 2023-12-28 02:26:14

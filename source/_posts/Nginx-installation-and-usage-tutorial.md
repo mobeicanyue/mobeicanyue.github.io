@@ -2,6 +2,8 @@
 title: Nginx 安装与使用教程
 tags:
   - Nginx
+  - 部署
+  - 运维
 abbrlink: 6645bed3
 date: 2024-03-02 14:04:40
 ---

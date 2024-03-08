@@ -3,7 +3,6 @@ title: 使用 uptime-kuma 作为 Status Page
 tags:
   - 部署
   - Uptime-kuma
-  - 1Panel
 abbrlink: c7c2ca22
 date: 2024-01-04 11:56:45
 ---

@@ -1,7 +1,7 @@
 ---
 title: 在 Fluid 主题中使用霞鹜文楷
 tags:
-  - hexo
+  - Hexo
   - fluid
 abbrlink: f24b41b1
 date: 2023-12-27 14:58:04

@@ -2,6 +2,8 @@
 title: Caddy 安装与使用教程
 tags:
   - Caddy
+  - 部署
+  - 运维
 abbrlink: f3ac7ef6
 date: 2024-03-04 04:56:00
 ---

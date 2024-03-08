@@ -1,7 +1,7 @@
 ---
 title: 压缩前端代码
 tags:
-  - hexo
+  - Hexo
   - 优化
 abbrlink: a89b8953
 date: 2023-12-28 02:51:41

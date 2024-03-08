@@ -3,7 +3,7 @@ title: 启用博客评论
 abbrlink: 7671c28e
 date: 2023-12-29 16:39:46
 tags:
-- Giscus
+  - Giscus
 ---
 
 {% note secondary %}

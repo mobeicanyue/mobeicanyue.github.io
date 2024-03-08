@@ -4,7 +4,7 @@ sticky: 101
 abbrlink: f297b285
 date: 2024-01-25 14:05:33
 tags:
-- open-source
+  - open-source
 ---
 
 - `1Panel`，现代化、开源的 Linux 服务器运维管理面板：{% post_link 1panel-installation-and-usage-tutorial '1Panel 安装配置教程' %}

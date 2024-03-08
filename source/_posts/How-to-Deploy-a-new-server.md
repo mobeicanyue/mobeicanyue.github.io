@@ -3,6 +3,11 @@ title: 从零开始部署服务器和网站
 sticky: 102
 tags:
   - 部署
+  - 运维
+  - 服务器
+  - SSH
+  - ufw
+  - Fail2ban
 abbrlink: 4cde56ee
 date: 2024-03-01 22:25:20
 ---
