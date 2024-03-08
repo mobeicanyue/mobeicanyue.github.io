@@ -18,13 +18,9 @@ Nginx 是一个被广泛使用的 Web 服务器，但是它的配置相对 Caddy
 
 ## 1. 安装 Caddy
 
-先更新系统软件包列表：
+输入以下命令安装 Caddy：
 ```bash
 sudo apt update
-```
-
-然后安装 Caddy：
-```bash
 sudo apt install caddy
 ```
 系统会提示是否安装，`回车` 或输入 `Y` 确认安装。
@@ -60,7 +56,10 @@ Caddy 有两种配置方式，一种是使用 `Caddyfile`，另一种是使用 J
 
 ![Caddyfile vs json](caddyfile-json.webp)
 
-Caddy 不强制要求配置文件放到哪个特定文件夹，默认情况下，在当前配置的目录运行 Caddy 就可以跑起来了
+Caddyfile 默认位置是 `/etc/caddy/Caddyfile`。但也可以使用 `-conf` 参数指定配置文件的位置：
+```bash
+caddy run -conf /path/to/Caddyfile
+```
 
 
 ### 3.2 Caddy 常用命令

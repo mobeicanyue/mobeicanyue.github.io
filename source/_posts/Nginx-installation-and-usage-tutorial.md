@@ -18,13 +18,9 @@ Nginx 是一个高性能的开源 Web 服务器，也可以作为反向代理服
 
 ## 1. 安装 Nginx
 
-先更新系统软件包列表：
+输入以下命令安装 Nginx：
 ```bash
 sudo apt update
-```
-
-然后安装 Nginx：
-```bash
 sudo apt install nginx
 ```
 系统会提示是否安装，`回车` 或输入 `Y` 确认安装。

@@ -1,5 +1,5 @@
 ---
-title: 压缩部署的代码
+title: 压缩前端代码
 tags:
   - hexo
   - 优化

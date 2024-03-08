@@ -19,8 +19,6 @@ npm install hexo-abbrlink --save
 
 ```yml
 permalink: posts/:abbrlink/ 
-# 或
-permalink: posts/:abbrlink.html
 ```
 
 然后在这行下面添加：
