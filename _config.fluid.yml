@@ -237,7 +237,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css: https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/lxgwwenkaigbscreen/result.min.css
 
-custom_head: '<meta name="baidu-site-verification" content="codeva-hNrgiriaVe" />'
+custom_head:
 
 # 网页访问统计
 # Analysis of website visitors
