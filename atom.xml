@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-03-08T11:56:11.000Z</updated>
+  <updated>2024-03-10T18:05:45.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>百度收录 Cloudflare Page 显示 308 报错</title>
+    <link href="https://blog.ovvv.top/posts/e7163e6b/"/>
+    <id>https://blog.ovvv.top/posts/e7163e6b/</id>
+    <published>2024-03-10T08:06:57.000Z</published>
+    <updated>2024-03-10T18:05:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;note note-success&quot;&gt;
+            &lt;p&gt;我的博客之前部署在 Github Page 上，但是因为众所周知的原因，Github Page 在国内访问速度不是很理想，所以我决定将博客迁移到 Cloudflare Page</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Cloudflare-Page" scheme="https://blog.ovvv.top/tags/Cloudflare-Page/"/>
+    
+    <category term="Baidu" scheme="https://blog.ovvv.top/tags/Baidu/"/>
+    
+    <category term="SEO" scheme="https://blog.ovvv.top/tags/SEO/"/>
+    
+  </entry>
   
   <entry>
     <title>Caddy 安装与使用教程</title>
@@ -512,27 +540,6 @@
     
     
     <category term="Hexo" scheme="https://blog.ovvv.top/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客搭建相关教程</title>
-    <link href="https://blog.ovvv.top/posts/6db78a27/"/>
-    <id>https://blog.ovvv.top/posts/6db78a27/</id>
-    <published>2023-12-28T11:03:00.000Z</published>
-    <updated>2024-02-28T14:27:02.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h2&gt;&lt;h3 id=&quot;Hexo-博客部署&quot;&gt;&lt;a href=&quot;#Hexo-博客部署&quot; class=&quot;headerlink&quot; title=&quot;Hexo</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
