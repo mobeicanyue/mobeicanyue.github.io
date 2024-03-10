@@ -63,8 +63,8 @@ sudo -iu postgres
 createuser --interactive
 ```
 输入要增加的角色名称，新的角色是否是超级用户。
-<br>
-提示：如果创建一个与 Linux 用户名相同的 PostgreSQL 角色/用户，就可以访问 PostgreSQL 数据库 shell，而无需指定用户登录（这非常方便）。
+
+提示：如果创建一个与 Linux 用户名相同的 PostgreSQL 角色/用户，就可以访问 PostgreSQL 数据库 shell，而无需指定用户登录（非常方便）。
 
 ## 5. 创建数据库
 使用 createdb 命令，创建一个上述用户可以读写的新数据库。
@@ -79,14 +79,14 @@ psql
 ```
 
 `postgres` shell 中，一些常用的命令：
-```bash
-\help # 列出所有命令
-\l # 列出所有数据库
-\c database # 连接到指定数据库
-\du # 列出所有用户
-\dt # 列出当前数据库的所有表
-\q # 退出数据库
-```
+
+- `\help`：列出所有命令
+- `\l`：列出所有数据库
+- `\c database`：连接到指定数据库
+- `\du`：列出所有用户
+- `\dt`：列出当前数据库的所有表
+- `\q`：退出数据库
+
 
 <br>
 
