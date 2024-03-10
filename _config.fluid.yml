@@ -237,7 +237,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css: https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/lxgwwenkaigbscreen/result.min.css
 
-custom_head: '<script async src="https://umami.ovvv.top/script.js" data-website-id="72f672c5-4ac9-4bbf-be13-2ba876d8cb93" data-domains="blog.ovvv.top,blog-ovvv-top.pages.dev,blog-ovvv-top.netlify.app,blog-ovvv-top.vercel.app,mobeicanyue.github.io" data-do-not-track="true"></script>'
+custom_head: '<meta name="baidu-site-verification" content="codeva-hNrgiriaVe" />'
 
 # 网页访问统计
 # Analysis of website visitors
@@ -442,6 +442,7 @@ footer:
 
     <script async src="/js/duration.js"></script>
     <script async src="/js/random.js"></script>
+    <script async src="https://umami.ovvv.top/script.js" data-website-id="72f672c5-4ac9-4bbf-be13-2ba876d8cb93" data-domains="blog.ovvv.top,blog-ovvv-top.pages.dev,blog-ovvv-top.netlify.app,blog-ovvv-top.vercel.app,mobeicanyue.github.io" data-do-not-track="true"></script>
     '
 
 
