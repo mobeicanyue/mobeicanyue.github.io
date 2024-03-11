@@ -442,7 +442,7 @@ footer:
 
     <script async src="/js/duration.js"></script>
     <script async src="/js/random.js"></script>
-    <script async src="https://umami.ovvv.top/script.js" data-website-id="72f672c5-4ac9-4bbf-be13-2ba876d8cb93" data-domains="blog.ovvv.top,blog-ovvv-top.pages.dev,blog-ovvv-top.netlify.app,blog-ovvv-top.vercel.app,mobeicanyue.github.io" data-do-not-track="true"></script>
+    <script async src="https://umami.ovvv.top/script.js" data-website-id="72f672c5-4ac9-4bbf-be13-2ba876d8cb93" data-domains="blog.ovvv.top" data-do-not-track="true"></script>
     '
 
 
@@ -477,7 +477,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -549,7 +549,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -912,7 +912,7 @@ discuss:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -923,7 +923,7 @@ archive:
 #---------------------------
 category:
   enable: false
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -952,7 +952,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -969,7 +969,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /images/avatar.webp
@@ -992,7 +992,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -1003,7 +1003,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟（毫秒）
@@ -1017,7 +1017,7 @@ page404:
 #---------------------------
 links:
   enable: false
-  banner_img: https://api.vvhan.com/api/bing
+  banner_img: https://www.yuanxiapi.cn/api/bing/
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
