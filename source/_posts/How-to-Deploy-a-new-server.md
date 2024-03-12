@@ -95,7 +95,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'x.x.x.x' (ED25519) to the list of known hosts.
 root@x.x.x.x's password:
 ```
-这段输出的意思是，无法验证服务器的真实性，是否继续连接，输入 `yes` 然后 **输入服务器的密码** 即可连接到服务器。这段真实性验证只会出现一次，以后再连接服务器就不会再出现了。
+这段输出的意思是，无法验证服务器的真实性，是否继续连接，输入 `yes` 然后 **输入服务器的密码** 即可连接到服务器。
+**这段真实性验证只会出现一次，以后再连接服务器就不会再出现了。**
 
 需要注意的是，**输入 SSH 密码时，屏幕上不会显示密码**，不用担心，将服务器的密码正确粘贴后回车即可。
 
@@ -120,13 +121,20 @@ timedatectl
            Universal time: Tue 2024-03-05 05:39:46 UTC
                  RTC time: Tue 2024-03-05 05:39:50
                 Time zone: UTC (UTC, +0000)
-System clock synchronized: yes
+System clock synchronized: no
               NTP service: active
           RTC in local TZ: no
 ```
-这代表你的服务器的时区是 UTC 时间，而 UTC 时间是世界标准时间，也就是 0 时区。根据你的服务器所在地区设置时区。比如我的服务器在香港，那么我就设置为 `Asia/Hong_Kong`。
+这代表你的服务器的时区是 UTC 时间，而 UTC 时间是世界标准时间，也就是 0 时区。而 `System clock synchronized: no` 代表你的系统时钟同步没有开启。
 
 ### 2.2 设置服务器时区
+
+根据你的服务器所在地区设置时区，输入以下命令来查看可用的时区：
+```bash
+timedatectl list-timezones
+```
+
+比如我的服务器在香港，那么我就设置为 `Asia/Hong_Kong`。
 
 ```bash
 timedatectl set-timezone Asia/Hong_Kong
@@ -137,13 +145,63 @@ timedatectl set-timezone Asia/Hong_Kong
 ```bash
 timedatectl
 ```
+如果显示为 `Time zone: Asia/Hong_Kong`，那么就说明时区设置成功了。
 
-如果时区已经设置为 `Asia/Shanghai`，那么就说明时区设置成功了。
-这个时候最好重启服务器，以确保时区设置生效。
+### 2.3 系统时钟同步
+网络时间协议 NTP（Network Time Protocol）是一种用于同步系统时钟的协议，提供高精准度的时间校正，保证服务器的时间准确。
 
+> 根据操作系统版本的不同，Debian 提供了多种安装 NTP 客户端的软件包。自 Debian 12 起，默认的 NTP 客户端是 systemd 的 systemd-timesyncd。[^2]timesyncd 是轻量级 ntpd 的替代品，配置更简单、更高效、更安全。此外，Timesyncd 还能更好地与 systemd 集成。这一特性使得使用 systemd 命令进行管理变得更容易。[^3]
+
+
+{% fold info @Debian 12 %}
+
+如果你是 Debian 12，那么你可以使用 `systemd-timesyncd` 来同步服务器时间。
+输入以下命令来安装 `systemd-timesyncd`：
 ```bash
-sudo reboot
+sudo apt install systemd-timesyncd
 ```
+
+查看 `systemd-timesyncd` 的状态：
+```bash
+sudo systemctl status systemd-timesyncd
+```
+
+如果 `systemd-timesyncd` 是 `active (running)` 状态，那么就说明 `systemd-timesyncd` 已经在运行了。否则，你需要手动启动 `systemd-timesyncd`：
+```bash
+sudo systemctl start systemd-timesyncd
+```
+
+这时你的服务器的时间就会自动同步了。
+{% endfold %}
+
+{% fold info @Debian 11 及更早版本 %}
+
+如果你是 Debian 11 或更早的版本，那么你可以使用 `ntp` 来同步服务器时间。
+
+输入以下命令来安装 `ntp`：
+```bash
+sudo apt install ntp
+```
+
+查看 `ntp` 的状态：
+```bash
+sudo systemctl status ntp
+```
+
+如果 `ntp` 是 `active (running)` 状态，那么就说明 `ntp` 已经在运行了。否则，你需要手动启动 `ntp`：
+```bash
+sudo systemctl start ntp
+```
+
+这时你的服务器的时间就会自动同步了。
+{% endfold %}
+
+
+再次查看时区：
+```bash
+timedatectl
+```
+如果显示为 `System clock synchronized: yes`，那么就说明系统时钟同步成功了。
 
 
 ## 3. 安装 Web 服务器
@@ -323,7 +381,9 @@ sudo ufw enable
 Fail2Ban 是一个入侵检测系统框架，它可以监控服务器的日志文件，当发现有暴力破解行为时，会自动封禁攻击者的 IP 地址。可以保护电脑服务器免受暴力破解。它用 Python 编写。能够在具有本地安装的数据包控制系统或防火墙（如 iptables）接口的 POSIX 系统上运行。
 
 
-<br><br><br>   
+<br><br><br>
 
 
 [^1]: https://help.aliyun.com/zh/ecs/ssh-service-introduction
+[^2]: https://wiki.debian.org/DateTime
+[^3]: https://phoenixnap.com/kb/debian-time-sync
