@@ -364,14 +364,20 @@ sudo apt install ufw
 注意，在启用 UFW 防火墙之前，你必须显式允许进来的 SSH 连接。SSH 可能是你操作机器的唯一渠道，如果被防火墙拦住，将永远都无法连接到机器上，可能就得重置服务器了。
 
 输入以下命令放开 SSH 端口：
-```
+```bash
 sudo ufw allow 2222/tcp
 ```
 
 SSH 默认为 22 端口，如果 SSH 运行在非标准端口，你需要将上述命令中的 2222 端口替换为对应的 SSH 端口。本文为 2222 端口
 
-输入以下命令启用 ufw：
+你还可以放开其他端口，比如 HTTP 端口 80、HTTPS 端口 443：
+```bash
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
 ```
+
+输入以下命令启用 ufw：
+```bash
 sudo ufw enable
 ```
 
