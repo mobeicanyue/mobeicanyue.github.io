@@ -83,3 +83,25 @@ services:
 
 换个浏览器访问域名验证一下，我们的状态页面已经添加成功了。显示了 `Github` 的响应状态信息。
 ![状态页面](status-page.webp)
+
+## 7. 配置邮件通知
+![监控项](monitor.webp)
+点击一个监控项的 `编辑`，然后点击 `设置通知`，`通知类型` 选择 `SMTP`，然后填写你的邮箱信息，点击 `保存`。
+
+这里我以 `outlook` 为例，参考 [微软 Outlook.com 的 POP、IMAP 和 SMTP 设置
+](https://support.microsoft.com/zh-cn/office/outlook-com-%E7%9A%84-pop-imap-%E5%92%8C-smtp-%E8%AE%BE%E7%BD%AE-d088b986-291d-42b8-9564-9c414e2aa040)
+
+微软邮箱的参数如下：
+**SMTP 主机名**：`smtp-mail.outlook.com`
+**SMTP 端口**：`587`
+**SMTP 加密**：`STARTTLS`
+
+**用户密码**就是你的 `outlook` 邮箱和密码。
+
+**发信人**写成 `Uptime Kuma <你的邮箱>`，收信人写 `你的邮箱`。
+
+**邮件主题**可以自定义，我建议为 `Uptime Kuma - {{NAME}}: is {{STATUS}}`
+
+填写完毕后点击 `测试`，如果收到邮件，说明配置成功。
+
+![测试成功，可以收到邮件](test.webp)
