@@ -164,11 +164,13 @@ AUR 包管理工具
 
 
 字体
-- `ttf-jetbrains-mono-nerd`：JetBrains Mono 字体，终端友好
+- `misans`：小米 misans，很好看 适合日用
+- `ttf-jetbrains-mono-nerd`：JetBrains Mono 字体，适用于终端、代码字体
 
 
 ## 6. 我的配置
 
+- 开机自动启动数字键盘：KDE 系统设置 -> 键盘 -> Plasma 启动时 NumLock 状态 -> 开启
 - 命令行安装软件包 软件包显示颜色：`sudo vim /etc/pacman.conf`, 取消 `Color` 的注释。
 - paru 包序号从最下面开始显示，和 `yay` 一样：`sudo vim /etc/paru.conf`, 取消 `BottomUp` 的注释。
 - 下载软件包的时候不附带 debug 包：`sudo vim /etc/makepkg.conf`, 在 `OPTIONS` 的 `debug` 前面加上 `!`。是最近出现的新问题，以前没遇到过。参考：https://bbs.archlinux.org/viewtopic.php?id=293055
