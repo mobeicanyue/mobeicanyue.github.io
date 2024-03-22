@@ -16,19 +16,20 @@ date: 2024-03-21 06:06:15
 `Archlinux` 是一个以简洁、轻量、灵活、可自定义为设计理念的 `Linux` 发行版，致力于通过 **滚动更新** 来更新系统和软件包。默认安装只有最小的基本系统，由用户自行添加需要的软件，它的安装过程相对于其他发行版来说要复杂一些。
 
 它有社区维护的 [`AUR`（Arch User Repository）](https://aur.archlinux.org)软件仓库，用户可以在这里找到大量的软件包，通过简单的命令即可编译安装。
-除此以外，`Archlinux` 还有丰富的[官方文档](https://wiki.archlinux.org)和[庞大的社区](https://bbs.archlinux.org/)，这些资源详细地描述了安装、配置和维护系统的过程，对新手或者有一定 `Linux` 基础的用户来说都是非常有帮助的。
+除此以外，`Archlinux` 还有丰富的[官方文档](https://wiki.archlinux.org)和[庞大的社区](https://bbs.archlinux.org/)，这些资源详细地描述了安装、配置和维护系统的过程，对新手或者有一定 Linux 基础的用户来说都是非常有帮助的。
 
-当然，如果你没有足够的耐心和时间，或者你只是想要一个稳定的系统，并且你没有足够的 `Linux` 基础，那么 `Archlinux` 可能不适合你。
+当然，如果你没有足够的耐心和时间，或者你只是想要一个稳定的系统，并且你没有足够的 `Linux 基础`，那么 `Archlinux` 可能不适合你。
 {% endnote %}
 
 本文主要记录了我安装 `Archlinux` 的过程。
 
 众所周知，[Manjaro](https://manjaro.org) 是一个基于 [Archlinux](https://archlinux.org) 的发行版。
 
-我之前久闻 AUR 的大名，决定尝试一下 `Manjaro` 。经过我半年的使用，发现确实很不错，可堪大用，`Manjaro` 开箱即用，内置了很多好用的开源软件，很多系统设置也有对应缺省。开发代码、日用如看视频、写文章等都有不错的体验，除了玩游戏（其实我现在也很少玩游戏了）。
+我之前久闻 AUR 的大名，决定尝试一下 `Manjaro` 。经过我半年的使用，发现确实很不错，可堪大用，`Manjaro` 开箱即用，内置了很多好用的开源软件，很多系统设置也有对应缺省。开发写代码、日用看视频、写文章等都有不错的体验，除了玩游戏（其实我现在也很少玩游戏了）。
 
 `Manjaro` 对 `Archlinux` 进行了很多魔改。
-尽管 Manjaro 使用 pacman 软件包管理器，但它有自己的软件库，且 `Manjaro` 使用 `archlinuxcn` 的软件源经常出现问题，导致我无法安装一些软件，经过询问相关人员得出结论，Manjaro 可以使用大部分 AUR，但是不要使用 `archlinuxcn`。加之 `Manjaro` 的软件源更新太慢了，用户需要等待几周，才可以安装上游的新版本软件。
+尽管 Manjaro 使用 pacman 软件包管理器，但它有自己的软件库，如果看镜像源就会发现 Manjaro 的镜像源为 https://mirrors.ustc.edu.cn/manjaro/ 而 Arch 的镜像源为 https://mirrors.ustc.edu.cn/archlinux/ 二者并不完全等价
+且 Manjaro 使用 `archlinuxcn` 的软件源经常出现问题，导致我无法安装一些软件，经过询问相关人员得出结论，Manjaro 可以使用大部分 AUR，但是不要使用 `archlinuxcn`。加之 `Manjaro` 的软件源更新太慢了，用户需要等待几周，才可以安装上游的新版本软件。
 
 如此种种致使我想尝试一下原汁原味的 `Archlinux`。
 
@@ -136,43 +137,43 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 
 ## 5. 我安装的软件包
 
-AUR 包管理工具
-- `yay`：AUR 包管理工具，使用 `go` 语言编写。
-- `paru`：AUR 包管理工具，使用 `rust` 语言编写。用法与 `yay` 类似
+### AUR helper
+- `yay`：AUR 包管理工具，使用 `go` 语言编写。`archlinuxcn`
+- `paru`：AUR 包管理工具，使用 `rust` 语言编写。用法与 `yay` 类似。`archlinuxcn`
 
-开发环境
-- `gcc(C/C++)`, `python`：是 Archlinux 默认内置的，不需要额外安装
-- `jdk17-openjdk`：openjdk 17，Java 开发环境
-- `nodejs-lts-iron`：Node.js 20，LTS 版本
-- `npm`, `yarn`, `pnpm`: Node.js 包管理工具
+### 开发环境
+- `gcc(C/C++)`, `python`：是 Archlinux 默认内置的，不需要额外安装。`core`
+- `jdk17-openjdk`：openjdk 17，Java 开发环境。`extra`
+- `nodejs-lts-iron`：Node.js 20，LTS 版本。`extra`
+- `npm`, `yarn`, `pnpm`: Node.js 包管理工具。`extra`
 
-开发工具
-- `visual-studio-code-bin`：伟大，无需多言
-- `intellij-idea-ultimate-edition`：著名的 Java IDE
-- `beekeeper-studio-bin`：数据库管理工具
+### 开发工具
+- `visual-studio-code-bin`：伟大，无需多言。`aur`
+- `intellij-idea-ultimate-edition`：著名的 Java IDE。`aur`
+- `beekeeper-studio-bin`：数据库管理工具。`aur`
+- `hoppscotch-bin`：API 接口调试工具。`aur`
 
-实用工具
-- `openssh`：SSH 客户端
-- `flameshot`：Linux 著名的截图工具，非常好用。
-- `wireshark-qt`：网络抓包工具
-- `kdeconnect`：用于连接手机，可以在电脑上接收手机的通知，发送文件等，神器
-- `spctacle`：KDE 的截图工具，可以截取当前窗口，全屏，矩形等。但是总体没有 `flameshot` 好用。
-- `kfind`：文件搜索工具，搜索文件很方便
-- `obs-studio`：开源的录屏软件，非常好用，听说大主播都用这个
-- `filelight`：图形化界面直观查看磁盘占用情况
-- `mpv`：Linux 上的播放器，感觉比 vlc 好用
+### 实用工具
+- `openssh`：SSH 客户端和服务端。`core`
+- `flameshot`：Linux 著名的截图工具，非常好用。`extra`
+- `wireshark-qt`：网络抓包工具。`extra`
+- `kdeconnect`：用于连接手机，可以在电脑上接收手机的通知，发送文件等，神器。`extra`
+- `spectacle`：KDE 的截图工具，可以截取当前窗口，全屏，矩形等。但是总体没有 `flameshot` 好用。`extra`
+- `kfind`：文件搜索工具，搜索文件很方便。`extra`
+- `obs-studio`：开源的录屏软件，非常好用，听说大主播都用这个。`extra`
+- `filelight`：图形化界面直观查看磁盘占用情况。`extra`
+- `mpv`：Linux 上的播放器，感觉比 vlc 好用。`extra`
+- `rar`：解压 rar 文件，万恶的 rar 格式。`archlinuxcn`
 
+### 休闲娱乐办公
+- `linuxqq`：Linux 上的 QQ 客户端，现在是用 electron 写的，好看。`aur`
+- `google-chrome`：谷歌浏览器，`aur`。你也可以选择开源的 `chromium`，`extra`
+- `wps-office-cn`, `wps-office-mui-zh-cn`：WPS Office，国产办公软件。`aur`
+- `okular`：KDE 的 PDF 阅读器。`extra`
 
-休闲娱乐办公
-- `linuxqq`：Linux 上的 QQ 客户端，现在是用 electron 写的，好看
-- `google-chrome`：谷歌浏览器。firefox 在手机上相当不好用，卡的一
-- `wps-office-cn`, `wps-office-mui-zh-cn`：WPS Office，国产办公软件
-- `okular`：KDE 的 PDF 阅读器
-
-
-字体
-- `misans`：小米 misans，很好看 适合日用
-- `ttf-jetbrains-mono-nerd`：JetBrains Mono 字体，适用于终端、代码字体
+### 字体
+- `misans`：小米 misans，很好看 适合日用。`aur`
+- `ttf-jetbrains-mono-nerd`：JetBrains Mono 字体，适用于终端、代码字体。`extra`
 
 
 ## 6. 我的配置
