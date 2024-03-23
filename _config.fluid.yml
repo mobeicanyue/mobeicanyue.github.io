@@ -237,7 +237,17 @@ custom_js:
 # The usage is the same as custom_js
 custom_css: https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/lxgwwenkaigbscreen/result.min.css
 
-custom_head: <script async src="https://umami.ovvv.top/script.js" data-website-id="72f672c5-4ac9-4bbf-be13-2ba876d8cb93" data-domains="blog.ovvv.top" data-do-not-track="true"></script>
+custom_head: '<script async>
+  let dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+  useDnt = dnt && (dnt.startsWith("1") || dnt.startsWith("yes") || dnt.startsWith("on"));
+  if (!useDnt) {
+    let umami = document.createElement("script");
+    umami.async = true;
+    umami.src = "https://umami.ovvv.top/script.js";
+    umami.setAttribute("data-website-id", "72f672c5-4ac9-4bbf-be13-2ba876d8cb93");
+    umami.setAttribute("data-domains", "blog.ovvv.top");
+    umami.setAttribute("data-do-not-track", "true");
+    document.head.appendChild(umami);}</script>'
 
 # 网页访问统计
 # Analysis of website visitors
