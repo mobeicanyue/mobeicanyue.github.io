@@ -123,7 +123,7 @@ sudo vim /etc/caddy/Caddyfile
 ```
 
 将以下内容粘贴到文件中：
-```caddy
+```Caddyfile
 example.com {
     root * /var/www/example.com
     file_server
@@ -165,7 +165,7 @@ Caddy 的反向代理是我们常用到的功能，它可以隐藏真实服务�
 ![反向代理过的网站](posts/6645bed3/reverse2.webp)
 
 那么，可以在 Caddyfile 中添加以下内容：
-```caddy
+```Caddyfile
 website.com {
     reverse_proxy localhost:8080
 }
@@ -216,7 +216,7 @@ server {
 ```
 
 这个是 Caddy 的配置：
-```caddy
+```Caddyfile
 app1.website.com {
     reverse_proxy http://127.0.0.1:8081 {
         header_up Host {host}

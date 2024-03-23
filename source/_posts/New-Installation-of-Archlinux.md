@@ -143,14 +143,14 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `paru`：AUR 包管理工具，使用 `rust` 语言编写。用法与 `yay` 类似。`archlinuxcn`
 
 ### 开发环境
-- `gcc(C/C++)`, `python`：是 Archlinux 默认内置的，不需要额外安装。`core`
+- `gcc`(C/C++), `python`：是 Archlinux 默认内置的，不需要额外安装。`core`
 - `jdk17-openjdk`：openjdk 17，Java 开发环境。`extra`
 - `nodejs-lts-iron`：Node.js 20，LTS 版本。`extra`
 - `npm`, `yarn`, `pnpm`: Node.js 包管理工具。`extra`
 
 ### 开发工具
 - `visual-studio-code-bin`：伟大，无需多言。`aur`
-- `intellij-idea-ultimate-edition`：著名的 Java IDE。`aur`
+- `intellij-idea-ultimate-edition`：强大，无需多言。`aur`
 - `beekeeper-studio-bin`：数据库管理工具。`aur`
 - `hoppscotch-bin`：API 接口调试工具。`aur`
 
@@ -163,13 +163,13 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `kfind`：文件搜索工具，搜索文件很方便。`extra`
 - `obs-studio`：开源的录屏软件，非常好用，听说大主播都用这个。`extra`
 - `filelight`：图形化界面直观查看磁盘占用情况。`extra`
-- `mpv`：Linux 上的播放器，感觉比 vlc 好用。`extra`
 - `rar`：解压 rar 文件，万恶的 rar 格式。`archlinuxcn`
 
 ### 休闲娱乐办公
 - `linuxqq`：Linux 上的 QQ 客户端，现在是用 electron 写的，好看。`aur`
 - `google-chrome`：谷歌浏览器，`aur`。你也可以选择开源的 `chromium`，`extra`
-- `wps-office-cn`, `wps-office-mui-zh-cn`：WPS Office，国产办公软件。`aur`
+- `onlyoffice-bin`：开源的办公软件，支持云协作。`aur`
+- `wps-office-cn`, `wps-office-mui-zh-cn`：WPS Office，国产办公软件，但是实际使用会出现一些小问题。`aur`
 - `okular`：KDE 的 PDF 阅读器。`extra`
 
 ### 字体
@@ -184,7 +184,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - paru 包序号从最下面开始显示，和 `yay` 一样：`sudo vim /etc/paru.conf`, 取消 `BottomUp` 的注释。
 - 下载软件包的时候不附带 debug 包：`sudo vim /etc/makepkg.conf`, 在 `OPTIONS` 的 `debug` 前面加上 `!`。是最近出现的新问题，以前没遇到过。参考：https://bbs.archlinux.org/viewtopic.php?id=293055
 - 让 Windows 和 Linux 的时间一致：`timedatectl set-local-rtc 1 --adjust-system-clock`。原理：Windows 会假设硬件时钟就是本地时间（Local Time），即硬件时钟存储的时间是与所在时区相同的时间，如东八区。而 Linux 会假设硬件时钟是协调世界时（UTC）时间。所以在 Linux 下设置硬件时钟为本地时间，Windows 和 Linux 的时间就会一致了。
-- `vim ~/.ssh/config`, 创建 ssh 配置文件，配置 github ssh 推送走 443 端口，避免被坤场阻止 22 端口，如：
+- `vim ~/.ssh/config`, 创建 ssh 配置文件，配置 github ssh 推送走 443 端口，避免被坤场阻止 22 端口：
   ```config
   Host github.com
     Hostname ssh.github.com
