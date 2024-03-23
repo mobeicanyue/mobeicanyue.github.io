@@ -6,7 +6,7 @@
   <link href="https://blog.ovvv.top/atom.xml" rel="self"/>
   
   <link href="https://blog.ovvv.top/"/>
-  <updated>2024-03-22T05:56:51.000Z</updated>
+  <updated>2024-03-23T07:06:43.000Z</updated>
   <id>https://blog.ovvv.top/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>在 Archlinux 上安装使用 MariaDB</title>
+    <link href="https://blog.ovvv.top/posts/53c8336d/"/>
+    <id>https://blog.ovvv.top/posts/53c8336d/</id>
+    <published>2024-03-22T19:06:02.000Z</published>
+    <updated>2024-03-23T07:06:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;note note-secondary&quot;&gt;
+            &lt;p&gt;&lt;code&gt;MariaDB&lt;/code&gt; 是一个可靠的、高性能的、功能全面的数据库，旨在为用户提供长期免费、向下兼容能直接替代 &lt;code&gt;MySQL&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="MariaDB" scheme="https://blog.ovvv.top/tags/MariaDB/"/>
+    
+    <category term="数据库" scheme="https://blog.ovvv.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="btrfs" scheme="https://blog.ovvv.top/tags/btrfs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>初来乍到 Archlinux</title>
     <link href="https://blog.ovvv.top/posts/22b3d1e2/"/>
     <id>https://blog.ovvv.top/posts/22b3d1e2/</id>
     <published>2024-03-20T22:06:15.000Z</published>
-    <updated>2024-03-22T05:56:51.000Z</updated>
+    <updated>2024-03-23T07:06:43.000Z</updated>
     
     
       
@@ -185,9 +213,9 @@
     
     
     
-    <category term="PostgreSQL" scheme="https://blog.ovvv.top/tags/PostgreSQL/"/>
-    
     <category term="数据库" scheme="https://blog.ovvv.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="PostgreSQL" scheme="https://blog.ovvv.top/tags/PostgreSQL/"/>
     
   </entry>
   
@@ -521,31 +549,6 @@
     
     
     <category term="Giscus" scheme="https://blog.ovvv.top/tags/Giscus/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 生成文章唯一永久链接</title>
-    <link href="https://blog.ovvv.top/posts/6a24c2b/"/>
-    <id>https://blog.ovvv.top/posts/6a24c2b/</id>
-    <published>2023-12-29T02:27:37.000Z</published>
-    <updated>2024-03-08T11:56:11.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;1-安装插件&quot;&gt;&lt;a href=&quot;#1-安装插件&quot; class=&quot;headerlink&quot; title=&quot;1. 安装插件&quot;&gt;&lt;/a&gt;1. 安装插件&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Hexo" scheme="https://blog.ovvv.top/tags/Hexo/"/>
-    
-    <category term="优化" scheme="https://blog.ovvv.top/tags/%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
