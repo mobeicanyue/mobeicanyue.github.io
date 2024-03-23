@@ -40,7 +40,7 @@ date: 2024-03-21 06:06:15
 
 ### 1.1 确保网络连接
 
-确保你有 `网线` 或者 `wifi 名非中文` 连接，在安装过程中需要连接网络来下载软件包。
+确保你有 `网线` 或者 `非中文名的 wifi` 连接，在安装过程中需要连接网络来下载软件包。
 
 ### 1.2 下载 Archlinux 镜像
 
@@ -125,6 +125,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 我做出的修改：
 - 不开启 `multilib` 仓库，因为我不想要 32 位的软件。
 - 输入法安装：只安装 `fcitx5-im`, `fcitx5-chinese-addons`, 还有 `fcitx5-rime` 输入法引擎 和 `fcitx-configtool`。没有安装 `fcitx5-anthy`, `fcitx5-pinyin-moegirl`, `fcitx5-material-color` 等，因为我不需要。
+- `timeshift` 配置的时候记得不要勾选 `@home`，因为 home 目录包含视频、音乐等大文件，且回滚时不需要回滚这些文件。
 
 ## 4. 可选配置
 
