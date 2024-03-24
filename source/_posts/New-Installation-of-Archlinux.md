@@ -3,7 +3,6 @@ title: 初来乍到 Archlinux
 tags:
   - Archlinux
   - Linux
-  - 安装
 abbrlink: 22b3d1e2
 date: 2024-03-21 06:06:15
 ---

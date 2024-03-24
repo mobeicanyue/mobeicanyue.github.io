@@ -15,7 +15,7 @@ date: 2024-03-23 03:06:02
 由此可见 `MariaDB` 体现了开源社区对 `MySQL` 的担忧，并且 `MariaDB` 几乎完全兼容 `MySQL`，所以使用上几乎没有区别，可以放心地使用。
 {% endnote %}
 
-## 0. （可选）`btrfs` 文件系统禁用 `COW`
+## 0. `btrfs` 文件系统禁用 `COW`
 
 如果你的系统分区为 `ext4`，可以跳过这一小节。
 
@@ -46,6 +46,9 @@ sudo chattr +C /your/path
 再次输出目录的属性
 ```bash
 sudo lsattr -d /your/path
+```
+如果输出如下：
+```bash
 ---------------C------ /your/path
 ```
 表示设置成功，`C` 表示 `关闭 Copy-on-Write` 特性。[^2]
@@ -265,4 +268,3 @@ MariaDB [(none)]> show databases;
 参考文章：
 [^1]: https://wiki.archlinux.org/title/MariaDB
 [^2]: https://man.archlinux.org/man/chattr.1
-
