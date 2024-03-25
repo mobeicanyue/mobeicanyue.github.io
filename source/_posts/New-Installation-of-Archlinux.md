@@ -154,7 +154,6 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `hoppscotch-bin`：API 接口调试工具。`aur`
 
 ### 实用工具
-- `openssh`：SSH 客户端和服务端。`core`
 - `flameshot`：Linux 著名的截图工具，非常好用。`extra`
 - `wireshark-qt`：网络抓包工具。`extra`
 - `kdeconnect`：用于连接手机，可以在电脑上接收手机的通知，发送文件等，神器。`extra`
@@ -162,7 +161,13 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `kfind`：文件搜索工具，搜索文件很方便。`extra`
 - `obs-studio`：开源的录屏软件，非常好用，听说大主播都用这个。`extra`
 - `filelight`：图形化界面直观查看磁盘占用情况。`extra`
+- `timeshift`：系统备份工具，可以备份系统快照，方便回滚。`extra`
 - `rar`：解压 rar 文件，万恶的 rar 格式。`archlinuxcn`
+
+### 系统组件
+- `openssh`：SSH 客户端和服务端。`core`
+- `man-db`：man 帮助文档。`core`
+- `typos`：拼写检查工具。`extra`
 
 ### 休闲娱乐办公
 - `linuxqq`：Linux 上的 QQ 客户端，现在是用 electron 写的，好看。`aur`

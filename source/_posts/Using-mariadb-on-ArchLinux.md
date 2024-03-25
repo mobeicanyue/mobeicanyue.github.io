@@ -15,6 +15,7 @@ date: 2024-03-23 03:06:02
 由此可见 `MariaDB` 体现了开源社区对 `MySQL` 的担忧，并且 `MariaDB` 几乎完全兼容 `MySQL`，所以使用上几乎没有区别，可以放心地使用。
 {% endnote %}
 
+
 ## 0. `btrfs` 文件系统禁用 `COW`
 
 如果你的系统分区为 `ext4`，可以跳过这一小节。
@@ -54,7 +55,7 @@ sudo lsattr -d /your/path
 表示设置成功，`C` 表示 `关闭 Copy-on-Write` 特性。[^2]
 {% endfold %}
 
-现在我们开始在 btrfs 上禁用 Copy-on-Write 特性：
+现在我们开始禁用数据库目录的 Copy-on-Write 特性：
 
 {% fold info @在 btrfs 上禁用 COW %}
 如果你的 `MariaDB` 数据库运行在 `btrfs` 分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性，否则可能会导致性能问题。不应创建数据库之后再禁用，因为这一更改只会影响新创建的文件，而不会影响现有文件。
@@ -69,16 +70,25 @@ sudo mkdir /var/lib/mysql
 展示目录属性：
 ```bash
 sudo lsattr -d /var/lib/mysql
+```
+输出如下：
+```bash
 ---------------------- /var/lib/mysql
 ```
+<br>
 
 现在设置目录不开启 `Copy-on-Write` 特性：
 ```bash
 sudo chattr +C /var/lib/mysql/
 ```
+<br>
+
 展示目录属性：
 ```bash
 sudo lsattr -d /var/lib/mysql
+```
+输出如下：
+```bash
 ---------------C------ /var/lib/mysql
 ```
 
@@ -89,7 +99,6 @@ sudo lsattr -d /var/lib/mysql
 
 ## 1. 安装 MariaDB
 
-### 1.1 安装 MariaDB
 ```bash
 sudo pacman -S mariadb
 ```
@@ -101,7 +110,7 @@ sudo pacman -S mariadb
      # mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 ```
 
-### 1.2 初始化数据库
+## 2. 初始化数据库
 所以我们需要初始化数据库：
 ```bash
 sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
@@ -127,17 +136,22 @@ able to connect as any of these users with a password and without sudo
 连接后，如果您需要能够 以任何这些用户身份使用密码 且无需 sudo 进行连接，则可以设置密码。
 
 
-### 1.3 启动 MariaDB 服务
+## 3. 启动 MariaDB 服务
+输入以下命令来启动 `MariaDB` 服务：
 ```bash
 sudo systemctl start mariadb
 ```
-如果没有输出，表示启动成功。
+确认服务是否启动成功
+```bash
+sudo systemctl status mariadb
+```
+如果输出中显示 `Active: active (running)` 就表示服务启动成功了。
 
 
-## 2. 配置 MariaDB
+## 4. 配置 MariaDB
 
 根据 Archwiki 的建议：
-> The mariadb-secure-installation command will interactively guide you through a number of recommended security measures, such as removing anonymous accounts and removing the test database:
+> The `mariadb-secure-installation` command will interactively guide you through a number of recommended security measures, such as removing anonymous accounts and removing the test database:
 
 
 所以我们可以运行 `mariadb-secure-installation` 来进行安全配置：
@@ -231,9 +245,9 @@ Thanks for using MariaDB!
 至此，我们已经完成了 MariaDB 的安全配置。
 
 
-## 3. 使用 MariaDB
+## 5. 使用 MariaDB
 
-### 3.1 登录 MariaDB
+### 5.1 登录 MariaDB
 ```bash
 sudo mariadb
 ```
@@ -245,7 +259,7 @@ sudo mariadb -u root -p
 
 如果这里报错：`ERROR 1698 (28000): Access denied for user 'root'@'localhost'`，那么你需要使用 `sudo mariadb` 来登录，或者重新运行 `sudo mariadb-secure-installation` 来设置密码。
 
-### 3.2 查看数据库
+### 5.2 查看数据库
 ```sql
 SHOW DATABASES;
 ```

@@ -14,6 +14,54 @@ date: 2024-02-29 09:44:23
 {% endnote %}
 
 
+## 0. `btrfs` 文件系统禁用 `COW`
+
+如果你的系统分区为 `ext4`，可以跳过这一小节。
+
+关于 `Copy-on-Write` 特性，可以阅读我的这篇文章 [btrfs 文件系统禁用 COW](https://blog.ovvv.top/posts/53c8336d/#0-btrfs-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8-COW)
+
+现在我们开始禁用数据库目录的 Copy-on-Write 特性：
+
+{% fold info @在 btrfs 上禁用 COW %}
+如果你的 `PostgreSQL` 数据库运行在 `btrfs` 分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性，否则可能会导致性能问题。不应创建数据库之后再禁用，因为这一更改只会影响新创建的文件，而不会影响现有文件。
+
+
+我们创建一个空目录 `/var/lib/postgres/data`：
+```bash
+sudo mkdir /var/lib/postgres/data
+```
+这个目录就是 `PostgreSQL` 数据库的数据目录。
+
+展示目录属性：
+```bash
+sudo lsattr -d /var/lib/postgres/data
+```
+输出如下：
+```bash
+---------------------- /var/lib/postgres/data
+```
+<br>
+
+现在设置目录不开启 `Copy-on-Write` 特性：
+```bash
+sudo chattr +C /var/lib/postgres/data/
+```
+<br>
+
+展示目录属性：
+```bash
+sudo lsattr -d /var/lib/postgres/data
+```
+输出如下：
+```bash
+---------------C------ /var/lib/postgres/data
+```
+
+至此，我们已经在 `/var/lib/postgres/data` 目录下禁用了 `Copy-on-Write` 特性。
+
+{% endfold %}
+
+
 ## 1. 安装 `PostgreSQL`
 ```bash
 sudo pacman -S postgresql
