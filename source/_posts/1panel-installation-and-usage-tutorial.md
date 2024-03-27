@@ -100,5 +100,3 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 ## 6. 申请域名 SSL 证书
 我使用 Cloudflare 的 DNS 服务，它会自动申请 SSL 证书并部署，选择流量代理模式即可使用。
 但如果你的域名在其他注册商托管，或者 二级域名不使用 Cloudflare 代理，那么你可以使用 1panel 申请 SSL 证书。
-
-参考 {% post_link 1panel-applies-for-domain-certificate '1Panel 申请 Let\'s Encrypt 域名证书' %}
