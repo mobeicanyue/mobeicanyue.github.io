@@ -10,22 +10,46 @@ tags:
 > 而想要让更多的人看到自己的博客，就需要做一些 SEO 优化，提升自己的博客在搜索引擎上的排名。
 如果你的博客是部署在 GitHub Pages 上的，就更需要注意了。因为 Github 限制百度的爬虫访问，你的博客在百度上是不会被收录的，而谷歌和必应会收录你的博客。
 
-## 1. 内容优化
-在你的博客中，你需要一些`关键词`和`描述`来帮助搜索引擎索引你的网页，比如你的博客是关于前端的，那么你的`关键词`可以是 `前端`、`JavaScript`、`Vue`、`React` 等等。
+## 0. 提升文章内容质量
+
+SEO 优化的第一步就是提升你的文章内容质量。**搜索引擎会根据你的文章内容来判断你的网站的质量，优秀的文章内容可以提升你的网站在搜索引擎中的排名**。如果你的文章内容质量不高，那么你的网站在搜索引擎中的排名就会很低，甚至根本不会被搜索引擎收录。
+
+所以，**文章优化是 SEO 优化的重中之重!!!**
+
+## 1. 网页关键词和描述
+
+在你的博客中，你需要一些 `关键词` 和 `描述` 来帮助搜索引擎索引你的网页，比如你的博客是关于前端的，那么你的`关键词`可以是 `前端`、`JavaScript`、`Vue`、`React` 等等。`描述` 会在搜索引擎中显示，所以你需要一个简洁明了的描述来吸引用户点击。
 
 在 Hexo 的 `_config.yml` 文件中，你可以配置你的关键词和描述。
-![关键词和描述](key-word.webp)
-如果你的博客不是 Hexo，那么你可以手动在你的网页的 `<head>` 标签中添加 `<meta>` 标签来配置你的关键词和描述。
-![手动添加 head](head.webp)
 
+```yml
+# Site
+title: 漠北残月的博客
+subtitle: '技术与生活'
+description: '这是一个前端博客，分享前端开发经验'
+keywords: '前端, JavaScript, Vue, React'
+```
 
-## 2. 安装 hexo-generator-sitemap
+<br/>
+
+如果你的博客不是 Hexo，请参考你所使用的博客框架的文档，找到你的关键词和描述的配置文件。否则，你也可以手动在你的网页的 `<head>` 标签中添加关键词和描述。
+
+```html
+<meta name="keywords" content="前端, JavaScript, Vue, React">
+<meta name="description" content="这是一个前端博客，分享前端开发经验">
+```
+
+## 2. 生成 sitemap.xml
+
+`sitemap.xml` 是存储网站所有页面链接的文件，搜索引擎可以通过这个文件来爬取你的网站。有助于搜索引擎更好的了解你的网站结构，提高你的网站在搜索引擎中的排名。生成 `sitemap.xml` 文件也是 SEO 优化的一个重要步骤。
+
+如果你的博客是 Hexo，那么你可以使用 `hexo-generator-sitemap` 插件来生成 `sitemap.xml` 文件：
 
 ```bash
 npm install hexo-generator-sitemap --save
 ```
 
-然后 执行
+然后执行
 
 ```bash
 hexo clean && hexo generate
@@ -34,6 +58,8 @@ hexo clean && hexo generate
 就可以在 public 目录下看到 sitemap.xml 文件了。
 
 ## 3. 配置 robots.txt
+
+`robots.txt` 是一个文本文件，它告诉搜索引擎爬虫哪些页面可以爬取，哪些页面不可以爬取。
 
 在 `source` 目录下新建 `robots.txt` 文件，内容如下：
 
@@ -44,8 +70,8 @@ Disallow:
 Sitemap: https://example.com/sitemap.xml
 ```
 
-User-agent: * 表示允许所有的搜索引擎爬取你的网站
-Disallow: 为空 表示 `不限制` 爬取
+User-agent: `*` 表示允许所有的搜索引擎爬取你的网站。
+Disallow: 为空 表示 `不限制` 爬取。如果你想限制搜索引擎爬取某些页面，可以在 Disallow 后面添加你不想让搜索引擎爬取的页面，比如 `Disallow: /admin` 表示不让搜索引擎爬取你的 admin 页面。
 Sitemap: 后面的链接是你的 sitemap.xml 文件的链接，这样搜索引擎就可以通过 sitemap.xml 文件来爬取你的网站了。
 
 ## 4. 搜索引擎提交
@@ -56,6 +82,8 @@ Sitemap: 后面的链接是你的 sitemap.xml 文件的链接，这样搜索引�
 ### 4.1 百度
 百度搜索资源平台：https://ziyuan.baidu.com/site/index
 ![百度搜索资源平台](baidu.webp)
+
+百度收录特别慢，可能需要几天到几个月，不要着急，耐心等待。
 
 ### 4.2 Google
 不出意外，谷歌是会自己爬取你的网站的，但是你可以通过谷歌搜索控制台来查看你的网站的爬取情况、优化你的网站内容、提交站点地图等等。
@@ -76,9 +104,7 @@ Sitemap: 后面的链接是你的 sitemap.xml 文件的链接，这样搜索引�
 ![必应站长平台](bing-page.webp)
 
 ### 4.4 Naver
-Naver 是韩国本土的搜索引擎，类似于国内的百度，不会像 Google Bing 那样自动收录你的网站。如果有需要，可以注册一个 Naver 账号，然后提交你的网站。
-注意 IP 限制，Naver 需要韩国 IP 才能注册。
-![注册](register.webp)
+Naver 是韩国本土的搜索引擎，类似于国内的百度，不会像 Google, Bing 那样自动收录你的网站。如果有需要，可以注册一个 Naver 账号，然后提交你的网站。
 
 站长平台：https://searchadvisor.naver.com/console/board
 ![验证所有权](verify.webp)
@@ -93,9 +119,12 @@ Naver 是韩国本土的搜索引擎，类似于国内的百度，不会像 Goog
 Yandex、DuckDuckGo、Yahoo 等搜索引擎会自动爬取你的网站，不需要去站长手动提交（不主流，没啥必要）。
 
 ## 5. 优化性能
-搜索引擎会根据你的网站的性能来排名，所以你需要优化你的网站的性能。
 
-访问 https://pagespeed.web.dev/ 输入你的网站地址，然后就可以看到你的网站的性能了。根据提示来优化你的网站。
+性能优化是 SEO 优化的重要一环，一个网站的性能好坏直接影响到用户体验，也会影响到搜索引擎对你网站的评价。
+
+访问 https://pagespeed.web.dev/ 输入你的网站地址，就可以看到你的网站的性能了。根据提示来优化你的网站。当然，这只是一个参考，你可以根据自己的需求来优化你的网站。
+
+比如说你的博客主要针对国内用户，那么你可能会用国内的静态资源 CDN 来加速你的网站，比如七牛、BootCDN、baomitu、字节 等等。这种对于用户体验是有帮助的。但是这些 CDN 往往没有优化国外节点，`PageSpeed Insights` 是谷歌的检测网页用户体验工具，可能就不会给你很高的分数。所以，分数只是一个参考，你可以根据自己的需求来优化你的网站。
 
 ## 6. 外链与反链
 
