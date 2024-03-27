@@ -6,7 +6,7 @@ tags:
   - Hexo
 ---
 
-我是 `Linux` 操作系统 `Manjaro` 分支，所以文章着重介绍 `Linux` 下的环境搭建。
+我是 `Linux` 操作系统 `Arch` 分支，所以文章着重介绍 `Linux` 下的环境搭建。
 `Windows` 下的环境搭建有不小的差异，但是原理是一样的。
 
 ### 1. 检查 Git 环境

@@ -9,7 +9,7 @@ layout: about
 
 本站建于 2023 年 12 月 26 日，是一个个人博客，主要记录一些技术、生活、学习、等方面的内容。个人简介见 [mobeicanyue](https://www.ovvv.top).
 
-本博客使用了开源静态博客框架 [Hexo](https://hexo.io/zh-cn) 及主题 [Fluid](https://hexo.fluid-dev.com/docs)，开源统计工具 [Umami](https://umami.is)。本站全站静态网页无 cookie（但是必应每日一图有，微软的锅）
+本博客使用了开源静态博客框架 [Hexo](https://hexo.io/zh-cn) 及主题 [Fluid](https://hexo.fluid-dev.com/docs)，开源统计工具 [Umami](https://umami.is)，遵守您的 DNT 设定。全站静态网页无 cookie（但是必应每日一图有，微软的锅）
 
 源代码托管于 [Github](https://github.com/mobeicanyue) 并自动构建，通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的优质服务支持。
 

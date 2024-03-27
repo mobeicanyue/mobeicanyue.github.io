@@ -3,6 +3,7 @@ title: 在 ArchLinux 上安装使用 PostgreSQL
 tags:
   - PostgreSQL
   - 数据库
+  - btrfs
 abbrlink: d2adab3b
 date: 2024-02-29 09:44:23
 ---
