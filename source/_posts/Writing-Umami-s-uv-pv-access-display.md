@@ -1,16 +1,20 @@
 ---
-title: 编写 Umami 的 UV, PV 访问统计显示
+title: Umami UV / PV 统计显示
 tags:
   - Umami
 abbrlink: 4259ee82
 date: 2024-02-25 19:47:17
 ---
 
-> Umami is a simple, fast, privacy-focused alternative to Google Analytics.
-> 
-> Umami 是一个简单、快速、注重隐私的 Google Analytics 替代品。
+In this post I will demonstrate how to implement Umami's UV, PV visit statistics display. 
+这篇文章我将演示如何实现 Umami 的 UV, PV 访问统计显示。
 
-本站的 Umami 访问统计页面，显示了每日的访问量和访问人数，链接：https://umami.ovvv.top/share/SYu8qUKmty52PW9w/blog
+Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+Umami 是一个简单、快速、注重隐私的 Google Analytics 替代品。
+
+<br>
+
+这是本站的 Umami 访问统计页面，显示了每日的访问量和访问人数，链接：https://umami.ovvv.top/share/SYu8qUKmty52PW9w/blog
 
 ![浏览量展示](display.webp)
 
@@ -27,7 +31,11 @@ date: 2024-02-25 19:47:17
 
 
 {% fold info @一点碎碎念 %}
-肯定有读者很疑惑，为什么不直接调用 Umami 的 API 获取数据，而是要额外创建一个账户。因为我的博客是 **静态开源无服务器** 的，往往需要将生成的代码展示在前端，包括 API 调用。而 Umami 的 API 权限太大了[^1]，如果使用 `admin` 权限的 API Token，那么这个 token 可以获取、修改、删除所有网站的数据，会有严重的安全隐患。所以我们需要创建一个 `View only` 权限的用户，然后使用这个用户的 API Token
+肯定有读者很疑惑，为什么不直接调用 Umami 的 API 获取数据，而是要额外创建一个账户。
+
+因为我的博客是 **静态开源无服务器** 的，所有代码都展示在前端，包括 API 调用。而 Umami 的 `admin` API 权限太大了[^1]，如果使用 `admin` 权限的 API Token，那么这个 token 可以获取、修改、删除所有网站的数据，会有严重的安全隐患。
+
+所以我们需要创建一个 `View only` 权限的用户，使用这个 `低权限的用户`的 API Token 来访问我们的浏览量等数据。
 {% endfold %}
 
 ## 2. 新建 `Team` 并添加用户和网站
@@ -176,7 +184,6 @@ Authorization: Bearer eyTMjU2IiwiY...4Q0JDLUhWxnIjoiUE_A
 
                 console.log(uniqueVisitors, pageViews);
                 console.log(data);
-                return data;
             } catch (error) {
                 console.error(error);
                 return "-1";
