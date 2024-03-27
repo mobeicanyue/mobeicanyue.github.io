@@ -198,7 +198,7 @@
     <link href="https://blog.ovvv.top/posts/d2adab3b/"/>
     <id>https://blog.ovvv.top/posts/d2adab3b/</id>
     <published>2024-02-29T01:44:23.000Z</published>
-    <updated>2024-03-25T01:41:46.000Z</updated>
+    <updated>2024-03-27T15:30:52.000Z</updated>
     
     
       
@@ -215,25 +215,25 @@
     
     <category term="数据库" scheme="https://blog.ovvv.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
+    <category term="btrfs" scheme="https://blog.ovvv.top/tags/btrfs/"/>
+    
     <category term="PostgreSQL" scheme="https://blog.ovvv.top/tags/PostgreSQL/"/>
     
   </entry>
   
   <entry>
-    <title>编写 Umami 的 UV, PV 访问统计显示</title>
+    <title>Umami UV / PV 统计显示</title>
     <link href="https://blog.ovvv.top/posts/4259ee82/"/>
     <id>https://blog.ovvv.top/posts/4259ee82/</id>
     <published>2024-02-25T11:47:17.000Z</published>
-    <updated>2024-02-29T11:19:51.000Z</updated>
+    <updated>2024-03-27T15:55:18.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Umami is a simple, fast, privacy-focused alternative to Google Analytics.&lt;/p&gt;
-&lt;p&gt;Umami 是一个简单、快速、注重隐私的 Google Analytics</summary>
+    <summary type="html">&lt;p&gt;In this post I will demonstrate how to implement Umami’s UV, PV visit statistics display.&lt;br&gt;这篇文章我将演示如何实现 Umami 的 UV, PV</summary>
         
       
     
@@ -326,37 +326,11 @@
   </entry>
   
   <entry>
-    <title>1Panel 申请 Let&#39;s Encrypt 域名证书</title>
-    <link href="https://blog.ovvv.top/posts/e6ee4a29/"/>
-    <id>https://blog.ovvv.top/posts/e6ee4a29/</id>
-    <published>2024-02-02T06:00:09.000Z</published>
-    <updated>2024-02-29T11:19:51.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;域名证书是网站安全的基础，它可以保护网站的数据传输安全，防止中间人攻击。而 Let’s Encrypt 是一个免费的证书颁发机构，它提供了免费的域名证书，可以让我们的网站免费使用 HTTPS</summary>
-        
-      
-    
-    
-    
-    
-    <category term="1Panel" scheme="https://blog.ovvv.top/tags/1Panel/"/>
-    
-    <category term="Let&#39;s-Encrypt" scheme="https://blog.ovvv.top/tags/Let-s-Encrypt/"/>
-    
-  </entry>
-  
-  <entry>
     <title>博客 SEO 优化</title>
     <link href="https://blog.ovvv.top/posts/d6d74ca/"/>
     <id>https://blog.ovvv.top/posts/d6d74ca/</id>
     <published>2024-01-28T04:56:50.000Z</published>
-    <updated>2024-03-08T11:56:11.000Z</updated>
+    <updated>2024-03-27T15:05:25.000Z</updated>
     
     
       
@@ -549,6 +523,31 @@
     
     
     <category term="Giscus" scheme="https://blog.ovvv.top/tags/Giscus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 生成文章唯一永久链接</title>
+    <link href="https://blog.ovvv.top/posts/6a24c2b/"/>
+    <id>https://blog.ovvv.top/posts/6a24c2b/</id>
+    <published>2023-12-29T02:27:37.000Z</published>
+    <updated>2024-03-08T11:56:11.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1-安装插件&quot;&gt;&lt;a href=&quot;#1-安装插件&quot; class=&quot;headerlink&quot; title=&quot;1. 安装插件&quot;&gt;&lt;/a&gt;1. 安装插件&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo" scheme="https://blog.ovvv.top/tags/Hexo/"/>
+    
+    <category term="优化" scheme="https://blog.ovvv.top/tags/%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
