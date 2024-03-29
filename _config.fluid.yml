@@ -359,6 +359,7 @@ navbar:
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "RSS", link: "/atom.xml", icon: "iconfont icon-rss" }
     - { key: "随机", link: "#", icon: "iconfont icon-code"}
+    - { key: "笔记", link: "/posts/fcd36967", icon: "iconfont icon-pen"}
     #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
 

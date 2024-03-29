@@ -1,5 +1,5 @@
 ---
-title: about
+title: 关于漠北残月
 date: 2023-12-26 22:43:21
 layout: about
 ---
