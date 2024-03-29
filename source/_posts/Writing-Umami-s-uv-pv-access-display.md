@@ -6,7 +6,7 @@ abbrlink: 4259ee82
 date: 2024-02-25 19:47:17
 ---
 
-In this post I will demonstrate how to implement Umami's UV, PV visit statistics display. 
+I'll demonstrate how to implement Umami's UV, PV visit statistics display. 
 这篇文章我将演示如何实现 Umami 的 UV, PV 访问统计显示。
 
 Umami is a simple, fast, privacy-focused alternative to Google Analytics.
@@ -40,7 +40,7 @@ Umami 是一个简单、快速、注重隐私的 Google Analytics 替代品。
 
 ## 2. 新建 `Team` 并添加用户和网站
 
-`Settings` -> `Teams` -> `Create team` -> 填写名称 -> `Save` -> 找到刚刚创建的 `Team` -> `Edit` -> 复制 `Access code`，点击 `Websites` 中点击 `Add website` 选中你想共享的网站 
+`Settings` -> `Teams` -> `Create team` -> 填写名称 -> `Save` -> 找到刚刚创建的 `Team` -> `Edit` -> 复制 `Access code`，点击 `Websites`，点击 `Add website` 添加你想共享的网站
 
 换一个浏览器登录 Umami（使用`View only` 权限的用户） -> `Settings` -> `Teams` -> `Join team` -> 输入 `Access code` -> `Join` -> 如果没有出错的话，点击 `Dashboard` 就可以看到你刚刚添加的网站了
 
@@ -50,7 +50,7 @@ Umami 是一个简单、快速、注重隐私的 Google Analytics 替代品。
 ```
 POST /api/auth/login
 ```
-例如 你的网站地址为 `example.com`，那么你需要使用 `View only` 的账户密码向 `https://example.com/api/auth/login` 发送一个 POST 请求，请求体为：
+例如 你的网站地址为 `example.com`，那么你需要使用 `View only` 的账户密码向 `https://example.com/api/auth/login` 发送一个 `POST` 请求，请求体为：
 
 ```json
 {
@@ -89,9 +89,9 @@ Authorization: Bearer eyTMjU2IiwiY...4Q0JDLUhWxnIjoiUE_A
 
 `websiteId` 和 `startAt` 需要我们自己获取
 
-`websiteId` 可以在 `Dashboard` -> `View details` -> 看浏览器栏的地址 `https://example.com/websites/{websiteId}` 中找到
+`websiteId` 可以在 `Dashboard` -> 点击你网站的 `View details` -> 浏览器栏的地址 `https://example.com/websites/{websiteId}` 中找到 {websiteId}
 
-`startAt` 可发送 `GET` 请求到 `https://example.com/api/websites/{websiteId}`，请求头为
+`startAt` 可发送 `GET` 请求到 `https://example.com/api/websites/{websiteId}`，带上上文获取的请求头
 
 ```
 Authorization: Bearer eyTMjU2IiwiY...4Q0JDLUhWxnIjoiUE_A

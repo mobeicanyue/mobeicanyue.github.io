@@ -15,7 +15,6 @@ tags:
 - {% post_link Fluid-theme-installation '安装 Fluid 主题' %}
 - {% post_link Use-lxgw-wenkai-in-fluid '在 Fluid 主题中使用霞鹜文楷' %}
 - {% post_link Fix-article-updated-time-on-github-pages '修复 Github Pages 上的文章更新时间' %}
-- {% post_link Hexo-Fluid-set-footer 'Hexo Fluid 设置页脚' %}
 
 ### 博客优化
 - {% post_link Compress-deploy-code-size '压缩部署的代码' %}
