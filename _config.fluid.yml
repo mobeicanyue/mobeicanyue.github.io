@@ -895,15 +895,15 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo: mobeicanyue/mobeicanyue.github.io
-  repo-id: R_kgDOK91kYA
+  repo: mobeicanyue/blog-comment
+  repo-id: R_kgDOLnLyGw
   category: Announcements
-  category-id: DIC_kwDOK91kYM4CcEec
+  category-id: DIC_kwDOLnLyG84CeUpm
   theme-light: light
   theme-dark: dark
   mapping: pathname
   reactions-enabled: 1
-  emit-metadata: 0
+  emit-metadata: 1
   input-position: top
   lang: zh-CN
 
