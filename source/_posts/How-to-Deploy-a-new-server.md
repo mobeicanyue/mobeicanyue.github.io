@@ -350,9 +350,9 @@ ssh root@<服务器 IP 地址> -p 2222
 
 ### 5.2 防火墙的选择
 
-RedHat/CentOS 系统使用的是 `firewalld` 防火墙，而 Debian/Ubuntu 系统使用的是 `ufw` 防火墙。
+RedHat/CentOS 系统可以选择 `firewalld` 防火墙，而 Debian/Ubuntu 系统可以选择 `ufw` 防火墙。
 
-本文使用的是 Debian 系统，所以我们使用 `ufw` 防火墙。
+本文使用的是 Debian 系统，所以我们可以选择 `ufw` 防火墙。
 
 ### 5.3 安装 ufw
 
@@ -383,7 +383,21 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
-## 6. 配置 Fail2ban
+## 6. 禁用 ping
+
+如果你不希望别人通过 ping 来探测你的服务器，可以禁用 ping：
+
+在 `/etc/sysctl.conf` 文件中添加以下内容：
+```bash
+net.ipv4.icmp_echo_ignore_all = 1
+```
+
+然后重新加载配置文件：
+```bash
+sudo sysctl -p
+```
+
+## 7. 配置 Fail2ban
 可以参考我的文章：{% post_link Fail2ban-installation-and-usage-tutorial 'Fail2ban 安装使用教程' %}
 
 Fail2Ban 是一个入侵检测系统框架，它可以监控服务器的日志文件，当发现有暴力破解行为时，会自动封禁攻击者的 IP 地址。可以保护电脑服务器免受暴力破解。它用 Python 编写。能够在具有本地安装的数据包控制系统或防火墙（如 iptables）接口的 POSIX 系统上运行。
