@@ -1,5 +1,5 @@
 ---
-title: 启用博客评论
+title: 启用博客评论 Giscus
 abbrlink: 7671c28e
 date: 2023-12-29 16:39:46
 tags:
@@ -10,7 +10,6 @@ tags:
 我认为评论功能是一个博客不可或缺的组成部分，作者可以通过评论获得读者反馈，比如说我文章哪里写错了或者哪里需要更新，而读者也可以通过评论与作者交流。
 
 又由于我 Hexo 部署的是 GitHub Pages 静态博客网页，依靠后端的评论系统不现实。所以我考虑依靠 Github 自带的 Issues 或者 Discussions 评论系统来实现评论功能。
-
 {% endnote %}
 
 Fluid 主题支持三种基于 GitHub 的评论系统，分别是：`Gitalk` `Utterances` `Giscus`，前两者基于 Issues，后者基于 Discussions。我选择 Discussions，因为我觉得 Discussions 更适合评论，Issues 更适合提 BUG 或需求。
@@ -18,7 +17,7 @@ Fluid 主题支持三种基于 GitHub 的评论系统，分别是：`Gitalk` `Ut
 在配置完成后，`giscus` 加载时，会使用 GitHub Discussions 搜索 API 根据选定的映射方式（如 URL、pathname、title 等）来查找与当前页面关联的 discussion。如果找不到匹配的 discussion，giscus bot 就会在第一次有人留下评论或回应时自动创建一个 discussion。这样你的博客读者 登陆 Github 即可对文章评论了。
 
 
-### 1. 配置 Giscus
+## 1. 配置 Giscus
 
 [Giscus 配置页](https://giscus.app/zh-CN)
 
@@ -56,16 +55,14 @@ Fluid 主题支持三种基于 GitHub 的评论系统，分别是：`Gitalk` `Ut
 此时来到下面，这个 `script` 标签就会显示你相应的参数。
 ![参数列表](configure8.webp)
 
-### 2. 配置 comment 参数
+## 2. 配置 comment 参数
 
-1. 主题不支持，手动添加评论
+### 2.1 主题不支持，手动添加评论
 
 在你想让评论出现的位置添加上图的 `script` 标签。但如果已经存在带有 giscus 类的元素，则评论会被放在那里。
 你可以在嵌入的页面中使用 .giscus 和 .giscus-frame 选择器来自定义容器布局。
 
-<br/>
-
-2. 主题支持，修改主题配置
+### 2.2 主题支持，修改主题配置
 
 修改主题配置（建议搜索 comment 照着修改）
 
@@ -98,9 +95,38 @@ giscus:
 
 如果没有看见评论功能，注意清除一下缓存 `hexo clean` 或者检查一下你的参数配置是否正确。
 
+## 3. 进阶配置
+
+进阶配置可通过在 仓库根目录下 创建一个 `giscus.json` 文件来完成。
+如设置 **限制允许评论的域名**，**评论的默认排序**等。
+
+示例如下：
+
+```json
+{
+  "origins": [
+    "https://giscus.app",
+    "https://giscus.vercel.app",
+    "https://giscus-component.vercel.app"
+  ],
+  "originsRegex": [
+    "https://giscus-git-([A-z0-9]|-)*giscus\\.vercel\\.app",
+    "https://giscus-component-git-([A-z0-9]|-)*giscus\\.vercel\\.app",
+    "http://selfhost:[0-9]+"
+  ],
+  "defaultCommentOrder": "oldest"
+}
+```
+
+- 你可以使用 `origins` 键限制可以加载 giscus 以及 存储库 Discussion 的域名。 `origins` 键接受一个字符串列表，将与 加载 giscus 的页面的 `window.origin` 进行校验。
+- `originsRegex` 键使用正则表达式来校验 `origin`。
+- `defaultCommentOrder` 键用于设置评论的默认排序方式。可选值为 `oldest` 或 `newest`。默认是 `oldest`。
+
+
 <br/><br/><br/><br/>
 
-2323.12.30 更新
+
+2023.12.30 更新
 
 发生了件趣事，昨天下午我开启了 `Giscus` ，晚上就崩溃了，一直显示 `Fetch Failed`报错 😣我还以为是我配置出了问题，就重新配置了一遍，还是不行。
 ![评论区报错](fail.webp)
@@ -117,3 +143,12 @@ giscus:
 
 这位友人还以为这个`bug` 是产品特色，哈哈哈哈
 ![这位友人还以为这个`bug` 是产品特色](fail4.webp)
+
+2024.3.31 更新
+
+绷不住了，有个小白直接复制了我的 Fluid 配置文件（里面带有 Giscus 配置），导致他使用博客评论的时候，在我的 Github Discussion 显示他博客的评论。
+
+其实不难理解，Giscus 并不知道当前页面是不是你的博客，它只会在有评论请求的时候，根据你的配置参数，去你的 Github 仓库里面找到对应的 Discussion，如果没有就会创建一个。所以会出现这种情况。
+
+现在我在仓库里面配置了一个 `giscus.json` 文件，限制了 `origins` 只有我博客的域名才能加载 Giscus。解决了这个问题。
+
