@@ -84,7 +84,7 @@ date: 2024-04-02 19:01:33
 这里贴一个 B 站很好的解说视频，虽然有些小细节没有讲解，但是寓意和故事的解读都很到位。
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-<iframe src="//player.bilibili.com/player.html?bvid=BV1mx4y1D75N" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0; border-radius: 5px"> </iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1mx4y1D75N&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0; border-radius: 5px"> </iframe>
 </div>
 
 <br>
