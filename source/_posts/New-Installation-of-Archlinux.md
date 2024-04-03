@@ -141,7 +141,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 
 ### 开发环境
 - `gcc`(C/C++), `python`：是 Archlinux 默认内置的，不需要额外安装。`core`
-- `jdk17-openjdk`：openjdk 17，Java 开发环境。`extra`
+- `jdk21-openjdk`：openjdk 21，Java 开发环境，LTS 版本。`extra`
 - `nodejs-lts-iron`：Node.js 20，LTS 版本。`extra`
 - `npm`, `yarn`, `pnpm`: Node.js 包管理工具。`extra`
 
@@ -169,6 +169,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 
 ### 休闲娱乐办公
 - `linuxqq`：Linux 上的 QQ 客户端，现在是用 electron 写的，好看。`aur`
+- `wechat-universal-bwrap`：微信终于有了 Linux 非 wine 的好用版本，但功能还是有点少，慢慢加功能吧。`aur`
 - `google-chrome`：谷歌浏览器，`aur`。你也可以选择开源的 `chromium`，`extra`
 - `onlyoffice-bin`：开源的办公软件，支持云协作。`aur`
 - `wps-office-cn`, `wps-office-mui-zh-cn`：WPS Office，国产办公软件，但是实际使用会出现一些小问题。`aur`
