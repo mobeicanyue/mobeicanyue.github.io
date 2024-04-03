@@ -103,15 +103,9 @@ sudo lsattr -d /var/lib/mysql
 sudo pacman -S mariadb
 ```
 
-我们在安装信息中可以看到：
-```bash
-:: You need to initialize the MariaDB data directory prior to starting
-   the service. This can be done with mariadb-install-db command, e.g.:
-     # mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
-```
-
 ## 2. 初始化数据库
-所以我们需要初始化数据库：
+
+根据安装提示，我们在使用前还需初始化数据库：
 ```bash
 sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 ```
