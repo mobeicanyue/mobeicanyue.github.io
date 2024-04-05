@@ -19,13 +19,15 @@ date: 2024-02-29 09:44:23
 
 如果你的系统分区为 `ext4`，可以跳过这一小节。
 
-关于 `Copy-on-Write` 特性，可以阅读我的这篇文章 [btrfs 文件系统禁用 COW](https://blog.ovvv.top/posts/53c8336d/#0-btrfs-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8-COW)
-
-现在我们开始禁用数据库目录的 Copy-on-Write 特性：
 
 {% fold info @在 btrfs 上禁用 COW %}
-如果你的 `PostgreSQL` 数据库运行在 `btrfs` 分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性，否则可能会导致性能问题。不应创建数据库之后再禁用，因为这一更改只会影响新创建的文件，而不会影响现有文件。
+Btrfs（B-tree 文件系统），一种支持写入时复制（COW）的文件系统。
+`COW` 简单说就是 写入 `不会就地覆盖数据`；相反，数据块在被复制和修改后会 `写入到新的位置`，元数据也会更新以指向新的位置。
 
+如果你的 `PostgreSQL` 数据库运行在 `btrfs` 系统分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性[^1]，否则可能会导致性能问题。
+不应创建数据库之后再禁用，因为这一更改只会影响新创建的文件，而不会影响现有文件。
+
+---
 
 我们创建一个空目录 `/var/lib/postgres/data`：
 ```bash
@@ -41,9 +43,11 @@ sudo lsattr -d /var/lib/postgres/data
 ```bash
 ---------------------- /var/lib/postgres/data
 ```
-<br>
+表示 **目录没有设置任何属性**
 
-现在设置目录不开启 `Copy-on-Write` 特性：
+---
+
+现在设置禁用目录 `Copy-on-Write` 特性：
 ```bash
 sudo chattr +C /var/lib/postgres/data/
 ```
@@ -57,7 +61,7 @@ sudo lsattr -d /var/lib/postgres/data
 ```bash
 ---------------C------ /var/lib/postgres/data
 ```
-
+`C` 表示 `关闭 Copy-on-Write` 特性。
 至此，我们已经在 `/var/lib/postgres/data` 目录下禁用了 `Copy-on-Write` 特性。
 
 {% endfold %}
@@ -141,5 +145,5 @@ psql
 
 
 参考文章：
-[^1]: https://wiki.archlinuxcn.org/wiki/PostgreSQL
+[^1]: https://wiki.archlinux.org/title/PostgreSQL
 [^2]: https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8

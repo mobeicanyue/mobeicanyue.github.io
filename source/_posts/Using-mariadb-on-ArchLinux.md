@@ -20,46 +20,15 @@ date: 2024-03-23 03:06:02
 
 如果你的系统分区为 `ext4`，可以跳过这一小节。
 
-{% fold info @Copy-on-Write 讲解 %}
-如果数据库 (位于 `/var/lib/mysql`) 运行在 `Btrfs` 分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性。 —— ArchWiki[^1]
-
-可参考 wikipedia 的 [Copy-on-Write](https://en.wikipedia.org/wiki/Copy-on-write) 概念 
-
-`COW` 简单说就是 写入 `不会就地覆盖数据`；相反，数据块在被复制和修改后会 `写入到新的位置`，元数据也会更新以指向新的位置。
-
-也就是说，当数据需要频繁地写入数据库时，这种特性会引发性能问题。所以在 `btrfs` 文件系统上使用 `MariaDB` 时，需要禁用 `Copy-on-Write` 特性。
-
-使用下面命令来列出目录的属性：
-```bash
-sudo lsattr -d /your/path
-```
-如果输出如下：
-```bash
----------------------- /your/path
-```
-则表示目录没有设置任何属性（`C` 表示关闭 `Copy-on-Write` 特性）。
-
-使用下面命令来关闭目录的 `Copy-on-Write` 特性：
-```bash
-sudo chattr +C /your/path
-```
-
-再次输出目录的属性
-```bash
-sudo lsattr -d /your/path
-```
-如果输出如下：
-```bash
----------------C------ /your/path
-```
-表示设置成功，`C` 表示 `关闭 Copy-on-Write` 特性。[^2]
-{% endfold %}
-
-现在我们开始禁用数据库目录的 Copy-on-Write 特性：
 
 {% fold info @在 btrfs 上禁用 COW %}
-如果你的 `MariaDB` 数据库运行在 `btrfs` 分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性，否则可能会导致性能问题。不应创建数据库之后再禁用，因为这一更改只会影响新创建的文件，而不会影响现有文件。
+Btrfs（B-tree 文件系统），一种支持写入时复制（COW）的文件系统。
+`COW` 简单说就是 写入 `不会就地覆盖数据`；相反，数据块在被复制和修改后会 `写入到新的位置`，元数据也会更新以指向新的位置。
 
+如果你的 `MariaDB` 数据库运行在 `btrfs` 系统分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性[^1]，否则可能会导致性能问题。
+不应创建数据库之后再禁用，因为这一更改只会影响新创建的文件，而不会影响现有文件。
+
+---
 
 我们创建一个空目录 `/var/lib/mysql`：
 ```bash
@@ -75,9 +44,11 @@ sudo lsattr -d /var/lib/mysql
 ```bash
 ---------------------- /var/lib/mysql
 ```
-<br>
+表示 **目录没有设置任何属性**
 
-现在设置目录不开启 `Copy-on-Write` 特性：
+---
+
+现在设置禁用目录 `Copy-on-Write` 特性：
 ```bash
 sudo chattr +C /var/lib/mysql/
 ```
@@ -91,7 +62,7 @@ sudo lsattr -d /var/lib/mysql
 ```bash
 ---------------C------ /var/lib/mysql
 ```
-
+`C` 表示 `关闭 Copy-on-Write` 特性。[^2]
 至此，我们已经在 `/var/lib/mysql` 目录下禁用了 `Copy-on-Write` 特性。
 
 {% endfold %}
@@ -271,6 +242,8 @@ MariaDB [(none)]> show databases;
 +--------------------+
 4 rows in set (0.001 sec)
 ```
+
+现在，你可以开始使用 `MariaDB` 了。
 
 
 参考文章：

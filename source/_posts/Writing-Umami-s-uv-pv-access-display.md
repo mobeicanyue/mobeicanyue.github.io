@@ -9,19 +9,15 @@ date: 2024-02-25 19:47:17
 I'll demonstrate how to implement Umami's UV, PV visit statistics display. 
 这篇文章我将演示如何实现 Umami 的 UV, PV 访问统计显示。
 
-Umami is a simple, fast, privacy-focused alternative to Google Analytics.
-Umami 是一个简单、快速、注重隐私的 Google Analytics 替代品。
-
 <br>
 
 这是本站的 Umami 访问统计页面，显示了每日的访问量和访问人数，链接：https://umami.ovvv.top/share/SYu8qUKmty52PW9w/blog
 
 ![浏览量展示](display.webp)
 
-我们在前文介绍过如何安装 Umami，本文将介绍编写一个简单的页面，通过 Umami 的 API 调用显示 Umami 的 UV, PV 访问情况。
+我们在前文介绍过如何安装 Umami：{% post_link 'Umami-installation-and-usage-tutorial' 'Umami 安装使用教程' %}。本文 **默认你已经安装了 Umami 并且添加了一个网站**。下面我们将编写一个简单的页面，通过 Umami 的 API 调用显示 Umami 的 UV, PV 访问情况。
 
-本文 **默认你已经安装了 Umami 并且添加了一个网站**，如果没有安装 Umami，请参考：{% post_link 'Umami-installation-and-usage-tutorial' 'Umami 安装使用教程' %}
-
+本文会使用类似于 `postman` 的 API 测试工具来发送 `GET`, `POST` 请求。你也可以使用 `hoppscotch`、`curl` 等工具。
 
 ## 1. 新建 `View only` 权限的用户
 
@@ -78,8 +74,6 @@ Authorization: Bearer eyTMjU2IiwiY...4Q0JDLUhWxnIjoiUE_A
 ```
 
 ## 4. 发送请求获取数据
-
-这里要用到类似于 `postman` 的 API 测试工具，我使用的是开源的 `hoppscotch`，你也可以使用 `curl` 或者其他工具。
 
 先分析一下官方文档的 API 接口[^3]：
 `GET /api/websites/{websiteId}/stats`
