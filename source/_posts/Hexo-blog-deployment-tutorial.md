@@ -70,7 +70,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 `Key type` 选择 `Authentication Key`，随便起一个 Tittle，复制你刚刚生成的 `id_ed25519.pub` 内容到 `Key` 中，点击 `Add SSH key` 保存。
 
-![将 SSH 密钥添加到 Github](image1.png)
+![将 SSH 密钥添加到 Github](image1.webp)
 
 
 ## 1. 安装 Hexo
@@ -90,7 +90,7 @@ hexo -v
 
 点击 Github 首页左导航栏的 `New` 按钮，新建一个仓库，仓库名建议为 `用户名.github.io`。将 `用户名` 替换为你的 Github 用户名。
 
-![新建仓库](image.png)
+![新建仓库](image.webp)
 
 然后点击 `Create repository` 按钮，完成仓库的创建。
 
@@ -122,7 +122,7 @@ git push -u origin main gh-pages
 ## 5. 配置 Github Pages
 
 点击仓库的 `Settings`，点击左边导航栏的 `Pages`。选择 `Branch` 的 `gh-pages` 分支，点击 `Save` 保存。
-![选择部署分支](image2.png)
+![选择部署分支](image2.webp)
 
 ## 6. 编写 Github Actions 配置文件
 
@@ -192,5 +192,5 @@ git push
 
 即可查看到你的博客
 
-![博客首页](image3.png)
+![博客首页](image3.webp)
 

@@ -19,7 +19,7 @@ npm install --save hexo-theme-fluid
 然后在博客目录下创建 _config.fluid.yml，将主题 [_config.yml](https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml) 内容复制过去。
 
 现在目录下有这三个 yml 文件：
-![yml-files.webp](yml-files.webp)
+![yml-files](yml-files.webp)
 
 可删除 `_config.landscape.yml` , 它是 hexo 默认的主题文件。
 
@@ -39,11 +39,8 @@ language: zh-CN
 hexo new page about
 ```
 
-创建成功后修改 `/source/about/index.md`，添加 `layout` 属性。
-
-添加后如下
-
-```md
+创建成功后修改 `/source/about/index.md`，添加 `layout` 属性：
+```markdown
 ---
 title: about
 date: 2023-12-26 22:43:21
@@ -51,15 +48,16 @@ layout: about
 ---
 这里写关于页的正文，支持 Markdown, HTML
 ```
-然后不出意外你就可以看到关于页了。
-输入
+不出意外你就可以看到关于页了。
+
+执行以下命令：
 ```bash
 hexo clean && hexo g && hexo s -o
 ```
 
 后访问 `http://localhost:4000/about/` 即可看到效果。
 
-![ablout.webp](about.webp)
+![关于页](about.webp)
 
 PS: 可以跟着文档把关于页面的几个 icon 一起改了。
 
@@ -85,7 +83,7 @@ apple_touch_icon: images/favicon.png
 
 ### 6. 修改 slogan 为 api 语录
 效果如图所示：
-![api-slogan.webp](api-slogan.webp)
+![语录](api-slogan.webp)
 
 在主题配置 `_config.fluid.yml` 中开启：
 ```yml
@@ -106,7 +104,7 @@ index:
 既然可以改 slogan 为 api 语录，那么背景图片当然也可以改为 api 图片 笑）。
 
 效果如图所示：
-![api-bg.webp](api-bg.webp)
+![api 图片](api-bg.webp)
 
 在主题配置 `_config.fluid.yml` 中搜索
 ```yml
