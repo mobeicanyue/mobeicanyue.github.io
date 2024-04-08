@@ -17,7 +17,7 @@ tags:
 
 - `Fail2ban`，是一个入侵检测系统框架，可以保护电脑服务器免受暴力破解等攻击：{% post_link Fail2ban-installation-and-usage-tutorial 'Fail2ban 安装使用教程' %}
 
-- `Hexo`，快速、简洁且高效的博客框架：{% post_link My-first-hexo-blog 'Hexo 博客部署教程' %}
+- `Hexo`，快速、简洁且高效的博客框架：{% post_link Hexo-blog-deployment-tutorial 'Hexo 博客部署教程' %}
 
 - `Nginx`，高性能的 HTTP 和反向代理服务器：{% post_link Nginx-installation-and-usage-tutorial 'Nginx 安装使用教程' %}
 

@@ -7,14 +7,12 @@ tags:
 ## 目录
 
 ### Hexo 博客部署 
-- {% post_link Build-the-environment 'Hexo 环境搭建' %}
-- {% post_link My-first-hexo-blog 'Hexo 博客部署教程' %}
+- {% post_link Hexo-blog-deployment-tutorial 'Hexo 博客部署教程' %}
 - {% post_link Enable-blog-comment '启用博客评论' %}
 
 ### Fluid 主题、美化相关
 - {% post_link Fluid-theme-installation '安装 Fluid 主题' %}
 - {% post_link Use-lxgw-wenkai-in-fluid '在 Fluid 主题中使用霞鹜文楷' %}
-- {% post_link Fix-article-updated-time-on-github-pages '修复 Github Pages 上的文章更新时间' %}
 
 ### 博客优化
 - {% post_link Compress-deploy-code-size '压缩部署的代码' %}
