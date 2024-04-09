@@ -19,16 +19,11 @@ date: 2023-12-28 15:54:04
 
 ![1panel 的官网简介](1panel-profile.webp)
 
-<p style="text-align:center">
-  1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。<br>
-Github 仓库：<a href="https://github.com/1Panel-dev/1Panel">https://github.com/1Panel-dev/1Panel</a>
-</p>
-
 <br>
 
-众所周知，服务器运维要在 Linux 命令行下进行各种操作，但 ~~人总会想着偷懒~~。而服务器管理面板封装了大量操作的实现，我们在浏览器中点击即可使用，大大提高了运维效率。
+众所周知，服务器运维要在 Linux 命令行下进行各种操作，但 ~~人总会想着偷懒~~。而 **服务器管理面板** 封装了大量操作的实现，我们在浏览器中点击即可使用，大大提高了运维效率。
 
-而 1Panel 是一个现代化、开源的服务器管理面板，封装了很多常用的操作，比如安装软件、配置反向代理、申请 SSL 证书等等。UI 界面好看，操作也很简单。是宝塔面板的一个很好的替代品。
+而 1Panel 是一个现代化、开源的 **服务器管理面板**，封装了很多常用的操作，比如安装软件、配置反向代理、申请 SSL 证书等等。UI 界面好看，操作也很简单。是宝塔面板的一个很好的替代品。Github 仓库：https://github.com/1Panel-dev/1Panel
 
 1Panel 在线体验：[https://demo.1panel.cn](https://demo.1panel.cn)
 

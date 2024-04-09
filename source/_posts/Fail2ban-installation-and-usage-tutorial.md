@@ -25,7 +25,7 @@ sudo apt install fail2ban
 ```bash
 sudo apt install rsyslog
 ```
-原因见：https://github.com/fail2ban/fail2ban/issues/3292
+原因见：[Github Issue](https://github.com/fail2ban/fail2ban/issues/3292)
 
 ## 2. 启动 Fail2ban
 
@@ -70,7 +70,7 @@ port = 22
 logpath = /var/log/auth.log
 ```
 
-可以根据自己的需求进行修改。
+[DEFAULT] 部分是全局配置，[sshd] 部分是针对 SSH 服务的配置，可以根据自己的需求进行修改。
 其中：
 - `bantime`：封禁时间，单位为秒。-1 表示永久封禁。
 - `findtime`：检测时间，单位为秒。如果在这个时间内有超过 `maxretry` 次的尝试，就会被封禁，如 300 秒内有 5 次尝试失败就会被封禁。
@@ -85,12 +85,17 @@ sudo systemctl restart fail2ban
 
 ## 6. 常用命令
 
-- 查看所有被封禁的 IP 地址：
+- 查看 sshd 所有被封禁的 IP 地址：
 ```bash
-sudo fail2ban-client status
+sudo fail2ban-client status sshd
 ```
 
-- 解封 IP 地址：
+- 手动封禁 IP 地址：
+```bash
+sudo fail2ban-client set sshd banip 6.6.6.6
+```
+
+- 手动解封 IP 地址：
 ```bash
 sudo fail2ban-client set sshd unbanip 6.6.6.6
 ```
