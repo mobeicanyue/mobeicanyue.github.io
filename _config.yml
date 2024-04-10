@@ -158,32 +158,16 @@ minify:
       - '*.svg'
       - '!*.min.svg'
   gzip:
-    enable: true
-    include:
-      - '*.html'
-      - '*.css'
-      - '*.js'
-      - '*.txt'
-      - '*.ttf'
-      - '*.atom'
-      - '*.stl'
-      - '*.xml'
-      - '*.svg'
-      - '*.eot'
-      - '*.json'
+    enable: false
   brotli:
+    enable: false
+  xml:
     enable: true
     include:
-      - '*.html'
-      - '*.css'
-      - '*.js'
-      - '*.txt'
-      - '*.ttf'
-      - '*.atom'
-      - '*.stl'
       - '*.xml'
-      - '*.svg'
-      - '*.eot'
-      - '*.json'
-  xml:
+      - '!*.min.xml'
   json:
+    enable: true
+    include:
+      - '*.json'
+      - '!*.min.json'
