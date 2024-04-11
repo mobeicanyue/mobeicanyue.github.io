@@ -17,15 +17,19 @@ jobs:
         with:
           fetch-depth: 0 # 用于获取提交记录，获取文件更新时间
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn'
+          cache: 'pnpm'
 
       - name: Install Dependencies
         run: |
-          yarn install
+          pnpm install
 
       # https://github.com/zhullyb/zhullyb.github.io/blob/master/.github/workflows/deploy.yml
       # 修复 hexo 生成的文件更新时间 为当前时间，实际应为提交时间
@@ -36,7 +40,7 @@ jobs:
       - name: Build Site
         run: |
           export TZ='Asia/Shanghai'
-          yarn build
+          pnpm build
       
       - name: Move baidu_verify
         run: |
