@@ -1,5 +1,7 @@
 {
   "name": "hexo-site",
+  "homepage": "https://blog.ovvv.top",
+  "license": "GPL-3.0-or-later",
   "version": "0.0.0",
   "private": true,
   "scripts": {

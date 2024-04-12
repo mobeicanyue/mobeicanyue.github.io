@@ -21,11 +21,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: "yarn"
 
       - name: Install Dependencies
         run: |
-          npm i -g pnpm
-          pnpm install
+          yarn install
 
       # https://github.com/zhullyb/zhullyb.github.io/blob/master/.github/workflows/deploy.yml
       # 修复 hexo 生成的文件更新时间 为当前时间，实际应为提交时间
@@ -35,9 +35,8 @@ jobs:
 
       - name: Build Site
         run: |
-          export TZ='Asia/Shanghai'
-          pnpm build
-      
+          yarn build
+
       - name: Move baidu_verify
         run: |
           cp asset/baidu_verify_codeva-GwRsL4VPtx.html.html public/
