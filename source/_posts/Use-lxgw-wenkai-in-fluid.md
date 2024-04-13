@@ -1,5 +1,5 @@
 ---
-title: 博客如何使用霞鹜文楷字体
+title: 如何在博客中使用霞鹜文楷字体
 tags:
   - Hexo
   - fluid

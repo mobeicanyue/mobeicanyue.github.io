@@ -23,4 +23,4 @@ tags:
 
 - `Umami`，简单、快速、注重隐私的开源分析解决方案：{% post_link Umami-installation-and-usage-tutorial 'Umami 安装使用教程' %}
 
-- `Uptime Kuma`，精致的自托管监控工具：{% post_link Using-uptime-kuma-as-Status-Page '使用 uptime-kuma 作为 Status Page' %}
+- `Uptime Kuma`，精致的自托管监控工具：{% post_link Using-uptime-kuma-as-Status-Page 'Uptime-Kuma 安装使用教程' %}

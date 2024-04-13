@@ -156,7 +156,6 @@ minify:
     enable: true
     include:
       - '*.svg'
-      - '!*.min.svg'
   gzip:
     enable: false
   brotli:
@@ -165,9 +164,7 @@ minify:
     enable: true
     include:
       - '*.xml'
-      - '!*.min.xml'
   json:
     enable: true
     include:
       - '*.json'
-      - '!*.min.json'

@@ -8,11 +8,11 @@ tags:
 
 ### Hexo 博客部署 
 - {% post_link Hexo-blog-deployment-tutorial 'Hexo 博客部署教程' %}
-- {% post_link Enable-blog-comment '启用博客评论' %}
+- {% post_link Enable-blog-comment '启用博客评论 Giscus' %}
 
 ### Fluid 主题、美化相关
 - {% post_link Fluid-theme-installation '安装 Fluid 主题' %}
-- {% post_link Use-lxgw-wenkai-in-fluid '在 Fluid 主题中使用霞鹜文楷' %}
+- {% post_link Use-lxgw-wenkai-in-fluid '如何在博客中使用霞鹜文楷字体' %}
 
 ### 博客优化
 - {% post_link Compress-deploy-code-size '压缩部署的代码' %}

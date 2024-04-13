@@ -1,5 +1,5 @@
 ---
-title: 使用 uptime-kuma 作为 Status Page
+title: Uptime-Kuma 安装使用教程
 tags:
   - 部署
   - Uptime-kuma
