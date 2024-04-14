@@ -5,6 +5,8 @@ date: 2024-04-13 13:11:03
 tags:
   - Vaultwarden
   - Bitwarden
+  - 部署
+  - 安全
 ---
 
 ![bitwarden](apps-combo-logo.webp)
@@ -63,7 +65,7 @@ sudo docker-compose up -d
 
 ![登陆](vault-login.webp)
 
-创建一个账号，然后你就可以在各个平台上使用 Bitwarden 客户端了。电脑上推荐使用浏览器插件，手机上推荐使用官方客户端。注意在登陆的时候要选择 `自定义服务器`，输入你的域名即可。
+创建一个账号，然后你就可以在各个平台上使用 Bitwarden 客户端了。电脑上推荐使用浏览器插件，手机上推荐使用官方客户端。注意在登陆的时候要选择 `自托管`，输入你的 `服务器 URL` 即可。
 
 ![登陆选择](login.webp)
 

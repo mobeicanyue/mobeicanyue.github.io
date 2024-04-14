@@ -7,6 +7,7 @@ tags:
   - 服务器
   - 部署
   - Fail2ban
+  - 安全
 ---
 
 ![Fail2ban](fail2ban.webp)

@@ -29,14 +29,14 @@ date: 2023-12-26 23:18:38
 
 如果你是 Linux / Mac 用户，那么通过发行版的 **包管理器** 即可安装。
 
-如果你是 Windows 用户，那么可以通过 [Nodejs 官网](https://nodejs.org/en/download) 下载安装 Nodejs，Git 可以通过 [Git 官网](https://git-scm.com/downloads) 下载安装。
+如果你是 Windows 用户，那么可以通过 [Nodejs 官网](https://nodejs.org/en/download) 下载安装 Nodejs，Git 可以通过 [Git 官网](https://git-scm.com/downloads) 下载安装，并配置好对应的 Nodejs 环境变量。
 
 
 安装完毕后，输入以下命令检验是否安装成功：
 ```bash
 node -v
 npm -v
-git -v
+git --version
 ```
 
 ### 0.2 配置 Git
@@ -45,6 +45,7 @@ git -v
 ```bash
 git config --global user.name "用户名"
 git config --global user.email 邮箱
+git config --global init.defaultBranch main
 ```
 
 执行以下命令检验是否配置成功：
@@ -79,7 +80,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```bash
 npm install hexo-cli -g
 ```
-Linux 可能需要 sudo 权限来执行上述命令。
+Linux 可能需要 sudo 权限来执行上述命令，Windows 可能需要管理员权限来执行上述命令。
 
 安装完毕后，输入以下命令检验是否安装成功：
 ```bash

@@ -9,6 +9,7 @@ tags:
   - SSH
   - ufw
   - Fail2ban
+  - 安全
 abbrlink: 4cde56ee
 date: 2024-03-01 22:25:20
 ---
