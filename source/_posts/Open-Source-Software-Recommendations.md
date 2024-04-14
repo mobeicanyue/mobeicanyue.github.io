@@ -11,7 +11,7 @@ tags:
 
 - `Alist`，支持多种存储的文件列表程序：{% post_link Deploying-a-Web-Disk-of-Your-Own '部署自己的网盘 — Alist 安装配置教程' %}
 
-- `Bitwarden`，开源密码管理解决方案：
+- `Bitwarden`，开源密码管理解决方案： {% post_link Vaultwarden-installation-and-usage-tutorial 'Bitwarden (Vaultwarden) 部署使用教程' %}
 
 - `Caddy`，现代化的 Web 服务器，具有自动 HTTPS、HTTP/3、反向代理、负载均衡、静态文件服务等功能：{% post_link Caddy-installation-and-usage-tutorial 'Caddy 安装使用教程' %} 
 

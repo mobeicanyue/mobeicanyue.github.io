@@ -157,6 +157,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `wireshark-qt`：网络抓包工具。`extra`
 - `kdeconnect`：用于连接手机，可以在电脑上接收手机的通知，发送文件等，神器。`extra`
 - `spectacle`：KDE 的截图工具，可以截取当前窗口，全屏，矩形等。但是总体没有 `flameshot` 好用。`extra`
+- `xclip`：剪贴板工具，可以帮助用户在终端和系统剪贴板之间便捷地复制粘贴数据。`extra`
 - `kfind`：文件搜索工具，搜索文件很方便。`extra`
 - `obs-studio`：开源的录屏软件，非常好用，听说大主播都用这个。`extra`
 - `filelight`：图形化界面直观查看磁盘占用情况。`extra`
