@@ -1,6 +1,9 @@
+let randomNavItem = document.querySelector(".nav-item:nth-child(5) a");
+randomNavItem.addEventListener("click", randomRedirect); // 给 item 设置 js 函数，点击时触发随机跳转
+
 function randomRedirect() {
     // 发起网络请求获取 sitemap.txt 文件内容
-    fetch("https://blog.ovvv.top/sitemap.txt")
+    fetch("/sitemap.txt")
         .then((response) => {
             if (!response.ok) {
                 throw new Error(
@@ -26,11 +29,7 @@ function randomRedirect() {
                 throw new Error("Invalid random link: " + randomLink);
             }
 
-            let randomNavItem = document.querySelector(
-                ".nav-item:nth-child(5) a"
-            );
-
-            randomNavItem.href = randomLink;
+            window.location.assign(randomLink);
         })
         .catch((error) => {
             console.error(
@@ -39,6 +38,3 @@ function randomRedirect() {
             );
         });
 }
-
-randomRedirect();
-console.log("random.js loaded");
