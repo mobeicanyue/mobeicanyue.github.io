@@ -174,7 +174,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `wechat-universal-bwrap`：微信终于有了 Linux 非 wine 的好用版本，但功能还是有点少，慢慢加功能吧。`aur`
 - `google-chrome`：谷歌浏览器，`aur`。你也可以选择开源的 `chromium`，`extra`
 - `onlyoffice-bin`：开源的办公软件，支持云协作。`aur`
-- `wps-office-cn`, `wps-office-mui-zh-cn`：WPS Office，国产办公软件，但是实际使用会出现一些小问题。`aur`
+- `wps-office-cn`, `wps-office-mui-zh-cn`, `ttf-wps-fonts`, `freetype2-wps`：WPS Office，国产办公软件。`aur`
 - `okular`：KDE 的 PDF 阅读器。`extra`
 
 ### 字体

@@ -137,13 +137,13 @@ System clock synchronized: no
 
 根据你的服务器所在地区设置时区，输入以下命令来查看可用的时区：
 ```bash
-timedatectl list-timezones
+sudo timedatectl list-timezones
 ```
 
 比如我的服务器在香港，那么我就设置为 `Asia/Hong_Kong`。
 
 ```bash
-timedatectl set-timezone Asia/Hong_Kong
+sudo timedatectl set-timezone Asia/Hong_Kong
 ```
 
 然后再次查看时区：
@@ -393,7 +393,7 @@ sudo ufw enable
 
 在 `/etc/sysctl.conf` 文件中添加以下内容：
 ```bash
-net.ipv4.icmp_echo_ignore_all = 1
+net/ipv4/icmp_echo_ignore_all=1
 ```
 
 然后重新加载配置文件：
