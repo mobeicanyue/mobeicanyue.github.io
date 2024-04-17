@@ -17,7 +17,7 @@ tags:
 Bitwarden 的官方服务有些功能是收费的（如 2FA），但它开源了服务端的代码，所以我们可以自己搭建一个 Bitwarden 服务。而我们今天要介绍的 **`Vaultwarden`** 就是 Bitwarden 服务器的一个开源实现。Vaultwarden 是用 Rust 编写的 Bitwarden 服务器 API 的替代实现，兼容上游 Bitwarden 客户端，非常适合在运行官方资源繁重的服务并不理想的情况下进行自托管部署[^1]。
 {% endnote %}
 
-本文将介绍如何在 Linux 服务器上通过 Docker Compose 部署 Vaultwarden 服务。
+本文将介绍如何在 Linux 服务器上通过 Docker Compose 部署 Vaultwarden 服务。当然你也可以使用 `1Panel` 一键安装部署。
 
 ## 1. 创建目录
 

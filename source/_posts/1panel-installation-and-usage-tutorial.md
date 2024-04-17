@@ -31,18 +31,17 @@ date: 2023-12-28 15:54:04
 
 开始之前先确保你的服务器安装了 `curl`
 
-1) ssh 连接到你的服务器，执行下面的命令，安装 1panel
+1. ssh 连接到你的服务器，执行下面的命令，安装 1panel
 ```bash
 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
 ```
 
-1) 命令行提示输入安装目录，敲回车 默认即可
+2. 命令行提示输入安装目录，敲回车 默认即可
 ![安装目录](dir.webp)
 随后命令行会输出一大串安装日志，等待即可。
 
-1) 命令行提示输入端口号，你可以自定义，也可以用它给你默认的端口号。
-注意 如果你使用的是云服务器，请至云服务器提供商的安全组开放 `输入的端口`。
-账号密码自己设置，但最好不要太简单，不然被人爆破就不好了。
+3. 记住它给你提供的默认端口号。注意 如果你使用的是云服务器，请至云服务器提供商的安全组开放 `输入的端口`。
+也记住他给出的账号密码，这是你登陆 1panel 面板的账号密码。
 ![输入信息](enter-info.webp)
 
 如果没有什么报错的话，那么恭喜你，1panel 已经安装成功了。
@@ -60,8 +59,8 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 首页显示的是`服务器的基本信息`，我们可以看到服务器的内存、cpu、硬盘、负载、系统的发行版本、内核、主机名等信息。
 
-我们点击应用商店，这里有 1panel 社区维护的一些应用，我们可以直接安装使用。
-应用商店包括了一些很热门的应用和开源项目 如：`AList` `MySQL` `Bitwarden` `WordPress` `Umami` `Uptime Kuma` `Gitea` `Jenkins` `Redis` `MongoDB` `PostgreSQL` `RabbitMQ`  等等。都是运行在 docker 容器中的，安装和卸载都很方便。（商店安装的软件和直接 docker-compose 安装的不同，它是运行在 1panel-network 的 bridge 网络中）
+点击应用商店，这里有 1panel 社区维护的一些应用，我们可以直接安装使用。
+应用商店包括了一些很热门的应用和开源项目 如：`AList` `MySQL` `Bitwarden` `WordPress` `Umami` `Uptime Kuma` `Jenkins` `Redis` `MongoDB` `PostgreSQL` 等等。都是运行在 docker 容器中的，安装和卸载都很方便。
 ![应用商店](app-store.webp)
 
 ## 3. 安装 `openresty` 应用
@@ -83,6 +82,18 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 配置好后，就可以使用域名访问 1panel 面板了。
 
-## 6. 申请域名 SSL 证书
+## 6. 配置域名 SSL 证书
 
 我使用 Cloudflare 的 DNS 服务，它会自动申请 SSL 证书并部署，选择流量代理模式即可使用。但如果你的域名在其他注册商托管，或者 二级域名不使用 Cloudflare 代理，那么你可以使用 1panel 申请 SSL 证书。
+
+### 6.1 创建 ACME 账户
+
+`网站` -> `证书` -> `ACME 账户` -> `创建账户`，填入邮箱地址，点击确认。
+
+### 6.2 申请证书
+
+`网站` -> `证书` -> `申请证书`，填入主域名，选择 ACME 账户，验证方式选择 `HTTP`，勾选 `自动续签`，点击确认。你就可以在 `证书` 页面看到你的证书了。
+
+### 6.3 配置证书
+
+`网站` -> 找到你的网站，点击 `编辑`，点击 `HTTPS` 启用，选择你的证书，点击保存。

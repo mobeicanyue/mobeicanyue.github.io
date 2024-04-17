@@ -1,5 +1,5 @@
 ---
-title: 记录一次部署 SpringBoot 项目到服务器上的过程
+title: 记录一次部署 SpringBoot 项目到服务器的过程
 tags:
   - SpringBoot
   - MariaDB
@@ -167,6 +167,8 @@ tar -xf images.tar.zst -C /path/to/images
 - `-C` 指定解压路径
 
 ## 5. 启动项目
+
+Springboot 打包好后可以通过 `java -jar xxx.jar` 命令启动项目。但是这样启动的项目会随着终端关闭而停止，所以我们可以通过 `nohup` 命令让项目在后台运行。
 
 输入以下命令启动项目：
 ```bash
