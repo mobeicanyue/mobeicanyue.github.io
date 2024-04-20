@@ -163,6 +163,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `filelight`：图形化界面直观查看磁盘占用情况。`extra`
 - `timeshift`：系统备份工具，可以备份系统快照，方便回滚。`extra`
 - `rar`：解压 rar 文件，万恶的 rar 格式。`archlinuxcn`
+- `p7zip-natspec`：解压 7z 文件，解决 Ark 中文乱码。`archlinuxcn`
 
 ### 系统组件
 - `openssh`：SSH 客户端和服务端。`core`
