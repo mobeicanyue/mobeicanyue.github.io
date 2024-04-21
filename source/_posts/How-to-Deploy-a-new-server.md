@@ -387,7 +387,7 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
-## 6. 禁用 ping
+## 6. 服务器禁用 ping
 
 如果你不希望别人通过 ping 来探测你的服务器，可以禁用 ping。实测禁用 ping 以后，服务器就基本没有遭受 SSH 暴力破解的尝试了。
 
