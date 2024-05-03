@@ -62,7 +62,7 @@ sudo lsattr -d /var/lib/mysql
 ```bash
 ---------------C------ /var/lib/mysql
 ```
-`C` 表示 `关闭 Copy-on-Write` 特性。[^2]
+`C` 表示 `关闭 Copy-on-Write` 特性[^2]。
 至此，我们已经在 `/var/lib/mysql` 目录下禁用了 `Copy-on-Write` 特性。
 
 {% endfold %}

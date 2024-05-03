@@ -94,7 +94,7 @@ scp -P 22 /path/to/local/file username@server:/path/to/remote/file
 
 ![仍位于 testing 源的 openjdk21](https://pic4.zhimg.com/80/v2-376f2c6779b47f9127ceb781d4868257_1440w.webp)
 
-不禁想起一个笑话：`Debian stable = Debian stale`.[^2]
+不禁想起一个笑话：`Debian stable = Debian stale`[^2]
 
 <br>
 
@@ -193,4 +193,4 @@ nohup java -jar xxx.jar >> nohup.out 2>&1 &
 
 参考资料：
 [^1]: https://openjdk.org/projects/jdk/21/#Schedule
-[^2]: https://linux.cn/article-13746-1.html
+[^2]: https://itsfoss.com/debian-vs-ubuntu/

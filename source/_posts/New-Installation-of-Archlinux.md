@@ -160,7 +160,6 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `wireshark-qt`：网络抓包工具。`extra`
 - `kdeconnect`：用于连接手机，可以在电脑上接收手机的通知，发送文件等，神器。`extra`
 - `spectacle`：KDE 的截图工具，可以截取当前窗口，全屏，矩形等。但是总体没有 `flameshot` 好用。`extra`
-- `xclip`：剪贴板工具，可以帮助用户在终端和系统剪贴板之间便捷地复制粘贴数据。`extra`
 - `kfind`：文件搜索工具，搜索文件很方便。`extra`
 - `obs-studio`：开源的录屏软件，非常好用，听说大主播都用这个。`extra`
 - `filelight`：图形化界面直观查看磁盘占用情况。`extra`
@@ -175,7 +174,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 
 ### 休闲娱乐办公
 - `linuxqq-nt-bwrap`：Linux 上的 QQ 客户端，现在是用 electron 写的，好看。`aur`
-- `wechat-universal-bwrap`：微信终于有了 Linux 非 wine 的好用版本，但功能还是有点少，慢慢加功能吧。`aur`
+- `wechat-universal-bwrap`：微信终于有了 Linux 非 wine 的好用版本，但功能还是有点少，等它慢慢加功能吧。`aur`
 - `google-chrome`：谷歌浏览器，`aur`。你也可以选择开源的 `chromium`，`extra`
 - `onlyoffice-bin`：开源的办公软件，支持云协作。`aur`
 - `wps-office-cn`, `wps-office-mui-zh-cn`, `ttf-wps-fonts`, `freetype2-wps`：WPS Office，国产办公软件。`aur`
@@ -203,6 +202,6 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 
 ## 7. 总结
 
-吐槽一下，Arch 确实用得很清爽，没什么多余的东西。就是安装太折磨人了，我花了一天多才搞明白。`Archinstall` 脚本安装 还安装失败了，我只能手动安装。不过好在手动安装的教程很详细，再加上朋友的帮助，一步步就能搞定。镜像里面自带的 `Archinstall` 还不是最新版（因为有个小依赖 bug 修复，需要 pacman 手动更新）。
+吐槽一下，Arch 确实用得很清爽，没什么多余的东西。就是安装折磨人，花了一天多才搞明白。我使用 `archinstall` 脚本安装还失败了（因为 kde 依赖更新了，镜像自带的 archinstall 脚本不是最新的），我只能手动安装。不过好在手动安装的教程很详细，一步步就能搞定。
 
 这篇文章可能还不太完善，在日后的使用中我会不断完善它。埋个坑

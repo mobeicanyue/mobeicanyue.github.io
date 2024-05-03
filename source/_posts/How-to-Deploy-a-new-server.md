@@ -158,7 +158,7 @@ timedatectl
 ### 2.3 系统时钟同步
 网络时间协议 NTP（Network Time Protocol）是一种用于同步系统时钟的协议，提供高精准度的时间校正，保证服务器的时间准确。
 
-> 根据操作系统版本的不同，Debian 提供了多种安装 NTP 客户端的软件包。自 Debian 12 起，默认的 NTP 客户端是 systemd 的 systemd-timesyncd。[^2]timesyncd 是轻量级 ntpd 的替代品，配置更简单、更高效、更安全。此外，Timesyncd 还能更好地与 systemd 集成。这一特性使得使用 systemd 命令进行管理变得更容易。[^3]
+> 根据操作系统版本的不同，Debian 提供了多种安装 NTP 客户端的软件包。自 Debian 12 起，默认的 NTP 客户端是 systemd 的 systemd-timesyncd[^2]。timesyncd 是轻量级 ntpd 的替代品，配置更简单、更高效、更安全。此外，Timesyncd 还能更好地与 systemd 集成。这一特性使得使用 systemd 命令进行管理变得更容易[^3]。
 
 
 {% fold info @Debian 12 %}
