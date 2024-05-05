@@ -8,13 +8,15 @@ date: 2024-01-17 20:50:59
 ---
 
 {% note secondary %}
-本文档为 Alist 部署教程，主要介绍 Alist 的配置及使用，参考了官网的教程来编写。更多信息请参照官网 https://alist.nn.ci/zh/guide
+AList 是一个支持多存储的文件列表 / WebDAV 程序，使用 Gin 和 Solidjs。
+
+本文档为 Alist 部署教程，主要介绍 Alist 的配置及使用，参考了[官网的教程](https://alist.nn.ci/zh/guide)
 {% endnote %}
 
 ## 1. 安装 Alist
 
 {% fold info @1Panel 一键安装 %}
-打开 `1Panel` 面板，点击 `应用商店`，搜索 `Alist`，点击 `安装` 即可。
+打开 `1Panel` 面板，点击 `应用商店`，搜索 `Alist`，点击 `安装` 即可。安装过程可以参考 `docker-compose` 安装。
 
 {% post_link 1panel-installation-and-usage-tutorial '1Panel 安装配置教程' %}
 {% endfold %}
@@ -107,12 +109,13 @@ docker exec -it alist ./alist admin set NEW_PASSWORD
 
 ## 3. 配置 Alist
 
-默认情况下，应用程序将在 http://localhost:5244 上启动。
+默认情况下，应用程序将在 http://localhost:5244 上启动。我们还需要配置一些内容，才可以正常使用我们部署的网盘。
 
-浏览器访问上述链接，输入用户名 `admin` 和上一步获取的 `密码`。
-点击登陆。
+浏览器访问上述链接，输入用户名 `admin` 和上一步获取的 `密码`。点击登陆。
 
 ### 3.1 添加本地存储
+
+Alist 支持多种存储，包括本地存储、OneDrive、Google Drive 等。这里我们以本地存储为例。
 
 1. 在你 `安装 alist 的路径` 手动创建一个目录 `files` 用于存储网盘文件。一键脚本路径为 `/opt/alist/files`；docker-compose 路径为 `etc/alist/files`。
 
@@ -123,18 +126,21 @@ docker exec -it alist ./alist admin set NEW_PASSWORD
 如果你是 **一键脚本安装** 的，就填写 `/opt/alist/files`；
 如果你是 **docker-compose 安装** 的，就填 `/opt/alist/data/files`。（注意，这个是容器内的映射路径，不是宿主机的路径，参考前文的 `volumes` 配置）
 
-也就是 `根文件夹路径(/opt/alist/files)` --> `挂载路径(/)`，这样就可以把 `/opt/alist/files` 映射到 `/`，也就是网盘根目录。
+也就是 `挂载路径(/)` --> `根文件夹路径(/opt/alist/files)`，这样就可以把 `/` 映射到 `/opt/alist/files`，也就是将网盘根目录映射到了 `files` 目录。
 
 最下面点击 `保存`
 
 ### 3.2 启用游客访问
+
+默认情况下，Alist 不允许游客访问，如果你希望游客可以访问，可以按照以下步骤开启：
+
 左边栏点击 `用户`
 编辑 `guest` 用户，将 `停用` 取消勾选，点击保存
 
 
 ### 3.3 启用索引
 
-按照以下步骤开启搜索：
+Alist 需要构建索引才能搜索文件，可以按照以下步骤开启搜索：
 
 1. 转到索引页，选择一个搜索索引，并单击保存;
 2. 保存索引后，单击构建索引来构建索引;
@@ -164,4 +170,5 @@ docker-compose up -d
 下载最新版本的 Alist，解压后替换原有文件即可。
 
 ## 5. 高级配置
+
 更多高级配置请参照官网 https://alist.nn.ci/zh/guide/
