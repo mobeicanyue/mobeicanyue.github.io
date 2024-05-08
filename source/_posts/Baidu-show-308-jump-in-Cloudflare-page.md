@@ -9,7 +9,7 @@ date: 2024-03-10 16:06:57
 ---
 
 {% note success %}
-我前阵子决定将博客迁移到 Cloudflare Page 上，但在使用 Cloudflare Page 遇到了一个问题，就是百度收录使用 `.html 验证网站所有权` 会显示网页 308 跳转报错。我一开始还以为是百度的问题，千方百计地设法解决但是都徒劳无功，后来才发现是 Cloudflare Page 的问题。
+前阵子我决定将博客迁移到 Cloudflare Page 上，但百度收录使用 `.html 验证网站所有权` 会显示网页 308 跳转报错。我一开始还以为是百度的问题，千方百计地设法解决但是都徒劳无功，后来才发现是 Cloudflare Page 的问题。
 
 Google 和 百度都没有发现这个解决办法，所以自己写一篇文章来记录一下。
 {% endnote %}
@@ -25,7 +25,7 @@ Google 和 百度都没有发现这个解决办法，所以自己写一篇文章
 
 ![百度报错 308](https://pic4.zhimg.com/80/v2-9b2591438a5d35d8ee4ca6e0da4d4f8f_1440w.webp)
 
-如 `https://www.ovvv.top/baidu_verify_codeva-xxx.html` 会自动重定向到 `https://www.ovvv.top/baidu_verify_codeva-xxx`。
+如 `https://www.ovvv.top/baidu_verify_codeva-GwRsL4VPtx.html` 会自动重定向到 `https://www.ovvv.top/baidu_verify_codeva-GwRsL4VPtx`。
 
 ![重定向，没有 .html 后缀](https://pic1.zhimg.com/80/v2-d1aad73842196ad68566de57ef0b75e8_1440w.webp)
 

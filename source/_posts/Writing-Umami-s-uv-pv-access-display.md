@@ -6,7 +6,6 @@ abbrlink: 4259ee82
 date: 2024-02-25 19:47:17
 ---
 
-I'll demonstrate how to implement Umami's UV, PV visit statistics display. 
 这篇文章我将演示如何实现 Umami 的 UV, PV 访问统计显示。
 
 <br>

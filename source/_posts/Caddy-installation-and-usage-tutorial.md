@@ -7,7 +7,7 @@ tags:
 abbrlink: f3ac7ef6
 date: 2024-03-04 04:56:00
 ---
-![caddy](https://pic4.zhimg.com/80/v2-653b9bf7506493ee27ff68e6107aeff7_1440w.webp)
+![caddy](https://pic4.zhimg.com/80/v2-e7c9fd51cac240e4494d7739909aadb3_1440w.webp)
 
 {% note secondary %}
 Caddy 是一个现代化的 Web 服务器，具有自动 HTTPS、HTTP/3、反向代理、负载均衡、静态文件服务等功能。Caddy 的设计理念是简单易用，它的配置文件采用 Caddyfile 格式，非常直观和易懂。Caddy 采用 Go 语言编写，性能优异，占用资源少，适合用于各种 Web 服务的搭建。
