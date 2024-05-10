@@ -43,7 +43,6 @@ jobs:
       - name: Move baidu_verify
         run: |
           cp asset/baidu_verify_codeva-GwRsL4VPtx.html.html public/
-          cp asset/naver57322dd0ed14599dd3052c79c6892766.html public/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
