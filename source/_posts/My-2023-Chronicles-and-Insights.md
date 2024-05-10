@@ -3,6 +3,7 @@ title: 纪事与感悟 — 我的 2023
 sticky: 100
 tags:
   - "2023"
+  - 随笔
 abbrlink: af028bbd
 date: 2024-02-12 20:15:28
 ---

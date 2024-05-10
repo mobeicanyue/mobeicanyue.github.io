@@ -88,7 +88,7 @@ Manjaro 的不足也是相对应的：
 
 如果你想体验更加原汁原味的 Archlinux，但又不想折腾，那么 EndeavourOS 可能是一个不错的选择。EndeavourOS 是一个基于 Archlinux 的 Linux 发行版，它提供了一个图形化的安装程序，让你可以快速安装 Archlinux。EndeavourOS 保持了 Archlinux 的原汁原味，但是提供了一些额外的工具和软件包，让你可以更加方便地使用 Arch。
 
-**EndeavourOS 没有自己的软件源。它依赖于 Arch Linux 的主软件源**，因此使用 EndeavourOS 可以获得最 `纯粹` 的 Archlinux 体验[^1]。
+**EndeavourOS 没有自己的软件源。它依赖于 Arch Linux 的主软件源**，因此使用 EndeavourOS 可以获得比较 `纯粹` 的 Archlinux 体验[^1]。
 
 
 <br><br>
