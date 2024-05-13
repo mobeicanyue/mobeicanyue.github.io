@@ -11,19 +11,15 @@ layout: about
 
 本博客使用了开源静态博客框架 [Hexo](https://hexo.io/zh-cn) 及主题 [Fluid](https://hexo.fluid-dev.com/docs)，开源统计工具 [Umami](https://umami.is)，遵守您的 DNT 设定，网站访问情况可通过 https://umami.ovvv.top/share/SYu8qUKmty52PW9w/blog 查看。
 
-本站文章知识共享许可协议为 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)。**您可以在遵守协议的前提下自由转载、分享、修改，但需注明作者和出处、不得用于商业目的、基于本协议进行再分享。**
+本站文章知识共享许可协议为 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)。**您可以在遵守协议的前提下自由转载、分享、修改，但需注明作者和出处、不得用于商业目的、基于本协议进行再分享。**如果文章有谬误或者您有改进文章的建议，欢迎您在文章下面留言，不胜感激。
 
-之前还在 CSDN 写过博客，有不少阅读量。但是奈何 CSDN 广告太多，使用体验也不太好，所以就搭建了这个博客。现在的博客主要用来写一些长篇的技术文章，以及一些生活感悟。CSDN 就更新一些简单、零碎的文章。
-
-源代码托管于 [Github](https://github.com/mobeicanyue) 并自动构建，通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的优质服务支持。
-
-<br>
-
-![Cloudflare](https://pic2.zhimg.com/80/v2-5dc3a549cd89aec337d268b17940e101_1440w.webp)
+本博客源代码托管于 [Github](https://github.com/mobeicanyue) 并自动构建，通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。大力感谢 [Cloudflare](https://www.cloudflare.com) 的优质服务支持。
 
 <br>
 
 由于奇奇怪怪的玄学原因，百度并没有收录本站，除了百度的主流搜索引擎都可以搜索到本站，如 Google、Bing（必应）、DuckDuckGo、Yandex、Yahoo（雅虎）等。
+
+之前还在 CSDN 写过博客，有不少阅读量。但是奈何 CSDN 广告太多，使用体验也不太好，就搭建了这个博客。现在的博客主要用来写一些长篇的技术文章，以及一些生活感悟。CSDN 就更新一些简单、零碎的文章。
 
 <br><br>
 

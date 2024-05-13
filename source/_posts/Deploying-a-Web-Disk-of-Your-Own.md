@@ -1,5 +1,5 @@
 ---
-title: 部署自己的网盘 — AList 安装配置教程
+title: AList 安装配置教程
 tags:
   - 部署
   - AList
@@ -10,7 +10,7 @@ date: 2024-01-17 20:50:59
 {% note secondary %}
 AList 是一个支持多存储的文件列表 / WebDAV 程序，使用 Gin 和 Solidjs。
 
-本文档为 Alist 部署教程，主要介绍 Alist 的配置及使用，参考了[官网的教程](https://alist.nn.ci/zh/guide)
+本文为 Alist 部署教程，主要介绍 Alist 的配置及使用。参考[官网教程](https://alist.nn.ci/zh/guide)
 {% endnote %}
 
 ## 1. 安装 Alist
@@ -113,7 +113,7 @@ docker exec -it alist ./alist admin set NEW_PASSWORD
 
 浏览器访问上述链接，输入用户名 `admin` 和上一步获取的 `密码`。点击登陆。
 
-### 3.1 添加本地存储
+### 3.1 添加存储
 
 Alist 支持多种存储，包括本地存储、OneDrive、Google Drive 等。这里我们以本地存储为例。
 
