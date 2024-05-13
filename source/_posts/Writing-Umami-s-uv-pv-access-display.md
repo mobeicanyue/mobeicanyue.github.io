@@ -6,7 +6,9 @@ abbrlink: 4259ee82
 date: 2024-02-25 19:47:17
 ---
 
-这篇文章我将演示如何实现 Umami 的 UV, PV 访问统计显示。
+> Umami 官方文档并没有提供 UV 和 PV 展示的 API，但是我们可以通过 Umami 的访客 API 获取到网站的访问量和访问人数。
+> 
+> 本文将介绍如何通过 Umami 的 API 获取网站的 UV 和 PV 数据，并在页面上展示。
 
 <br>
 
@@ -14,13 +16,13 @@ date: 2024-02-25 19:47:17
 
 ![浏览量展示](https://pic4.zhimg.com/80/v2-a96d771513470a3a394727e04bb3afcb_1440w.webp)
 
-我们在前文介绍过如何安装 Umami：{% post_link 'Umami-installation-and-usage-tutorial' 'Umami 安装使用教程' %}。本文 **默认你已经安装了 Umami 并且添加了一个网站**。下面我们将编写一个简单的页面，通过 Umami 的 API 调用显示 Umami 的 UV, PV 访问情况。
+我们在前文介绍过如何安装 Umami：{% post_link 'Umami-installation-and-usage-tutorial' 'Umami 安装使用教程' %}
 
-本文会使用类似于 `postman` 的 API 测试工具来发送 `GET`, `POST` 请求。你也可以使用 `hoppscotch`、`curl` 等工具。
+下面我们将新建用户，通过 Umami 的 API 调用，编写一个简单的页面来显示 Umami 的 UV, PV 访问情况。本文使用类似于 `postman` 的 API 测试工具来发送 `GET`, `POST` 请求。你也可以使用 `hoppscotch`、`curl` 等工具。
 
 ## 1. 新建 `View only` 权限的用户
 
-`Settings` -> `Users` -> `Create user` -> 填写账号密码，`Role` 选择 `View only` -> `Save`
+点击 `Settings` -> 点击 `Users` -> 点击 `Create user` -> 填写账号密码，`Role` 选择 `View only` -> 点击 `Save`
 
 ![新建用户](https://pic1.zhimg.com/80/v2-3947dd0fa291aa3db02b5bb251ea2d30_1440w.webp)
 
@@ -35,9 +37,16 @@ date: 2024-02-25 19:47:17
 
 ## 2. 新建 `Team` 并添加用户和网站
 
-`Settings` -> `Teams` -> `Create team` -> 填写名称 -> `Save` -> 找到刚刚创建的 `Team` -> `Edit` -> 复制 `Access code`，点击 `Websites`，点击 `Add website` 添加你想共享的网站
+点击 `Settings` -> 点击 `Teams` -> 点击 `Create team` -> 填写名称 -> 点击 `Save`
 
-换一个浏览器登录 Umami（使用`View only` 权限的用户） -> `Settings` -> `Teams` -> `Join team` -> 输入 `Access code` -> `Join` -> 如果没有出错的话，点击 `Dashboard` 就可以看到你刚刚添加的网站了
+`Teams` 中选择你刚创建的 Team 点击 `view` -> 复制 `Access code`，点击 `Websites`，点击 `Add website` 添加你想共享的网站。
+
+![添加网站](https://pic4.zhimg.com/80/v2-6bec3db22890310bfba2a0875981caa7_1440w.webp)
+
+如果你的网站之前属于个人账户，那么你可以将其转移到团队账户上。
+![转移团队](https://pic4.zhimg.com/80/v2-d1d4ab90948235cadafd0b64c43ce2e7_1440w.webp)
+
+换一个浏览器登录 Umami（使用 `View only` 权限的用户） -> `Settings` -> `Teams` -> `Join team` -> 输入 `Access code` -> `Join` -> 如果没有出错的话，点击 `Dashboard` 就可以看到你刚刚添加的网站了。
 
 ## 3. 获取 `View only` 用户的 API Token
 根据 Umami 的文档[^2]，我们可以通过以下方式获取 API Token：
@@ -120,13 +129,13 @@ Authorization: Bearer eyTMjU2IiwiY...4Q0JDLUhWxnIjoiUE_A
     </div>
 
     <script>
-        // 从配置文件中获取 umami 的配置
+        // umami 的 website id
         const website_id = 'xxx';
 
         // 拼接请求地址
         const request_url = 'https://xxx.com' + '/api/websites/' + website_id + '/stats';
 
-        const start_time = new Date('2024-01-01').getTime();
+        const start_time = new Date('2024-01-01').getTime(); // 你的网站创建时间
         const end_time = new Date().getTime();
 
         const token = 'xxxxxx';

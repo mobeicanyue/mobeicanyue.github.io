@@ -79,30 +79,30 @@ volumes:
 
 ## 2. 获取 Alist 密码
 
-Alist 默认情况下需要 `随机生成` 或者 `手动设置` 密码，才能使用密码登陆。
+Alist 默认情况下需要初始化密码后才能使用密码登陆。我们可以 `随机生成` 或者 `手动设置` 一个密码。
 
-通过 **一键脚本安装** 的，可以在安装路径下执行如下命令：
+### 2.1 随机生成密码
 
-- 随机生成一个密码
+- 通过 **一键脚本安装** 的，可以在安装路径下执行如下命令：
 ```bash
 ./alist admin random
 ```
 
-- 手动设置一个密码，`NEW_PASSWORD`是指你需要设置的密码
-```bash
-./alist admin set NEW_PASSWORD
-```
-
-<br>
-
-通过 **doekcer compose** 安装的，可执行如下命令。注意，如果你的容器名称不是 `alist`，需要将其更换为你的对应容器名称：
-
-- 随机生成一个密码
+- 通过 **doekcer-compose** 安装的，可执行如下命令。注意，如果你的容器名称不是 `alist`，需要将 `-it` 后面的 `alist` 替换为你的容器名称：
 ```bash
 docker exec -it alist ./alist admin random
 ```
 
-- 手动设置一个密码，`NEW_PASSWORD`是指你需要设置的密码
+### 2.2 手动设置密码
+
+`set ` 后面的 `NEW_PASSWORD` 即你要设置的密码。
+
+- 通过 **一键脚本安装** 的，可以在安装路径下执行如下命令：
+```bash
+./alist admin set NEW_PASSWORD
+```
+
+- 通过 **doekcer-compose** 安装的，可执行如下命令。注意，如果你的容器名称不是 `alist`，需要将 `-it` 后面的 `alist` 替换为你的容器名称：
 ```bash
 docker exec -it alist ./alist admin set NEW_PASSWORD
 ```
