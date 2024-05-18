@@ -2,7 +2,7 @@
   "name": "hexo-site",
   "homepage": "https://blog.ovvv.top",
   "license": "Apache-2.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "build": "hexo generate",
