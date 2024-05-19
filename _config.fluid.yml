@@ -150,7 +150,7 @@ color:
 
   # 顶部菜单字体色
   # Color of navigation bar text
-  navbar_text_color: "#f9e298"
+  navbar_text_color: "#fff"
   navbar_text_color_dark: "#d0d0d0"
 
   # 副标题字体色
