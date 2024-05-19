@@ -9,10 +9,11 @@ date: 2024-03-23 03:06:02
 ---
 
 {% note secondary %}
-`MariaDB` 是一个可靠的、高性能的、功能全面的数据库，旨在为用户提供长期免费、向下兼容能直接替代 `MySQL` 的数据库服务。
-自 2013 年起，`MariaDB` 就被 Arch Linux 当作官方默认的 `MySQL` 实现。
-`MySQL` 也在 `Debian 9` 中被 `MariaDB` 取代。
-由此可见 `MariaDB` 体现了开源社区对 `MySQL` 的担忧，并且 `MariaDB` 几乎完全兼容 `MySQL`，所以使用上几乎没有区别，可以放心地使用。
+`MariaDB` 是一个可靠、高性能的数据库，旨在为用户提供长期免费的、向下兼容的、能直接替代 `MySQL` 的数据库服务。
+
+许多 Linux 发行版和 BSD 操作系统都包含 `MariaDB`，并将其作为 `MySQL` 的默认实现。例如 Archlinux、Debian（从 Debian 9 开始）、Fedora（从 Fedora 19 开始）、Red Hat Enterprise Linux（从 RHEL 7 开始）、CentOS（从 CentOS 7 开始）、OpenBSD（从 5.7 开始）和 FreeBSD 等[^1]。
+
+可见开源社区对 `MySQL` 未来发展和开放性的担忧，并且 `MariaDB` 几乎完全兼容 `MySQL`，使用上没有太大区别，可以放心使用。
 {% endnote %}
 
 
@@ -25,7 +26,7 @@ date: 2024-03-23 03:06:02
 Btrfs（B-tree 文件系统），一种支持写入时复制（COW）的文件系统。
 `COW` 简单说就是 写入 `不会就地覆盖数据`；相反，数据块在被复制和修改后会 `写入到新的位置`，元数据也会更新以指向新的位置。
 
-如果你的 `MariaDB` 数据库运行在 `btrfs` 系统分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性[^1]，否则可能会导致性能问题。
+如果你的 `MariaDB` 数据库运行在 `btrfs` 系统分区之上，你应当在创建数据库之前禁用 `Copy-on-Write` 特性[^2]，否则可能会导致数据库性能问题。
 不应创建数据库之后再禁用，因为这一更改只会影响新创建的文件，而不会影响现有文件。
 
 ---
@@ -62,7 +63,7 @@ sudo lsattr -d /var/lib/mysql
 ```bash
 ---------------C------ /var/lib/mysql
 ```
-`C` 表示 `关闭 Copy-on-Write` 特性[^2]。
+`C` 表示 `关闭 Copy-on-Write` 特性[^3]。
 至此，我们已经在 `/var/lib/mysql` 目录下禁用了 `Copy-on-Write` 特性。
 
 {% endfold %}
@@ -247,5 +248,6 @@ MariaDB [(none)]> show databases;
 
 
 参考文章：
-[^1]: https://wiki.archlinux.org/title/MariaDB
-[^2]: https://man.archlinux.org/man/chattr.1
+[^1]: https://en.wikipedia.org/wiki/MariaDB#Prominent_users
+[^2]: https://wiki.archlinux.org/title/MariaDB
+[^3]: https://man.archlinux.org/man/chattr.1

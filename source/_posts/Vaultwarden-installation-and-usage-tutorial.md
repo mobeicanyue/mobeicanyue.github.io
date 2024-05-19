@@ -12,23 +12,23 @@ tags:
 ![bitwarden](https://pic1.zhimg.com/80/v2-37027f299fa4cff9f29e0cb223d127ec_1440w.webp)
 
 {% note info %}
-相信大家对 Bitwarden 这款密码管理工具并不陌生，它是一款 **`开源`** 的密码管理工具，可以帮助我们管理各种账号密码，支持多种平台，包括 Windows、macOS、Linux、Android、iOS 等。
+相信大家对 Bitwarden 这款密码管理工具并不陌生，它是一款 **`开源`** 的密码管理工具，可以帮助我们管理各种账号密码，支持多种平台，包括 Windows、macOS、Linux、Android、iOS 等，十分方便。
 
-Bitwarden 的官方服务有些功能是收费的（如 2FA），但它开源了服务端的代码，所以我们可以自己搭建一个 Bitwarden 服务。而我们今天要介绍的 **`Vaultwarden`** 就是 Bitwarden 服务器的一个开源实现。Vaultwarden 是用 Rust 编写的 Bitwarden 服务器 API 的替代实现，兼容上游 Bitwarden 客户端，非常适合在运行官方资源繁重的服务并不理想的情况下进行自托管部署[^1]。
+Bitwarden 官方的部分服务功能是收费的（如 2FA），但它开源了服务端的代码，所以我们可以自己搭建一个 Bitwarden 服务。我们今天要介绍的 **`Vaultwarden`** 就是 Bitwarden 服务器的一个轻量级开源实现。Vaultwarden 是用 Rust 编写的 Bitwarden 服务器 API 的替代实现，兼容上游 Bitwarden 客户端，非常适合在运行官方资源繁重的服务并不理想的情况下进行自托管部署[^1]。
 {% endnote %}
 
 本文将介绍如何在 Linux 服务器上通过 Docker Compose 部署 Vaultwarden 服务。当然你也可以使用 `1Panel` 一键安装部署。
 
 ## 1. 创建目录
 
-输入以下命令创建一个目录，用于存放 Vaultwarden 的数据：
+输入以下命令创建目录，存放 Vaultwarden 的数据：
 ```bash
 sudo mkdir /opt/vaultwarden && cd /opt/vaultwarden
 ```
 
 ## 2. 创建 Docker Compose 配置文件
 
-输入以下命令创建一个 Docker Compose 配置文件：
+输入以下命令创建 Docker Compose 配置文件：
 ```bash
 sudo vim /opt/vaultwarden/docker-compose.yml
 ```
@@ -59,13 +59,14 @@ services:
 sudo docker-compose up -d
 ```
 
-现在 Vaultwarden 服务已经启动了，地址为 `http://example.com:6666`
+现在 Vaultwarden 服务已经启动了，默认地址为 `http://localhost:6666`
 
-但是**在使用之前，你最好使用反向代理隐藏端口并配置 HTTPS，避免中间人攻击。**配置完毕之后你就可以访问你的 Vaultwarden 网页版服务了。
+**在使用之前，你最好使用反向代理隐藏端口并配置 HTTPS，确保 Vaultwarden 服务的安全。**配置完毕之后你就可以访问你的 Vaultwarden 网页了。
 
 ![登陆](https://pic3.zhimg.com/80/v2-64812e3da6683431d0ecf696e102afc2_1440w.webp)
 
-创建一个账号，然后你就可以在各个平台上使用 Bitwarden 客户端了。电脑上推荐使用浏览器插件，手机上推荐使用官方客户端。注意在登陆的时候要选择 `自托管`，输入你的 `服务器 URL` 即可。
+创建一个账号，就可以使用 Bitwarden 的官方客户端了。电脑上推荐使用**浏览器插件**，手机上推荐使用 **APP 客户端**。
+注意在登陆的时候要选择 `自托管`，输入你的 `服务器 URL` 即可。
 
 ![登陆选择](https://pic4.zhimg.com/80/v2-196b3cc79509562d5cec5426076a14b3_1440w.webp)
 
@@ -76,9 +77,9 @@ sudo docker-compose up -d
 
 `vaultwarden/server:latest` 是 Vaultwarden 服务器的 Docker 镜像，latest 是最新版本。
 
-而本文使用的是 `vaultwarden/server:latest-alpine`，是基于 Alpine Linux 的最新版本。该镜像功能上与 latest 相同，但镜像基于 Alpine 而非 Debian，镜像更小，基础应用程序更新。
+而本文使用的是 `vaultwarden/server:latest-alpine`，是基于 Alpine Linux 的最新版本。镜像功能与 latest 相同，但基于 Alpine 而非 Debian，镜像更小，基础应用程序更新。
 
-当然你也可以指定一个特定的版本，如 `vaultwarden/server:1.22.0` 或 `vaultwarden/server:1.22.0-alpine`。
+当然你也可以给镜像指定一个特定的版本，如 `vaultwarden/server:1.22.0` 或 `vaultwarden/server:1.22.0-alpine`。
 
 ### 4.2 ports
 
@@ -129,7 +130,8 @@ sudo docker-compose down
 Vaultwarden 的数据存储在 `./vw-data` 目录中，你可以直接备份这个目录。
 
 
----
+<br><br>
 
+参考资料：
 [^1]: https://github.com/dani-garcia/vaultwarden
 [^2]: https://github.com/dani-garcia/vaultwarden/wiki

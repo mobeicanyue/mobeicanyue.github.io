@@ -165,7 +165,7 @@ Java 开发国内有多火，相信大家应该都有所耳闻。但好端端天
 
 ## 4. 对 Java 的未来的展望
 
-#### GraalVM 的广泛使用以提高性能
+### 4.1 GraalVM 的广泛使用，提高性能
 GraalVM 是由 Oracle 开发的一个高性能、通用的虚拟机，支持多种编程语言，包括 Java、JavaScript、Python、Ruby 等。以下是一些关键特性和用途：
 多语言支持：GraalVM 支持多种编程语言，使得开发者可以在同一个运行时环境中使用不同语言编写的代码，包括 Java、JavaScript、Python、Ruby 等。这为混合语言的开发提供了便利。
 即时编译器（JIT）：GraalVM 包含一个先进的 JIT 编译器，可以提供比传统的 Java 虚拟机更好的性能。它允许将程序源代码直接编译成机器码，而不需要预先将代码编译成字节码。
@@ -173,5 +173,7 @@ Native Image：GraalVM 提供了 Native Image 工具，可以将 Java 程序直�
 嵌入式执行：GraalVM 可以嵌入到其他应用程序中，使得开发者可以在自己的应用中利用 GraalVM 的多语言支持和性能优势。
 支持 Java 17+ 版本。
 
-#### 直接使用 Kotlin 代替 Java
+### 4.2 使用 Kotlin 代替 Java
 Kotlin 是一种静态类型的编程语言，它可以编译成 Java 字节码，也可以编译成本地机器码。Kotlin 由 JetBrains 开发，目前已经成为 Android 开发的首选语言。Kotlin 与 Java 兼容，可以与 Java 代码无缝集成，也可以直接使用 Kotlin 编写 Android 应用程序。Kotlin 语法简洁，易于学习，具有很好的可读性和可维护性。Kotlin 也可以嵌入到其他应用程序中，使得开发者可以在自己的应用中利用 Kotlin 的多语言支持和性能优势。Kotlin 也是一种跨平台语言，Kotlin/Native 允许将 Kotlin 代码编译成本地机器代码，而不是 Java 字节码，可以脱离 JVM，直接在支持的平台上运行编译后的二进制文件。
+
+但是如果还是虚拟机运行，好像有点换汤不换药？:)
