@@ -61,7 +61,7 @@ sudo docker-compose up -d
 
 现在 Vaultwarden 服务已经启动了，默认地址为 `http://localhost:6666`
 
-**在使用之前，你最好使用反向代理隐藏端口并配置 HTTPS，确保 Vaultwarden 服务的安全。**配置完毕之后你就可以访问你的 Vaultwarden 网页了。
+**在使用之前，你最好使用反向代理隐藏端口并配置 HTTPS，确保 Vaultwarden 服务的安全。**配置完毕之后你就可以访问 Vaultwarden 网页端了。
 
 ![登陆](https://pic3.zhimg.com/80/v2-64812e3da6683431d0ecf696e102afc2_1440w.webp)
 
