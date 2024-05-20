@@ -1,5 +1,5 @@
 ---
-title: Manjaro Linux 值得推荐使用吗？有何优缺点？
+title: Manjaro Linux 有何优缺点？是否推荐使用？
 tags:
   - Linux
   - Manjaro-Linux

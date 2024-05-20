@@ -8,9 +8,7 @@ date: 2024-01-17 20:50:59
 ---
 
 {% note secondary %}
-AList 是一个支持多存储的文件列表 / WebDAV 程序，使用 Gin 和 Solidjs。
-
-本文为 Alist 部署教程，主要介绍 Alist 的配置及使用。参考[官网教程](https://alist.nn.ci/zh/guide)
+AList 是一个支持多存储的文件列表 / WebDAV 程序，使用 Gin 和 Solidjs。本文为 Alist 部署教程，主要介绍 Alist 的配置及使用。参考官网教程：https://alist.nn.ci/zh/guide
 {% endnote %}
 
 ## 1. 安装 Alist
@@ -74,12 +72,13 @@ volumes:
 
 {% fold @手动安装（适合 Windows） %}
 打开 AList Release 下载待部署系统对应的文件。下载后解压，赋予文件执行权限后运行即可。Windows 推荐使用该方式安装。
-参照 https://alist.nn.ci/zh/guide/install/manual.html
+
+参考：https://alist.nn.ci/zh/guide/install/manual.html
 {% endfold %}
 
-## 2. 获取 Alist 密码
+## 2.  Alist 初始化登录密码
 
-Alist 默认情况下需要初始化密码后才能使用密码登陆。我们可以 `随机生成` 或者 `手动设置` 一个密码。
+**Alist 在登录之前需要初始化密码。**我们可以 `随机生成` 或者 `手动设置` 一个密码。
 
 ### 2.1 随机生成密码
 
@@ -109,30 +108,30 @@ docker exec -it alist ./alist admin set NEW_PASSWORD
 
 ## 3. 配置 Alist
 
-默认情况下，应用程序将在 http://localhost:5244 上启动。我们还需要配置一些内容，才可以正常使用我们部署的网盘。
+默认情况下，应用程序将在 http://localhost:5244 上启动。
 
-浏览器访问上述链接，输入用户名 `admin` 和上一步获取的 `密码`。点击登陆。
+我们还需要进行一些配置，才可以正常使用我们部署的网盘。浏览器访问上述链接，输入用户名 `admin` 和初始化后的 `密码`，点击登陆，点击页脚的 `管理` 进入管理页面。
 
 ### 3.1 添加存储
 
 Alist 支持多种存储，包括本地存储、OneDrive、Google Drive 等。这里我们以本地存储为例。
 
-1. 在你 `安装 alist 的路径` 手动创建一个目录 `files` 用于存储网盘文件。一键脚本路径为 `/opt/alist/files`；docker-compose 路径为 `etc/alist/files`。
+1. 在 `Alist 的安装路径` 手动创建一个目录 `files` 用于存储网盘文件。一键脚本路径为 `/opt/alist/files`；docker-compose 路径为 `/etc/alist/files`。
 
 2. 添加存储：
-左边栏点击 `存储`，然后点击`添加`，驱动选择 `本机存储`，点击`添加`
+点击管理页面左边栏的 `存储`，然后点击`添加`，驱动选择 `本机存储`，点击`添加`
 
-3. `挂载路径`填写 `/`，意味着这次添加的存储为 `网盘根目录`。往下滑，找到 `根文件夹路径`，也就是文件的存储路径。
-  如果你是 **一键脚本安装** 的，就填写 `/opt/alist/files`；
-  如果你是 **docker-compose 安装** 的，就填容器内路径 `/opt/alist/data/files`。（注意，这个是容器内的映射路径，不是宿主机的路径，参考前文的 `volumes` 配置）
+3. `挂载路径`填写 `/`，意味着这次添加的存储为 `Alist 网盘的根目录`。往下划，找到 `根文件夹路径`，也就是文件的物理存储路径。
+  **一键脚本安装** 为 `/opt/alist/files`；
+  **docker-compose 安装** 为 `/opt/alist/data/files`。（注意，这个是容器内的映射路径，不是宿主机的路径，参考上文 docker-compose 安装的 volumes 配置，`/etc/alist:/opt/alist/data`）
 
-  也就是 `挂载路径(/)` --> `根文件夹路径(/opt/alist/files)`，这样就可以把 `/` 映射到 `/opt/alist/files`，也就是将网盘根目录映射到了 `files` 目录。
+  也就是 `挂载路径(/)` --> `根文件夹路径(/opt/alist/files)`，这样就可以把 `/opt/alist/files` 映射到 `/`。也就是将 `/opt/alist/files` 映射到了网盘根目录。
 
-最下面点击 `保存`
+网页划到最下面点击 `保存`
 
 ### 3.2 启用游客访问
 
-默认情况下，Alist 不允许游客访问，如果你希望游客可以访问，可以按照以下步骤开启：
+**Alist 默认情况下不允许游客访问。**如果你希望游客访问你的网盘，可以按照以下步骤开启：
 
 左边栏点击 `用户`，编辑 `guest` 用户，将 `停用` 取消勾选，点击保存。
 
@@ -147,27 +146,27 @@ Alist 需要构建索引才能搜索文件，可以按照以下步骤开启搜�
 
 ## 4. 更新 Alist
 
-### 4.1 `1Panel` 一键安装
-
+{% fold info @1Panel 一键安装 %}
 打开 `1Panel` 面板，点击 `应用商店`，点击 `可升级`，找到 `Alist`，点击 `升级` 即可。
+{% endfold %}
 
-### 4.2 一键脚本安装
-
+{% fold info @一键脚本安装 %}
 ```bash
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update
 ```
+{% endfold %}
 
-### 4.3 docker-compose 安装
-
+{% fold info @docker-compose 安装 %}
 ```bash
 docker-compose pull
 docker-compose up -d
 ```
+{% endfold %}
 
-### 4.4 手动安装
-
+{% fold @手动安装 %}
 下载最新版本的 Alist，解压后替换原有文件即可。
+{% endfold %}
 
 ## 5. 高级配置
 
-更多高级配置请参照官网 https://alist.nn.ci/zh/guide/
+更多高级配置请参照官网 https://alist.nn.ci/zh/guide/advanced/

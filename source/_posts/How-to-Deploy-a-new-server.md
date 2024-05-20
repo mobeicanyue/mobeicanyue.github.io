@@ -411,6 +411,8 @@ Fail2Ban 是一个入侵检测系统框架，它可以监控服务器的日志�
 ## 8. 一键脚本
 本文所讲述的内容我整理成了一键脚本，可以帮助你快速部署服务器，包括设置时区、安装 Web 服务器、SSH 安全配置、防火墙配置、禁用 ping、配置 Fail2ban 等等。 **`在使用前请最好先阅读脚本内容，以免造成不必要的损失`** 你可以根据自己的需求修改脚本内容。目前支持 Debian 12, Ubuntu 22.04
 
+脚本开源地址：https://github.com/mobeicanyue/init-server
+
 使用方法：
 ```bash
 wget https://raw.githubusercontent.com/mobeicanyue/init-server/main/init-server.sh
