@@ -124,7 +124,19 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - 输入法安装：只安装 `fcitx5-im`, `fcitx5-chinese-addons`, 还有 `fcitx5-rime` 输入法引擎 和 `fcitx-configtool`。没有安装 `fcitx5-anthy`, `fcitx5-pinyin-moegirl`, `fcitx5-material-color` 等，因为我不需要。
 - `timeshift` 配置的时候记得不要勾选 `@home`，因为 home 目录包含视频、音乐等大文件，且回滚时不需要回滚这些文件。
 
-## 4. 可选配置
+## 4. 安装 AMD 显卡驱动
+
+我使用的是 AMD 显卡，所以需要安装对应的驱动。我安装的是 AMD 官方的开源驱动：
+
+```bash
+sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau
+```
+
+其中 `mesa` 是开源的 `OpenGL` 驱动，`xf86-video-amdgpu` 是 `Xorg` 的 `AMDGPU` 视频驱动，`vulkan-radeon` 是适用于 AMDGPU 的开源 `Vulkan` 驱动。
+
+与原教程不同的是，我没有安装 `lib32-mesa` 和 `lib32-vulkan-radeon`，因为我不需要 32 位的软件。我还安装了 `libva-mesa-driver` 和 `mesa-vdpau` 来开启硬件视频加速。
+
+## 5. 可选配置
 
 我做出的改动：
 - 我的命令行美化采用 https://gitee.com/mo2/zsh 的 `powerlevel10k` 主题，非常好看。
@@ -135,7 +147,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - grub 引导界面主题采用了 `darkmatter-grub2-theme`，非常好看。
   ![Grub](https://pic2.zhimg.com/80/v2-f02c4381153538b1aed9b9f61367ea7d_1440w.webp)
 
-## 5. 我安装的软件包
+## 6. 我安装的软件包
 
 ### AUR helper
 - `yay`：AUR 包管理工具，使用 `go` 语言编写。`archlinuxcn`
@@ -185,7 +197,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 - `ttf-jetbrains-mono-nerd`：JetBrains Mono 字体，适用于终端、代码字体。`extra`
 
 
-## 6. 我的配置
+## 7. 我的配置
 
 - 开机自动启动数字键盘：KDE 系统设置 -> 键盘 -> Plasma 启动时 NumLock 状态 -> 开启
 - 命令行安装软件包 软件包显示颜色：`sudo vim /etc/pacman.conf`, 取消 `Color` 的注释。
@@ -201,7 +213,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
     User git
   ```
 
-## 7. 总结
+## 8. 总结
 
 吐槽一下，Arch 确实用得很清爽，没什么多余的东西。就是安装折磨人，花了一天多才搞明白。我使用 `archinstall` 脚本安装还失败了（因为 kde 依赖更新了，镜像自带的 archinstall 脚本不是最新的），我只能手动安装。不过好在手动安装的教程很详细，一步步就能搞定。
 
