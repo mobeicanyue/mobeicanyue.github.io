@@ -71,6 +71,7 @@ sudo lsattr -d /var/lib/mysql
 
 ## 1. 安装 MariaDB
 
+输入以下命令来安装 `MariaDB`：
 ```bash
 sudo pacman -S mariadb
 ```
@@ -213,7 +214,48 @@ Thanks for using MariaDB!
 
 ## 5. 使用 MariaDB
 
-### 5.1 登录 MariaDB
+### 5.1 常用命令
+
+启动 MariaDB 服务并设置服务开机自启：
+```bash
+sudo systemctl enable --now mariadb
+```
+查看 MariaDB 服务状态：
+```bash
+sudo systemctl status mariadb
+```
+更新 MariaDB：
+```bash
+sudo pacman -Syu mariadb
+```
+
+<br>
+
+启动 MariaDB 服务：
+```bash
+sudo systemctl start mariadb
+```
+停止 MariaDB 服务：
+```bash
+sudo systemctl stop mariadb
+```
+重启 MariaDB 服务：
+```bash
+sudo systemctl restart mariadb
+```
+
+<br>
+
+开机启动 MariaDB 服务：
+```bash
+sudo systemctl enable mariadb
+```
+禁用 MariaDB 服务开机自启：
+```bash
+sudo systemctl disable mariadb
+```
+
+### 5.2 登录 MariaDB
 ```bash
 sudo mariadb
 ```
@@ -225,7 +267,7 @@ sudo mariadb -u root -p
 
 如果这里报错：`ERROR 1698 (28000): Access denied for user 'root'@'localhost'`，那么你需要使用 `sudo mariadb` 来登录，或者重新运行 `sudo mariadb-secure-installation` 来设置密码。
 
-### 5.2 查看数据库
+### 5.3 查看数据库
 ```sql
 SHOW DATABASES;
 ```
@@ -244,7 +286,7 @@ MariaDB [(none)]> show databases;
 4 rows in set (0.001 sec)
 ```
 
-现在，你可以开始使用 `MariaDB` 了。
+现在，你可以开始使用 `MariaDB` 了。`MariaDB` 默认只提供命令行工具，你也可以使用 `beekeeper-studio` 或者 `navicat` 等图形化工具来管理数据库，增删改查非常方便。
 
 
 参考文章：

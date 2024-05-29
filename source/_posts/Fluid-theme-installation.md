@@ -8,20 +8,28 @@ abbrlink: 5eba38dc
 date: 2023-12-27 02:09:48
 ---
 
-[官方文档](https://hexo.fluid-dev.com/docs/start)其实挺详细的了。
-记录一下我自己的操作。
+[官方文档](https://hexo.fluid-dev.com/docs/start)其实挺详细的了。本文记录一下自己的操作。
 
 ## 1. 安装主题
-进入博客目录执行命令：
+
+### 1.1 安装方式一：从 NPM 安装
+
+在博客目录执行命令：
 ```bash
 npm install --save hexo-theme-fluid
 ```
-然后在博客目录下创建 _config.fluid.yml，将官方仓库的主题配置 [_config.yml](https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml) 内容复制过去。
+然后在博客根目录下创建 _config.fluid.yml，将官方仓库的主题配置 [_config.yml](https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml) 内容复制过去。
 
 现在目录下有这三个 yml 文件：
 ![yml-files](https://pic2.zhimg.com/80/v2-052fdc56939475513bf83af1bd6b1bb5_1440w.webp)
 
 可删除 `_config.landscape.yml` , 它是 hexo 默认的主题文件。
+
+### 1.2 安装方式二：解压 GitHub 源码包
+
+下载 [主题最新 release 版本](https://github.com/fluid-dev/hexo-theme-fluid/releases) 解压到 themes 目录，并将解压出的文件夹重命名为 fluid。注意，这种方式安装的主题自带配置文件 `_config.yml`，位于主题根目录，不需要手动创建。
+
+这种方式适用于想灵活修改主题的用户，因为 Fluid 更新较慢，如果你有一些自定义需求，可以直接修改源码。
 
 ## 2. 修改 hexo 配置
 

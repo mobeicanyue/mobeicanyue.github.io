@@ -70,23 +70,25 @@ yarn start
 
 {% fold info @docker-compose 安装 %}
 下载官方的 docker-compose.yml 文件：
-https://github.com/umami-software/umami/blob/master/docker-compose.yml
+```bash
+wget https://raw.githubusercontent.com/umami-software/umami/master/docker-compose.yml
+```
 
-配置里默认是 Postgresql 数据库，如果你想使用 MySQL 数据库，可以修改 `docker-compose.yml` 文件，将 `DATABASE_URL` 的 `postgres` 替换为 `mysql`，并修改 `DATABASE_URL` 为 MySQL 对应的链接。
+`docker-compose.yml` 的默认数据库是 Postgresql 数据库，如果你想使用 MySQL 数据库，可以修改 `docker-compose.yml`，将 `DATABASE_URL` 的 `postgres` 替换为 `mysql`，并修改 `DATABASE_URL` 为 MySQL 对应的链接。
 
-然后运行：
+修改完配置参数后运行：
 ```bash
 docker-compose up -d
 ```
 {% endfold %}
 
-默认情况下，应用程序将在 http://localhost:3000 上启动。你可能需要代理 Web 服务器的请求，或更改端口来直接为应用程序提供服务。
+默认情况下，应用程序将在 http://localhost:3000 上启动。建议使用反向代理避免直接暴露端口。
 
 
 ## 3. 修改 Umami 密码
 Umami 启动后，默认用户名为 `admin`，默认密码为 `umami`。
 
-第一件事是修改密码，选择 `Setting` -> `Profile`，然后设置你的新密码。
+我们先修改密码，选择 `Setting` -> `Profile`，然后设置你的新密码。
 ![修改密码](https://pic4.zhimg.com/80/v2-8e5d01834b102bd9acedb220fe8cc29f_1440w.webp)
 
 点击右上角的地球图标，修改语言为 `中文`。
