@@ -119,3 +119,7 @@ Umami 启动后，默认用户名为 `admin`，默认密码为 `umami`。
 <script async src="https://example.com/script.js" data-website-id="xxxxxxxxxxxxxxxxxxxx" data-do-not-track="true"></script>
 ```
 更多使用方法请参考官方文档：https://umami.is/docs/tracker-configuration
+
+## 5. Umami UV / PV 统计显示
+
+Umami 官方文档并没有直接提供 UV 和 PV 展示的 API，但是我们可以通过编写相应的代码来获取 Umami 的访问量和访问人数。具体操作参考我的另一篇文章：{% post_link 'Writing-Umami-s-uv-pv-access-display' 'Umami UV / PV 统计显示' %}
