@@ -506,12 +506,12 @@ index:
 
     # 为空则按 hexo config.subtitle 显示
     # If empty, text based on `subtitle` in hexo config
-    text: "漠北残月的博客"
+    text: "<img src='https://pic1.zhimg.com/80/v2-422b9050d913581f87e3e62a902977cc_1440w.webp' class='avatar'/> <br/>「人间有味是清欢」"
 
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
     # Subtitle of the homepage through the API, must be returned a JSON. If the request fails, it will be displayed in `text` value. This feature must first enable the typing animation
     api:
-      enable: true
+      enable: false
 
       # 请求地址
       # Request url
