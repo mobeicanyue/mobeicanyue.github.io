@@ -288,6 +288,21 @@ MariaDB [(none)]> show databases;
 
 现在，你可以开始使用 `MariaDB` 了。`MariaDB` 默认只提供命令行工具，你也可以使用 `beekeeper-studio` 或者 `navicat` 等图形化工具来管理数据库，增删改查非常方便。
 
+### 5.4 数据库升级
+
+Arch 是一个更新比较激进的发行版，我们有时候更新后会看见 `MariaDB` 的提示：
+```bash
+:: MariaDB was updated to a new feature release. To update the data run:
+     # systemctl restart mariadb.service && mariadb-upgrade -u root -p
+```
+
+这时候我们就需要运行如下命令来升级数据库：
+```bash
+sudo systemctl restart mariadb && sudo mariadb-upgrade -u root -p
+```
+
+比如我在写这篇文章的时候，`MariaDB` 从 `11.3.2-MariaDB` 升级到了 `11.4.2-MariaDB`，就运行了这个命令来升级数据库。`Major version upgrade detected from 11.3.2-MariaDB to 11.4.2-MariaDB. Check required!`
+
 
 参考文章：
 [^1]: https://en.wikipedia.org/wiki/MariaDB#Prominent_users
