@@ -41,6 +41,6 @@
     transition: transform 1s; /* 添加过渡效果 */
     border: 3px solid #ddd; /* 添加边框 */
     /* 添加 bottom 的 margin 值，使其与下面的文字对齐 */
-    margin: 65px 0 20px 0;
+    margin: 65px 0 30px 0;
   }
 }
