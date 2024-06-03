@@ -35,12 +35,12 @@
 /* 针对手机设备的样式 */
 @media screen and (max-width: 767px) {
   .avatar {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     transition: transform 1s; /* 添加过渡效果 */
     border: 3px solid #ddd; /* 添加边框 */
     /* 添加 bottom 的 margin 值，使其与下面的文字对齐 */
-    margin: 70px 0 15px 0;
+    margin: 65px 0 20px 0;
   }
 }
