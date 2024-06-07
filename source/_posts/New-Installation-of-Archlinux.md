@@ -203,7 +203,7 @@ sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau
 - 命令行安装软件包 软件包显示颜色：`sudo vim /etc/pacman.conf`, 取消 `Color` 的注释。
 - paru 包序号从最下面开始显示，和 `yay` 一样：`sudo vim /etc/paru.conf`, 取消 `BottomUp` 的注释。
 - 下载软件包的时候不附带 debug 包：`sudo vim /etc/makepkg.conf`, 在 `OPTIONS` 的 `debug` 前面加上 `!`。是最近出现的新问题，以前没遇到过。参考：https://bbs.archlinux.org/viewtopic.php?id=293055
-- 让 Windows 和 Linux 的时间一致：`timedatectl set-local-rtc 1 --adjust-system-clock`。原理：Windows 会假设硬件时钟就是本地时间（Local Time），即硬件时钟存储的时间是与所在时区相同的时间，如东八区。而 Linux 会假设硬件时钟是协调世界时（UTC）时间。所以在 Linux 下设置硬件时钟为本地时间，Windows 和 Linux 的时间就会一致了。如果有更好的解决方案，欢迎在评论区告诉我。
+- 让 Windows 和 Linux 的时间一致：`timedatectl set-local-rtc 1 --adjust-system-clock`. 原理：Windows 会假设硬件时钟就是本地时间（Local Time），即硬件时钟存储的时间是与所在时区相同的时间，如东八区。而 Linux 会假设硬件时钟是协调世界时（UTC）时间。所以在 Linux 下设置硬件时钟为本地时间，Windows 和 Linux 的时间就会一致了。如果有更好的解决方案，欢迎在评论区告诉我。
 - GRUB 内核配置 `GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 nowatchdog"`：quiet, 禁用绝大多数日志消息[^1]。loglevel=3, 只显示错误日志消息[^1]。nowatchdog, 关闭 watchdog[^2]。修改后执行 `sudo grub-mkconfig -o /boot/grub/grub.cfg` 使 grub 配置生效。
 - `vim ~/.ssh/config`, 创建 ssh 配置文件，配置 github ssh 推送走 443 端口，避免被坤场阻止 22 端口：
   ```config
