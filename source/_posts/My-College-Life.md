@@ -3,6 +3,7 @@ title: 我这大学四年
 sticky: 100
 tags:
   - 随笔
+  - 生活
 abbrlink: ac61edc7
 date: 2024-05-08 22:28:05
 ---

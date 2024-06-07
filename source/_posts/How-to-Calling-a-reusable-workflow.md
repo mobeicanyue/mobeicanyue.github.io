@@ -8,7 +8,7 @@ date: 2024-06-07 12:37:58
 ---
 
 {% note secondary %}
-在 Github Actions 中，我们可能会有这样的需求：一个 workflow 执行满足了某个条件后，需要调用另一个 workflow 完成相应业务。这也是困扰我很久的一个问题，今天写下这篇文章，记录一下如何实现这个功能。
+在 Github Actions 中，我们可能会有这样的需求：一个 workflow 执行满足了某个条件后，需要调用另一个 workflow 完成相应业务。
 
 本文将介绍如何在 Github Actions 的 workflow 中调用另一个 workflow.
 
@@ -31,7 +31,7 @@ on:
 ## 2. 调用 workflow
 
 文档中提到如下信息：
-```Text
+
 You call a reusable workflow by using the uses keyword. Unlike when you are using actions within a workflow, you call reusable workflows directly within a job, and not from within job steps.
 
 `jobs.<job_id>.uses`
@@ -40,7 +40,7 @@ You reference reusable workflow files using one of the following syntaxes:
 
 - `{owner}/{repo}/.github/workflows/{filename}@{ref}` for reusable workflows in public and private repositories.
 - `./.github/workflows/{filename}` for reusable workflows in the same repository.
-```
+
 
 也就是说，调用 `workflow` 有两种方式：
 1. 调用本仓库的 workflow，使用 `./.github/workflows/{filename}`.

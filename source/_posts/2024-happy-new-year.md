@@ -1,7 +1,6 @@
 ---
 title: '2024, Happy New Year!'
 tags:
-  - 日常
 abbrlink: 1c0214de
 date: 2024-01-01 00:19:00
 ---
