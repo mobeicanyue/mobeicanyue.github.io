@@ -6,10 +6,8 @@ abbrlink: 9ac67242
 date: 2024-06-08 19:03:46
 ---
 
-{% note info %}
-近来由于维护 lxgw-wenkai-web 的需要，学习一下 npm 包的上传。
-
-本文将介绍如何将自己的 npm 包上传到 npm 仓库。
+{% note primary %}
+本文将介绍如何将自己的 npm 包上传到 npm registry 仓库。
 {% endnote %}
 
 在开始之前，请首先阅读 [npm 官方文档](https://docs.npmjs.com/)，了解 npm 的基本使用方法。
