@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Site
         run: |
-          bun build
+          bun generate
 
       - name: Move baidu_verify
         run: |
