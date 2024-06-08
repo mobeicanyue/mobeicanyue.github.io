@@ -8,10 +8,9 @@ date: 2024-06-07 12:37:58
 ---
 
 {% note secondary %}
-在 Github Actions 中，我们可能会有这样的需求：一个 workflow 执行满足了某个条件后，需要调用另一个 workflow 完成相应业务。
+在 Github Actions 中，我们可能会有这样的需求：一个 workflow 执行满足了某个条件后，调用另一个 workflow 完成相应业务。
 
 本文将介绍如何在 Github Actions 的 workflow 中调用另一个 workflow.
-
 Github 官方文档：https://docs.github.com/en/actions/using-workflows/reusing-workflows.
 {% endnote %}
 
@@ -30,8 +29,11 @@ on:
 
 ## 2. 调用 workflow
 
+<br>
 文档中提到如下信息：
 
+
+---
 You call a reusable workflow by using the uses keyword. Unlike when you are using actions within a workflow, you call reusable workflows directly within a job, and not from within job steps.
 
 `jobs.<job_id>.uses`
@@ -40,32 +42,68 @@ You reference reusable workflow files using one of the following syntaxes:
 
 - `{owner}/{repo}/.github/workflows/{filename}@{ref}` for reusable workflows in public and private repositories.
 - `./.github/workflows/{filename}` for reusable workflows in the same repository.
+---
 
 
-也就是说，调用 `workflow` 有两种方式：
-1. 调用本仓库的 workflow，使用 `./.github/workflows/{filename}`.
+也就是说，Github Action 有两种调用 `workflow` 的方式：
+1. 调用本仓库的 workflow，使用 `./.github/workflows/{filename}`. 
+   `./` 代表 `Github Action 的默认工作目录`。
 2. 调用其他仓库的 workflow，使用 `{owner}/{repo}/.github/workflows/{filename}@{ref}`.
 
-代码示例如下：
+文档中好像还提到了 `./.github/actions` 这种路径的调用方式，和 `./.github/workflows` 类似，感兴趣的可以自行查看文档：[Using an action in the same repository as the workflow](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-an-action-in-the-same-repository-as-the-workflow)
+
+<br>
+
+示例代码如下：
 ```yaml
 jobs:
-  call-workflow-1-in-local-repo:
+  in-local-repo-1:
     uses: octo-org/this-repo/.github/workflows/workflow-1.yml@172239021f7ba04fe7327647b213799853a9eb89
-  call-workflow-2-in-local-repo:
+  in-local-repo-2:
     uses: ./.github/workflows/workflow-2.yml
-  call-workflow-in-another-repo:
+  in-another-repo:
     uses: octo-org/another-repo/.github/workflows/workflow.yml@v1
 ```
 
-由例子可见：我们在使用 `uses:` 调用 workflow 时，需要直接在 `jobs.<job_id>.uses` 中使用，而不是在 job 的 steps 中使用。
+由例子可见：使用 `uses:` 调用 workflow 时，需要直接在 `jobs.<job_id>.uses` 调用，而不是在 job 的 steps 中调用。
 
-## 3. 项目实战
+## 3. 传递参数
 
+如果你需要在调用 workflow 时传递参数，你可以使用 `with` 字段，如下所示：
+
+这是调用 workflow 的文件 `workflow1.yml`:
+```yaml
+jobs:
+  call-workflow:
+    uses: octo-org/this-repo/.github/workflows/workflow.yml@main
+    with:
+      foo: bar
+```
+使用 `with` 字段传递参数，`foo` 是参数名，`bar` 是参数值。
+
+这是被调用的 workflow 文件 `workflow2.yml`:
+```yaml
+on:
+  workflow_call:
+    inputs:
+      foo:
+        required: true
+        type: string
+
+jobs:
+  called-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the input
+        run: echo ${{ inputs.foo }}
+```
+在被调用的 workflow 文件中，在 `on.workflow_call.inputs` 中定义参数，然后在 `jobs` 中使用 `${{ inputs.foo }}` 获取参数值。
+
+## 4. 项目实战
 我们来看一个实际的例子，如何在一个 workflow 中调用另一个 workflow.
 
 ```yaml
 name: Detect Update
-
 on:
   schedule:
     - cron: "0 0 * * 1"
@@ -74,21 +112,8 @@ on:
 jobs:
   check-update:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
-
       ### 省略业务逻辑 ###
-
-      - name: 比较版本号
-        id: version-compare
-        run: |
-          python3 <<END
-          if lxgw_version > self_version:
-              os.system('echo "lxgw_newer=true" >> $GITHUB_OUTPUT')
-          else:
-              os.system('echo "lxgw_newer=false" >> $GITHUB_OUTPUT')
-          END
 
     outputs:
       lxgw_newer: ${{ steps.version-compare.outputs.lxgw_newer }}
@@ -99,6 +124,8 @@ jobs:
     uses: mobeicanyue/test-font/.github/workflows/split.yml@main
     permissions:
       contents: write
+    with:
+      lxgw_tag: ${{ needs.check-update.outputs.lxgw_tag }}
 ```
 
 这是一个检查更新的 workflow，分为两个 job：`check-update` 和 `update`。`check-update` 用于检查是否有更新，`update` 用于更新。
@@ -115,15 +142,16 @@ name: Split
 
 on:
   workflow_call:
+    inputs:
+      lxgw_tag:
+        required: true
+        type: string
 
 jobs:
-    split:
-        runs-on: ubuntu-latest
-    
-        steps:
-        - uses: actions/checkout@v4
-    
-        ### 省略业务逻辑 ###
+  split:
+    runs-on: ubuntu-latest
+    steps:
+    ### 省略业务逻辑 ###
 ```
 
 这样，我们就实现了在一个 workflow 中调用另一个 workflow 的功能。

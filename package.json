@@ -5,10 +5,11 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "new": "hexo new",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "build": "hexo generate",
+    "server": "hexo server",
+    "deploy": "hexo deploy"
   },
   "hexo": {
     "version": "7.2.0"
