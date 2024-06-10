@@ -11,7 +11,7 @@ layout: about
 
 博客使用开源静态博客框架 [Hexo](https://hexo.io/zh-cn) 及其主题 [Fluid](https://hexo.fluid-dev.com/docs) 构建。源代码托管于 [Github](https://github.com/mobeicanyue) 并自动构建，通过 Cloudflare Pages 和 Cloudflare CDN 部署在 Cloudflare 的全球边缘网络上。博客采用开源访问统计工具 [Umami](https://umami.is) 来统计博客访问情况，遵守您的 DNT 设定，链接 https://umami.ovvv.top/share/SYu8qUKmty52PW9w/blog.
 
-本站文章知识共享许可协议为 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)。**您可以在遵守协议的前提下自由转载、分享、修改，但需注明作者和出处、不得用于商业目的、基于本协议进行再分享。**如果文章有谬误或者您有改进文章的建议，欢迎您在文章下面留言，不胜感激。
+本站文章知识共享许可协议为 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans). **您可以在遵守协议的前提下自由转载、分享、修改，但需注明作者和出处、不得用于商业目的、基于本协议进行再分享。**如果文章有谬误或者您有改进文章的建议，欢迎您在文章下面留言，不胜感激。
 
 由于奇奇怪怪的玄学原因，百度并没有收录本站，除了百度的主流搜索引擎都可以搜索到本站，如 Google、Bing（必应）、DuckDuckGo、Yandex、Yahoo（雅虎）等。
 

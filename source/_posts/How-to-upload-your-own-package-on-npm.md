@@ -10,19 +10,21 @@ date: 2024-06-08 19:03:46
 本文将介绍如何将自己的 npm 包上传到 npm registry 仓库。
 {% endnote %}
 
-在开始之前，请首先阅读 [npm 官方文档](https://docs.npmjs.com/)，了解 npm 的基本使用方法。
+在开始之前，请先阅读 [npm 官方文档](https://docs.npmjs.com/)，了解 npm 的基本使用方法。
 
 ## 0. 创建 npm 包
 
-首先，我们需要创建一个 npm 包，**如果你已经有了 npm 包，可以跳过这一步**。
+> 一个 npm 包是由 `package.json` 文件描述的文件或目录。npm 包必须包含 `package.json` 文件，才能发布到 npm registry 仓库。
 
-否则，你可以在项目目录下执行 npm 命令来创建一个 npm 包，：
+**如果你已经有了 npm 包，可以跳过这一步**。
+
+否则，你可以在项目目录下执行如下命令来创建一个 npm 包：
 ```bash
 npm init
 ```
-根据命令行提示填写项目信息，npm 会生成一个 `package.json` 文件，这个文件是 npm 包的配置文件，里面包含了项目的基本信息。
+根据命令行的提示填写项目信息，npm 会生成一个 `package.json` 文件，这个文件是 npm 包的配置文件，里面包含了项目的基本信息。
 
-再或者，你可以手动创建一个 `package.json` 文件，内容参考：
+或者，你也可以手动创建一个 `package.json` 文件，内容参考：
 {% fold info @package.json %}
 ```json
 {
