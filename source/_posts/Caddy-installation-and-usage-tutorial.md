@@ -30,7 +30,7 @@ sudo apt install caddy -y
 ```bash
 caddy version
 ```
-当前教程演示的 Caddy 版本是 `2.6.2`。
+当前教程演示的 Caddy 版本是 `2.6.2`.
 
 
 ## 2. 启动 Caddy

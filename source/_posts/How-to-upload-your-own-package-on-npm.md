@@ -90,7 +90,7 @@ npm publish
 
 至此，你的 npm 包已经成功发布到 npm 仓库。你可以在 www.npmjs.com 里搜索你的包。
 
-4. 更新 npm 包
+## 4. 更新 npm 包
 
 如果你的 npm 包有更新，你需要修改 `package.json` 中的 `version` 字段，然后重新发布。
 
@@ -105,3 +105,30 @@ npm publish
 ```
 其中 `<newversion>` 为新版本号，`major`、`minor`、`patch` 分别为主版本号、次版本号、修订号。
 比如，你可以输入 `npm version patch` 来更新修订号；或者输入 `npm version 1.0.1` 来更新到 `1.0.1` 版本，然后发布。
+
+## 5. 在 Github Actions 中发布 npm 包
+
+Github 发布新版本时，可以触发工作流来发布包。触发类型 published 的事件时，执行下例中的过程。如果 CI 测试通过，该过程会将包上传到 npm 注册表。
+请确保在存储库的 Secrets 中设置 `NPM_TOKEN`.
+
+```yaml
+name: Publish Package to npmjs
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm ci
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+```
+
