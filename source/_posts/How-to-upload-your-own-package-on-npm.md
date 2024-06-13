@@ -108,14 +108,13 @@ npm publish
 
 ## 5. 在 Github Actions 中发布 npm 包
 
-Github 发布新版本时，可以触发工作流来发布包。触发类型 published 的事件时，执行下例中的过程。如果 CI 测试通过，该过程会将包上传到 npm 注册表。
+Github 可以通过手动触发工作流来发布 npm 包。该工作流会将包上传到 npm registry。
 请确保在存储库的 Secrets 中设置 `NPM_TOKEN`.
 
 ```yaml
 name: Publish Package to npmjs
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
