@@ -35,8 +35,8 @@
 /* 针对手机设备的样式 */
 @media screen and (max-width: 767px) {
   .avatar {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
     border-radius: 50%;
     transition: transform 1s; /* 添加过渡效果 */
     border: 3px solid #ddd; /* 添加边框 */
