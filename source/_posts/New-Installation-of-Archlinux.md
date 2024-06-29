@@ -120,7 +120,7 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 参照上文教程的 `桌面环境与常用应用安装` 一节继续安装。
 
 我做出的修改：
-- 不开启 `multilib` 仓库，因为我不想要 32 位的软件。
+- ~~不开启 `multilib` 仓库，因为我不想要 32 位的软件。~~如果你要装 `steam`，记得开启 `multilib` 仓库，安装 32 位 OpenGL 图形驱动。
 - 输入法安装：只安装 `fcitx5-im`, `fcitx5-chinese-addons`, 还有 `fcitx5-rime` 输入法引擎 和 `fcitx-configtool`。没有安装 `fcitx5-anthy`, `fcitx5-pinyin-moegirl`, `fcitx5-material-color` 等，因为我不需要。
 - `timeshift` 配置的时候记得不要勾选 `@home`，因为 home 目录包含视频、音乐等大文件，且回滚时不需要回滚这些文件。
 
@@ -129,12 +129,17 @@ Ventoy 启动后，选择你下载的 Archlinux 镜像文件，然后启动。
 我使用的是 AMD 显卡，所以需要安装对应的驱动。我安装的是 AMD 官方的开源驱动：
 
 ```bash
-sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau
+sudo pacman -S mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon
+```
+
+对于硬件视频加速，可以安装如下的驱动来开启：
+```bash
+sudo pacman -S libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 ```
 
 其中 `mesa` 是开源的 `OpenGL` 驱动，`xf86-video-amdgpu` 是 `Xorg` 的 `AMDGPU` 视频驱动，`vulkan-radeon` 是适用于 AMDGPU 的开源 `Vulkan` 驱动。
 
-与原教程不同的是，我没有安装 `lib32-mesa` 和 `lib32-vulkan-radeon`，因为我不需要 32 位的软件。我还安装了 `libva-mesa-driver` 和 `mesa-vdpau` 来开启硬件视频加速。
+我还安装了 `libva-mesa-driver` 和 `mesa-vdpau` 来开启硬件视频加速。
 
 ## 5. 可选配置
 
@@ -195,6 +200,8 @@ sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau
 ### 字体
 - `misans`：小米 misans，很好看 适合日用。`aur`
 - `ttf-jetbrains-mono-nerd`：JetBrains Mono 字体，适用于终端、代码字体。`extra`
+- `wqy-zenhei`：安装以支持亚洲地区语言，Steam 可能用到。[^3]`extra` 
+- `ttf-liberation`：Steam 图形界面大量使用 Arial 字体。你可以通过安装 ttf-liberation 来解决。[^3]`extra`
 
 
 ## 7. 我的配置
@@ -221,3 +228,4 @@ sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau
 
 [^1]: https://docs.kernel.org/admin-guide/kernel-parameters.html
 [^2]: https://wiki.archlinux.org/title/Improving_performance#Watchdogs
+[^3]: https://wiki.archlinuxcn.org/wiki/Steam
